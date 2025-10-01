@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="en-IN">
+<head>
+  <!-- =======================================================================
+       Hotel The Black Gold — About Us
+       File: about.html
+       =======================================================================
+       - Semantic HTML5; WCAG-2.1 AA; ARIA; single <h1>
+       - Inline minified CSS; minimal JS; hero preload; lazy images
+       - Canonical, OG/Twitter, JSON-LD (Hotel, Breadcrumb)
+       - Responsive: grid/flex, mobile-first; sticky header; floating quick actions
+       - Dev: replace placeholder assets & wire GA4 / booking widget when ready
+       ======================================================================= -->
+
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover, interactive-widget=resizes-content">
+
+  <!-- Browser UI colors -->
+  <meta name="theme-color" content="#111111">
+  <meta name="color-scheme" content="dark light">
+
+  <!-- Meta Title (<=60 chars) -->
+  <title>About Hotel The Black Gold | Chandigarh</title>
+
+  <!-- Meta Description (<=155 chars) -->
+  <meta name="description" content="Guest-first hotel near PGI, PEC &amp; Panjab University. Learn our story, values, and why travelers choose Hotel The Black Gold for comfort and convenience.">
+
+  <!-- Canonical -->
+  <link rel="canonical" href="https://www.hoteltheblackgold.com/about.html">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="About Hotel The Black Gold | Chandigarh">
+  <meta property="og:description" content="Guest-first hotel near PGI, PEC &amp; Panjab University. Learn our story, values, and why travelers choose Hotel The Black Gold.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://www.hoteltheblackgold.com/about.html">
+  <meta property="og:site_name" content="Hotel The Black Gold">
+  <meta property="og:image" content="https://www.hoteltheblackgold.com/assets/og/og-about.webp">
+  <meta property="og:image:secure_url" content="https://www.hoteltheblackgold.com/assets/og/og-about.webp">
+  <meta property="og:image:type" content="image/webp">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Hotel The Black Gold team and welcoming lobby">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="About Hotel The Black Gold | Chandigarh">
+  <meta name="twitter:description" content="Our story &amp; standards. A dependable, pet-friendly base near PGI, PEC &amp; Panjab University.">
+  <meta name="twitter:image" content="https://www.hoteltheblackgold.com/assets/og/og-about.webp">
+  <meta name="twitter:image:alt" content="Hotel The Black Gold team and welcoming lobby">
+  <meta name="twitter:site" content="@HotelBlackGold">
+
+  <!-- Favicons -->
+  <link rel="icon" href="/assets/icons/favicon.ico">
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/icons/favicon-32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/icons/favicon-16.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/icons/apple-touch-icon.png">
+  <link rel="manifest" href="/assets/icons/site.webmanifest">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Montserrat:wght@600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Preload hero image -->
+  <link rel="preload" as="image" href="/assets/images/about-hero-the-black-gold.webp"
+      imagesrcset="/assets/images/about-hero-the-black-gold.webp 1920w"
+      imagesizes="100vw" fetchpriority="high">
+
+  <!-- Styles (minified) -->
+  <style>
+    :root{--bg:#111111;--text:#F5F5F5;--muted:#EDEDED;--gold:#D4AF37;--card:#151515;--line:#2A2A2A;--shadow:0 8px 24px rgba(0,0,0,.35),0 2px 6px rgba(0,0,0,.25)}
+    *{box-sizing:border-box}html,body{margin:0;padding:0;background:var(--bg);color:var(--text);font-family:Lato,system-ui,-apple-system,Segoe UI,Roboto,"Helvetica Neue",Arial,sans-serif;line-height:1.6}
+    img{max-width:100%;height:auto;border:0}a{color:var(--muted);text-decoration:none}a:hover,a:focus{color:var(--gold)}
+    .container{width:min(1180px,92vw);margin-inline:auto}
+    .skip-link{position:absolute;left:-999px;top:auto;width:1px;height:1px;overflow:hidden}
+    .skip-link:focus{left:1rem;top:1rem;width:auto;height:auto;background:#000;padding:.75rem 1rem;border:2px solid var(--gold);z-index:10000}
+
+    /* Header */
+    header{position:sticky;top:0;z-index:999;background:rgba(17,17,17,.78);backdrop-filter:saturate(120%) blur(8px);border-bottom:1px solid rgba(255,255,255,.05)}
+    .nav{display:flex;align-items:center;justify-content:space-between;padding:.85rem 0}
+    .brand{display:flex;align-items:center;gap:.75rem}.logo{width:36px;height:36px;border-radius:10px;background:linear-gradient(135deg,var(--gold),#9b7c1f);box-shadow:var(--shadow)}
+    .brand-name{font-family:Montserrat,sans-serif;font-weight:800;letter-spacing:.4px}
+    nav ul{list-style:none;margin:0;padding:0;display:flex;gap:1.25rem;align-items:center}
+    .book-now{background:var(--gold);color:#111;padding:.6rem 1rem;border-radius:999px;font-weight:700;box-shadow:var(--shadow);border:1px solid rgba(0,0,0,.35)}
+
+    /* Hero */
+    .hero{position:relative;isolation:isolate}
+    .hero-media{position:absolute;inset:0;z-index:-1;overflow:hidden}
+    .hero-media img{width:100%;height:100%;object-fit:cover;filter:grayscale(.04) contrast(1.05) brightness(.88)}
+    .hero-overlay{position:absolute;inset:0;background:radial-gradient(1200px 600px at 60% 18%,rgba(212,175,55,.16),transparent),linear-gradient(180deg,rgba(17,17,17,.28),rgba(17,17,17,.88))}
+    .hero-inner{padding:clamp(88px,12vw,148px) 0 56px}
+    h1{font-family:Montserrat,sans-serif;font-weight:800;line-height:1.1;font-size:clamp(28px,5.6vw,46px);margin:0 0 .5rem}
+    .subhead{color:var(--muted);font-size:clamp(15px,2.2vw,18px);max-width:880px}
+    .cta-row{display:flex;gap:10px;flex-wrap:wrap;margin-top:14px}
+    .btn{display:inline-flex;align-items:center;justify-content:center;gap:.5rem;border:none;border-radius:12px;cursor:pointer;padding:.85rem 1.05rem}
+    .btn-primary{background:var(--gold);color:#111;font-weight:800}
+    .btn-ghost{background:#1a1a1a;border:1px solid #2b2b2b;color:#f1f1f1}
+
+    /* Sections */
+    section{padding:64px 0}
+    .section-title{font-family:Montserrat,sans-serif;font-weight:800;font-size:clamp(22px,3.6vw,32px);margin:0 0 16px}
+    .muted{color:#d2d2d2}.small{font-size:.95rem;color:#cfcfcf}
+
+    /* Chips */
+    .chips{display:flex;flex-wrap:wrap;gap:.5rem}
+    .chip{display:inline-flex;align-items:center;gap:.4rem;background:#141414;color:#f3f3f3;border:1px solid #2a2a2a;border-radius:999px;padding:.4rem .7rem}
+    .chip .dot{width:8px;height:8px;border-radius:999px;background:var(--gold)}
+
+    /* Grids */
+    .grid-2{display:grid;grid-template-columns:1fr;gap:18px}
+    .grid-3{display:grid;grid-template-columns:1fr;gap:18px}
+    @media (min-width:720px){.grid-2{grid-template-columns:repeat(2,1fr)}.grid-3{grid-template-columns:repeat(3,1fr)}}
+
+    /* Cards */
+    .card{background:var(--card);border:1px solid var(--line);border-radius:18px;overflow:hidden;box-shadow:var(--shadow)}
+    .card img{display:block;aspect-ratio:16/9;object-fit:cover}
+    .card-body{padding:16px}
+    .card h3{font-family:Montserrat,sans-serif;margin:.2rem 0 .5rem}
+    .more{color:var(--gold);font-weight:700}
+
+    /* Icon row */
+    .icon-row{display:flex;gap:.75rem;align-items:flex-start;background:#141414;border:1px solid var(--line);padding:.8rem .9rem;border-radius:12px}
+    .icon{width:36px;height:36px;border-radius:10px;background:#1a1a1a;border:1px solid #2a2a2a;display:grid;place-items:center;color:var(--gold);font-weight:800}
+
+    /* Footer */
+    footer{border-top:1px solid rgba(255,255,255,.06);padding-top:40px;padding-bottom:80px}
+    .footer-grid{display:grid;grid-template-columns:1fr;gap:22px}
+    .footer-col h4{font-family:Montserrat,sans-serif;margin:.2rem 0 .6rem}
+    .copyright{border-top:1px solid rgba(255,255,255,.06);margin-top:26px;padding-top:18px;color:#c9c9c9;font-size:.9rem}
+    @media (min-width:700px){.footer-grid{grid-template-columns:2fr 1fr 1fr 1fr}}
+
+    /* FAB */
+    .fab{position:fixed;right:16px;bottom:16px;display:grid;gap:10px;z-index:1000}
+    .fab a{display:flex;align-items:center;gap:.6rem;padding:.7rem 1rem;border-radius:999px;box-shadow:var(--shadow);border:1px solid rgba(0,0,0,.4);backdrop-filter:saturate(120%) blur(6px)}
+    .fab .call{background:var(--gold);color:#111;font-weight:800}
+    .fab .wa{background:#128C7E;color:#fff}
+    .fab .book{background:#1f1f1f;color:#f1f1f1;border-color:#343434}
+
+    /* Animations */
+    @media (prefers-reduced-motion:no-preference){
+      .fade-up{opacity:0;transform:translateY(10px);animation:fadeUp .6s ease .05s forwards}
+      .delay{animation-delay:.16s}.delay2{animation-delay:.28s}
+      @keyframes fadeUp{to{opacity:1;transform:none}}
+    }
+    :where(a,button){outline-color:var(--gold);outline-offset:2px}
+  </style>
+
+  <!-- JSON-LD: Hotel (context) -->
+  <!-- JSON-LD: Hotel (context) -->
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Hotel",
+  "name": "Hotel The Black Gold",
+  "url": "https://www.hoteltheblackgold.com/",
+  "image": "https://www.hoteltheblackgold.com/assets/og/og-home.webp",
+  "description": "Modern, guest-first hotel in the Chandigarh region near PGI with rooms from budget to premium and practical amenities.",
+  "telephone": "+917277522222",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Hotel The Black Gold, near Century Public School, Nayagaon, Punjab",
+    "addressLocality": "Nayagaon",
+    "addressRegion": "Punjab",
+    "postalCode": "160103",
+    "addressCountry": "IN"
+  },
+  "geo": { "@type": "GeoCoordinates", "latitude": 30.77498, "longitude": 76.79716 },
+  "areaServed": "Chandigarh",
+  "currenciesAccepted": "INR",
+  "paymentAccepted": "Cash, Card, UPI",
+  "priceRange": "₹₹",
+  "brand": { "@type": "Brand", "name": "Hotel The Black Gold", 
+  "logo": "https://www.hoteltheblackgold.com/assets/brand/logo.svg" },
+  "hasMap": "https://maps.app.goo.gl/8PPMnzc98C3cesBN9",
+  "sameAs": [
+    "https://www.facebook.com/HotelTheBlackGoldChandigarh",
+    "https://x.com/HotelBlackGold",
+    "https://maps.app.goo.gl/yUs4sxDEXqwgCvyC6"
+  ],
+  "knowsLanguage": ["en","hi","pa"]
+}
+</script>
+
+  <!-- JSON-LD: Breadcrumbs -->
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"BreadcrumbList",
+    "itemListElement":[
+      {"@type":"ListItem","position":1,"name":"Home","item":"https://www.hoteltheblackgold.com/"},
+      {"@type":"ListItem","position":2,"name":"About Us","item":"https://www.hoteltheblackgold.com/about.html"}
+    ]
+  }
+  </script>
+
+  <!-- Analytics hook (insert GA4 when ready) -->
+  <!-- <script defer src="/assets/js/ga4.js"></script> -->
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <!-- HEADER -->
+  <header role="banner" aria-label="Primary">
+    <div class="container nav" id="nav">
+      <!-- Brand -->
+      <a class="brand" href="/" aria-label="Hotel The Black Gold — Home">
+        <span class="logo" aria-hidden="true"></span>
+        <span class="brand-name">Hotel The Black Gold</span>
+      </a>
+
+      <!-- Nav -->
+      <nav aria-label="Main">
+        <ul>
+          <li><a href="/">Home</a></li>
+          <li><a href="/rooms.html">Rooms &amp; Rates</a></li>
+          <li><a href="/amenities.html">Amenities</a></li>
+          <li><a href="/location.html">Location</a></li>
+          <li><a href="/faq.html">FAQ</a></li>
+          <li><a href="/contact.html">Contact</a></li>
+        </ul>
+      </nav>
+
+      <!-- CTA -->
+      <a class="book-now" href="/contact.html">Book Now</a>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero" aria-label="About Hero">
+    <div class="hero-media" aria-hidden="true">
+      <img src="/assets/images/about-hero-the-black-gold.webp"
+           alt="Welcoming lobby and team at Hotel The Black Gold"
+           width="1920" height="1080" decoding="async" fetchpriority="high">
+      <div class="hero-overlay"></div>
+    </div>
+    <div class="container hero-inner fade-up">
+      <nav class="breadcrumbs" aria-label="Breadcrumb">
+        <a href="/">Home</a> › <span aria-current="page">About Us</span>
+      </nav>
+      <h1>About Hotel The Black Gold – Chandigarh</h1>
+      <p class="subhead">A guest-first stay near PGI, PEC &amp; Panjab University — modern rooms, practical amenities, and a caring team.</p>
+      <div class="cta-row">
+        <a class="btn btn-primary" href="tel:+917277522222" aria-label="Call Hotel The Black Gold">Call</a>
+        <a class="btn btn-ghost" href="https://wa.me/917277522222" target="_blank" rel="noopener" aria-label="WhatsApp Hotel The Black Gold">WhatsApp</a>
+        <a class="btn btn-ghost" href="/contact.html" aria-label="Book Now">Book Now</a>
+    </div>
+      </div>
+  </section>
+
+  <main id="main" class="container" role="main">
+    <!-- OUR STORY -->
+<section class="fade-up" aria-labelledby="story">
+  <h2 id="story" class="section-title">Our Story</h2>
+  <div class="grid-2">
+    <div class="card">
+      <div class="card-body">
+        <p>We started The Black Gold to make business, medical, and leisure trips to Chandigarh simpler. That means clean rooms, reliable Wi-Fi, attentive housekeeping, and friendly, no-drama service — all minutes from <a href="/hotel-near-pgi.html">PGI</a>, <a href="/location.html">PEC</a>, and Panjab University.</p>
+        <p class="small">We’re independent, local, and focused on the details that matter: quick check-in, flexible dining, and practical add-ons like printing/scanning and wheelchair assistance.</p>
+      </div>
+    </div>
+    <figure class="card">
+      <img loading="lazy" decoding="async" width="800" height="450"
+           src="/assets/images/about-team-the-black-gold.webp"
+           alt="Front desk team welcoming guests at Hotel The Black Gold">
+      <figcaption class="card-body small">A small team with one goal — a smooth, comfortable stay.</figcaption>
+    </figure>
+  </div>
+</section>
+
+    <!-- WHAT GUESTS LOVE (chips) -->
+    <section class="fade-up" aria-labelledby="love">
+      <h2 id="love" class="section-title">What Guests Love Here</h2>
+      <div class="chips" role="list">
+        <span class="chip" role="listitem"><span class="dot"></span>Fast Wi-Fi (100 Mbps per wing)</span>
+        <span class="chip" role="listitem"><span class="dot"></span>Smart TVs in upgraded rooms</span>
+        <span class="chip" role="listitem"><span class="dot"></span>24/7 basics: tea,coffee,Maggi</span>
+        <span class="chip" role="listitem"><span class="dot"></span>Lift access &amp; wheelchair help</span>
+        <span class="chip" role="listitem"><span class="dot"></span>Pet-friendly (₹300/night/pet)</span>
+        <span class="chip" role="listitem"><span class="dot"></span>Near PGI, PEC &amp; PU</span>
+      </div>
+    </section>
+
+    <!-- OUR STANDARDS (icon rows) -->
+    <section class="fade-up" aria-labelledby="standards">
+      <h2 id="standards" class="section-title">Our Standards</h2>
+      <div class="grid-3">
+        <div class="icon-row">
+          <div class="icon" aria-hidden="true">🧼</div>
+          <div><strong>Clean &amp; Maintained</strong><br><span class="small">Daily housekeeping, fresh linen, and regular upkeep.</span></div>
+        </div>
+        <div class="icon-row">
+          <div class="icon" aria-hidden="true">⚡</div>
+          <div><strong>Reliable Connectivity</strong><br><span class="small">High-speed Wi-Fi and ample power points in every room.</span></div>
+        </div>
+        <div class="icon-row">
+          <div class="icon" aria-hidden="true">🍳</div>
+          <div><strong>Practical Dining</strong><br><span class="small">Kitchen 7:30 AM – 10:30 PM; <br>24/7 basics always available.</span></div>
+        </div>
+        <div class="icon-row">
+          <div class="icon" aria-hidden="true">🛎️</div>
+          <div><strong>Helpful Front Desk</strong><br><span class="small">Printing/scanning, local tips, and quick responses.</span></div>
+        </div>
+        <div class="icon-row">
+          <div class="icon" aria-hidden="true">♿</div>
+          <div><strong>Access for All</strong><br><span class="small">Lift access — wheelchair assistance on request.</span></div>
+        </div>
+        <div class="icon-row">
+          <div class="icon" aria-hidden="true">🐶</div>
+          <div><strong>Pet-Friendly</strong><br><span class="small">Designated rooms for pets (₹300/night/pet).</span></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- LOCATION CHIPS -->
+      <section class="fade-up" aria-labelledby="location">
+        <h2 id="location" class="section-title">Location Advantages</h2>
+        <div class="grid-2">
+          <div>
+            <p class="muted">Minutes from PGIMER for medical visits, close to Sukhna Lake and Rock Garden for sightseeing, and convenient to Sector 17 for business and shopping.</p>
+            <div class="dist-list small" role="list">
+              <div role="listitem"><strong>PGI Chandigarh</strong> – &lt; 2 km</div>
+              <div role="listitem"><strong>Rock Garden</strong> – ~3 km</div>
+              <div role="listitem"><strong>Sukhna Lake</strong> – ~4 km</div>
+              <div role="listitem"><strong>Sector 17 Plaza</strong> – ~4 km</div>
+              <div role="listitem"><strong>PEC</strong> – &lt; 1 km</div>
+              <div role="listitem"><strong>Punjab &amp; Haryana High Court</strong> – ~2 km</div>
+              <div role="listitem"><strong>Airport</strong> – ~25 km</div>
+              <div role="listitem"><strong>Railway Station</strong> – ~8 km</div>
+              <div role="listitem"><strong>Bus Stand Sec 43</strong> – ~8 km</div>
+            </div>
+            <p class="small" style="margin-top:10px">Learn more on our <a href="/location.html">Location</a> page or see <a href="/hotel-near-pgi.html" >Hotel Near PGI</a>.</p>
+          </div>
+          <div>
+            <div id="map" role="img" aria-label="Map placeholder for Hotel The Black Gold location">
+              <!-- Replace this div with your actual Google Map embed when ready -->
+              <iframe id="map" src="YOUR_EMBED_URL" width="100%" height="320" style="border:0" loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade" title="Map of Hotel The Black Gold" aria-label="Map of Hotel The Black Gold"></iframe>
+              <span>Map embed goes here</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+    <!-- EXPLORE OUR ROOMS -->
+    <section class="fade-up" aria-labelledby="explore">
+      <h2 id="explore" class="section-title">Explore Our Rooms</h2>
+      <div class="grid-3">
+        <article class="card">
+          <img loading="lazy" decoding="async" width="800" height="450"
+               src="/assets/images/deluxe-card-the-black-gold.webp"
+               alt="Deluxe Room with 32-inch TV and compact comfort">
+          <div class="card-body">
+            <h3>Deluxe Room</h3>
+            <p class="small">Budget-friendly room in Chandigarh with AC, Wi-Fi, and attached washroom.</p>
+            <a class="more" href="/deluxe-room.html">View Deluxe →</a>
+          </div>
+        </article>
+        <article class="card">
+          <img loading="lazy" decoding="async" width="800" height="450"
+               src="/assets/images/super-deluxe-card-the-black-gold.webp"
+               alt="Super Deluxe Room with 43-inch Smart TV and plush seating">
+          <div class="card-body">
+            <h3>Super Deluxe Room</h3>
+            <p class="small">Spacious room with 43-inch Smart TV, seating, and free Wi-Fi.</p>
+            <a class="more" href="/super-deluxe-room.html">View Super Deluxe →</a>
+          </div>
+        </article>
+        <article class="card">
+          <img loading="lazy" decoding="async" width="800" height="450"
+               src="/assets/images/premium-room-card-the-black-gold.webp"
+               alt="Premium Room with 50-inch 4K Smart TV and upscale finishes">
+          <div class="card-body">
+            <h3>Premium Room</h3>
+            <p class="small">Luxury room in Chandigarh with 50-inch 4K Smart TV and upscale finishes.</p>
+            <a class="more" href="/premium-room.html">View Premium →</a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- CONVERSION FOOTER -->
+    <section class="fade-up" aria-label="Final Call to Action">
+      <div class="strip card" style="padding:18px">
+        <h2 class="section-title" style="margin-top:0">Ready to Plan Your Stay?</h2>
+        <p class="muted">Book direct for the best rates &amp; complimentary breakfast on select plans.</p>
+        <div class="cta-row">
+          <a class="btn btn-primary" href="tel:+917277522222" aria-label="Call Now">Call Now</a>
+          <a class="btn btn-ghost" href="https://wa.me/917277522222" target="_blank" rel="noopener" aria-label="WhatsApp Us">WhatsApp Us</a>
+          <a class="btn btn-ghost" href="/contact.html" aria-label="Book Now">Book Now</a>
+        </div>
+        <p class="small" style="margin-top:10px">Explore: <a href="/rooms.html">Rooms &amp; Rates</a> • <a href="/amenities.html">Amenities</a> • <a href="/pet-friendly.html">Pet-Friendly Hotel in Chandigarh</a> • <a href="/long-term-stay.html">Long-Term Stay Hotel Chandigarh</a></p>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer role="contentinfo">
+    <div class="container footer-grid">
+      <div class="footer-col">
+        <h4>Hotel The Black Gold</h4>
+        <p class="small">Chandigarh, India • Modern rooms with practical amenities near PGI, PEC &amp; Panjab University.</p>
+        <p class="small">Nayagaon, Punjab (Chandigarh region) </p>
+        <p class="small"><strong>Phone:</strong> <a href="tel:+917277522222">+91-72775-22222</a><br><strong>Email:</strong> <a href="mailto:hoteltheblackgold@gmail.com">hoteltheblackgold@gmail.com</a></p>
+      </div>
+      <div class="footer-col">
+        <h4>Rooms</h4>
+        <p class="small">
+          <a href="/deluxe-room.html">Deluxe Room</a><br>
+          <a href="/super-deluxe-room.html">Super Deluxe Room</a><br>
+          <a href="/premium-room.html">Premium Room</a><br>
+          <a href="/rooms.html">Rooms &amp; Rates</a>
+        </p>
+      </div>
+      <div class="footer-col">
+        <h4>Plan</h4>
+        <p class="small">
+          <a href="/location.html">Location</a><br>
+          <a href="/hotel-near-pgi.html">Hotel Near PGI</a>
+        </p>
+      </div>
+      <div class="footer-col">
+        <h4>Help</h4>
+        <p class="small">
+          <a href="/faq.html">FAQ</a><br>
+          <a href="/contact.html">Contact</a>
+        </p>
+      </div>
+    </div>
+    <div class="container copyright">
+      <div>© <span id="year"></span> Hotel The Black Gold. All rights reserved.</div>
+    </div>
+  </footer>
+
+  <!-- Floating Quick Actions (priority: Call > WhatsApp > Book) -->
+  <nav class="fab" aria-label="Quick actions">
+    <a class="call" href="tel:+917277522222" aria-label="Call Hotel The Black Gold">Call</a>
+    <a class="wa" href="https://wa.me/917277522222" target="_blank" rel="noopener" aria-label="WhatsApp Hotel The Black Gold">WhatsApp</a>
+    <a class="book" href="/contact.html" aria-label="Book at Hotel The Black Gold">Book Now</a>
+  </nav>
+
+  <!-- Minimal JS: year (no accordion needed here) -->
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+
+  <!-- Developer notes:
+       - Insert GA4 tag when ready (see head comment).
+       - Swap real images for:
+           /assets/images/about-hero-the-black-gold.webp
+           /assets/images/about-team-the-black-gold.webp
+           /assets/images/about-map-the-black-gold.webp
+           /assets/images/deluxe-card-the-black-gold.webp
+           /assets/images/super-deluxe-card-the-black-gold.webp
+           /assets/images/premium-room-card-the-black-gold.webp
+       - Keep WebP, add width/height if available, and maintain lazy-loading for non-hero media.
+  -->
+</body>
+</html>

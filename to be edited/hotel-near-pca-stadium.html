@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- =========================================================================
+       Hotel The Black Gold — Hotel Near PCA Stadium (Mullanpur)
+       File: hotel-near-pca-stadium.html
+       Senior Front-End + Technical SEO build (Apple-level polish)
+       =========================================================================
+       - Semantic HTML5; WCAG-2.1 AA; ARIA; single <h1>
+       - Inline, minified CSS; tiny vanilla JS; hero preload; lazy images
+       - Canonical, OG/Twitter, JSON-LD (Hotel, Breadcrumb, FAQPage)
+       - Responsive: grid/flex, mobile-first; sticky header; floating quick actions
+       - Developer: replace placeholder assets & wire GA4 / booking widget when ready
+       ========================================================================= -->
+
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Meta Title (<=60 chars) -->
+  <title>Hotel Near PCA Stadium Mullanpur | Hotel The Black Gold</title>
+
+  <!-- Meta Description (<=155 chars) -->
+  <meta name="description" content="Premium stay ~12–16 km from PCA Stadium (≈25–35 mins). Early/late meals, Wi-Fi, parking+EV, printing, accessibility, group rates. Call +91-72775-22222.">
+
+  <!-- Canonical -->
+  <link rel="canonical" href="https://www.hoteltheblackgold.com/hotel-near-pca-stadium.html">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Hotel Near PCA Stadium Mullanpur | Hotel The Black Gold">
+  <meta property="og:description" content="Match-day comfort near Mullanpur: fast Wi-Fi, early/late meals, parking+EV, printing/scanning, accessibility & long-stay options.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://www.hoteltheblackgold.com/hotel-near-pca-stadium.html">
+  <meta property="og:site_name" content="Hotel The Black Gold">
+  <meta property="og:image" content="https://www.hoteltheblackgold.com/assets/og/og-pca.webp">
+  <meta property="og:locale" content="en_IN">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Hotel Near PCA Stadium Mullanpur | The Black Gold">
+  <meta name="twitter:description" content="Premium base for cricket & concerts: Wi-Fi, meals, parking+EV, group blocks & GST invoices.">
+  <meta name="twitter:image" content="https://www.hoteltheblackgold.com/assets/og/og-pca.webp">
+
+  <!-- Favicons (replace with real assets) -->
+  <link rel="icon" href="/assets/icons/favicon.ico">
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/icons/favicon-32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/icons/favicon-16.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/icons/apple-touch-icon.png">
+  <link rel="manifest" href="/assets/icons/site.webmanifest">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Montserrat:wght@600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Preload hero image -->
+  <link rel="preload" as="image" href="/assets/images/hotel-near-pca-stadium-mullanpur-the-black-gold.webp" imagesrcset="/assets/images/hotel-near-pca-stadium-mullanpur-the-black-gold.webp 1920w" imagesizes="100vw">
+
+  <!-- Styles (minified) -->
+  <style>
+    :root{--bg:#111111;--text:#F5F5F5;--muted:#EDEDED;--gold:#D4AF37;--card:#161616;--line:#2A2A2A;--shadow:0 8px 24px rgba(0,0,0,.35),0 2px 6px rgba(0,0,0,.25)}
+    *{box-sizing:border-box}html,body{margin:0;padding:0;background:var(--bg);color:var(--text);font-family:Lato,system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,"Helvetica Neue",Arial,sans-serif;line-height:1.6;text-rendering:optimizeLegibility}
+    img{max-width:100%;height:auto;border:0}a{color:var(--muted);text-decoration:none}a:hover,a:focus{color:var(--gold)}
+    .container{width:min(1180px,92vw);margin-inline:auto}
+    .skip-link{position:absolute;left:-999px;top:auto;width:1px;height:1px;overflow:hidden}
+    .skip-link:focus{left:1rem;top:1rem;width:auto;height:auto;background:#000;padding:.75rem 1rem;border:2px solid var(--gold);z-index:10000}
+
+    /* Header */
+    header{position:sticky;top:0;z-index:999;background:rgba(17,17,17,.75);backdrop-filter:saturate(120%) blur(8px);border-bottom:1px solid rgba(255,255,255,.05)}
+    .nav{display:flex;align-items:center;justify-content:space-between;padding:.85rem 0}
+    .brand{display:flex;align-items:center;gap:.75rem}.logo{width:36px;height:36px;border-radius:10px;background:linear-gradient(135deg,var(--gold),#9b7c1f);box-shadow:var(--shadow)}
+    .brand-name{font-family:Montserrat,sans-serif;font-weight:800;letter-spacing:.4px}
+    nav ul{list-style:none;margin:0;padding:0;display:flex;gap:1.25rem;align-items:center}
+    .book-now{background:var(--gold);color:#111;padding:.6rem 1rem;border-radius:999px;font-weight:700;box-shadow:var(--shadow);border:1px solid rgba(0,0,0,.35)}
+    .book-now:hover{filter:brightness(1.05)}
+
+    /* Hero */
+    .hero{position:relative;isolation:isolate}
+    .hero-media{position:absolute;inset:0;z-index:-1;overflow:hidden}
+    .hero-media img{width:100%;height:100%;object-fit:cover;filter:grayscale(.06) contrast(1.05) brightness(.85)}
+    .hero-overlay{position:absolute;inset:0;background:radial-gradient(1200px 600px at 60% 20%,rgba(212,175,55,.18),transparent),linear-gradient(180deg,rgba(17,17,17,.35),rgba(17,17,17,.85))}
+    .hero-inner{padding:clamp(84px,11vw,140px) 0 56px}
+    h1{font-family:Montserrat,sans-serif;font-weight:800;line-height:1.1;font-size:clamp(28px,5.6vw,46px);margin:0 0 .5rem}
+    .subhead{color:var(--muted);font-size:clamp(15px,2.2vw,18px);max-width:880px}
+    .cta-row{display:flex;gap:10px;flex-wrap:wrap;margin-top:14px}
+    .btn{display:inline-flex;align-items:center;justify-content:center;gap:.5rem;border:none;border-radius:12px;cursor:pointer;padding:.85rem 1.05rem}
+    .btn-primary{background:var(--gold);color:#111;font-weight:800}
+    .btn-ghost{background:#1a1a1a;border:1px solid #2b2b2b;color:#f1f1f1}
+
+    /* Sections */
+    section{padding:64px 0}
+    .section-title{font-family:Montserrat,sans-serif;font-weight:800;font-size:clamp(22px,3.6vw,32px);margin:0 0 16px}
+    .muted{color:#d2d2d2}.small{font-size:.95rem;color:#cfcfcf}
+    .grid-2{display:grid;grid-template-columns:1fr;gap:22px}
+    .grid-3{display:grid;grid-template-columns:1fr;gap:18px}
+
+    /* Cards */
+    .cards{display:grid;grid-template-columns:1fr;gap:18px}
+    .card{background:#151515;border:1px solid var(--line);border-radius:18px;overflow:hidden;box-shadow:var(--shadow)}
+    .card img{display:block;aspect-ratio:16/9;object-fit:cover}
+    .card-body{padding:16px}
+    .card h3{font-family:Montserrat,sans-serif;margin:.2rem 0 .5rem}
+    .more{color:var(--gold);font-weight:700}
+
+    /* Icons */
+    .icons{display:grid;grid-template-columns:1fr;gap:12px}
+    .icon-row{display:flex;gap:.75rem;align-items:flex-start;background:#141414;border:1px solid var(--line);padding:.8rem .9rem;border-radius:12px}
+    .icon{width:36px;height:36px;border-radius:10px;background:#1a1a1a;border:1px solid #2a2a2a;display:grid;place-items:center;color:var(--gold);font-weight:800}
+
+    /* Highlight strip */
+    .strip{background:linear-gradient(180deg,#151515,#121212);border:1px solid #2b2b2b;border-radius:18px;box-shadow:var(--shadow);padding:18px}
+    .badge{display:inline-block;background:var(--gold);color:#111;font-weight:800;border-radius:999px;padding:.25rem .6rem;margin-bottom:.4rem}
+
+    /* Breadcrumbs */
+    .breadcrumbs{font-size:.95rem;margin:18px 0;color:#cfcfcf}
+    .breadcrumbs a{color:#cfcfcf}.breadcrumbs a:hover{color:var(--gold)}
+
+    /* Footer */
+    footer{border-top:1px solid rgba(255,255,255,.06);padding-top:40px;padding-bottom:80px}
+    .footer-grid{display:grid;grid-template-columns:1fr;gap:22px}
+    .footer-col h4{font-family:Montserrat,sans-serif;margin:.2rem 0 .6rem}
+    .copyright{border-top:1px solid rgba(255,255,255,.06);margin-top:26px;padding-top:18px;color:#c9c9c9;font-size:.9rem}
+
+    /* Accordion */
+    .accordion{border:1px solid var(--line);border-radius:18px;overflow:hidden}
+    .acc-item{border-bottom:1px solid var(--line);background:#141414}
+    .acc-item:last-child{border-bottom:0}
+    .acc-btn{width:100%;text-align:left;padding:16px 18px;background:#141414;color:var(--text);border:0;font-weight:700;font-family:Montserrat,sans-serif;cursor:pointer}
+    .acc-content{max-height:0;overflow:hidden;transition:max-height .35s ease}
+    .acc-inner{padding:0 18px 16px;color:#d7d7d7}
+
+    /* FAB */
+    .fab{position:fixed;right:16px;bottom:16px;display:grid;gap:10px;z-index:1000}
+    .fab a{display:flex;align-items:center;gap:.6rem;padding:.7rem .9rem;border-radius:999px;box-shadow:var(--shadow);border:1px solid rgba(0,0,0,.4);backdrop-filter:saturate(120%) blur(6px)}
+    .fab .call{background:var(--gold);color:#111;font-weight:800}
+    .fab .wa{background:#128C7E;color:#fff}
+    .fab .book{background:#1f1f1f;color:#f1f1f1;border-color:#343434}
+
+    /* Responsive */
+    @media (min-width:700px){
+      .grid-2{grid-template-columns:1.15fr .85fr}
+      .grid-3{grid-template-columns:repeat(3,1fr)}
+      .cards{grid-template-columns:repeat(3,1fr)}
+      .icons{grid-template-columns:repeat(3,1fr)}
+      .footer-grid{grid-template-columns:2fr 1fr 1fr 1fr}
+    }
+
+    /* Animations */
+    @media (prefers-reduced-motion:no-preference){
+      .fade-up{opacity:0;transform:translateY(10px);animation:fadeUp .6s ease .05s forwards}
+      .delay{animation-delay:.16s}.delay2{animation-delay:.28s}
+      @keyframes fadeUp{to{opacity:1;transform:none}}
+    }
+
+    /* Focus */
+    :where(a,button){outline-color:var(--gold);outline-offset:2px}
+  </style>
+
+  <!-- JSON-LD: Hotel (amenities tuned for event visitors) -->
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"Hotel",
+    "name":"Hotel The Black Gold",
+    "url":"https://www.hoteltheblackgold.com/",
+    "brand":"Hotel The Black Gold",
+    "image":"https://www.hoteltheblackgold.com/assets/og/og-home.webp",
+    "description":"Premium base for PCA Stadium (Mullanpur) events. High-speed Wi-Fi, early/late meals on request, secure parking with EV chargers, free printing/scanning, accessibility, pet-friendly rooms, laundry, and GST invoices for long stays.",
+    "telephone":"+91-72775-22222",
+    "address":{"@type":"PostalAddress","addressLocality":"Chandigarh","addressRegion":"Chandigarh","postalCode":"160000","addressCountry":"IN"},
+    "geo":{"@type":"GeoCoordinates","latitude":30.7333,"longitude":76.7794},
+    "areaServed":"Chandigarh",
+    "amenityFeature":[
+      {"@type":"LocationFeatureSpecification","name":"Distance to PCA Stadium (Mullanpur)","value":"~12–16 km (~25–35 minutes by car)"},
+      {"@type":"LocationFeatureSpecification","name":"High-Speed Wi-Fi","value":"100 Mbps per wing"},
+      {"@type":"LocationFeatureSpecification","name":"Early/Late Meals","value":"Available on request"},
+      {"@type":"LocationFeatureSpecification","name":"Printing & Scanning","value":"Complimentary at front desk"},
+      {"@type":"LocationFeatureSpecification","name":"Secure Parking & EV Chargers","value":"On-site, multi-day"},
+      {"@type":"LocationFeatureSpecification","name":"Accessibility","value":"Lift access; wheelchair assistance on request"},
+      {"@type":"LocationFeatureSpecification","name":"Laundry & Ironing","value":"Available"},
+      {"@type":"LocationFeatureSpecification","name":"Long-Stay GST Invoices","value":"Provided on eligible stays"},
+      {"@type":"LocationFeatureSpecification","name":"Pet-Friendly Rooms","value":"₹300/night/pet"}
+    ]
+  }
+  </script>
+
+  <!-- JSON-LD: Breadcrumbs -->
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"BreadcrumbList",
+    "itemListElement":[
+      {"@type":"ListItem","position":1,"name":"Home","item":"https://www.hoteltheblackgold.com/"},
+      {"@type":"ListItem","position":2,"name":"Hotel Near PCA Stadium Mullanpur","item":"https://www.hoteltheblackgold.com/hotel-near-pca-stadium.html"}
+    ]
+  }
+  </script>
+
+  <!-- JSON-LD: FAQPage (mirrors accordion content below) -->
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"FAQPage",
+    "mainEntity":[
+      {"@type":"Question","name":"How far is the Mullanpur PCA Stadium from the hotel?","acceptedAnswer":{"@type":"Answer","text":"Around 12–16 km, typically 25–35 minutes by car depending on traffic."}},
+      {"@type":"Question","name":"Can the hotel arrange transport to and from the match?","acceptedAnswer":{"@type":"Answer","text":"Yes. We can help pre-book cabs and coordinate return pick-ups on request."}},
+      {"@type":"Question","name":"Do you provide early breakfast or late dinner after matches?","acceptedAnswer":{"@type":"Answer","text":"Yes, on request. 24×7 basics like tea, coffee, Maggi, and sandwiches are always available."}},
+      {"@type":"Question","name":"Is parking available?","acceptedAnswer":{"@type":"Answer","text":"Yes. Secure basement parking is available along with EV charging points."}},
+      {"@type":"Question","name":"Do you have group rates for fans or crews?","acceptedAnswer":{"@type":"Answer","text":"Yes. Group room blocks and flexible meal windows are available—contact us for a quote."}},
+      {"@type":"Question","name":"Is Wi-Fi free and reliable?","acceptedAnswer":{"@type":"Answer","text":"Yes. Complimentary high-speed Wi-Fi is provided property-wide."}},
+      {"@type":"Question","name":"Are pets allowed?","acceptedAnswer":{"@type":"Answer","text":"Yes. Pet-friendly rooms are available at ₹300/night/pet."}}
+    ]
+  }
+  </script>
+
+  <!-- Analytics hook (insert GA4 when ready) -->
+  <!-- <script defer src="/assets/js/ga4.js"></script> -->
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <!-- HEADER -->
+  <header role="banner" aria-label="Primary">
+    <div class="container nav" id="nav">
+      <div class="brand" aria-label="Hotel The Black Gold">
+        <div class="logo" aria-hidden="true"></div>
+        <div class="brand-name">Hotel The Black Gold</div>
+      </div>
+      <nav aria-label="Main">
+        <ul>
+          <li><a href="/" rel="home">Home</a></li>
+          <li><a href="/rooms.html" rel="internal">Rooms &amp; Rates</a></li>
+          <li><a href="/amenities.html" rel="internal">Amenities</a></li>
+          <li><a href="/location.html" rel="internal">Location</a></li>
+          <li><a href="/faq.html" rel="internal">FAQ</a></li>
+          <li><a href="/contact.html" rel="internal">Contact</a></li>
+        </ul>
+      </nav>
+      <div><a class="book-now" href="/contact.html" rel="internal">Book Now</a></div>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero" aria-label="Hero">
+    <div class="hero-media" aria-hidden="true">
+      <img src="/assets/images/hotel-near-pca-stadium-mullanpur-the-black-gold.webp" alt="Premium hotel base near PCA Stadium Mullanpur" width="1920" height="1080">
+      <div class="hero-overlay"></div>
+    </div>
+    <div class="container hero-inner fade-up">
+      <nav class="breadcrumbs" aria-label="Breadcrumb">
+        <a href="/" rel="home">Home</a> › <span aria-current="page">Hotel Near PCA Stadium Mullanpur</span>
+      </nav>
+      <h1>Hotel Near PCA Stadium Mullanpur – Hotel The Black Gold</h1>
+      <p class="subhead">Premium comfort and easy access for match days &amp; concerts — ideal for cricket fans, families, media crews, corporate hospitality, and event staff.</p>
+      <div class="cta-row">
+        <a class="btn btn-primary" href="tel:+917277522222" aria-label="Call Hotel The Black Gold">Call</a>
+        <a class="btn btn-ghost" href="https://wa.me/917277522222" rel="noopener" aria-label="WhatsApp Hotel The Black Gold">WhatsApp</a>
+        <a class="btn btn-ghost" href="/contact.html" aria-label="Book or enquire at Hotel The Black Gold">Book Now</a>
+      </div>
+    </div>
+  </section>
+
+  <main id="main" class="container" role="main">
+    <!-- LOCATION ADVANTAGE -->
+    <section class="fade-up" aria-labelledby="advantage">
+      <h2 id="advantage" class="section-title">Location Advantage</h2>
+      <div class="strip">
+        <span class="badge" aria-hidden="true">Distance &amp; Time</span>
+        <p class="muted">We’re <strong>~12–16 km</strong> from <strong>PCA Stadium (Mullanpur)</strong> — typically <strong>≈25–35 minutes by car</strong>. Travel is easy via Ola/Uber, local cabs and autos; our front desk can assist with bookings before and after the event. See directions on our <a href="/location.html" rel="internal">Location</a> page.</p>
+      </div>
+    </section>
+
+    <!-- ROOM OPTIONS -->
+    <section class="fade-up" aria-labelledby="rooms">
+      <h2 id="rooms" class="section-title">Room Options for Match Days</h2>
+      <div class="cards" role="list">
+        <article class="card" role="listitem">
+          <img loading="lazy" src="/assets/images/rooms-deluxe-hotel-the-black-gold-chandigarh.webp" alt="Deluxe room for cricket fans near Mullanpur stadium">
+          <div class="card-body">
+            <h3>Deluxe</h3>
+            <p>Budget-friendly comfort with all essentials for a winning stay.</p>
+            <a class="more" href="/deluxe-room.html" rel="internal">View Deluxe →</a>
+          </div>
+        </article>
+        <article class="card" role="listitem">
+          <img loading="lazy" src="/assets/images/rooms-super-deluxe-hotel-the-black-gold-chandigarh.webp" alt="Super Deluxe room with 43 inch Smart TV near PCA stadium">
+          <div class="card-body">
+            <h3>Super Deluxe</h3>
+            <p>Extra space, 43&quot; Smart TV + Airtel STB — perfect for unwinding post-match.</p>
+            <a class="more" href="/super-deluxe-room.html" rel="internal">View Super Deluxe →</a>
+          </div>
+        </article>
+        <article class="card" role="listitem">
+          <img loading="lazy" src="/assets/images/rooms-premium-hotel-the-black-gold-chandigarh.webp" alt="Premium room with 50 inch 4K Smart TV near PCA stadium">
+          <div class="card-body">
+            <h3>Premium</h3>
+            <p>Maximum comfort with a 50&quot; 4K Smart TV, premium bedding and style.</p>
+            <a class="more" href="/premium-room.html" rel="internal">View Premium →</a>
+          </div>
+        </article>
+      </div>
+      <p class="small" style="margin-top:10px">Compare categories and typical ranges on <a href="/rooms.html" rel="internal">Rooms &amp; Rates</a>. Full inclusions on <a href="/amenities.html" rel="internal">Amenities</a>.</p>
+    </section>
+
+    <!-- MATCH-DAY AMENITIES -->
+    <section class="fade-up" aria-labelledby="amenities">
+      <h2 id="amenities" class="section-title">Match-Day Friendly Amenities</h2>
+      <div class="icons" role="list">
+        <div class="icon-row" role="listitem"><div class="icon" aria-hidden="true">🍽</div><div><strong>Early/Late Meals:</strong> In-house kitchen (Indian &amp; Chinese); early breakfast and late dinner on request. 24×7 basics: tea, coffee, Maggi, sandwiches.</div></div>
+        <div class="icon-row" role="listitem"><div class="icon" aria-hidden="true">📶</div><div><strong>High-Speed Wi-Fi:</strong> 100 Mbps per wing for live updates, work calls, and uploads.</div></div>
+        <div class="icon-row" role="listitem"><div class="icon" aria-hidden="true">🅿</div><div><strong>Parking &amp; EV:</strong> Secure basement parking with EV charging for multi-day stays.</div></div>
+        <div class="icon-row" role="listitem"><div class="icon" aria-hidden="true">🖨</div><div><strong>Printing &amp; Scanning:</strong> Complimentary at the front desk for passes, ID copies, and tickets.</div></div>
+        <div class="icon-row" role="listitem"><div class="icon" aria-hidden="true">♿</div><div><strong>Accessibility:</strong> Lift access; wheelchair assistance available on request.</div></div>
+      </div>
+    </section>
+
+    <!-- GROUPS & HOSPITALITY -->
+    <section class="fade-up" aria-labelledby="groups">
+      <h2 id="groups" class="section-title">Groups, Crews &amp; Corporate Hospitality</h2>
+      <div class="strip">
+        <span class="badge" aria-hidden="true">For Teams &amp; Fans</span>
+        <p class="muted">Group room blocks, coordinated check-ins, flexible meal windows, and a dining hall for team/fan breakfasts or post-match dinners. Media crews and sponsors appreciate our reliable Wi-Fi and quick printing support.</p>
+        <p class="small">Plan your event stay: <a href="/group-bookings.html" rel="internal">Group Bookings</a> • <a href="/corporate-bookings.html" rel="internal">Corporate Bookings</a></p>
+      </div>
+    </section>
+
+    <!-- LONG STAY -->
+    <section class="fade-up" aria-labelledby="longstay">
+      <h2 id="longstay" class="section-title">Longer Stays for Series &amp; Tournaments</h2>
+      <div class="strip">
+        <span class="badge" aria-hidden="true">Long-Stay Perks</span>
+        <ul class="small" style="margin:0 0 8px 18px">
+          <li>Weekly and monthly discounted rates</li>
+          <li>GST-compliant invoices</li>
+          <li>Laundry &amp; ironing service</li>
+          <li>Luggage storage for back-to-back fixtures</li>
+          <li>Pet-friendly rooms (₹300/night/pet)</li>
+        </ul>
+        <div class="cta-row" style="margin-top:8px">
+          <a class="btn btn-primary" href="tel:+917277522222" aria-label="Call for long-stay quote">Call for Quote</a>
+          <a class="btn btn-ghost" href="https://wa.me/917277522222" rel="noopener" aria-label="WhatsApp for long-stay quote">WhatsApp Us</a>
+          <a class="btn btn-ghost" href="/long-term-stay.html" rel="internal" aria-label="See long-term stay details">See Long-Term Stay</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- NEARBY LANDMARKS -->
+    <section class="fade-up" aria-labelledby="landmarks">
+      <h2 id="landmarks" class="section-title">Nearby Landmarks &amp; Distances</h2>
+      <ul class="small" style="margin:0 0 0 18px">
+        <li><strong>PCA Stadium (Mullanpur):</strong> ~12–16 km</li>
+        <li><strong>PGI:</strong> &lt;2 km</li>
+        <li><strong>Panjab University:</strong> ~5.5 km</li>
+        <li><strong>PEC:</strong> ~5 km</li>
+        <li><strong>Sector 17 Plaza:</strong> ~7 km</li>
+        <li><strong>Sukhna Lake:</strong> ~6 km</li>
+        <li><strong>Rock Garden:</strong> ~7 km</li>
+        <li><strong>Airport:</strong> ~11 km</li>
+        <li><strong>Railway Station:</strong> ~8 km</li>
+      </ul>
+      <p class="small" style="margin-top:10px">For directions and transport options, visit our <a href="/location.html" rel="internal">Location</a> page.</p>
+    </section>
+
+    <!-- FAQ -->
+    <section class="fade-up" aria-labelledby="faq">
+      <h2 id="faq" class="section-title">Hotel Near PCA Stadium – FAQs</h2>
+      <div class="accordion" id="accordion" role="region" aria-label="PCA hotel FAQs">
+        <div class="acc-item">
+          <button class="acc-btn" aria-expanded="false">How far is the Mullanpur PCA Stadium from the hotel?</button>
+          <div class="acc-content"><div class="acc-inner">Around 12–16 km — typically 25–35 minutes by car, depending on traffic.</div></div>
+        </div>
+        <div class="acc-item">
+          <button class="acc-btn" aria-expanded="false">Can the hotel arrange transport to and from the match?</button>
+          <div class="acc-content"><div class="acc-inner">Yes. We can help pre-book cabs and coordinate return pick-ups on request.</div></div>
+        </div>
+        <div class="acc-item">
+          <button class="acc-btn" aria-expanded="false">Do you provide early breakfast or late dinner after matches?</button>
+          <div class="acc-content"><div class="acc-inner">Yes, on request. 24×7 basics (tea/coffee/Maggi/sandwiches) are always available.</div></div>
+        </div>
+        <div class="acc-item">
+          <button class="acc-btn" aria-expanded="false">Is parking available?</button>
+          <div class="acc-content"><div class="acc-inner">Yes. Secure basement parking is available, with EV charging points.</div></div>
+        </div>
+        <div class="acc-item">
+          <button class="acc-btn" aria-expanded="false">Do you have group rates for fans or crews?</button>
+          <div class="acc-content"><div class="acc-inner">Yes. Group room blocks and flexible meal windows are available—contact us for a quote.</div></div>
+        </div>
+        <div class="acc-item">
+          <button class="acc-btn" aria-expanded="false">Is Wi-Fi free and reliable?</button>
+          <div class="acc-content"><div class="acc-inner">Yes. Complimentary high-speed Wi-Fi is provided property-wide.</div></div>
+        </div>
+        <div class="acc-item">
+          <button class="acc-btn" aria-expanded="false">Are pets allowed?</button>
+          <div class="acc-content"><div class="acc-inner">Yes. Pet-friendly rooms are available at ₹300/night/pet.</div></div>
+        </div>
+      </div>
+      <p class="small" style="margin-top:12px">Still have questions? See our <a href="/faq.html" rel="internal">FAQ</a> or <a href="/contact.html" rel="internal">Contact</a> us.</p>
+    </section>
+
+    <!-- CONVERSION FOOTER -->
+    <section class="fade-up" aria-label="Final Call to Action">
+      <div class="grid-2" style="align-items:center">
+        <div>
+          <h2 class="section-title">Book Your Stay for Match Day</h2>
+          <p class="muted">Priority: <strong>Call</strong> → <strong>WhatsApp</strong> → <strong>Book Online</strong>. Book direct for the best rates and flexibility.</p>
+          <div class="small">One number for everything: <strong><a href="tel:+917277522222">+91-72775-22222</a></strong>.</div>
+        </div>
+        <div>
+          <div class="cta-row">
+            <a class="btn btn-primary" href="tel:+917277522222" aria-label="Call Now">Call Now</a>
+            <a class="btn btn-ghost" href="https://wa.me/917277522222" rel="noopener" aria-label="WhatsApp Us">WhatsApp Us</a>
+            <a class="btn btn-ghost" href="/contact.html" aria-label="Book Online">Book Online</a>
+          </div>
+          <p class="small" style="margin-top:10px">Explore: <a href="/rooms.html" rel="internal">Rooms &amp; Rates</a> • <a href="/amenities.html" rel="internal">Amenities</a> • <a href="/group-bookings.html" rel="internal">Group Bookings</a> • <a href="/corporate-bookings.html" rel="internal">Corporate Bookings</a></p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer role="contentinfo">
+    <div class="container footer-grid">
+      <div class="footer-col">
+        <h4>Hotel The Black Gold</h4>
+        <p class="small">Chandigarh, India • Ideal base for PCA Stadium events • Trusted by fans, crews, and sponsors</p>
+        <p class="small"><strong>Phone:</strong> <a href="tel:+917277522222">+91-72775-22222</a><br><strong>Email:</strong> <a href="mailto:reservations@hoteltheblackgold.in">reservations@hoteltheblackgold.in</a></p>
+      </div>
+      <div class="footer-col">
+        <h4>Stay</h4>
+        <p class="small">
+          <a href="/deluxe-room.html" rel="internal">Deluxe</a><br>
+          <a href="/super-deluxe-room.html" rel="internal">Super Deluxe</a><br>
+          <a href="/premium-room.html" rel="internal">Premium</a>
+        </p>
+      </div>
+      <div class="footer-col">
+        <h4>Plan</h4>
+        <p class="small">
+          <a href="/rooms.html" rel="internal">Rooms &amp; Rates</a><br>
+          <a href="/amenities.html" rel="internal">Amenities</a><br>
+          <a href="/location.html" rel="internal">Location</a>
+        </p>
+      </div>
+      <div class="footer-col">
+        <h4>Help</h4>
+        <p class="small">
+          <a href="/faq.html" rel="internal">FAQ</a><br>
+          <a href="/contact.html" rel="internal">Contact</a>
+        </p>
+      </div>
+    </div>
+    <div class="container copyright">
+      <div>© <span id="year"></span> Hotel The Black Gold. All rights reserved.</div>
+    </div>
+  </footer>
+
+  <!-- Floating Quick Actions (priority: Call > WhatsApp > Book) -->
+  <nav class="fab" aria-label="Quick actions">
+    <a class="call" href="tel:+917277522222" aria-label="Call Hotel The Black Gold">Call</a>
+    <a class="wa" href="https://wa.me/917277522222" rel="noopener" aria-label="WhatsApp Hotel The Black Gold">WhatsApp</a>
+    <a class="book" href="/contact.html" aria-label="Book at Hotel The Black Gold">Book</a>
+  </nav>
+
+  <!-- Minimal JS: FAQ + year (deferred by placement) -->
+  <script>
+    // FAQ accordion
+    const items=document.querySelectorAll('.acc-item');items.forEach(it=>{const btn=it.querySelector('.acc-btn'),ct=it.querySelector('.acc-content');btn.addEventListener('click',()=>{const open=btn.getAttribute('aria-expanded')==='true';btn.setAttribute('aria-expanded',!open);ct.style.maxHeight=!open?(ct.scrollHeight+'px'):0})});
+    // Current year
+    document.getElementById('year').textContent=new Date().getFullYear();
+  </script>
+
+  <!-- Developer notes:
+       - Insert GA4 tag when ready (see head comment).
+       - Booking widget: route to /contact.html or POST /api/enquiry when backend is ready.
+       - Replace hero and room images with optimized WebP assets:
+           /assets/images/hotel-near-pca-stadium-mullanpur-the-black-gold.webp
+           /assets/images/rooms-deluxe-hotel-the-black-gold-chandigarh.webp
+           /assets/images/rooms-super-deluxe-hotel-the-black-gold-chandigarh.webp
+           /assets/images/rooms-premium-hotel-the-black-gold-chandigarh.webp
+       - Keep image dimensions consistent and lazy-load non-critical media. -->
+</body>
+</html>

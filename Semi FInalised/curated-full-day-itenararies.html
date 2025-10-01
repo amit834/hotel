@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- =========================================================
+       Hotel The Black Gold — curated-full-day-itenararies
+       - Sticky header & footer, gold accents, rounded-2xl, soft shadows
+       - Montserrat (headings), Lato (body)
+       - Floating quick actions (Call > WhatsApp > Book)
+       Dev notes:
+       • Replace placeholder images in /assets/images/
+       • Paste GA4 in the marked snippet below
+     ========================================================= -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <title>Full-Day Outings from Chandigarh | Hotel The Black Gold</title>
+  <meta name="description" content="Plan curated one-day trips from Hotel The Black Gold: Shimla, Kasauli, Pinjore & Morni Hills, Anandpur Sahib, Ropar Wetlands, and more. Timings, tips, and routes.">
+  <link rel="canonical" href="https://www.hoteltheblackgold.in/full-day-outings">
+  <!-- Open Graph -->
+  <meta property="og:title" content="Full-Day Outings from Chandigarh | Hotel The Black Gold">
+  <meta property="og:description" content="Curated one-day trips with timings, tips, and routes—starting and ending at Hotel The Black Gold, Chandigarh.">
+  <meta property="og:url" content="https://www.hoteltheblackgold.in/full-day-outings">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Hotel The Black Gold">
+  <meta property="og:image" content="https://www.hoteltheblackgold.in/assets/images/full-day-outings-hero.webp">
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Full-Day Outings from Chandigarh | Hotel The Black Gold">
+  <meta name="twitter:description" content="Curated day trips near Chandigarh: Shimla, Kasauli, Pinjore & Morni, Anandpur Sahib, Ropar Wetlands, and more.">
+  <meta name="twitter:image" content="https://www.hoteltheblackgold.in/assets/images/full-day-outings-hero.webp">
+  <!-- Icons -->
+  <link rel="icon" href="/assets/icons/favicon.ico">
+  <link rel="apple-touch-icon" href="/assets/icons/apple-touch-icon.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Lato:wght@400;500&display=swap">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Lato:wght@400;500&display=swap" rel="stylesheet">
+  <!-- Preload hero -->
+  <link rel="preload" as="image" href="/assets/images/full-day-outings-hero.webp" imagesrcset="/assets/images/full-day-outings-hero.webp" type="image/webp">
+  <!-- Styles (minified, consistent with sitewide design system) -->
+  <style>
+    :root{--bg:#111111;--text:#F5F5F5;--muted:#EDEDED;--gold:#D4AF37;--focus:rgba(255,255,255,.8);--shadow:0 10px 30px rgba(0,0,0,.35);--radius:1rem}
+    *{box-sizing:border-box}html,body{margin:0;padding:0;background:var(--bg);color:var(--text);font-family:Lato,system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;line-height:1.6}
+    img{max-width:100%;height:auto}
+    a{color:var(--text);text-decoration:none}a:hover{opacity:.9}
+    .container{width:min(1200px,92vw);margin-inline:auto}
+    .skip-link{position:absolute;left:-9999px;top:auto;width:1px;height:1px;overflow:hidden}
+    .skip-link:focus{left:1rem;top:1rem;width:auto;height:auto;background:#000;color:#fff;padding:.5rem .75rem;border-radius:.5rem;z-index:10000}
+    /* Header */
+    header.site{position:sticky;top:0;z-index:999;background:rgba(17,17,17,.9);backdrop-filter:saturate(1.2) blur(8px);border-bottom:1px solid rgba(255,255,255,.06)}
+    .navbar{display:flex;align-items:center;justify-content:space-between;padding:.9rem 0}
+    .brand{display:flex;align-items:center;gap:.6rem}
+    .brand__logo{width:34px;height:34px;border-radius:10px;background:linear-gradient(135deg,#2a2a2a,#000);border:1px solid rgba(255,255,255,.1);display:grid;place-items:center;color:var(--gold);font-weight:700}
+    .brand__name{font-family:Montserrat,sans-serif;font-weight:700;letter-spacing:.3px}
+    nav.primary ul{display:flex;gap:1rem;list-style:none;margin:0;padding:0}
+    nav.primary a{padding:.45rem .7rem;border-radius:.5rem}
+    nav.primary a[aria-current="page"],nav.primary a:hover{background:rgba(255,255,255,.06)}
+    .cta-book{margin-left:.75rem;background:var(--gold);color:#111;padding:.55rem .95rem;border-radius:.7rem;font-weight:700;box-shadow:var(--shadow)}
+    .cta-book:focus-visible{outline:3px solid var(--focus);outline-offset:2px}
+    /* Breadcrumbs */
+    .breadcrumbs{font-size:.9rem;color:var(--muted);padding:.25rem 0 .75rem}
+    .breadcrumbs a{color:var(--muted);text-decoration:underline dotted}
+    /* Hero */
+    .hero{position:relative;overflow:hidden;border-radius:var(--radius);box-shadow:var(--shadow);background:linear-gradient(180deg,rgba(212,175,55,.12),rgba(17,17,17,.6)),url('/assets/images/full-day-outings-hero.webp') center/cover no-repeat}
+    .hero__inner{padding:clamp(2rem,4vw,3rem)}
+    .eyebrow{color:var(--gold);text-transform:uppercase;letter-spacing:.12em;font-size:.8rem}
+    h1{font-family:Montserrat,sans-serif;font-size:clamp(1.6rem,3.2vw,2.4rem);line-height:1.2;margin:.25rem 0 1rem}
+    .hero p{max-width:70ch;color:var(--muted);margin:0 0 1.25rem}
+    .actions{display:flex;flex-wrap:wrap;gap:.6rem}
+    .btn{display:inline-flex;align-items:center;gap:.5rem;border-radius:.8rem;padding:.65rem 1rem;border:1px solid rgba(255,255,255,.12);background:rgba(255,255,255,.04)}
+    .btn--gold{background:var(--gold);color:#111;border-color:transparent}
+    .btn:focus-visible{outline:3px solid var(--focus);outline-offset:2px}
+    /* Chips */
+    .chip{display:inline-flex;align-items:center;gap:.4rem;background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.1);color:var(--muted);padding:.25rem .55rem;border-radius:999px;font-size:.85rem}
+    .chip--gold{background:rgba(212,175,55,.15);border-color:rgba(212,175,55,.4);color:var(--gold)}
+    /* Sections */
+    .section{padding:clamp(1.5rem,3.5vw,2.5rem) 0}
+    .section__head{display:flex;align-items:end;justify-content:space-between;gap:1rem;margin-bottom:1rem}
+    h2{font-family:Montserrat,sans-serif;font-size:clamp(1.2rem,2.4vw,1.6rem);margin:0 0 .25rem}
+    /* Grid cards */
+    .grid{display:grid;gap:1rem}
+    @media(min-width:740px){.grid{grid-template-columns:repeat(2,1fr)}}
+    @media(min-width:1100px){.grid{grid-template-columns:repeat(3,1fr)}}
+    .card{background:linear-gradient(180deg,rgba(255,255,255,.04),rgba(255,255,255,.02));border:1px solid rgba(255,255,255,.08);border-radius:var(--radius);padding:1rem;box-shadow:var(--shadow);transition:transform .3s ease, border-color .3s ease}
+    .card:hover{transform:translateY(-3px);border-color:rgba(212,175,55,.45)}
+    .card__top{display:flex;align-items:center;justify-content:space-between;margin-bottom:.5rem}
+    .muted{color:var(--muted)}
+    ul.clean{margin:.5rem 0 0 1rem}
+    ul.clean li{margin:.25rem 0}
+    .tips{border-top:1px dashed rgba(255,255,255,.12);margin-top:.75rem;padding-top:.75rem;color:var(--muted);font-size:.95rem}
+    /* Add-ons chips row */
+    .chips{display:flex;flex-wrap:wrap;gap:.5rem}
+    /* Transport strip */
+    .transport{display:grid;gap:.75rem;background:linear-gradient(180deg,rgba(255,255,255,.03),rgba(255,255,255,.01));border:1px solid rgba(255,255,255,.08);border-radius:var(--radius);padding:1rem}
+    .transport__items{display:flex;flex-wrap:wrap;gap:.5rem}
+    /* Footer (sitewide) */
+    footer.site{margin-top:2rem;border-top:1px solid rgba(255,255,255,.08);background:rgba(17,17,17,.8)}
+    .footer-grid{display:grid;gap:1rem;padding:1.25rem 0}
+    @media(min-width:820px){.footer-grid{grid-template-columns:2fr 1fr 1fr}}
+    .footer h3{font-family:Montserrat,sans-serif;margin:.25rem 0 .5rem}
+    .footer a{color:var(--muted);text-decoration:underline dotted}
+    .legal{font-size:.85rem;color:var(--muted);border-top:1px solid rgba(255,255,255,.08);padding:.75rem 0}
+    /* Floating quick actions */
+    .fab{position:fixed;right:1rem;bottom:1rem;display:flex;flex-direction:column;gap:.5rem;z-index:999}
+    .fab a{display:flex;align-items:center;justify-content:center;width:52px;height:52px;border-radius:50%;box-shadow:var(--shadow);background:var(--gold);color:#111;border:0}
+    .fab a.secondary{background:#1a1a1a;color:#fff;border:1px solid rgba(255,255,255,.12)}
+    .sr-only{position:absolute;left:-10000px;top:auto;width:1px;height:1px;overflow:hidden}
+    /* Motion preferences */
+    @media(prefers-reduced-motion:reduce){.card,.hero{transition:none}}
+  </style>
+
+  <!-- =================== JSON-LD SCHEMA =================== -->
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"BreadcrumbList",
+    "itemListElement":[
+      {"@type":"ListItem","position":1,"name":"Home","item":"https://www.hoteltheblackgold.in/"},
+      {"@type":"ListItem","position":2,"name":"Location","item":"https://www.hoteltheblackgold.in/location"},
+      {"@type":"ListItem","position":3,"name":"Full-Day Outings","item":"https://www.hoteltheblackgold.in/full-day-outings"}
+    ]
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":["Hotel","LocalBusiness"],
+    "name":"Hotel The Black Gold",
+    "url":"https://www.hoteltheblackgold.in/",
+    "telephone":"+91-72775-22222",
+    "address":{"@type":"PostalAddress","addressLocality":"Chandigarh","addressCountry":"IN"},
+    "geo":{"@type":"GeoCoordinates","latitude":"30.74","longitude":"76.79"}, 
+    "areaServed":"Chandigarh",
+    "amenityFeature":[
+      {"@type":"LocationFeatureSpecification","name":"High-speed Wi-Fi","value":true,"description":"100 Mbps per wing"},
+      {"@type":"LocationFeatureSpecification","name":"Secure basement parking","value":true},
+      {"@type":"LocationFeatureSpecification","name":"EV charging","value":true},
+      {"@type":"LocationFeatureSpecification","name":"Wheelchair access & lift","value":true},
+      {"@type":"LocationFeatureSpecification","name":"Pet-friendly rooms","value":true,"description":"₹300/night/pet"},
+      {"@type":"LocationFeatureSpecification","name":"In-house kitchen","value":true,"description":"7:30 AM – 10:30 PM"}
+    ],
+    "openingHoursSpecification":[{"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"],"opens":"00:00","closes":"23:59"}]
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"ItemList",
+    "name":"Full-Day Outings from Chandigarh",
+    "itemListElement":[
+      {"@type":"ListItem","position":1,"name":"Shimla Heritage Loop","url":"https://www.hoteltheblackgold.in/full-day-outings#shimla-heritage-loop"},
+      {"@type":"ListItem","position":2,"name":"Kasauli & Timber Trail","url":"https://www.hoteltheblackgold.in/full-day-outings#kasauli-timber-trail"},
+      {"@type":"ListItem","position":3,"name":"Anandpur Sahib & Virasat-e-Khalsa","url":"https://www.hoteltheblackgold.in/full-day-outings#anandpur-virasat"},
+      {"@type":"ListItem","position":4,"name":"Pinjore & Morni Hills Nature Day","url":"https://www.hoteltheblackgold.in/full-day-outings#pinjore-morni"},
+      {"@type":"ListItem","position":5,"name":"Ropar Heritage & Sutlej Wetlands","url":"https://www.hoteltheblackgold.in/full-day-outings#ropar-wetlands"},
+      {"@type":"ListItem","position":6,"name":"Chandigarh Architecture Deep-Dive","url":"https://www.hoteltheblackgold.in/full-day-outings#chd-architecture"},
+      {"@type":"ListItem","position":7,"name":"Patiala Royal Circuit","url":"https://www.hoteltheblackgold.in/full-day-outings#patiala-royal"},
+      {"@type":"ListItem","position":8,"name":"Nangal–Bhakra Dam Outlook","url":"https://www.hoteltheblackgold.in/full-day-outings#nangal-bhakra"}
+    ]
+  }
+  </script>
+  <!-- GA4: paste your tag below
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXX"></script>
+  <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)};gtag('js',new Date());gtag('config','G-XXXXXXX');</script>
+  -->
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <!-- ===== Header (matches global design) ===== -->
+  <header class="site" role="banner">
+    <div class="container navbar" aria-label="Primary">
+      <a class="brand" href="/" aria-label="Hotel The Black Gold Home">
+        <span class="brand__logo">BG</span>
+        <span class="brand__name">Hotel The Black Gold</span>
+      </a>
+      <nav class="primary" aria-label="Main navigation">
+        <ul>
+          <li><a href="/">Home</a></li>
+          <li><a href="/rooms.html">Rooms & Rates</a></li>
+          <li><a href="/amenities.html">Amenities</a></li>
+          <li><a href="/location.html">Location</a></li>
+          <li><a href="/nearby-attractions.html">Nearby Attractions</a></li>
+          <li><a href="/contact.html">Contact</a></li>
+        </ul>
+      </nav>
+      <a class="cta-book" href="/contact.html" aria-label="Book now via Contact">Book Now</a>
+    </div>
+    <div class="container breadcrumbs">
+      <nav aria-label="breadcrumb">
+        <ol style="list-style:none;display:flex;gap:.5rem;padding:0;margin:0">
+          <li><a href="/">Home</a></li><li aria-hidden="true">›</li>
+          <li><a href="/location.html">Location</a></li><li aria-hidden="true">›</li>
+          <li aria-current="page">Full-Day Outings</li>
+        </ol>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ===== Main ===== -->
+  <main id="main" class="container" role="main">
+    <!-- Hero -->
+    <section class="hero" role="region" aria-label="Full-Day Outings hero">
+      <div class="hero__inner">
+        <span class="eyebrow">Plan with confidence</span>
+        <h1>Full-Day Outings from Chandigarh</h1>
+        <p>Make Hotel The Black Gold your effortless base for curated one-day trips. Every itinerary starts and ends at the hotel, with practical timings, highlights, food stops, and tips. Distances are approximate and traffic-dependent. We can help with cab bookings, breakfast packs on request, and secure luggage storage while you explore.</p>
+        <div class="actions" role="group" aria-label="Quick actions">
+          <a class="btn btn--gold" href="tel:+917277522222" aria-label="Call Hotel The Black Gold">Call +91-72775-22222</a>
+          <a class="btn" href="https://wa.me/917277522222" aria-label="WhatsApp Hotel The Black Gold" rel="noopener">WhatsApp</a>
+          <a class="btn" href="/rooms.html" aria-label="View rooms and rates">View Rooms</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- How to Use -->
+    <section class="section" aria-label="How to use this guide">
+      <div class="section__head">
+        <h2>How to Use This Guide</h2>
+        <span class="chip chip--gold" aria-hidden="true">Practical & time-boxed</span>
+      </div>
+      <div class="card">
+        <ul class="clean">
+          <li>Start early and pre-book cabs where possible.</li>
+          <li>Carry water and sunscreen; dress modestly for religious sites.</li>
+          <li>Keep digital payments handy plus small cash for incidentals.</li>
+          <li>Check road and weather advisories in monsoon/winter seasons.</li>
+        </ul>
+        <p class="tips">Need help? Our front desk can assist with route suggestions and cab coordination. See <a href="/location.html">Location</a> and <a href="/nearby-attractions.html">Nearby Attractions</a> for more ideas.</p>
+      </div>
+    </section>
+
+    <!-- Itineraries Grid -->
+    <section class="section" aria-label="Full-day itineraries">
+      <div class="section__head">
+        <h2>Curated Day Itineraries</h2>
+        <div class="chips">
+          <span class="chip chip--gold">Hotel base: Sector PGI area</span>
+          <span class="chip">Airport 11 km</span>
+          <span class="chip">Railway 8 km</span>
+        </div>
+      </div>
+
+      <div class="grid">
+        <!-- Shimla -->
+        <article id="shimla-heritage-loop" class="card" aria-labelledby="h2-shimla">
+          <div class="card__top">
+            <h2 id="h2-shimla">Shimla Heritage Loop</h2>
+            <div class="chips">
+              <span class="chip chip--gold" title="Ideal start">Start: 7:00 AM</span>
+              <span class="chip" title="Drive distance">≈115 km / 3.5–4.5 hrs one-way</span>
+            </div>
+          </div>
+          <ul class="clean">
+            <li><strong>Morning:</strong> Mall Road stroll, Ridge & Christ Church; snack break.</li>
+            <li><strong>Mid-day:</strong> Vice Regal Lodge tour, museum lawns, colonial avenues.</li>
+            <li><strong>Afternoon:</strong> Viewpoints & photo stops; light lunch near Mall.</li>
+            <li><strong>Evening:</strong> Sunset amble; depart before late-evening traffic.</li>
+          </ul>
+          <p class="muted"><strong>Food:</strong> Choose bustling bazaar cafés or simple vegetarian dhabas on the highway.</p>
+          <div class="tips"><strong>Costs & tips:</strong> Select sites have entry fees; wear good walking shoes; winters get chilly. Return to the hotel for warm meals and late snacks—message us on <a href="https://wa.me/917277522222" rel="noopener">WhatsApp</a>.</div>
+        </article>
+
+        <!-- Kasauli & Timber Trail -->
+        <article id="kasauli-timber-trail" class="card" aria-labelledby="h2-kasauli">
+          <div class="card__top">
+            <h2 id="h2-kasauli">Kasauli & Timber Trail</h2>
+            <div class="chips">
+              <span class="chip chip--gold">Start: 8:00 AM</span>
+              <span class="chip">≈60 km / 1.5–2.5 hrs one-way</span>
+            </div>
+          </div>
+          <ul class="clean">
+            <li><strong>Morning:</strong> Gilbert Trail walk; Christ Church & main market.</li>
+            <li><strong>Afternoon:</strong> Sunset Point (earlier in winter), leisurely lunch.</li>
+            <li><strong>Evening:</strong> Timber Trail ropeway (timings vary); drive back.</li>
+          </ul>
+          <p class="muted"><strong>Food:</strong> Try Kasauli market cafés or highway eateries around Parwanoo.</p>
+          <div class="tips"><strong>Costs & tips:</strong> Ropeway tickets extra; carry water; roads can be foggy in monsoon. Back at the hotel, unwind and check <a href="/rooms.html">Rooms & Rates</a> for a cozy upgrade.</div>
+        </article>
+
+        <!-- Anandpur Sahib & Virasat -->
+        <article id="anandpur-virasat" class="card" aria-labelledby="h2-anandpur">
+          <div class="card__top">
+            <h2 id="h2-anandpur">Anandpur Sahib & Virasat-e-Khalsa</h2>
+            <div class="chips">
+              <span class="chip chip--gold">Start: 7:30 AM</span>
+              <span class="chip">≈85 km / 2–2.5 hrs one-way</span>
+            </div>
+          </div>
+          <ul class="clean">
+            <li><strong>Morning:</strong> Gurudwara visit (head covering required; footwear policy applies).</li>
+            <li><strong>Afternoon:</strong> Virasat-e-Khalsa museum (award-winning design & exhibits).</li>
+            <li><strong>Evening:</strong> Tea break en-route; back before dinner.</li>
+          </ul>
+          <p class="muted"><strong>Food:</strong> Simple eateries near the complex; keep small cash for offerings/parking.</p>
+          <div class="tips"><strong>Costs & tips:</strong> Modest attire; museum entry is time-slotted on some days. We can arrange cab returns—contact <a href="/contact.html">Contact</a>.</div>
+        </article>
+
+        <!-- Pinjore & Morni -->
+        <article id="pinjore-morni" class="card" aria-labelledby="h2-pinjore">
+          <div class="card__top">
+            <h2 id="h2-pinjore">Pinjore & Morni Hills Nature Day</h2>
+            <div class="chips">
+              <span class="chip chip--gold">Start: 8:00 AM</span>
+              <span class="chip">≈20–50 km / 1–1.5 hrs one-way</span>
+            </div>
+          </div>
+          <ul class="clean">
+            <li><strong>Morning:</strong> Yadavindra (Pinjore) Gardens—Mughal terraces & fountains.</li>
+            <li><strong>Afternoon:</strong> Drive to Morni; Tikkar Taal lakes; easy nature walks.</li>
+            <li><strong>Evening:</strong> Scenic return via village roads (daylight preferred).</li>
+          </ul>
+          <p class="muted"><strong>Food:</strong> Garden-side kiosks or dhabas near Morni; carry snacks in peak season.</p>
+          <div class="tips"><strong>Costs & tips:</strong> Garden entry/parking fee; avoid late-night hill driving. Back at the hotel, plan a calm evening—see <a href="/nearby-attractions.html">Nearby Attractions</a> for tomorrow.</div>
+        </article>
+
+        <!-- Ropar & Wetlands -->
+        <article id="ropar-wetlands" class="card" aria-labelledby="h2-ropar">
+          <div class="card__top">
+            <h2 id="h2-ropar">Ropar Heritage & Sutlej Wetlands</h2>
+            <div class="chips">
+              <span class="chip chip--gold">Start: 7:30 AM</span>
+              <span class="chip">≈45 km / 1–1.5 hrs one-way</span>
+            </div>
+          </div>
+          <ul class="clean">
+            <li><strong>Morning:</strong> Archaeological museum & town heritage walk.</li>
+            <li><strong>Afternoon:</strong> Wetland birding points; serene riverside pause.</li>
+            <li><strong>Evening:</strong> Golden hour photographs; drive back pre-dusk.</li>
+          </ul>
+          <p class="muted"><strong>Food:</strong> Simple restaurants in Ropar; carry water on wetland trails.</p>
+          <div class="tips"><strong>Costs & tips:</strong> Museum tickets modest; binoculars help; winter is best for birding. For multi-day plans, explore <a href="/long-term-stay.html">Long-Term Stay</a>.</div>
+        </article>
+
+        <!-- Chandigarh Architecture -->
+        <article id="chd-architecture" class="card" aria-labelledby="h2-arch">
+          <div class="card__top">
+            <h2 id="h2-arch">Chandigarh Architecture Deep-Dive</h2>
+            <div class="chips">
+              <span class="chip chip--gold">Start: 9:00 AM</span>
+              <span class="chip">City loop (short drives)</span>
+            </div>
+          </div>
+          <ul class="clean">
+            <li><strong>Morning:</strong> Capitol Complex (UNESCO), Open Hand Monument.</li>
+            <li><strong>Afternoon:</strong> Government Museum & Art Gallery; Leisure Valley greens.</li>
+            <li><strong>Evening:</strong> Sector-17 walk & Sukhna Lake sunset.</li>
+          </ul>
+          <p class="muted"><strong>Food:</strong> Sector-17 and lakefront zones offer diverse options.</p>
+          <div class="tips"><strong>Costs & tips:</strong> Museum tickets nominal; sun protection recommended. See exact distances in <a href="/location.html">Location</a> and book a calm night in our <a href="/rooms.html">Rooms</a>.</div>
+        </article>
+
+        <!-- Patiala -->
+        <article id="patiala-royal" class="card" aria-labelledby="h2-patiala">
+          <div class="card__top">
+            <h2 id="h2-patiala">Patiala Royal Circuit</h2>
+            <div class="chips">
+              <span class="chip chip--gold">Start: 7:00 AM</span>
+              <span class="chip">≈75–90 km / 2–2.5 hrs one-way</span>
+            </div>
+          </div>
+          <ul class="clean">
+            <li><strong>Morning:</strong> Qila Mubarak complex; heritage quarters.</li>
+            <li><strong>Afternoon:</strong> Old bazaars and local sweets tasting.</li>
+            <li><strong>Evening:</strong> Leisurely return before traffic builds.</li>
+          </ul>
+          <p class="muted"><strong>Food:</strong> Traditional eateries in the old city; ask us for current recommendations.</p>
+          <div class="tips"><strong>Costs & tips:</strong> Monument tickets; conservative attire in religious areas. Plan your rest day with <a href="/nearby-attractions.html">Nearby Attractions</a>.</div>
+        </article>
+
+        <!-- Nangal–Bhakra -->
+        <article id="nangal-bhakra" class="card" aria-labelledby="h2-nangal">
+          <div class="card__top">
+            <h2 id="h2-nangal">Nangal–Bhakra Dam Outlook</h2>
+            <div class="chips">
+              <span class="chip chip--gold">Start: 7:00 AM</span>
+              <span class="chip">≈110 km / 3–3.5 hrs one-way</span>
+            </div>
+          </div>
+          <ul class="clean">
+            <li><strong>Morning:</strong> Drive via Ropar; waterworks viewpoints (access rules vary).</li>
+            <li><strong>Afternoon:</strong> River vistas & photo stops; quiet lunch nearby.</li>
+            <li><strong>Evening:</strong> Early departure recommended; night driving not advised.</li>
+          </ul>
+          <p class="muted"><strong>Food:</strong> Highway dhabas; keep cashless options ready.</p>
+          <div class="tips"><strong>Costs & tips:</strong> Some zones need permissions; follow signage. Back at the hotel, late snacks available—see <a href="/contact.html">Contact</a> for today’s timings.</div>
+        </article>
+      </div>
+
+      <!-- Local Add-ons -->
+      <div class="card" style="margin-top:1rem">
+        <h3 style="margin-top:.25rem">Local Evening Add-Ons</h3>
+        <div class="chips" aria-label="Local add-ons">
+          <a class="chip" href="/nearby-attractions.html#sukhna-lake">Sukhna promenade</a>
+          <a class="chip" href="/nearby-attractions.html#rock-garden">Rock Garden</a>
+          <a class="chip" href="/nearby-attractions.html#rose-garden">Rose Garden</a>
+          <a class="chip" href="/nearby-attractions.html#sector-17-plaza">Sector-17 Plaza</a>
+          <a class="chip" href="/nearby-attractions.html#japanese-garden">Japanese Garden</a>
+          <a class="chip" href="/nearby-attractions.html#elante-mall">Elante Mall</a>
+        </div>
+        <p class="tips">See full list on <a href="/nearby-attractions.html">Nearby Attractions</a>. We can hold your bags while you step out for a quick city loop.</p>
+      </div>
+    </section>
+
+    <!-- Transport & Essentials -->
+    <section class="section" aria-label="Transport & essentials">
+      <div class="transport">
+        <h2>Transport & Essentials</h2>
+        <p class="muted">Ola/Uber are widely available. Our front desk can assist with reliable cab bookings for day trips and returns.</p>
+        <div class="transport__items" role="list">
+          <span class="chip" role="listitem">Airport: 11 km</span>
+          <span class="chip" role="listitem">Railway Station: 8 km</span>
+          <span class="chip" role="listitem">ISBT-43: 3.5 km</span>
+          <span class="chip" role="listitem">ISBT-17: 6 km</span>
+          <span class="chip" role="listitem">Basement Parking</span>
+          <span class="chip" role="listitem">EV Charging</span>
+        </div>
+        <p class="tips">For match-day or concert logistics, see our <a href="/hotel-near-pca-stadium.html">Hotel Near PCA Stadium</a>. For extended workcations, check <a href="/long-term-stay.html">Long-Term Stay</a>.</p>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ===== Footer (global) ===== -->
+  <footer class="site footer" role="contentinfo">
+    <div class="container footer-grid">
+      <div>
+        <h3>Hotel The Black Gold</h3>
+        <p class="muted">Chandigarh, India<br>Near PGIMER & Sukhna Lake</p>
+        <p><strong>Reservations:</strong> <a href="tel:+917277522222">+91-72775-22222</a></p>
+        <div class="actions">
+          <a class="btn btn--gold" href="tel:+917277522222">Call Now</a>
+          <a class="btn" href="https://wa.me/917277522222" rel="noopener">WhatsApp</a>
+          <a class="btn" href="/rooms.html">Book Direct</a>
+        </div>
+        <p class="tips" style="margin-top:.75rem">Book direct & enjoy complimentary breakfast on select plans.</p>
+      </div>
+      <div>
+        <h3>Explore</h3>
+        <p><a href="/rooms.html">Rooms & Rates</a><br>
+        <a href="/amenities.html">Amenities</a><br>
+        <a href="/location.html">Location</a><br>
+        <a href="/nearby-attractions.html">Nearby Attractions</a></p>
+      </div>
+      <div>
+        <h3>Plan</h3>
+        <p><a href="/hotel-near-pca-stadium.html">Hotel Near PCA Stadium</a><br>
+        <a href="/long-term-stay.html">Long-Term Stay</a><br>
+        <a href="/contact.html">Contact</a></p>
+      </div>
+    </div>
+    <div class="container legal">
+      © <span id="year"></span> Hotel The Black Gold. All rights reserved.
+    </div>
+  </footer>
+
+  <!-- Floating Quick Actions -->
+  <div class="fab" role="region" aria-label="Quick actions">
+    <a href="tel:+917277522222" aria-label="Call Hotel The Black Gold"><span class="sr-only">Call</span>☎</a>
+    <a class="secondary" href="https://wa.me/917277522222" rel="noopener" aria-label="WhatsApp Hotel The Black Gold"><span class="sr-only">WhatsApp</span>🟢</a>
+    <a class="secondary" href="/rooms.html" aria-label="Book a room"><span class="sr-only">Book</span>★</a>
+  </div>
+
+  <!-- Minimal JS (deferred) -->
+  <script defer>
+    // Current year
+    document.getElementById('year').textContent=new Date().getFullYear();
+    // Optional smooth scroll for same-page links
+    document.querySelectorAll('a[href^="#"]').forEach(a=>{
+      a.addEventListener('click',e=>{
+        const id=a.getAttribute('href').slice(1),el=document.getElementById(id);
+        if(el){e.preventDefault();el.scrollIntoView({behavior:'smooth',block:'start'})}
+      });
+    });
+  </script>
+</body>
+</html>

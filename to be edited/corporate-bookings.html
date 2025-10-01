@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- =========================================================================
+       Hotel The Black Gold — Corporate Bookings (corporate-bookings.html)
+       =========================================================================
+       - Semantic HTML5; WCAG-2.1 AA; ARIA; single <h1>
+       - Inline, minified CSS; tiny vanilla JS; hero preload; lazy images
+       - Canonical, OG/Twitter, JSON-LD (Hotel, Breadcrumb, FAQPage)
+       - Responsive: grid/flex, mobile-first; sticky header; floating quick actions
+       - Developer: replace placeholder assets & wire GA4 / enquiry form as needed
+       ========================================================================= -->
+
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Meta Title (<=60 chars) -->
+  <title>Corporate Bookings Hotel Chandigarh | The Black Gold</title>
+
+  <!-- Meta Description (<=155 chars) -->
+  <meta name="description" content="Business-ready hotel in Chandigarh with corporate rates, GST invoices, fast Wi-Fi, parking & EV. Call +91-72775-22222 for tailored packages.">
+
+  <!-- Canonical -->
+  <link rel="canonical" href="https://www.hoteltheblackgold.com/corporate-bookings.html">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Corporate Bookings Hotel Chandigarh | The Black Gold">
+  <meta property="og:description" content="Corporate rates, GST-compliant billing, 100 Mbps Wi-Fi, parking & EV chargers. Near PGI & key business hubs.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://www.hoteltheblackgold.com/corporate-bookings.html">
+  <meta property="og:site_name" content="Hotel The Black Gold">
+  <meta property="og:image" content="https://www.hoteltheblackgold.com/assets/og/og-corporate-bookings.webp">
+  <meta property="og:locale" content="en_IN">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Corporate Bookings Hotel Chandigarh | The Black Gold">
+  <meta name="twitter:description" content="Business hotel near PGI with corporate rates, GST invoices, fast Wi-Fi, parking & EV. Call +91-72775-22222.">
+  <meta name="twitter:image" content="https://www.hoteltheblackgold.com/assets/og/og-corporate-bookings.webp">
+
+  <!-- Favicons (replace with real assets) -->
+  <link rel="icon" href="/assets/icons/favicon.ico">
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/icons/favicon-32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/icons/favicon-16.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/icons/apple-touch-icon.png">
+  <link rel="manifest" href="/assets/icons/site.webmanifest">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Montserrat:wght@600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Preload hero image -->
+  <link rel="preload" as="image" href="/assets/images/corporate-bookings-hotel-the-black-gold.webp" imagesrcset="/assets/images/corporate-bookings-hotel-the-black-gold.webp 1920w" imagesizes="100vw">
+
+  <!-- Styles (minified) -->
+  <style>
+    :root{--bg:#111111;--text:#F5F5F5;--muted:#EDEDED;--gold:#D4AF37;--card:#161616;--line:#2A2A2A;--shadow:0 8px 24px rgba(0,0,0,.35),0 2px 6px rgba(0,0,0,.25)}
+    *{box-sizing:border-box}html,body{margin:0;padding:0;background:var(--bg);color:var(--text);font-family:Lato,system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,"Helvetica Neue",Arial,sans-serif;line-height:1.6;text-rendering:optimizeLegibility}
+    img{max-width:100%;height:auto;border:0}a{color:var(--muted);text-decoration:none}a:hover,a:focus{color:var(--gold)}
+    .container{width:min(1180px,92vw);margin-inline:auto}
+    .skip-link{position:absolute;left:-999px;top:auto;width:1px;height:1px;overflow:hidden}
+    .skip-link:focus{left:1rem;top:1rem;width:auto;height:auto;background:#000;padding:.75rem 1rem;border:2px solid var(--gold);z-index:10000}
+    /* Header */
+    header{position:sticky;top:0;z-index:999;background:rgba(17,17,17,.75);backdrop-filter:saturate(120%) blur(8px);border-bottom:1px solid rgba(255,255,255,.05)}
+    .nav{display:flex;align-items:center;justify-content:space-between;padding:.85rem 0}
+    .brand{display:flex;align-items:center;gap:.75rem}.logo{width:36px;height:36px;border-radius:10px;background:linear-gradient(135deg,var(--gold),#9b7c1f);box-shadow:var(--shadow)}
+    .brand-name{font-family:Montserrat,sans-serif;font-weight:800;letter-spacing:.4px}
+    nav ul{list-style:none;margin:0;padding:0;display:flex;gap:1.25rem;align-items:center}
+    .book-now{background:var(--gold);color:#111;padding:.6rem 1rem;border-radius:999px;font-weight:700;box-shadow:var(--shadow);border:1px solid rgba(0,0,0,.35)}
+    .book-now:hover{filter:brightness(1.05)}
+    /* Hero */
+    .hero{position:relative;isolation:isolate}
+    .hero-media{position:absolute;inset:0;z-index:-1;overflow:hidden}
+    .hero-media img{width:100%;height:100%;object-fit:cover;filter:grayscale(.1) contrast(1.1) brightness(.82)}
+    .hero-overlay{position:absolute;inset:0;background:radial-gradient(1200px 600px at 60% 20%,rgba(212,175,55,.18),transparent),linear-gradient(180deg,rgba(17,17,17,.35),rgba(17,17,17,.85))}
+    .hero-inner{padding:clamp(84px,11vw,140px) 0 56px}
+    h1{font-family:Montserrat,sans-serif;font-weight:800;line-height:1.1;font-size:clamp(28px,5.6vw,46px);margin:0 0 .5rem}
+    .subhead{color:var(--muted);font-size:clamp(15px,2.2vw,18px);max-width:880px}
+    .cta-row{display:flex;gap:10px;flex-wrap:wrap;margin-top:14px}
+    .btn{display:inline-flex;align-items:center;justify-content:center;gap:.5rem;border:none;border-radius:12px;cursor:pointer;padding:.85rem 1.05rem}
+    .btn-primary{background:var(--gold);color:#111;font-weight:800}
+    .btn-ghost{background:#1a1a1a;border:1px solid #2b2b2b;color:#f1f1f1}
+    /* Sections */
+    section{padding:64px 0}
+    .section-title{font-family:Montserrat,sans-serif;font-weight:800;font-size:clamp(22px,3.6vw,32px);margin:0 0 16px}
+    .muted{color:#d2d2d2}.small{font-size:.95rem;color:#cfcfcf}
+    .grid-2{display:grid;grid-template-columns:1fr;gap:22px}
+    .grid-3{display:grid;grid-template-columns:1fr;gap:18px}
+    /* Benefit strip */
+    .benefits{display:grid;grid-template-columns:1fr;gap:12px}
+    .benefit{display:flex;gap:.75rem;align-items:flex-start;background:#141414;border:1px solid var(--line);padding:.8rem .9rem;border-radius:12px}
+    .icon{width:36px;height:36px;border-radius:10px;background:#1a1a1a;border:1px solid #2a2a2a;display:grid;place-items:center;color:var(--gold);font-weight:800}
+    /* Facilities grid */
+    .facilities{display:grid;grid-template-columns:1fr;gap:12px}
+    .facility{display:flex;gap:.75rem;align-items:flex-start;background:#151515;border:1px solid var(--line);padding:.9rem;border-radius:12px}
+    /* Steps */
+    .steps{display:grid;grid-template-columns:1fr;gap:12px}
+    .step{display:flex;gap:.8rem;align-items:flex-start;background:#131313;border:1px solid var(--line);border-radius:12px;padding:1rem}
+    .num{min-width:32px;height:32px;border-radius:999px;background:var(--gold);color:#111;display:grid;place-items:center;font-weight:800}
+    /* Chips */
+    .chips{display:flex;flex-wrap:wrap;gap:8px}
+    .chip{border:1px solid var(--line);background:#151515;border-radius:999px;padding:.4rem .7rem;font-size:.95rem;box-shadow:var(--shadow)}
+    /* Breadcrumbs */
+    .breadcrumbs{font-size:.95rem;margin:18px 0;color:#cfcfcf}
+    .breadcrumbs a{color:#cfcfcf}.breadcrumbs a:hover{color:var(--gold)}
+    /* FAQ */
+    .accordion{border:1px solid var(--line);border-radius:18px;overflow:hidden}
+    .acc-item{border-bottom:1px solid var(--line);background:#141414}
+    .acc-item:last-child{border-bottom:0}
+    .acc-btn{width:100%;text-align:left;padding:16px 18px;background:#141414;color:var(--text);border:0;font-weight:700;font-family:Montserrat,sans-serif;cursor:pointer}
+    .acc-content{max-height:0;overflow:hidden;transition:max-height .35s ease}
+    .acc-inner{padding:0 18px 16px;color:#d7d7d7}
+    /* Footer */
+    footer{border-top:1px solid rgba(255,255,255,.06);padding-top:40px;padding-bottom:80px}
+    .footer-grid{display:grid;grid-template-columns:1fr;gap:22px}
+    .footer-col h4{font-family:Montserrat,sans-serif;margin:.2rem 0 .6rem}
+    .copyright{border-top:1px solid rgba(255,255,255,.06);margin-top:26px;padding-top:18px;color:#c9c9c9;font-size:.9rem}
+    /* FAB */
+    .fab{position:fixed;right:16px;bottom:16px;display:grid;gap:10px;z-index:1000}
+    .fab a{display:flex;align-items:center;gap:.6rem;padding:.7rem .9rem;border-radius:999px;box-shadow:var(--shadow);border:1px solid rgba(0,0,0,.4);backdrop-filter:saturate(120%) blur(6px)}
+    .fab .call{background:var(--gold);color:#111;font-weight:800}
+    .fab .wa{background:#128C7E;color:#fff}
+    .fab .email{background:#1f1f1f;color:#f1f1f1;border-color:#343434}
+    /* Responsive */
+    @media (min-width:700px){
+      .grid-2{grid-template-columns:1.15fr .85fr}
+      .grid-3{grid-template-columns:repeat(3,1fr)}
+      .benefits{grid-template-columns:repeat(3,1fr)}
+      .facilities{grid-template-columns:repeat(3,1fr)}
+      .steps{grid-template-columns:repeat(4,1fr)}
+      .footer-grid{grid-template-columns:2fr 1fr 1fr 1fr}
+    }
+    /* Animations */
+    @media (prefers-reduced-motion:no-preference){
+      .fade-up{opacity:0;transform:translateY(10px);animation:fadeUp .6s ease .05s forwards}
+      .delay{animation-delay:.16s}
+      .delay2{animation-delay:.28s}
+      @keyframes fadeUp{to{opacity:1;transform:none}}
+    }
+    /* Focus */
+    :where(a,button){outline-color:var(--gold);outline-offset:2px}
+  </style>
+
+  <!-- JSON-LD: Hotel (amenities for corporate stays) -->
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"Hotel",
+    "name":"Hotel The Black Gold",
+    "url":"https://www.hoteltheblackgold.com/",
+    "brand":"Hotel The Black Gold",
+    "image":"https://www.hoteltheblackgold.com/assets/og/og-home.webp",
+    "description":"Business-ready hotel in Chandigarh offering corporate rates, GST invoices, 100 Mbps Wi-Fi, secure basement parking with EV chargers, and dedicated support.",
+    "telephone":"+91-72775-22222",
+    "address":{"@type":"PostalAddress","addressLocality":"Chandigarh","addressRegion":"Chandigarh","postalCode":"160000","addressCountry":"IN"},
+    "geo":{"@type":"GeoCoordinates","latitude":30.7333,"longitude":76.7794},
+    "areaServed":"Chandigarh",
+    "amenityFeature":[
+      {"@type":"LocationFeatureSpecification","name":"Corporate Rates","value":"Negotiated packages for recurring/bulk stays"},
+      {"@type":"LocationFeatureSpecification","name":"GST-Compliant Invoices","value":"Input credit ready"},
+      {"@type":"LocationFeatureSpecification","name":"High-Speed Wi-Fi","value":"100 Mbps per wing"},
+      {"@type":"LocationFeatureSpecification","name":"Printing & Scanning","value":"Free at front desk"},
+      {"@type":"LocationFeatureSpecification","name":"Secure Basement Parking","value":"Multiple vehicles; EV chargers"},
+      {"@type":"LocationFeatureSpecification","name":"24/7 Basics","value":"Tea, coffee, Maggi, sandwiches"}
+    ],
+    "sameAs":["https://www.chandigarhtourism.gov.in/"]
+  }
+  </script>
+
+  <!-- JSON-LD: Breadcrumbs -->
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"BreadcrumbList",
+    "itemListElement":[
+      {"@type":"ListItem","position":1,"name":"Home","item":"https://www.hoteltheblackgold.com/"},
+      {"@type":"ListItem","position":2,"name":"Corporate Bookings","item":"https://www.hoteltheblackgold.com/corporate-bookings.html"}
+    ]
+  }
+  </script>
+
+  <!-- JSON-LD: FAQPage (mirrors accordion content below) -->
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"FAQPage",
+    "mainEntity":[
+      {"@type":"Question","name":"Do you offer corporate rates?","acceptedAnswer":{"@type":"Answer","text":"Yes. Preferential rates are available for bulk or recurring corporate stays."}},
+      {"@type":"Question","name":"Can I get a GST invoice?","acceptedAnswer":{"@type":"Answer","text":"Yes. We issue GST-compliant invoices suitable for input credit."}},
+      {"@type":"Question","name":"Is there parking for multiple company vehicles?","acceptedAnswer":{"@type":"Answer","text":"Yes. We provide secure basement parking and on-site EV charging."}},
+      {"@type":"Question","name":"Can you arrange airport pickup/drop?","acceptedAnswer":{"@type":"Answer","text":"Yes. Airport and railway transfers can be arranged on request."}},
+      {"@type":"Question","name":"Can we reserve multiple rooms for an extended project?","acceptedAnswer":{"@type":"Answer","text":"Yes. We accommodate long-term projects with flexible arrangements."}},
+      {"@type":"Question","name":"Is high-speed Wi-Fi included?","acceptedAnswer":{"@type":"Answer","text":"Yes. 100 Mbps Wi-Fi is available per wing and included in your stay."}}
+    ]
+  }
+  </script>
+
+  <!-- Analytics hook (insert GA4 when ready) -->
+  <!-- <script defer src="/assets/js/ga4.js"></script> -->
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <!-- HEADER -->
+  <header role="banner" aria-label="Primary">
+    <div class="container nav" id="nav">
+      <div class="brand" aria-label="Hotel The Black Gold">
+        <div class="logo" aria-hidden="true"></div>
+        <div class="brand-name">Hotel The Black Gold</div>
+      </div>
+      <nav aria-label="Main">
+        <ul>
+          <li><a href="/" rel="home">Home</a></li>
+          <li><a href="/rooms.html" rel="internal">Rooms &amp; Rates</a></li>
+          <li><a href="/amenities.html" rel="internal">Amenities</a></li>
+          <li><a href="/location.html" rel="internal">Location</a></li>
+          <li><a href="/group-bookings.html" rel="internal">Group Bookings</a></li>
+          <li><a href="/faq.html" rel="internal">FAQ</a></li>
+        </ul>
+      </nav>
+      <div><a class="book-now" href="/contact.html" rel="internal">Book Now</a></div>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero" aria-label="Hero">
+    <div class="hero-media" aria-hidden="true">
+      <img src="/assets/images/corporate-bookings-hotel-the-black-gold.webp" alt="Business-friendly hotel in Chandigarh for corporate stays" width="1920" height="1080">
+      <div class="hero-overlay"></div>
+    </div>
+    <div class="container hero-inner fade-up">
+      <nav class="breadcrumbs" aria-label="Breadcrumb">
+        <a href="/" rel="home">Home</a> › <span aria-current="page">Corporate Bookings</span>
+      </nav>
+      <h1>Corporate Bookings – Hotel The Black Gold, Chandigarh</h1>
+      <p class="subhead">Efficiency-first stays for teams and executives. Corporate rates, GST-compliant invoices, fast Wi-Fi, secure parking &amp; EV chargers — close to PGI and city business hubs.</p>
+      <div class="cta-row">
+        <a class="btn btn-primary" href="tel:+917277522222" aria-label="Call Hotel The Black Gold">Call</a>
+        <a class="btn btn-ghost" href="https://wa.me/917277522222" rel="noopener" aria-label="WhatsApp Hotel The Black Gold">WhatsApp</a>
+        <a class="btn btn-ghost" href="mailto:reservations@hoteltheblackgold.in" aria-label="Email Hotel The Black Gold">Email</a>
+      </div>
+    </div>
+  </section>
+
+  <main id="main" class="container" role="main">
+    <!-- WHY CHOOSE US -->
+    <section class="fade-up" aria-labelledby="benefits">
+      <h2 id="benefits" class="section-title">Why Choose Us for Corporate Travel</h2>
+      <div class="benefits" role="list">
+        <div class="benefit" role="listitem"><div class="icon" aria-hidden="true">📍</div><div><strong>Central Location:</strong> Near PGIMER, High Court, and Sector 17 for efficient schedules.</div></div>
+        <div class="benefit" role="listitem"><div class="icon" aria-hidden="true">🛏</div><div><strong>Room Mix:</strong> <a href="/deluxe-room.html" rel="internal">Deluxe</a>, <a href="/super-deluxe-room.html" rel="internal">Super Deluxe</a>, <a href="/premium-room.html" rel="internal">Premium</a>.</div></div>
+        <div class="benefit" role="listitem"><div class="icon" aria-hidden="true">💼</div><div><strong>Corporate Rates:</strong> Negotiated packages for recurring/bulk stays.</div></div>
+        <div class="benefit" role="listitem"><div class="icon" aria-hidden="true">🧾</div><div><strong>GST Invoices:</strong> Fully compliant billing for input credit.</div></div>
+        <div class="benefit" role="listitem"><div class="icon" aria-hidden="true">📶</div><div><strong>100 Mbps Wi-Fi:</strong> Reliable connectivity per wing.</div></div>
+        <div class="benefit" role="listitem"><div class="icon" aria-hidden="true">🚗</div><div><strong>Parking &amp; EV:</strong> Secure basement parking with EV chargers.</div></div>
+      </div>
+    </section>
+
+    <!-- FACILITIES -->
+    <section class="fade-up" aria-labelledby="facilities">
+      <h2 id="facilities" class="section-title">Facilities for Business Guests</h2>
+      <div class="facilities" role="list">
+        <div class="facility" role="listitem"><div class="icon" aria-hidden="true">🖨</div><div><strong>Printing &amp; Scanning:</strong> Free at the front desk.</div></div>
+        <div class="facility" role="listitem"><div class="icon" aria-hidden="true">🚕</div><div><strong>Cab Booking:</strong> Assistance for meetings and site visits.</div></div>
+        <div class="facility" role="listitem"><div class="icon" aria-hidden="true">🍽</div><div><strong>In-House Kitchen:</strong> Indian &amp; Chinese; flexible timings on request.</div></div>
+        <div class="facility" role="listitem"><div class="icon" aria-hidden="true">🧺</div><div><strong>Laundry &amp; Ironing:</strong> Ideal for long stays.</div></div>
+        <div class="facility" role="listitem"><div class="icon" aria-hidden="true">♿</div><div><strong>Accessibility:</strong> Lift to all floors; wheelchair-friendly.</div></div>
+        <div class="facility" role="listitem"><div class="icon" aria-hidden="true">🕐</div><div><strong>24/7 Basics:</strong> Tea, coffee, Maggi, sandwiches anytime.</div></div>
+      </div>
+    </section>
+
+    <!-- BOOKING PROCESS -->
+    <section class="fade-up" aria-labelledby="process">
+      <h2 id="process" class="section-title">Corporate Booking Process</h2>
+      <div class="steps" role="list">
+        <div class="step" role="listitem"><div class="num" aria-hidden="true">1</div><div><strong>Initial Enquiry:</strong> Call <a href="tel:+917277522222">+91-72775-22222</a> or WhatsApp/email us.</div></div>
+        <div class="step" role="listitem"><div class="num" aria-hidden="true">2</div><div><strong>Rate Proposal:</strong> Receive a tailored corporate package for your dates and room mix.</div></div>
+        <div class="step" role="listitem"><div class="num" aria-hidden="true">3</div><div><strong>Agreement:</strong> Finalize terms and GST details; confirm payment &amp; cancellation policy.</div></div>
+        <div class="step" role="listitem"><div class="num" aria-hidden="true">4</div><div><strong>Confirmation:</strong> Get booking confirmation and GST invoice as needed.</div></div>
+      </div>
+      <p class="small" style="margin-top:10px">Need multiple rooms for an extended project? See <a href="/group-bookings.html" rel="internal">Group Bookings</a>.</p>
+    </section>
+
+    <!-- LOCATION ADVANTAGE -->
+    <section class="fade-up" aria-labelledby="location">
+      <h2 id="location" class="section-title">Location Advantage for Business Travel</h2>
+      <div class="chips" role="list" aria-label="Approximate distances">
+        <span class="chip" role="listitem">PGIMER &lt; 2 km</span>
+        <span class="chip" role="listitem">High Court ~6 km</span>
+        <span class="chip" role="listitem">Sector 17 ~7 km</span>
+        <span class="chip" role="listitem">Airport ~11 km</span>
+        <span class="chip" role="listitem">Railway ~8 km</span>
+      </div>
+      <p class="small" style="margin-top:10px">See a detailed map and directions on our <a href="/location.html" rel="internal">Location</a> page.</p>
+    </section>
+
+    <!-- FAQ -->
+    <section class="fade-up" aria-labelledby="faq">
+      <h2 id="faq" class="section-title">Corporate Bookings – FAQs</h2>
+      <div class="accordion" id="accordion" role="region" aria-label="Corporate booking FAQs">
+        <div class="acc-item">
+          <button class="acc-btn" aria-expanded="false">Do you offer corporate rates?</button>
+          <div class="acc-content"><div class="acc-inner">Yes. Preferential corporate rates are available for bulk or recurring stays.</div></div>
+        </div>
+        <div class="acc-item">
+          <button class="acc-btn" aria-expanded="false">Can I get a GST invoice?</button>
+          <div class="acc-content"><div class="acc-inner">Yes. We issue GST-compliant invoices for input credit.</div></div>
+        </div>
+        <div class="acc-item">
+          <button class="acc-btn" aria-expanded="false">Is there parking for multiple company vehicles?</button>
+          <div class="acc-content"><div class="acc-inner">Yes. Secure basement parking is available, along with on-site EV charging.</div></div>
+        </div>
+        <div class="acc-item">
+          <button class="acc-btn" aria-expanded="false">Can you arrange airport pickup/drop?</button>
+          <div class="acc-content"><div class="acc-inner">Yes. Airport and railway transfers are available on request.</div></div>
+        </div>
+        <div class="acc-item">
+          <button class="acc-btn" aria-expanded="false">Can we reserve multiple rooms for an extended project?</button>
+          <div class="acc-content"><div class="acc-inner">Yes. We regularly host long-term corporate stays with flexible terms.</div></div>
+        </div>
+        <div class="acc-item">
+          <button class="acc-btn" aria-expanded="false">Is high-speed Wi-Fi included?</button>
+          <div class="acc-content"><div class="acc-inner">Yes. 100 Mbps Wi-Fi per wing is included in your stay.</div></div>
+        </div>
+      </div>
+      <p class="small" style="margin-top:12px">More questions? Visit <a href="/faq.html" rel="internal">FAQ</a> or <a href="/contact.html" rel="internal">Contact</a> us.</p>
+    </section>
+
+    <!-- CONVERSION FOOTER -->
+    <section class="fade-up" aria-label="Final Call to Action">
+      <div class="grid-2" style="align-items:center">
+        <div>
+          <h2 class="section-title">Ready for a Custom Corporate Package?</h2>
+          <p class="muted">Priority: <strong>Call</strong> → <strong>WhatsApp</strong> → <strong>Email</strong>. Get a tailored proposal and fast confirmation today.</p>
+          <div class="small">One number for corporate bookings: <strong><a href="tel:+917277522222">+91-72775-22222</a></strong>.</div>
+        </div>
+        <div>
+          <div class="cta-row">
+            <a class="btn btn-primary" href="tel:+917277522222" aria-label="Call Now">Call Now</a>
+            <a class="btn btn-ghost" href="https://wa.me/917277522222" rel="noopener" aria-label="WhatsApp Us">WhatsApp Us</a>
+            <a class="btn btn-ghost" href="mailto:reservations@hoteltheblackgold.in" aria-label="Email Us">Email Us</a>
+          </div>
+          <p class="small" style="margin-top:10px">Explore: <a href="/rooms.html" rel="internal">Rooms &amp; Rates</a> • <a href="/amenities.html" rel="internal">Amenities</a> • <a href="/location.html" rel="internal">Location</a></p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer role="contentinfo">
+    <div class="container footer-grid">
+      <div class="footer-col">
+        <h4>Hotel The Black Gold</h4>
+        <p class="small">Chandigarh, India • Near PGI &amp; business hubs • Pet-friendly • Wheelchair accessible</p>
+        <p class="small"><strong>Phone:</strong> <a href="tel:+917277522222">+91-72775-22222</a><br><strong>Email:</strong> <a href="mailto:reservations@hoteltheblackgold.in">reservations@hoteltheblackgold.in</a></p>
+      </div>
+      <div class="footer-col">
+        <h4>Explore</h4>
+        <p class="small">
+          <a href="/rooms.html" rel="internal">Rooms &amp; Rates</a><br>
+          <a href="/amenities.html" rel="internal">Amenities</a><br>
+          <a href="/group-bookings.html" rel="internal">Group Bookings</a>
+        </p>
+      </div>
+      <div class="footer-col">
+        <h4>Stay Options</h4>
+        <p class="small">
+          <a href="/deluxe-room.html" rel="internal">Deluxe</a><br>
+          <a href="/super-deluxe-room.html" rel="internal">Super Deluxe</a><br>
+          <a href="/premium-room.html" rel="internal">Premium</a>
+        </p>
+      </div>
+      <div class="footer-col">
+        <h4>Help</h4>
+        <p class="small">
+          <a href="/faq.html" rel="internal">FAQ</a><br>
+          <a href="/contact.html" rel="internal">Contact</a>
+        </p>
+      </div>
+    </div>
+    <div class="container copyright">
+      <div>© <span id="year"></span> Hotel The Black Gold. All rights reserved.</div>
+    </div>
+  </footer>
+
+  <!-- Floating Quick Actions (priority: Call > WhatsApp > Email) -->
+  <nav class="fab" aria-label="Quick actions">
+    <a class="call" href="tel:+917277522222" aria-label="Call Hotel The Black Gold">Call</a>
+    <a class="wa" href="https://wa.me/917277522222" rel="noopener" aria-label="WhatsApp Hotel The Black Gold">WhatsApp</a>
+    <a class="email" href="mailto:reservations@hoteltheblackgold.in" aria-label="Email Hotel The Black Gold">Email</a>
+  </nav>
+
+  <!-- Minimal JS: FAQ + year (deferred by placement) -->
+  <script>
+    // FAQ accordion
+    const items=document.querySelectorAll('.acc-item');items.forEach(it=>{const btn=it.querySelector('.acc-btn'),ct=it.querySelector('.acc-content');btn.addEventListener('click',()=>{const open=btn.getAttribute('aria-expanded')==='true';btn.setAttribute('aria-expanded',!open);ct.style.maxHeight=!open?(ct.scrollHeight+'px'):0})});
+    // Current year
+    document.getElementById('year').textContent=new Date().getFullYear();
+  </script>
+
+  <!-- Developer notes:
+       - Insert GA4 tag when ready (see head comment).
+       - Corporate enquiry form: link to /contact.html or add a dedicated /api/corporate-enquiry endpoint & modal.
+       - Replace hero image with optimized WebP:
+           /assets/images/corporate-bookings-hotel-the-black-gold.webp
+       - Consider adding a downloadable PDF corporate rate sheet when finalized. -->
+</body>
+</html>

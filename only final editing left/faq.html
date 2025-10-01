@@ -1,0 +1,1129 @@
+<!DOCTYPE html>
+<html lang="en-IN">
+<head>
+  <!-- =========================================================================
+       Hotel The Black Gold — FAQ (faq.html)
+       =========================================================================
+       - Consistent with rooms.html (fonts, colors, accordion behavior)
+       - Two sections: Bookings & Rates, Check-in & Check-out
+       - Tightened vertical rhythm between accordions/sections
+       - FAQPage JSON-LD mirrors visible questions
+       ========================================================================= -->
+
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover, interactive-widget=resizes-content">
+
+   <!-- Browser UI colors -->
+  <meta name="theme-color" content="#111111">
+  <meta name="color-scheme" content="dark light">
+
+  <title>FAQ | Hotel The Black Gold Chandigarh</title>
+  <meta name="description" content="Answers about bookings, rates, check-in/out, rooms & amenities, dining, accessibility, pets, policies, transport & support. Call +91-72775-22222.">
+
+  <!-- Canonical -->
+  <link rel="canonical" href="https://www.hoteltheblackgold.com/faq.html">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="FAQ | Hotel The Black Gold Chandigarh">
+  <meta property="og:description" content="Bookings, rates, check-in/out, rooms, dining, accessibility, pets, policies & transport. Chat with us or call +91-72775-22222.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://www.hoteltheblackgold.com/faq.html">
+  <meta property="og:site_name" content="Hotel The Black Gold">
+  <meta property="og:image" content="https://www.hoteltheblackgold.com/assets/og/og-faq.webp">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:locale" content="en_IN">
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="FAQ | Hotel The Black Gold Chandigarh">
+  <meta name="twitter:description" content="Quick answers about bookings, rooms, dining, policies & support.">
+  <meta name="twitter:image" content="https://www.hoteltheblackgold.com/assets/og/og-faq.webp">
+  <meta name="twitter:site" content="@HotelBlackGold">
+
+  <!-- Favicons -->
+  <link rel="icon" href="/assets/icons/favicon.ico">
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/icons/favicon-32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/icons/favicon-16.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/icons/apple-touch-icon.png">
+  <link rel="manifest" href="/assets/icons/site.webmanifest">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Montserrat:wght@600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Hero preload -->
+  <link rel="preload" as="image"
+        href="/assets/images/hero-faq-hotel-the-black-gold.webp"
+        imagesrcset="/assets/images/hero-faq-hotel-the-black-gold.webp 1920w"
+        imagesizes="100vw" fetchpriority="high">
+
+   <!-- Styles (aligned with rooms.html; tightened section spacing) -->
+  <style>
+    :root{--bg:#111111;--text:#F5F5F5;--muted:#EDEDED;--gold:#D4AF37;--card:#161616;--line:#2A2A2A;--shadow:0 8px 24px rgba(0,0,0,.35),0 2px 6px rgba(0,0,0,.25)}
+    *{box-sizing:border-box}
+    html,body{margin:0;padding:0;background:var(--bg);color:var(--text);font-family:Lato,system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,"Helvetica Neue",Arial,sans-serif;line-height:1.6;text-rendering:optimizeLegibility}
+    a{color:var(--muted);text-decoration:none}a:hover,a:focus{color:var(--gold)}
+    .container{width:min(1180px,92vw);margin-inline:auto}
+    .skip-link{position:absolute;left:-999px;top:auto;width:1px;height:1px;overflow:hidden}.skip-link:focus{left:1rem;top:1rem;width:auto;height:auto;background:#000;padding:.75rem 1rem;border:2px solid var(--gold);z-index:10000}
+
+    /* Header */
+    header{position:sticky;top:0;z-index:999;background:rgba(17,17,17,.75);backdrop-filter:saturate(120%) blur(8px);border-bottom:1px solid rgba(255,255,255,.05)}
+    .nav{display:flex;align-items:center;justify-content:space-between;padding:.85rem 0}
+    .brand{display:flex;align-items:center;gap:.75rem}
+    .logo{width:36px;height:36px;border-radius:10px;background:linear-gradient(135deg,var(--gold),#9b7c1f);box-shadow:var(--shadow)}
+    .brand-name{font-family:Montserrat,sans-serif;font-weight:800;letter-spacing:.4px}
+    nav ul{list-style:none;margin:0;padding:0;display:flex;gap:1.25rem;align-items:center}
+    .book-now{background:var(--gold);color:#111;padding:.6rem 1rem;border-radius:999px;font-weight:700;box-shadow:var(--shadow);border:1px solid rgba(0,0,0,.35)}
+    .book-now:hover{filter:brightness(1.05)}
+
+    /* Hero */
+    .hero{position:relative;isolation:isolate}
+    .hero-media{position:absolute;inset:0;z-index:-1;overflow:hidden}
+    .hero-media img{width:100%;height:100%;object-fit:cover;filter:grayscale(.1) contrast(1.1) brightness(.8)}
+    .hero-overlay{position:absolute;inset:0;background:radial-gradient(1200px 600px at 60% 20%,rgba(212,175,55,.15),transparent),linear-gradient(180deg,rgba(17,17,17,.35),rgba(17,17,17,.85))}
+    .hero-inner{padding:clamp(84px,11vw,140px) 0 48px}
+    h1{font-family:Montserrat,sans-serif;font-weight:800;line-height:1.1;font-size:clamp(28px,5.6vw,46px);margin:0 0 .5rem}
+    .subhead{color:var(--muted);font-size:clamp(15px,2.2vw,18px);max-width:840px}
+
+    /* Sections */
+    section{padding:48px 0}           /* reduced from 64px */
+    .faq-section{padding:36px 0}      /* even tighter for FAQ stacks */
+    .faq-section + .faq-section{padding-top:22px} /* small gap between the two accordions */
+    .section-title{font-family:Montserrat,sans-serif;font-weight:800;font-size:clamp(22px,3.6vw,32px);margin:0 0 14px}
+
+    /* Accordion */
+    .accordion{border:1px solid var(--line);border-radius:18px;overflow:hidden;margin:0} /* no extra bottom gap */
+    .acc-item{border-bottom:1px solid var(--line);background:#141414}
+    .acc-item:last-child{border-bottom:0}
+    .acc-btn{width:100%;text-align:left;padding:16px 18px;background:#141414;color:var(--text);border:0;font-weight:700;font-family:Montserrat,sans-serif;cursor:pointer}
+    .acc-content{max-height:0;overflow:hidden;transition:max-height .35s ease}
+    .acc-inner{padding:0 18px 16px;color:#d7d7d7}
+
+    /* Footer */
+    footer{border-top:1px solid rgba(255,255,255,.06);padding-top:36px;padding-bottom:72px}
+    .footer-grid{display:grid;grid-template-columns:1fr;gap:22px}
+    .footer-col h4{font-family:Montserrat,sans-serif;margin:.2rem 0 .6rem}
+    .copyright{border-top:1px solid rgba(255,255,255,.06);margin-top:20px;padding-top:14px;color:#c9c9c9;font-size:.9rem}
+
+    /* FAB */
+    .fab{position:fixed;right:16px;bottom:16px;display:grid;gap:10px;z-index:1000}
+    .fab a{display:flex;align-items:center;gap:.6rem;padding:.7rem .9rem;border-radius:999px;box-shadow:var(--shadow);border:1px solid rgba(0,0,0,.4);backdrop-filter:saturate(120%) blur(6px)}
+    .fab .call{background:var(--gold);color:#111;font-weight:800}
+    .fab .wa{background:#128C7E;color:#fff}
+    .fab .book{background:#1f1f1f;color:#f1f1f1;border-color:#343434}
+
+    /* Responsive */
+    @media (min-width:700px){
+      .footer-grid{grid-template-columns:2fr 1fr 1fr 1fr}
+    }
+
+    /* Focus */
+    :where(a,button,input,select):focus-visible{outline-color:var(--gold);outline-offset:2px}
+  </style>
+
+  <!-- JSON-LD: Breadcrumbs -->
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"BreadcrumbList",
+    "itemListElement":[
+      {"@type":"ListItem","position":1,"name":"Home","item":"https://www.hoteltheblackgold.com/"},
+      {"@type":"ListItem","position":2,"name":"FAQ","item":"https://www.hoteltheblackgold.com/faq.html"}
+    ]
+  }
+  </script>
+
+  <!-- JSON-LD: Hotel (site-level) -->
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"Hotel",
+    "name":"Hotel The Black Gold",
+    "url":"https://www.hoteltheblackgold.com/",
+    "image":"https://www.hoteltheblackgold.com/assets/og/og-home.webp",
+    "description":"Friendly staff, homely meals, and practical amenities near PGI & Sukhna Lake. Wheelchair-friendly access, EV charging, and pet-friendly rooms.",
+    "telephone":"+917277522222",
+    "address":{"@type":"PostalAddress","streetAddress":"Hotel The Black Gold, near Century Public School, Nayagaon, Punjab","addressLocality":"Nayagaon","addressRegion":"Punjab","postalCode":"160103","addressCountry":"IN"},
+    "geo":{"@type":"GeoCoordinates","latitude":30.77498,"longitude":76.79716},
+    "amenityFeature":[
+      {"@type":"LocationFeatureSpecification","name":"High-speed Wi-Fi","value":"100 Mbps per wing"},
+      {"@type":"LocationFeatureSpecification","name":"Secure basement parking","value":"On-site"},
+      {"@type":"LocationFeatureSpecification","name":"EV charging","value":"Available"},
+      {"@type":"LocationFeatureSpecification","name":"Lift & wheelchair access","value":"All floors"},
+      {"@type":"LocationFeatureSpecification","name":"Pet-friendly","value":"₹300/night/pet"}
+    ],
+    "areaServed":"Chandigarh",
+    "currenciesAccepted":"INR",
+    "paymentAccepted":"Cash, Card, UPI",
+    "priceRange":"₹₹",
+    "sameAs":[
+      "https://www.facebook.com/HotelTheBlackGoldChandigarh",
+      "https://x.com/HotelBlackGold",
+      "https://maps.app.goo.gl/yUs4sxDEXqwgCvyC6"
+    ]
+  }
+  </script>
+
+  <!-- JSON-LD: FAQPage (high-intent questions mirrored from accordions) -->
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"FAQPage",
+  "mainEntity":[
+    {
+      "@type":"Question",
+      "name":"What’s the best way to get the lowest rate at Hotel The Black Gold?",
+      "acceptedAnswer":{"@type":"Answer","text":"The best rates are always available when you book directly through our official channels — by calling +91-72775-22222, sending us a WhatsApp message, or using our official booking link. Direct bookings often include perks such as complimentary breakfast on select plans and flexible support."}
+    },
+    {
+      "@type":"Question",
+      "name":"Do you offer price matching?",
+      "acceptedAnswer":{"@type":"Answer","text":"Yes. If you find a lower publicly available rate for the same room type, dates, and booking conditions, we’ll match it — provided you contact us before confirming your booking."}
+    },
+    {
+      "@type":"Question",
+      "name":"How are your room rates calculated?",
+      "acceptedAnswer":{"@type":"Answer","text":"Rates are based on room category, occupancy, seasonality, and availability. Special events in Chandigarh, such as cricket matches or festivals, may impact pricing."}
+    },
+    {
+      "@type":"Question",
+      "name":"Are taxes included in the room rate?",
+      "acceptedAnswer":{"@type":"Answer","text":"All rates are exclusive of applicable GST, which is added at the time of booking or check-in."}
+    },
+    {
+      "@type":"Question",
+      "name":"What payment methods do you accept?",
+      "acceptedAnswer":{"@type":"Answer","text":"We accept major credit/debit cards, UPI, net banking, and cash payments at the hotel."}
+    },
+    {
+      "@type":"Question",
+      "name":"Do you accept international credit cards?",
+      "acceptedAnswer":{"@type":"Answer","text":"Yes, Visa, MasterCard, and other internationally recognized cards are accepted."}
+    },
+    {
+      "@type":"Question",
+      "name":"Can I pay in cash at check-in?",
+      "acceptedAnswer":{"@type":"Answer","text":"Yes, we accept cash payments at check-in or check-out."}
+    },
+    {
+      "@type":"Question",
+      "name":"Do you require a booking deposit?",
+      "acceptedAnswer":{"@type":"Answer","text":"For certain high-demand periods, group bookings, or long-term stays, we may request a partial advance to confirm your booking."}
+    },
+    {
+      "@type":"Question",
+      "name":"What’s your refund policy?",
+      "acceptedAnswer":{"@type":"Answer","text":"Refunds are processed as per our cancellation policy, which varies based on the booking plan. Please confirm the terms before making your reservation."}
+    },
+    {
+      "@type":"Question",
+      "name":"How do I modify an existing booking?",
+      "acceptedAnswer":{"@type":"Answer","text":"Simply call our reservations team or send a WhatsApp message to +91-72775-22222. Changes are subject to availability and rate adjustments."}
+    },
+    {
+      "@type":"Question",
+      "name":"How do I cancel a booking?",
+      "acceptedAnswer":{"@type":"Answer","text":"You can cancel via the same channel you booked through. Cancellations made within the free-cancellation window will be refunded in full."}
+    },
+    {
+      "@type":"Question",
+      "name":"Do you offer corporate rates?",
+      "acceptedAnswer":{"@type":"Answer","text":"Yes, special rates are available for corporate clients. Please see Corporate Bookings (corporate-bookings.html)."}
+    },
+    {
+      "@type":"Question",
+      "name":"Are there special rates for travel agents?",
+      "acceptedAnswer":{"@type":"Answer","text":"Yes, we work with travel partners and offer competitive commissions. Contact us for details."}
+    },
+    {
+      "@type":"Question",
+      "name":"Do you offer long-term stay discounts?",
+      "acceptedAnswer":{"@type":"Answer","text":"Yes, discounted rates are available for extended stays. See Long-Term Stay (long-term-stay.html) for more information."}
+    },
+    {
+      "@type":"Question",
+      "name":"Are there seasonal promotions?",
+      "acceptedAnswer":{"@type":"Answer","text":"We run periodic offers during festive seasons and off-peak periods. Check our website or call us to know the latest deals."}
+    },
+    {
+      "@type":"Question",
+      "name":"What are your check-in and check-out times?",
+      "acceptedAnswer":{"@type":"Answer","text":"Standard check-in is from 12:00 PM, and check-out is by 11:00 AM."}
+    },
+    {
+      "@type":"Question",
+      "name":"Can I request an early check-in?",
+      "acceptedAnswer":{"@type":"Answer","text":"Yes, subject to room availability and a nominal charge."}
+    },
+    {
+      "@type":"Question",
+      "name":"Can I request a late check-out?",
+      "acceptedAnswer":{"@type":"Answer","text":"Yes, depending on availability. Charges may apply for late check-outs beyond 2:00 PM."}
+    },
+    {
+      "@type":"Question",
+      "name":"Is there a charge for early check-in or late check-out?",
+      "acceptedAnswer":{"@type":"Answer","text":"Yes, a half-day or full-day rate may apply depending on the time and duration."}
+    },
+    {
+      "@type":"Question",
+      "name":"What documents do I need at check-in?",
+      "acceptedAnswer":{"@type":"Answer","text":"All guests must present a valid government-issued photo ID (passport for international guests)."}
+    },
+    {
+      "@type":"Question",
+      "name":"Can I check in without an ID?",
+      "acceptedAnswer":{"@type":"Answer","text":"No, valid ID is mandatory for all guests."}
+    },
+    {
+      "@type":"Question",
+      "name":"Can someone else check in on my behalf?",
+      "acceptedAnswer":{"@type":"Answer","text":"Yes, but their name must be on the booking, and they must present valid ID."}
+    },
+    {
+      "@type":"Question",
+      "name":"Can I check in after midnight?",
+      "acceptedAnswer":{"@type":"Answer","text":"Yes, late-night check-ins are accepted if your booking is confirmed in advance."}
+    },
+    {
+      "@type":"Question",
+      "name":"Is 24-hour check-in available?",
+      "acceptedAnswer":{"@type":"Answer","text":"We do not offer rolling 24-hour check-in, but our front desk is open 24×7 to assist guests."}
+    },
+    {
+      "@type":"Question",
+      "name":"Can I store luggage before check-in or after check-out?",
+      "acceptedAnswer":{"@type":"Answer","text":"Yes, we provide secure luggage storage for early arrivals and late departures."}
+    },
+    {
+      "@type":"Question",
+      "name":"Is there a secure luggage storage area?",
+      "acceptedAnswer":{"@type":"Answer","text":"Yes, your belongings will be safely stored at the front desk until you collect them."}
+    },
+    {
+      "@type":"Question",
+      "name":"What room categories are available?",
+      "acceptedAnswer":{"@type":"Answer","text":"We offer Deluxe Room (deluxe-room.html), Super Deluxe Room (super-deluxe-room.html), and Premium Room (premium-room.html) options."}
+    },
+    {
+      "@type":"Question",
+      "name":"What is included in the Deluxe Room?",
+      "acceptedAnswer":{"@type":"Answer","text":"Compact comfort with a 32\" TV, AC, Wi-Fi, attached washroom, and all basic amenities."}
+    },
+    {
+      "@type":"Question",
+      "name":"What is included in the Super Deluxe Room?",
+      "acceptedAnswer":{"@type":"Answer","text":"Extra space, a 43\" Smart TV with Airtel STB, and upgraded furnishings."}
+    },
+    {
+      "@type":"Question",
+      "name":"What is included in the Premium Room?",
+      "acceptedAnswer":{"@type":"Answer","text":"Our most spacious option with a 50\" 4K Smart TV, premium finishes, and serene ambience."}
+    },
+    {
+      "@type":"Question",
+      "name":"Do all rooms have air conditioning?",
+      "acceptedAnswer":{"@type":"Answer","text":"Yes, every room is air-conditioned."}
+    },
+    {
+      "@type":"Question",
+      "name":"Is Wi-Fi free and how fast is it?",
+      "acceptedAnswer":{"@type":"Answer","text":"Yes, free high-speed Wi-Fi (100 Mbps per wing) is available throughout the property."}
+    },
+    {
+      "@type":"Question",
+      "name":"Do rooms have attached washrooms?",
+      "acceptedAnswer":{"@type":"Answer","text":"Yes, all rooms feature private attached washrooms."}
+    },
+    {
+      "@type":"Question",
+      "name":"Are toiletries provided?",
+      "acceptedAnswer":{"@type":"Answer","text":"Yes, fresh towels, soap, shampoo, and other essentials are included."}
+    },
+    {
+      "@type":"Question",
+      "name":"Is bottled water complimentary?",
+      "acceptedAnswer":{"@type":"Answer","text":"Yes, drinking water is provided in all rooms."}
+    },
+    {
+      "@type":"Question",
+      "name":"Do you provide an electric kettle?",
+      "acceptedAnswer":{"@type":"Answer","text":"No, but tea, coffee, and basic snacks are available 24×7 via room service."}
+    },
+    {
+      "@type":"Question",
+      "name":"Do you have work desks in rooms?",
+      "acceptedAnswer":{"@type":"Answer","text":"No, but all rooms have a coffee table and two chairs."}
+    },
+    {
+      "@type":"Question",
+      "name":"Can I request an extra bed or pillow?",
+      "acceptedAnswer":{"@type":"Answer","text":"Yes, available on request, subject to availability."}
+    },
+    {
+      "@type":"Question",
+      "name":"Are ironing facilities available?",
+      "acceptedAnswer":{"@type":"Answer","text":"Yes, ironing is offered as a service."}
+    },
+    {
+      "@type":"Question",
+      "name":"How often is housekeeping done?",
+      "acceptedAnswer":{"@type":"Answer","text":"Daily housekeeping is included in all stays."}
+    },
+    {
+      "@type":"Question",
+      "name":"Do rooms have a balcony or view?",
+      "acceptedAnswer":{"@type":"Answer","text":"Views vary by room; please request in advance."}
+    },
+    {
+      "@type":"Question",
+      "name":"Are smoking rooms available?",
+      "acceptedAnswer":{"@type":"Answer","text":"No, all rooms are non-smoking."}
+    },
+    {
+      "@type":"Question",
+      "name":"Do you have wheelchair-accessible rooms?",
+      "acceptedAnswer":{"@type":"Answer","text":"Yes, accessible rooms and lift access are available."}
+    },
+    {
+      "@type":"Question",
+      "name":"Can I request a specific floor or room number?",
+      "acceptedAnswer":{"@type":"Answer","text":"Yes, subject to availability."}
+    },
+    {
+      "@type":"Question",
+      "name":"Are rooms soundproof?",
+      "acceptedAnswer":{"@type":"Answer","text":"Rooms are designed for privacy, though not fully soundproof."}
+    },
+    {
+      "@type":"Question",
+      "name":"What are the kitchen operating hours?",
+      "acceptedAnswer":{"@type":"Answer","text":"The kitchen operates from 7:30 AM to 10:30 PM for full meals."}
+    },
+    {
+      "@type":"Question",
+      "name":"Is breakfast included in my booking?",
+      "acceptedAnswer":{"@type":"Answer","text":"Complimentary breakfast is included with select packages."}
+    },
+    {
+      "@type":"Question",
+      "name":"What cuisines do you serve?",
+      "acceptedAnswer":{"@type":"Answer","text":"We serve Indian and Chinese cuisine."}
+    },
+    {
+      "@type":"Question",
+      "name":"Can I order food to my room?",
+      "acceptedAnswer":{"@type":"Answer","text":"Yes, room service is available."}
+    },
+    {
+      "@type":"Question",
+      "name":"Do you have 24-hour room service?",
+      "acceptedAnswer":{"@type":"Answer","text":"Yes, for basics like tea, coffee, Maggi, and sandwiches."}
+    },
+    {
+      "@type":"Question",
+      "name":"Do you cater to dietary restrictions?",
+      "acceptedAnswer":{"@type":"Answer","text":"Yes, inform us in advance so we can accommodate."}
+    },
+    {
+      "@type":"Question",
+      "name":"Can I request a custom meal?",
+      "acceptedAnswer":{"@type":"Answer","text":"Yes, subject to ingredient availability."}
+    },
+    {
+      "@type":"Question",
+      "name":"Do you serve alcohol?",
+      "acceptedAnswer":{"@type":"Answer","text":"No, we do not serve alcohol."}
+    },
+    {
+      "@type":"Question",
+      "name":"Can I order food from outside?",
+      "acceptedAnswer":{"@type":"Answer","text":"Yes, outside food delivery is allowed."}
+    },
+    {
+      "@type":"Question",
+      "name":"Do you have a dining hall?",
+      "acceptedAnswer":{"@type":"Answer","text":"Yes, especially for group bookings (group-bookings.html)."}
+    },
+    {
+      "@type":"Question",
+      "name":"Can you arrange in-room celebrations with cake and drinks?",
+      "acceptedAnswer":{"@type":"Answer","text":"Yes, see Room Decorations (room-decorations.html) for options."}
+    },
+    {
+      "@type":"Question",
+      "name":"Is the hotel wheelchair accessible?",
+      "acceptedAnswer":{"@type":"Answer","text":"Yes, our property has been designed to accommodate wheelchair users, with smooth pathways and lift access to all floors."}
+    },
+    {
+      "@type":"Question",
+      "name":"Do you have a lift/elevator to all floors?",
+      "acceptedAnswer":{"@type":"Answer","text":"Yes, a modern elevator provides access to every floor, including guest rooms and common areas."}
+    },
+    {
+      "@type":"Question",
+      "name":"Do you offer wheelchair assistance?",
+      "acceptedAnswer":{"@type":"Answer","text":"Yes, our team can provide wheelchair assistance on request. Please inform us in advance for smooth arrangements."}
+    },
+    {
+      "@type":"Question",
+      "name":"Are washrooms accessible for guests with disabilities?",
+      "acceptedAnswer":{"@type":"Answer","text":"Yes, select rooms feature accessible washrooms with supportive fixtures."}
+    },
+    {
+      "@type":"Question",
+      "name":"Do you have Braille signs or tactile indicators?",
+      "acceptedAnswer":{"@type":"Answer","text":"We do not have Braille signage at this time, but our staff is trained to assist visually impaired guests."}
+    },
+    {
+      "@type":"Question",
+      "name":"Are pets allowed?",
+      "acceptedAnswer":{"@type":"Answer","text":"Yes, we are a pet-friendly hotel. Details are available on our Pet-Friendly page (pet-friendly.html)."}
+    },
+    {
+      "@type":"Question",
+      "name":"What’s the pet fee?",
+      "acceptedAnswer":{"@type":"Answer","text":"The fee is ₹300 per night per pet."}
+    },
+    {
+      "@type":"Question",
+      "name":"Do you have pet-friendly rooms?",
+      "acceptedAnswer":{"@type":"Answer","text":"Yes, certain rooms are allocated for guests traveling with pets."}
+    },
+    {
+      "@type":"Question",
+      "name":"Can I leave my pet alone in the room?",
+      "acceptedAnswer":{"@type":"Answer","text":"We do not recommend leaving pets unattended for long periods to ensure their safety and comfort."}
+    },
+    {
+      "@type":"Question",
+      "name":"Do you offer pet beds or bowls?",
+      "acceptedAnswer":{"@type":"Answer","text":"Yes, available on request at no extra charge."}
+    },
+    {
+      "@type":"Question",
+      "name":"Are there any pet size or breed restrictions?",
+      "acceptedAnswer":{"@type":"Answer","text":"No, we welcome pets of all sizes and breeds."}
+    },
+    {
+      "@type":"Question",
+      "name":"Do you have a designated pet relief area?",
+      "acceptedAnswer":{"@type":"Answer","text":"No, but we can guide you to nearby outdoor spaces suitable for pets."}
+    },
+    {
+      "@type":"Question",
+      "name":"Are unmarried couples allowed?",
+      "acceptedAnswer":{"@type":"Answer","text":"Yes, we welcome all adult guests, including unmarried couples."}
+    },
+    {
+      "@type":"Question",
+      "name":"Do you require both guests to show ID?",
+      "acceptedAnswer":{"@type":"Answer","text":"Yes, valid government-issued IDs are required for all guests."}
+    },
+    {
+      "@type":"Question",
+      "name":"Will my local ID be accepted?",
+      "acceptedAnswer":{"@type":"Answer","text":"Yes, local IDs are accepted for check-in."}
+    },
+    {
+      "@type":"Question",
+      "name":"Is the hotel discreet for couples?",
+      "acceptedAnswer":{"@type":"Answer","text":"Yes, we respect the privacy of all guests and maintain a professional approach."}
+    },
+    {
+      "@type":"Question",
+      "name":"Do you provide early check-in for couples?",
+      "acceptedAnswer":{"@type":"Answer","text":"Early check-in is subject to availability and may incur a nominal charge."}
+    },
+    {
+      "@type":"Question",
+      "name":"Do you offer special couple packages?",
+      "acceptedAnswer":{"@type":"Answer","text":"Yes, including romantic room decorations — see Room Decorations (room-decorations.html)."}
+    },
+    {
+      "@type":"Question",
+      "name":"Is the room decoration service available for anniversaries or proposals?",
+      "acceptedAnswer":{"@type":"Answer","text":"Yes, custom themes can be arranged with prior notice."}
+    },
+    {
+      "@type":"Question",
+      "name":"Are there restrictions for same-sex couples?",
+      "acceptedAnswer":{"@type":"Answer","text":"No, we are inclusive and welcome all couples."}
+    },
+    {
+      "@type":"Question",
+      "name":"Do you ensure privacy for couple guests?",
+      "acceptedAnswer":{"@type":"Answer","text":"Yes, guest confidentiality is a priority."}
+    },
+    {
+      "@type":"Question",
+      "name":"How far is PGI Chandigarh from the hotel?",
+      "acceptedAnswer":{"@type":"Answer","text":"Less than 1.5 km — approximately a 5-minute drive. See Hotel Near PGI (hotel-near-pgi.html)."}
+    },
+    {
+      "@type":"Question",
+      "name":"How far is Sukhna Lake from the hotel?",
+      "acceptedAnswer":{"@type":"Answer","text":"Around 6 km, a 15-minute drive."}
+    },
+    {
+      "@type":"Question",
+      "name":"How far is the Rock Garden from the hotel?",
+      "acceptedAnswer":{"@type":"Answer","text":"Approximately 7 km, about 15 minutes by car."}
+    },
+    {
+      "@type":"Question",
+      "name":"How far is Sector 17 from the hotel?",
+      "acceptedAnswer":{"@type":"Answer","text":"Around 7 km, roughly 15 minutes by car."}
+    },
+    {
+      "@type":"Question",
+      "name":"How far is PEC from the hotel?",
+      "acceptedAnswer":{"@type":"Answer","text":"About 5 km, 12 minutes by car."}
+    },
+    {
+      "@type":"Question",
+      "name":"How far is Panjab University from the hotel?",
+      "acceptedAnswer":{"@type":"Answer","text":"Around 5 km, about 12 minutes by car."}
+    },
+    {
+      "@type":"Question",
+      "name":"How far is the Punjab & Haryana High Court from the hotel?",
+      "acceptedAnswer":{"@type":"Answer","text":"Approximately 6 km, a 15-minute drive."}
+    },
+    {
+      "@type":"Question",
+      "name":"How far is PCA Stadium from the hotel?",
+      "acceptedAnswer":{"@type":"Answer","text":"Around 15 km, about 30 minutes by car."}
+    },
+    {
+      "@type":"Question",
+      "name":"How far is Chandigarh International Airport?",
+      "acceptedAnswer":{"@type":"Answer","text":"Approximately 11 km, a 25-minute drive."}
+    },
+    {
+      "@type":"Question",
+      "name":"How far is the railway station?",
+      "acceptedAnswer":{"@type":"Answer","text":"Around 8 km, roughly 20 minutes by car."}
+    },
+    {
+      "@type":"Question",
+      "name":"How far are the main bus stands?",
+      "acceptedAnswer":{"@type":"Answer","text":"Sector 43 Bus Stand is 3.5 km away; ISBT Sector 17 is 6 km away."}
+    },
+    {
+      "@type":"Question",
+      "name":"Do you offer airport pickup and drop?",
+      "acceptedAnswer":{"@type":"Answer","text":"Yes, available on request for an additional charge."}
+    },
+    {
+      "@type":"Question",
+      "name":"Can you arrange a taxi or cab?",
+      "acceptedAnswer":{"@type":"Answer","text":"Yes, we can arrange Ola, Uber, or private taxis for you."}
+    },
+    {
+      "@type":"Question",
+      "name":"Is parking available?",
+      "acceptedAnswer":{"@type":"Answer","text":"Yes, secure basement parking is available for guests."}
+    },
+    {
+      "@type":"Question",
+      "name":"Do you have EV charging?",
+      "acceptedAnswer":{"@type":"Answer","text":"Yes, EV charging stations are available in our parking area."}
+    },
+    {
+      "@type":"Question",
+      "name":"Is Ola/Uber easily available?",
+      "acceptedAnswer":{"@type":"Answer","text":"Yes, both are readily accessible in our location."}
+    },
+    {
+      "@type":"Question",
+      "name":"Is the hotel safe for solo travelers?",
+      "acceptedAnswer":{"@type":"Answer","text":"Yes, our hotel is in a safe area and has robust security measures."}
+    },
+    {
+      "@type":"Question",
+      "name":"Is the hotel safe for women travelers?",
+      "acceptedAnswer":{"@type":"Answer","text":"Absolutely. We maintain 24-hour staffed reception and CCTV surveillance."}
+    },
+    {
+      "@type":"Question",
+      "name":"Do you have 24-hour front desk staff?",
+      "acceptedAnswer":{"@type":"Answer","text":"Yes, our team is available round-the-clock to assist."}
+    },
+    {
+      "@type":"Question",
+      "name":"Do you have CCTV surveillance?",
+      "acceptedAnswer":{"@type":"Answer","text":"Yes, common areas and entrances are monitored for your safety."}
+    },
+    {
+      "@type":"Question",
+      "name":"Is there a safe in the room?",
+      "acceptedAnswer":{"@type":"Answer","text":"We do not provide in-room safes, but valuables can be stored securely at the front desk."}
+    },
+    {
+      "@type":"Question",
+      "name":"Are valuables safe in the room?",
+      "acceptedAnswer":{"@type":"Answer","text":"We recommend storing high-value items at reception for maximum security."}
+    },
+    {
+      "@type":"Question",
+      "name":"Do you offer room decorations?",
+      "acceptedAnswer":{"@type":"Answer","text":"Yes, for birthdays, anniversaries, and special occasions. See Room Decorations (room-decorations.html)."}
+    },
+    {
+      "@type":"Question",
+      "name":"Can you organize birthday surprises?",
+      "acceptedAnswer":{"@type":"Answer","text":"Yes, including balloons, cakes, and themed décor."}
+    },
+    {
+      "@type":"Question",
+      "name":"Do you have meeting spaces?",
+      "acceptedAnswer":{"@type":"Answer","text":"We do not currently have formal meeting rooms."}
+    },
+    {
+      "@type":"Question",
+      "name":"Do you have laundry service?",
+      "acceptedAnswer":{"@type":"Answer","text":"Yes, laundry and ironing services are available."}
+    },
+    {
+      "@type":"Question",
+      "name":"Do you have printing and scanning?",
+      "acceptedAnswer":{"@type":"Answer","text":"Yes, free printing and scanning services are available at the front desk."}
+    },
+    {
+      "@type":"Question",
+      "name":"Can you arrange a doctor on call?",
+      "acceptedAnswer":{"@type":"Answer","text":"Yes, we have a doctor on call for emergencies."}
+    },
+    {
+      "@type":"Question",
+      "name":"Do you help with sightseeing plans?",
+      "acceptedAnswer":{"@type":"Answer","text":"Yes, our team can recommend and arrange local tours."}
+    },
+    {
+      "@type":"Question",
+      "name":"Do you offer event hosting?",
+      "acceptedAnswer":{"@type":"Answer","text":"Small in-room celebrations can be hosted; we do not offer banquet facilities."}
+    },
+    {
+      "@type":"Question",
+      "name":"What’s your smoking policy?",
+      "acceptedAnswer":{"@type":"Answer","text":"Smoking is not allowed inside rooms; designated outdoor areas are available."}
+    },
+    {
+      "@type":"Question",
+      "name":"What’s your cancellation policy?",
+      "acceptedAnswer":{"@type":"Answer","text":"Varies by booking type; please check at the time of reservation."}
+    },
+    {
+      "@type":"Question",
+      "name":"Do you have a no-noise policy?",
+      "acceptedAnswer":{"@type":"Answer","text":"Yes, quiet hours are observed from 10:00 PM to 7:00 AM."}
+    },
+    {
+      "@type":"Question",
+      "name":"What’s your alcohol policy?",
+      "acceptedAnswer":{"@type":"Answer","text":"We do not serve alcohol, but guests may consume their own in private rooms."}
+    },
+    {
+      "@type":"Question",
+      "name":"Do you allow outside visitors?",
+      "acceptedAnswer":{"@type":"Answer","text":"Yes, but they must register at the front desk and carry valid ID."}
+    },
+    {
+      "@type":"Question",
+      "name":"What’s your photography policy?",
+      "acceptedAnswer":{"@type":"Answer","text":"Personal photography is allowed; commercial shoots require prior approval."}
+    },
+    {
+      "@type":"Question",
+      "name":"What’s the best way to contact you?",
+      "acceptedAnswer":{"@type":"Answer","text":"Call or WhatsApp us at +91-72775-22222, or use our Contact page (contact.html)."}
+    },
+    {
+      "@type":"Question",
+      "name":"Do you have WhatsApp support?",
+      "acceptedAnswer":{"@type":"Answer","text":"Yes, for reservations, queries, and quick assistance."}
+    },
+    {
+      "@type":"Question",
+      "name":"Do you respond to emails quickly?",
+      "acceptedAnswer":{"@type":"Answer","text":"Yes, we aim to respond within a few hours during working hours."}
+    },
+    {
+      "@type":"Question",
+      "name":"Can I contact you 24×7?",
+      "acceptedAnswer":{"@type":"Answer","text":"Yes, our reception team is available at all times."}
+    },
+    {
+      "@type":"Question",
+      "name":"Who do I call for urgent issues?",
+      "acceptedAnswer":{"@type":"Answer","text":"Use our single contact number: +91-72775-22222 — available for all needs including food orders, housekeeping, and emergencies."}
+    }
+  ]
+}
+</script>
+
+
+  <!-- Analytics hook (insert GA4 when ready) -->
+  <!-- <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXX"></script>
+  <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)};gtag('js',new Date());gtag('config','G-XXXXXXX');</script> -->
+</head>
+
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+ <header role="banner">
+  <div class="container nav">
+    <!-- Brand -->
+    <a class="brand" href="/" aria-label="Hotel The Black Gold — Home">
+      <span class="logo" aria-hidden="true"></span>
+      <span class="brand-name">Hotel The Black Gold</span>
+    </a>
+
+    <!-- Nav -->
+    <nav aria-label="Main">
+      <ul>
+        <li><a href="/">Home</a></li>
+        <li><a href="/rooms.html" aria-current="page">Rooms &amp; Rates</a></li>
+        <li><a href="/amenities.html">Amenities</a></li>
+        <li><a href="/location.html">Location</a></li>
+        <li><a href="/hotel-near-pgi.html">Hotel Near PGI</a></li>
+        <li><a href="/faq.html">FAQ</a></li>
+      </ul>
+    </nav>
+
+    <!-- CTA -->
+    <a class="book-now" href="/contact.html">Book Now</a>
+  </div>
+</header>
+
+<!-- HERO -->
+<section class="hero" aria-label="Hero">
+  <div class="hero-media" aria-hidden="true">
+    <img src="/assets/images/hero-faq-hotel-the-black-gold.webp"
+         alt="Welcoming staff, homely meals and accessible, comfortable rooms near PGI Chandigarh"
+         width="1920" height="1080" decoding="async" fetchpriority="high">
+    <div class="hero-overlay"></div>
+  </div>
+  <div class="container hero-inner fade-up">
+    <nav class="breadcrumbs" aria-label="Breadcrumb">
+      <a href="/">Home</a> › <span aria-current="page">FAQ</span>
+    </nav>
+    <h1>Hotel The Black Gold — Frequently Asked Questions</h1>
+    <p class="subhead">Answers you need, fast. Browse the topics below — each section expands into quick, practical guidance. Still unsure? Call or WhatsApp us any time; we’re here 24×7.</p>
+    <div class="cta-row">
+      <a class="btn btn-primary" href="tel:+917277522222" aria-label="Call Hotel The Black Gold">Call +91-72775-22222</a>
+      <a class="btn btn-ghost" href="https://wa.me/917277522222" target="_blank" rel="noopener" aria-label="WhatsApp Hotel The Black Gold">WhatsApp</a>
+      <a class="btn btn-ghost" href="/contact.html" aria-label="Open Contact Form">Contact Form</a>
+    </div>
+  </div>
+</section>
+
+ <!-- ===== FAQs by Topic (separate accordions) ===== -->
+<!-- Main -->
+  <main id="main" class="container" role="main">
+    <!-- 1) Bookings & Rates -->
+    <section class="faq-section" aria-labelledby="faq-bookings-title">
+      <h2 id="faq-bookings-title" class="section-title">Bookings &amp; Rates</h2>
+      <div class="accordion" id="acc-bookings-title" role="region" aria-label="Bookings and Rates FAQs">
+        <div class="acc-item" id="bfr-q1"><button class="acc-btn" id="bfr-q1-btn" aria-controls="bfr-a1-panel" aria-expanded="false">What’s the best way to get the lowest rate at Hotel The Black Gold?</button><div class="acc-content" id="bfr-a1-panel" role="region" aria-labelledby="bfr-q1-btn"><div class="acc-inner">The best rates are always available when you book directly through our official channels — by calling <a href="tel:+917277522222">+91-72775-22222</a>, sending us a WhatsApp message, or using our official booking link. Direct bookings often include perks such as complimentary breakfast on select plans and flexible support.</div></div></div>
+        <div class="acc-item" id="bfr-q2"><button class="acc-btn" id="bfr-q2-btn" aria-controls="bfr-a2-panel" aria-expanded="false">Do you offer price matching?</button><div class="acc-content" id="bfr-a2-panel" role="region" aria-labelledby="bfr-q2-btn"><div class="acc-inner">Yes. If you find a lower publicly available rate for the same room type, dates, and booking conditions, we’ll match it — provided you contact us before confirming your booking.</div></div></div>
+        <div class="acc-item" id="bfr-q3"><button class="acc-btn" id="bfr-q3-btn" aria-controls="bfr-a3-panel" aria-expanded="false">How are your room rates calculated?</button><div class="acc-content" id="bfr-a3-panel" role="region" aria-labelledby="bfr-q3-btn"><div class="acc-inner">Rates are based on room category, occupancy, seasonality, and availability. Special events in Chandigarh, such as cricket matches or festivals, may impact pricing.</div></div></div>
+        <div class="acc-item" id="bfr-q4"><button class="acc-btn" id="bfr-q4-btn" aria-controls="bfr-a4-panel" aria-expanded="false">Are taxes included in the room rate?</button><div class="acc-content" id="bfr-a4-panel" role="region" aria-labelledby="bfr-q4-btn"><div class="acc-inner">All rates are exclusive of applicable GST, which is added at the time of booking or check-in.</div></div></div>
+        <div class="acc-item" id="bfr-q5"><button class="acc-btn" id="bfr-q5-btn" aria-controls="bfr-a5-panel" aria-expanded="false">What payment methods do you accept?</button><div class="acc-content" id="bfr-a5-panel" role="region" aria-labelledby="bfr-q5-btn"><div class="acc-inner">We accept major credit/debit cards, UPI, net banking, and cash payments at the hotel.</div></div></div>
+        <div class="acc-item" id="bfr-q6"><button class="acc-btn" id="bfr-q6-btn" aria-controls="bfr-a6-panel" aria-expanded="false">Do you accept international credit cards?</button><div class="acc-content" id="bfr-a6-panel" role="region" aria-labelledby="bfr-q6-btn"><div class="acc-inner">Yes, Visa, MasterCard, and other internationally recognized cards are accepted.</div></div></div>
+        <div class="acc-item" id="bfr-q7"><button class="acc-btn" id="bfr-q7-btn" aria-controls="bfr-a7-panel" aria-expanded="false">Can I pay in cash at check-in?</button><div class="acc-content" id="bfr-a7-panel" role="region" aria-labelledby="bfr-q7-btn"><div class="acc-inner">Yes, we accept cash payments at check-in or check-out.</div></div></div>
+        <div class="acc-item" id="bfr-q8"><button class="acc-btn" id="bfr-q8-btn" aria-controls="bfr-a8-panel" aria-expanded="false">Do you require a booking deposit?</button><div class="acc-content" id="bfr-a8-panel" role="region" aria-labelledby="bfr-q8-btn"><div class="acc-inner">For certain high-demand periods, group bookings, or long-term stays, we may request a partial advance to confirm your booking.</div></div></div>
+        <div class="acc-item" id="bfr-q9"><button class="acc-btn" id="bfr-q9-btn" aria-controls="bfr-a9-panel" aria-expanded="false">What’s your refund policy?</button><div class="acc-content" id="bfr-a9-panel" role="region" aria-labelledby="bfr-q9-btn"><div class="acc-inner">Refunds are processed as per our cancellation policy, which varies based on the booking plan. Please confirm the terms before making your reservation.</div></div></div>
+        <div class="acc-item" id="bfr-q10"><button class="acc-btn" id="bfr-q10-btn" aria-controls="bfr-a10-panel" aria-expanded="false">How do I modify an existing booking?</button><div class="acc-content" id="bfr-a10-panel" role="region" aria-labelledby="bfr-q10-btn"><div class="acc-inner">Simply call our reservations team or send a WhatsApp message to <a href="tel:+917277522222">+91-72775-22222</a>. Changes are subject to availability and rate adjustments.</div></div></div>
+        <div class="acc-item" id="bfr-q11"><button class="acc-btn" id="bfr-q11-btn" aria-controls="bfr-a11-panel" aria-expanded="false">How do I cancel a booking?</button><div class="acc-content" id="bfr-a11-panel" role="region" aria-labelledby="bfr-q11-btn"><div class="acc-inner">You can cancel via the same channel you booked through. Cancellations made within the free-cancellation window will be refunded in full.</div></div></div>
+        <div class="acc-item" id="bfr-q12"><button class="acc-btn" id="bfr-q12-btn" aria-controls="bfr-a12-panel" aria-expanded="false">Do you offer corporate rates?</button><div class="acc-content" id="bfr-a12-panel" role="region" aria-labelledby="bfr-q12-btn"><div class="acc-inner">Yes, special rates are available for corporate clients. Please see <a href="/corporate-bookings.html">Corporate Bookings</a>.</div></div></div>
+        <div class="acc-item" id="bfr-q13"><button class="acc-btn" id="bfr-q13-btn" aria-controls="bfr-a13-panel" aria-expanded="false">Are there special rates for travel agents?</button><div class="acc-content" id="bfr-a13-panel" role="region" aria-labelledby="bfr-q13-btn"><div class="acc-inner">Yes, we work with travel partners and offer competitive commissions. Contact us for details.</div></div></div>
+        <div class="acc-item" id="bfr-q14"><button class="acc-btn" id="bfr-q14-btn" aria-controls="bfr-a14-panel" aria-expanded="false">Do you offer long-term stay discounts?</button><div class="acc-content" id="bfr-a14-panel" role="region" aria-labelledby="bfr-q14-btn"><div class="acc-inner">Yes, discounted rates are available for extended stays. See <a href="/long-term-stay.html">Long-Term Stay</a> for more information.</div></div></div>
+        <div class="acc-item" id="bfr-q15"><button class="acc-btn" id="bfr-q15-btn" aria-controls="bfr-a15-panel" aria-expanded="false">Are there seasonal promotions?</button><div class="acc-content" id="bfr-a15-panel" role="region" aria-labelledby="bfr-q15-btn"><div class="acc-inner">We run periodic offers during festive seasons and off-peak periods. Check our website or call us to know the latest deals.</div></div></div>
+      </div>
+    </section>
+
+    <!-- 2) Check-in & Check-out -->
+    <section class="faq-section" aria-labelledby="faq-ci-title">
+      <h2 id="faq-ci-title" class="section-title">Check-in &amp; Check-out</h2>
+      <div class="accordion" id="acc-checkin" role="region" aria-label="Check-in & Check-out FAQs">
+        <div class="acc-item" id="ci-q1"><button class="acc-btn" id="ci-q1-btn" aria-controls="ci-a1-panel" aria-expanded="false">What are your check-in and check-out times?</button><div class="acc-content" id="ci-a1-panel" role="region" aria-labelledby="ci-q1-btn"><div class="acc-inner">Standard check-in is from 12:00 PM, and check-out is by 11:00 AM.</div></div></div>
+        <div class="acc-item" id="ci-q2"><button class="acc-btn" id="ci-q2-btn" aria-controls="ci-a2-panel" aria-expanded="false">Can I request an early check-in?</button><div class="acc-content" id="ci-a2-panel" role="region" aria-labelledby="ci-q2-btn"><div class="acc-inner">Yes, subject to room availability and a nominal charge.</div></div></div>
+        <div class="acc-item" id="ci-q3"><button class="acc-btn" id="ci-q3-btn" aria-controls="ci-a3-panel" aria-expanded="false">Can I request a late check-out?</button><div class="acc-content" id="ci-a3-panel" role="region" aria-labelledby="ci-q3-btn"><div class="acc-inner">Yes, depending on availability. Charges may apply for late check-outs beyond 2:00 PM.</div></div></div>
+        <div class="acc-item" id="ci-q4"><button class="acc-btn" id="ci-q4-btn" aria-controls="ci-a4-panel" aria-expanded="false">Is there a charge for early check-in or late check-out?</button><div class="acc-content" id="ci-a4-panel" role="region" aria-labelledby="ci-q4-btn"><div class="acc-inner">Yes, a half-day or full-day rate may apply depending on the time and duration.</div></div></div>
+        <div class="acc-item" id="ci-q5"><button class="acc-btn" id="ci-q5-btn" aria-controls="ci-a5-panel" aria-expanded="false">What documents do I need at check-in?</button><div class="acc-content" id="ci-a5" role="region" aria-labelledby="ci-q5-btn"><div class="acc-inner">All guests must present a valid government-issued photo ID (passport for international guests).</div></div></div>
+        <div class="acc-item" id="ci-q6"><button class="acc-btn" id="ci-q6-btn" aria-controls="ci-a6-panel" aria-expanded="false">Can I check in without an ID?</button><div class="acc-content" id="ci-a6-panel" role="region" aria-labelledby="ci-q6-btn"><div class="acc-inner">No, valid ID is mandatory for all guests.</div></div></div>
+        <div class="acc-item" id="ci-q7"><button class="acc-btn" id="ci-q7-btn" aria-controls="ci-a7-panel" aria-expanded="false">Can someone else check in on my behalf?</button><div class="acc-content" id="ci-a7-panel" role="region" aria-labelledby="ci-q7-btn"><div class="acc-inner">Yes, but their name must be on the booking, and they must present valid ID.</div></div></div>
+        <div class="acc-item" id="ci-q8"><button class="acc-btn" id="ci-q8-btn" aria-controls="ci-a8-panel" aria-expanded="false">Can I check in after midnight?</button><div class="acc-content" id="ci-a8-panel" role="region" aria-labelledby="ci-q8-btn"><div class="acc-inner">Yes, late-night check-ins are accepted if your booking is confirmed in advance.</div></div></div>
+        <div class="acc-item" id="ci-q9"><button class="acc-btn" id="ci-q9-btn" aria-controls="ci-a9-panel" aria-expanded="false">Is 24-hour check-in available?</button><div class="acc-content" id="ci-a9-panel" role="region" aria-labelledby="ci-q9-btn"><div class="acc-inner">We do not offer rolling 24-hour check-in, but our front desk is open 24×7 to assist guests.</div></div></div>
+        <div class="acc-item" id="ci-q10"><button class="acc-btn" id="ci-q10-btn" aria-controls="ci-a10-panel" aria-expanded="false">Can I store luggage before check-in or after check-out?</button><div class="acc-content" id="ci-a10-panel" role="region" aria-labelledby="ci-q10-btn"><div class="acc-inner">Yes, we provide secure luggage storage for early arrivals and late departures.</div></div></div>
+        <div class="acc-item" id="ci-q11"><button class="acc-btn" id="ci-q11-btn" aria-controls="ci-a11-panel" aria-expanded="false">Is there a secure luggage storage area?</button><div class="acc-content" id="ci-a11-panel" role="region" aria-labelledby="ci-q11-btn"><div class="acc-inner">Yes, your belongings will be safely stored at the front desk until you collect them.</div></div></div>
+      </div>
+    </section>
+
+    <!-- 3) Rooms & Amenities -->
+    <section class="faq-section" aria-labelledby="faq-rooms-title">
+    <h2 id="faq-rooms-title" class="section-title">Rooms &amp; AMenities</h2>
+      <div class="accordion" id="acc-rooms" role="region" aria-label="Rooms & Amenities FAQs">
+        <div class="acc-item" id="ra-q1"><button class="acc-btn" id="ra-q1-btn" aria-controls="ra-a1-panel" aria-expanded="false">What room categories are available?</button><div class="acc-content" id="ra-a1-panel" role="region" aria-labelledby="ra-q1-btn"><div class="acc-inner">We offer <a href="/deluxe-room.html">Deluxe Room</a>, <a href="/super-deluxe-room.html">Super Deluxe Room</a>, and <a href="/premium-room.html">Premium Room</a> options.</div></div></div>
+        <div class="acc-item" id="ra-q2"><button class="acc-btn" id="ra-q2-btn" aria-controls="ra-a2-panel" aria-expanded="false">What is included in the Deluxe Room?</button><div class="acc-content" id="ra-a2-panel" role="region" aria-labelledby="ra-q2-btn"><div class="acc-inner">Compact comfort with a 32" TV, AC, Wi-Fi, attached washroom, and all basic amenities.</div></div></div>
+        <div class="acc-item" id="ra-q3"><button class="acc-btn" id="ra-q3-btn" aria-controls="ra-a3-panel" aria-expanded="false">What is included in the Super Deluxe Room?</button><div class="acc-content" id="ra-a3-panel" role="region" aria-labelledby="ra-q3-btn"><div class="acc-inner">Extra space, a 43" Smart TV with Airtel STB, and upgraded furnishings.</div></div></div>
+        <div class="acc-item" id="ra-q4"><button class="acc-btn" id="ra-q4-btn" aria-controls="ra-a4-panel" aria-expanded="false">What is included in the Premium Room?</button><div class="acc-content" id="ra-a4-panel" role="region" aria-labelledby="ra-q4-btn"><div class="acc-inner">Our most spacious option with a 50" 4K Smart TV, premium finishes, and serene ambience.</div></div></div>
+        <div class="acc-item" id="ra-q5"><button class="acc-btn" id="ra-q5-btn" aria-controls="ra-a5-panel" aria-expanded="false">Do all rooms have air conditioning?</button><div class="acc-content" id="ra-a5-panel" role="region" aria-labelledby="ra-q5-btn"><div class="acc-inner">Yes, every room is air-conditioned.</div></div></div>
+        <div class="acc-item" id="ra-q6"><button class="acc-btn" id="ra-q6-btn" aria-controls="ra-a6-panel" aria-expanded="false">Is Wi-Fi free and how fast is it?</button><div class="acc-content" id="ra-a6-panel" role="region" aria-labelledby="ra-q6-btn"><div class="acc-inner">Yes, free high-speed Wi-Fi (100 Mbps per wing) is available throughout the property.</div></div></div>
+        <div class="acc-item" id="ra-q7"><button class="acc-btn" id="ra-q7-btn" aria-controls="ra-a7-panel" aria-expanded="false">Do rooms have attached washrooms?</button><div class="acc-content" id="ra-a7-panel" role="region" aria-labelledby="ra-q7-btn"><div class="acc-inner">Yes, all rooms feature private attached washrooms.</div></div></div>
+        <div class="acc-item" id="ra-q8"><button class="acc-btn" id="ra-q8-btn" aria-controls="ra-a8-panel" aria-expanded="false">Are toiletries provided?</button><div class="acc-content" id="ra-a8-panel" role="region" aria-labelledby="ra-q8-btn"><div class="acc-inner">Yes, fresh towels, soap, shampoo, and other essentials are included.</div></div></div>
+        <div class="acc-item" id="ra-q9"><button class="acc-btn" id="ra-q9-btn" aria-controls="ra-a9-panel" aria-expanded="false">Is bottled water complimentary?</button><div class="acc-content" id="ra-a9-panel" role="region" aria-labelledby="ra-q9-btn"><div class="acc-inner">Yes, drinking water is provided in all rooms.</div></div></div>
+        <div class="acc-item" id="ra-q10"><button class="acc-btn" id="ra-q10-btn" aria-controls="ra-a10-panel" aria-expanded="false">Do you provide an electric kettle?</button><div class="acc-content" id="ra-a10-panel" role="region" aria-labelledby="ra-q10-btn"><div class="acc-inner">No, but tea, coffee, and basic snacks are available 24×7 via room service.</div></div></div>
+        <div class="acc-item" id="ra-q11"><button class="acc-btn" id="ra-q11-btn" aria-controls="ra-a11-panel" aria-expanded="false">Do you have work desks in rooms?</button><div class="acc-content" id="ra-a11-panel" role="region" aria-labelledby="ra-q11-btn"><div class="acc-inner">No, but all rooms have a coffee table and two chairs.</div></div></div>
+        <div class="acc-item" id="ra-q12"><button class="acc-btn" id="ra-q12-btn" aria-controls="ra-a12-panel" aria-expanded="false">Can I request an extra bed or pillow?</button><div class="acc-content" id="ra-a12-panel" role="region" aria-labelledby="ra-q12-btn"><div class="acc-inner">Yes, available on request, subject to availability.</div></div></div>
+        <div class="acc-item" id="ra-q13"><button class="acc-btn" id="ra-q13-btn" aria-controls="ra-a13-panel" aria-expanded="false">Are ironing facilities available?</button><div class="acc-content" id="ra-a13-panel" role="region" aria-labelledby="ra-q13-btn"><div class="acc-inner">Yes, ironing is offered as a service.</div></div></div>
+        <div class="acc-item" id="ra-q14"><button class="acc-btn" id="ra-q14-btn" aria-controls="ra-a14-panel" aria-expanded="false">How often is housekeeping done?</button><div class="acc-content" id="ra-a14-panel" role="region" aria-labelledby="ra-q14-btn"><div class="acc-inner">Daily housekeeping is included in all stays.</div></div></div>
+        <div class="acc-item" id="ra-q15"><button class="acc-btn" id="ra-q15-btn" aria-controls="ra-a15-panel" aria-expanded="false">Do rooms have a balcony or view?</button><div class="acc-content" id="ra-a15-panel" role="region" aria-labelledby="ra-q15-btn"><div class="acc-inner">Views vary by room; please request in advance.</div></div></div>
+        <div class="acc-item" id="ra-q16"><button class="acc-btn" id="ra-q16-btn" aria-controls="ra-a16-panel" aria-expanded="false">Are smoking rooms available?</button><div class="acc-content" id="ra-a16-panel" role="region" aria-labelledby="ra-q16-btn"><div class="acc-inner">No, all rooms are non-smoking.</div></div></div>
+        <div class="acc-item" id="ra-q17"><button class="acc-btn" id="ra-q17-btn" aria-controls="ra-a17-panel" aria-expanded="false">Do you have wheelchair-accessible rooms?</button><div class="acc-content" id="ra-a17-panel" role="region" aria-labelledby="ra-q17-btn"><div class="acc-inner">Yes, accessible rooms and lift access are available.</div></div></div>
+        <div class="acc-item" id="ra-q18"><button class="acc-btn" id="ra-q18-btn" aria-controls="ra-a18-panel" aria-expanded="false">Can I request a specific floor or room number?</button><div class="acc-content" id="ra-a18-panel" role="region" aria-labelledby="ra-q18-btn"><div class="acc-inner">Yes, subject to availability.</div></div></div>
+        <div class="acc-item" id="ra-q19"><button class="acc-btn" id="ra-q19-btn" aria-controls="ra-a19-panel" aria-expanded="false">Are rooms soundproof?</button><div class="acc-content" id="ra-a19-panel" role="region" aria-labelledby="ra-q19-btn"><div class="acc-inner">Rooms are designed for privacy, though not fully soundproof.</div></div></div>
+      </div>
+    </section>
+
+    <!-- 4) Dining & Kitchen -->
+    <section class="faq-section" aria-labelledby="faq-dining-title">
+    <h2 id="faq-dining-title" class="section-title">Dining &amp; Kitchen</h2>
+      <div class="accordion" id="acc-dining" role="region" aria-label="Dining & Kitchen FAQs">
+        <div class="acc-item" id="dk-q1"><button class="acc-btn" id="dk-q1-btn" aria-controls="dk-a1-panel" aria-expanded="false">What are the kitchen operating hours?</button><div class="acc-content" id="dk-a1-panel" role="region" aria-labelledby="dk-q1-btn"><div class="acc-inner">The kitchen operates from 7:30 AM to 10:30 PM for full meals.</div></div></div>
+        <div class="acc-item" id="dk-q2"><button class="acc-btn" id="dk-q2-btn" aria-controls="dk-a2-panel" aria-expanded="false">Is breakfast included in my booking?</button><div class="acc-content" id="dk-a2-panel" role="region" aria-labelledby="dk-q2-btn"><div class="acc-inner">Complimentary breakfast is included with select packages.</div></div></div>
+        <div class="acc-item" id="dk-q3"><button class="acc-btn" id="dk-q3-btn" aria-controls="dk-a3-panel" aria-expanded="false">What cuisines do you serve?</button><div class="acc-content" id="dk-a3-panel" role="region" aria-labelledby="dk-q3-btn"><div class="acc-inner">We serve Indian and Chinese cuisine.</div></div></div>
+        <div class="acc-item" id="dk-q4"><button class="acc-btn" id="dk-q4-btn" aria-controls="dk-a4-panel" aria-expanded="false">Can I order food to my room?</button><div class="acc-content" id="dk-a4-panel" role="region" aria-labelledby="dk-q4-btn"><div class="acc-inner">Yes, room service is available.</div></div></div>
+        <div class="acc-item" id="dk-q5"><button class="acc-btn" id="dk-q5-btn" aria-controls="dk-a5-panel" aria-expanded="false">Do you have 24-hour room service?</button><div class="acc-content" id="dk-a5-panel" role="region" aria-labelledby="dk-q5-btn"><div class="acc-inner">Yes, for basics like tea, coffee, Maggi, and sandwiches.</div></div></div>
+        <div class="acc-item" id="dk-q6"><button class="acc-btn" id="dk-q6-btn" aria-controls="dk-a6-panel" aria-expanded="false">Do you cater to dietary restrictions?</button><div class="acc-content" id="dk-a6-panel" role="region" aria-labelledby="dk-q6-btn"><div class="acc-inner">Yes, inform us in advance so we can accommodate.</div></div></div>
+        <div class="acc-item" id="dk-q7"><button class="acc-btn" id="dk-q7-btn" aria-controls="dk-a7-panel" aria-expanded="false">Can I request a custom meal?</button><div class="acc-content" id="dk-a7-panel" role="region" aria-labelledby="dk-q7-btn"><div class="acc-inner">Yes, subject to ingredient availability.</div></div></div>
+        <div class="acc-item" id="dk-q8"><button class="acc-btn" id="dk-q8-btn" aria-controls="dk-a8-panel" aria-expanded="false">Do you serve alcohol?</button><div class="acc-content" id="dk-a8-panel" role="region" aria-labelledby="dk-q8-btn"><div class="acc-inner">No, we do not serve alcohol.</div></div></div>
+        <div class="acc-item" id="dk-q9"><button class="acc-btn" id="dk-q9-btn" aria-controls="dk-a9-panel" aria-expanded="false">Can I order food from outside?</button><div class="acc-content" id="dk-a9-panel" role="region" aria-labelledby="dk-q9-btn"><div class="acc-inner">Yes, outside food delivery is allowed.</div></div></div>
+        <div class="acc-item" id="dk-q10"><button class="acc-btn" id="dk-q10-btn" aria-controls="dk-a10-panel" aria-expanded="false">Do you have a dining hall?</button><div class="acc-content" id="dk-a10-panel" role="region" aria-labelledby="dk-q10-btn"><div class="acc-inner">Yes, especially for <a href="/group-bookings.html">Group Bookings</a>.</div></div></div>
+        <div class="acc-item" id="dk-q11"><button class="acc-btn" id="dk-q11-btn" aria-controls="dk-a11-panel" aria-expanded="false">Can you arrange in-room celebrations with cake and drinks?</button><div class="acc-content" id="dk-a11-panel" role="region" aria-labelledby="dk-q11-btn"><div class="acc-inner">Yes, see <a href="/room-decorations.html">Room Decorations</a> for options.</div></div></div>
+      </div>
+    </section>
+
+    <!-- 5) Accessibility -->
+    <section class="faq-section" aria-labelledby="faq-access-title">
+    <h2 id="faq-access-title" class="section-title">Accessibility</h2>
+      <div class="accordion" id="acc-accessibility" role="region" aria-label="Accessibility FAQs">
+        <div class="acc-item" id="acc-q1"><button class="acc-btn" id="acc-q1-btn" aria-controls="acc-a1-panel" aria-expanded="false">Is the hotel wheelchair accessible?</button><div class="acc-content" id="acc-a1-panel" role="region" aria-labelledby="acc-q1-btn"><div class="acc-inner">Yes, our property has been designed to accommodate wheelchair users, with smooth pathways and lift access to all floors.</div></div></div>
+        <div class="acc-item" id="acc-q2"><button class="acc-btn" id="acc-q2-btn" aria-controls="acc-a2-panel" aria-expanded="false">Do you have a lift/elevator to all floors?</button><div class="acc-content" id="acc-a2-panel" role="region" aria-labelledby="acc-q2-btn"><div class="acc-inner">Yes, a modern elevator provides access to every floor, including guest rooms and common areas.</div></div></div>
+        <div class="acc-item" id="acc-q3"><button class="acc-btn" id="acc-q3-btn" aria-controls="acc-a3-panel" aria-expanded="false">Do you offer wheelchair assistance?</button><div class="acc-content" id="acc-a3-panel" role="region" aria-labelledby="acc-q3-btn"><div class="acc-inner">Yes, our team can provide wheelchair assistance on request. Please inform us in advance for smooth arrangements.</div></div></div>
+        <div class="acc-item" id="acc-q4"><button class="acc-btn" id="acc-q4-btn" aria-controls="acc-a4-panel" aria-expanded="false">Are washrooms accessible for guests with disabilities?</button><div class="acc-content" id="acc-a4-panel" role="region" aria-labelledby="acc-q4-btn"><div class="acc-inner">Yes, select rooms feature accessible washrooms with supportive fixtures.</div></div></div>
+        <div class="acc-item" id="acc-q5"><button class="acc-btn" id="acc-q5-btn" aria-controls="acc-a5-panel" aria-expanded="false">Do you have Braille signs or tactile indicators?</button><div class="acc-content" id="acc-a5-panel" role="region" aria-labelledby="acc-q5-btn"><div class="acc-inner">We do not have Braille signage at this time, but our staff is trained to assist visually impaired guests.</div></div></div>
+      </div>
+    </section>
+
+    <!-- 6) Pets -->
+    <section class="faq-section" aria-labelledby="faq-pets-title">
+    <h2 id="faq-pets-title" class="section-title">Pets</h2>
+      <div class="accordion" id="acc-pets" role="region" aria-label="Pet Policy FAQs">
+        <div class="acc-item" id="pets-q1"><button class="acc-btn" id="pets-q1-btn" aria-controls="pets-a1-panel" aria-expanded="false">Are pets allowed?</button><div class="acc-content" id="pets-a1-panel" role="region" aria-labelledby="pets-q1-btn"><div class="acc-inner">Yes, we are a pet-friendly hotel. Details are available on our <a href="/pet-friendly.html">Pet-Friendly</a> page.</div></div></div>
+        <div class="acc-item" id="pets-q2"><button class="acc-btn" id="pets-q2-btn" aria-controls="pets-a2-panel" aria-expanded="false">What’s the pet fee?</button><div class="acc-content" id="pets-a2-panel" role="region" aria-labelledby="pets-q2-btn"><div class="acc-inner">The fee is ₹300 per night per pet.</div></div></div>
+        <div class="acc-item" id="pets-q3"><button class="acc-btn" id="pets-q3-btn" aria-controls="pets-a3-panel" aria-expanded="false">Do you have pet-friendly rooms?</button><div class="acc-content" id="pets-a3-panel" role="region" aria-labelledby="pets-q3-btn"><div class="acc-inner">Yes, certain rooms are allocated for guests traveling with pets.</div></div></div>
+        <div class="acc-item" id="pets-q4"><button class="acc-btn" id="pets-q4-btn" aria-controls="pets-a4-panel" aria-expanded="false">Can I leave my pet alone in the room?</button><div class="acc-content" id="pets-a4-panel" role="region" aria-labelledby="pets-q4-btn"><div class="acc-inner">We do not recommend leaving pets unattended for long periods to ensure their safety and comfort.</div></div></div>
+        <div class="acc-item" id="pets-q5"><button class="acc-btn" id="pets-q5-btn" aria-controls="pets-a5-panel" aria-expanded="false">Do you offer pet beds or bowls?</button><div class="acc-content" id="pets-a5-panel" role="region" aria-labelledby="pets-q5-btn"><div class="acc-inner">Yes, available on request at no extra charge.</div></div></div>
+        <div class="acc-item" id="pets-q6"><button class="acc-btn" id="pets-q6-btn" aria-controls="pets-a6-panel" aria-expanded="false">Are there any pet size or breed restrictions?</button><div class="acc-content" id="pets-a6-panel" role="region" aria-labelledby="pets-q6-btn"><div class="acc-inner">No, we welcome pets of all sizes and breeds.</div></div></div>
+        <div class="acc-item" id="pets-q7"><button class="acc-btn" id="pets-q7-btn" aria-controls="pets-a7-panel" aria-expanded="false">Do you have a designated pet relief area?</button><div class="acc-content" id="pets-a7-panel" role="region" aria-labelledby="pets-q7-btn"><div class="acc-inner">No, but we can guide you to nearby outdoor spaces suitable for pets.</div></div></div>
+      </div>
+    </section>
+
+    <!-- 7) Couple-Friendly Policy -->
+    <section class="faq-section" aria-labelledby="faq-couple-title">
+    <h2 id="faq-couple-title" class="section-title">Couple-Friendly Policy</h2> 
+      <div class="accordion" id="acc-couples" role="region" aria-label="Couple-Friendly FAQs">
+        <div class="acc-item" id="cf-q1"><button class="acc-btn" id="cf-q1-btn" aria-controls="cf-a1-panel" aria-expanded="false">Are unmarried couples allowed?</button><div class="acc-content" id="cf-a1-panel" role="region" aria-labelledby="cf-q1-btn"><div class="acc-inner">Yes, we welcome all adult guests, including unmarried couples.</div></div></div>
+        <div class="acc-item" id="cf-q2"><button class="acc-btn" id="cf-q2-btn" aria-controls="cf-a2-panel" aria-expanded="false">Do you require both guests to show ID?</button><div class="acc-content" id="cf-a2-panel" role="region" aria-labelledby="cf-q2-btn"><div class="acc-inner">Yes, valid government-issued IDs are required for all guests.</div></div></div>
+        <div class="acc-item" id="cf-q3"><button class="acc-btn" id="cf-q3-btn" aria-controls="cf-a3-panel" aria-expanded="false">Will my local ID be accepted?</button><div class="acc-content" id="cf-a3-panel" role="region" aria-labelledby="cf-q3-btn"><div class="acc-inner">Yes, local IDs are accepted for check-in.</div></div></div>
+        <div class="acc-item" id="cf-q4"><button class="acc-btn" id="cf-q4-btn" aria-controls="cf-a4-panel" aria-expanded="false">Is the hotel discreet for couples?</button><div class="acc-content" id="cf-a4-panel" role="region" aria-labelledby="cf-q4-btn"><div class="acc-inner">Yes, we respect the privacy of all guests and maintain a professional approach.</div></div></div>
+        <div class="acc-item" id="cf-q5"><button class="acc-btn" id="cf-q5-btn" aria-controls="cf-a5-panel" aria-expanded="false">Do you provide early check-in for couples?</button><div class="acc-content" id="cf-a5-panel" role="region" aria-labelledby="cf-q5-btn"><div class="acc-inner">Early check-in is subject to availability and may incur a nominal charge.</div></div></div>
+        <div class="acc-item" id="cf-q6"><button class="acc-btn" id="cf-q6-btn" aria-controls="cf-a6-panel" aria-expanded="false">Do you offer special couple packages?</button><div class="acc-content" id="cf-a6-panel" role="region" aria-labelledby="cf-q6-btn"><div class="acc-inner">Yes, including romantic room decorations — see <a href="/room-decorations.html">Room Decorations</a>.</div></div></div>
+        <div class="acc-item" id="cf-q7"><button class="acc-btn" id="cf-q7-btn" aria-controls="cf-a7-panel" aria-expanded="false">Is the room decoration service available for anniversaries or proposals?</button><div class="acc-content" id="cf-a7-panel" role="region" aria-labelledby="cf-q7-btn"><div class="acc-inner">Yes, custom themes can be arranged with prior notice.</div></div></div>
+        <div class="acc-item" id="cf-q8"><button class="acc-btn" id="cf-q8-btn" aria-controls="cf-a8-panel" aria-expanded="false">Are there restrictions for same-sex couples?</button><div class="acc-content" id="cf-a8-panel" role="region" aria-labelledby="cf-q8-btn"><div class="acc-inner">No, we are inclusive and welcome all couples.</div></div></div>
+        <div class="acc-item" id="cf-q9"><button class="acc-btn" id="cf-q9-btn" aria-controls="cf-a9-panel" aria-expanded="false">Do you ensure privacy for couple guests?</button><div class="acc-content" id="cf-a9-panel" role="region" aria-labelledby="cf-q9-btn"><div class="acc-inner">Yes, guest confidentiality is a priority.</div></div></div>
+      </div>
+    </section>
+
+    <!-- 8) Location & Transport -->
+    <section class="faq-section" aria-labelledby="faq-lt-title">
+    <h2 id="faq-lt-title" class="section-title">Location &amp; Transport</h2>
+      <div class="accordion" id="acc-location" role="region" aria-label="Location & Transport FAQs">
+        <div class="acc-item" id="lt-q1"><button class="acc-btn" id="lt-q1-btn" aria-controls="lt-a1-panel" aria-expanded="false">How far is PGI Chandigarh from the hotel?</button><div class="acc-content" id="lt-a1-panel" role="region" aria-labelledby="lt-q1-btn"><div class="acc-inner">Less than 1.5 km — approximately a 5-minute drive. See <a href="/hotel-near-pgi.html">Hotel Near PGI</a>.</div></div></div>
+        <div class="acc-item" id="lt-q2"><button class="acc-btn" id="lt-q2-btn" aria-controls="lt-a2-panel" aria-expanded="false">How far is Sukhna Lake from the hotel?</button><div class="acc-content" id="lt-a2-panel" role="region" aria-labelledby="lt-q2-btn"><div class="acc-inner">Around 6 km, a 15-minute drive.</div></div></div>
+        <div class="acc-item" id="lt-q3"><button class="acc-btn" id="lt-q3-btn" aria-controls="lt-a3-panel" aria-expanded="false">How far is the Rock Garden from the hotel?</button><div class="acc-content" id="lt-a3-panel" role="region" aria-labelledby="lt-q3-btn"><div class="acc-inner">Approximately 7 km, about 15 minutes by car.</div></div></div>
+        <div class="acc-item" id="lt-q4"><button class="acc-btn" id="lt-q4-btn" aria-controls="lt-a4-panel" aria-expanded="false">How far is Sector 17 from the hotel?</button><div class="acc-content" id="lt-a4-panel" role="region" aria-labelledby="lt-q4-btn"><div class="acc-inner">Around 7 km, roughly 15 minutes by car.</div></div></div>
+        <div class="acc-item" id="lt-q5"><button class="acc-btn" id="lt-q5-btn" aria-controls="lt-a5-panel" aria-expanded="false">How far is PEC from the hotel?</button><div class="acc-content" id="lt-a5-panel" role="region" aria-labelledby="lt-q5-btn"><div class="acc-inner">About 5 km, 12 minutes by car.</div></div></div>
+        <div class="acc-item" id="lt-q6"><button class="acc-btn" id="lt-q6-btn" aria-controls="lt-a6-panel" aria-expanded="false">How far is Panjab University from the hotel?</button><div class="acc-content" id="lt-a6-panel" role="region" aria-labelledby="lt-q6-btn"><div class="acc-inner">Around 5 km, about 12 minutes by car.</div></div></div>
+        <div class="acc-item" id="lt-q7"><button class="acc-btn" id="lt-q7-btn" aria-controls="lt-a7-panel" aria-expanded="false">How far is the Punjab & Haryana High Court from the hotel?</button><div class="acc-content" id="lt-a7-panel" role="region" aria-labelledby="lt-q7-btn"><div class="acc-inner">Approximately 6 km, a 15-minute drive.</div></div></div>
+        <div class="acc-item" id="lt-q8"><button class="acc-btn" id="lt-q8-btn" aria-controls="lt-a8-panel" aria-expanded="false">How far is PCA Stadium from the hotel?</button><div class="acc-content" id="lt-a8-panel" role="region" aria-labelledby="lt-q8-btn"><div class="acc-inner">Around 15 km, about 30 minutes by car.</div></div></div>
+        <div class="acc-item" id="lt-q9"><button class="acc-btn" id="lt-q9-btn" aria-controls="lt-a9-panel" aria-expanded="false">How far is Chandigarh International Airport?</button><div class="acc-content" id="lt-a9-panel" role="region" aria-labelledby="lt-q9-btn"><div class="acc-inner">Approximately 11 km, a 25-minute drive.</div></div></div>
+        <div class="acc-item" id="lt-q10"><button class="acc-btn" id="lt-q10-btn" aria-controls="lt-a10-panel" aria-expanded="false">How far is the railway station?</button><div class="acc-content" id="lt-a10-panel" role="region" aria-labelledby="lt-q10-btn"><div class="acc-inner">Around 8 km, roughly 20 minutes by car.</div></div></div>
+        <div class="acc-item" id="lt-q11"><button class="acc-btn" id="lt-q11-btn" aria-controls="lt-a11-panel" aria-expanded="false">How far are the main bus stands?</button><div class="acc-content" id="lt-a11-panel" role="region" aria-labelledby="lt-q11-btn"><div class="acc-inner">Sector 43 Bus Stand is 3.5 km away; ISBT Sector 17 is 6 km away.</div></div></div>
+        <div class="acc-item" id="lt-q12"><button class="acc-btn" id="lt-q12-btn" aria-controls="lt-a12-panel" aria-expanded="false">Do you offer airport pickup and drop?</button><div class="acc-content" id="lt-a12-panel" role="region" aria-labelledby="lt-q12-btn"><div class="acc-inner">Yes, available on request for an additional charge.</div></div></div>
+        <div class="acc-item" id="lt-q13"><button class="acc-btn" id="lt-q13-btn" aria-controls="lt-a13-panel" aria-expanded="false">Can you arrange a taxi or cab?</button><div class="acc-content" id="lt-a13-panel" role="region" aria-labelledby="lt-q13-btn"><div class="acc-inner">Yes, we can arrange Ola, Uber, or private taxis for you.</div></div></div>
+        <div class="acc-item" id="lt-q14"><button class="acc-btn" id="lt-q14-btn" aria-controls="lt-a14-panel" aria-expanded="false">Is parking available?</button><div class="acc-content" id="lt-a14-panel" role="region" aria-labelledby="lt-q14-btn"><div class="acc-inner">Yes, secure basement parking is available for guests.</div></div></div>
+        <div class="acc-item" id="lt-q15"><button class="acc-btn" id="lt-q15-btn" aria-controls="lt-a15-panel" aria-expanded="false">Do you have EV charging?</button><div class="acc-content" id="lt-a15-panel" role="region" aria-labelledby="lt-q15-btn"><div class="acc-inner">Yes, EV charging stations are available in our parking area.</div></div></div>
+        <div class="acc-item" id="lt-q16"><button class="acc-btn" id="lt-q16-btn" aria-controls="lt-a16-panel" aria-expanded="false">Is Ola/Uber easily available?</button><div class="acc-content" id="lt-a16-panel" role="region" aria-labelledby="lt-q16-btn"><div class="acc-inner">Yes, both are readily accessible in our location.</div></div></div>
+      </div>
+    </section>
+
+    <!-- 9) Safety & Security -->
+    <section class="faq-section" aria-labelledby="faq-safety-title">
+    <h2 id="faq-safety-title" class="section-title">Safety &amp; Security</h2>
+      <div class="accordion" id="acc-safety" role="region" aria-label="Safety & Security FAQs">
+        <div class="acc-item" id="ss-q1"><button class="acc-btn" id="ss-q1-btn" aria-controls="ss-a1-panel" aria-expanded="false">Is the hotel safe for solo travelers?</button><div class="acc-content" id="ss-a1-panel" role="region" aria-labelledby="ss-q1-btn"><div class="acc-inner">Yes, our hotel is in a safe area and has robust security measures.</div></div></div>
+        <div class="acc-item" id="ss-q2"><button class="acc-btn" id="ss-q2-btn" aria-controls="ss-a2-panel" aria-expanded="false">Is the hotel safe for women travelers?</button><div class="acc-content" id="ss-a2-panel" role="region" aria-labelledby="ss-q2-btn"><div class="acc-inner">Absolutely. We maintain 24-hour staffed reception and CCTV surveillance.</div></div></div>
+        <div class="acc-item" id="ss-q3"><button class="acc-btn" id="ss-q3-btn" aria-controls="ss-a3-panel" aria-expanded="false">Do you have 24-hour front desk staff?</button><div class="acc-content" id="ss-a3-panel" role="region" aria-labelledby="ss-q3-btn"><div class="acc-inner">Yes, our team is available round-the-clock to assist.</div></div></div>
+        <div class="acc-item" id="ss-q4"><button class="acc-btn" id="ss-q4-btn" aria-controls="ss-a4-panel" aria-expanded="false">Do you have CCTV surveillance?</button><div class="acc-content" id="ss-a4-panel" role="region" aria-labelledby="ss-q4-btn"><div class="acc-inner">Yes, common areas and entrances are monitored for your safety.</div></div></div>
+        <div class="acc-item" id="ss-q5"><button class="acc-btn" id="ss-q5-btn" aria-controls="ss-a5-panel" aria-expanded="false">Is there a safe in the room?</button><div class="acc-content" id="ss-a5-panel" role="region" aria-labelledby="ss-q5-btn"><div class="acc-inner">We do not provide in-room safes, but valuables can be stored securely at the front desk.</div></div></div>
+        <div class="acc-item" id="ss-q6"><button class="acc-btn" id="ss-q6-btn" aria-controls="ss-a6-panel" aria-expanded="false">Are valuables safe in the room?</button><div class="acc-content" id="ss-a6-panel" role="region" aria-labelledby="ss-q6-btn"><div class="acc-inner">We recommend storing high-value items at reception for maximum security.</div></div></div>
+      </div>
+    </section>
+
+    <!-- 10) Special Services -->
+    <section class="faq-section" aria-labelledby="faq-special-title">
+    <h2 id="faq-special-title" class="section-title">Special Services</h2>
+      <div class="accordion" id="acc-special" role="region" aria-label="Special Services FAQs">
+        <div class="acc-item" id="sp-q1"><button class="acc-btn" id="sp-q1-btn" aria-controls="sp-a1-panel" aria-expanded="false">Do you offer room decorations?</button><div class="acc-content" id="sp-a1-panel" role="region" aria-labelledby="sp-q1-btn"><div class="acc-inner">Yes, for birthdays, anniversaries, and special occasions. See <a href="/room-decorations.html">Room Decorations</a>.</div></div></div>
+        <div class="acc-item" id="sp-q2"><button class="acc-btn" id="sp-q2-btn" aria-controls="sp-a2-panel" aria-expanded="false">Can you organize birthday surprises?</button><div class="acc-content" id="sp-a2-panel" role="region" aria-labelledby="sp-q2-btn"><div class="acc-inner">Yes, including balloons, cakes, and themed décor.</div></div></div>
+        <div class="acc-item" id="sp-q3"><button class="acc-btn" id="sp-q3-btn" aria-controls="sp-a3-panel" aria-expanded="false">Do you have meeting spaces?</button><div class="acc-content" id="sp-a3-panel" role="region" aria-labelledby="sp-q3-btn"><div class="acc-inner">We do not currently have formal meeting rooms.</div></div></div>
+        <div class="acc-item" id="sp-q4"><button class="acc-btn" id="sp-q4-btn" aria-controls="sp-a4-panel" aria-expanded="false">Do you have laundry service?</button><div class="acc-content" id="sp-a4-panel" role="region" aria-labelledby="sp-q4-btn"><div class="acc-inner">Yes, laundry and ironing services are available.</div></div></div>
+        <div class="acc-item" id="sp-q5"><button class="acc-btn" id="sp-q5-btn" aria-controls="sp-a5-panel" aria-expanded="false">Do you have printing and scanning?</button><div class="acc-content" id="sp-a5-panel" role="region" aria-labelledby="sp-q5-btn"><div class="acc-inner">Yes, free printing and scanning services are available at the front desk.</div></div></div>
+        <div class="acc-item" id="sp-q6"><button class="acc-btn" id="sp-q6-btn" aria-controls="sp-a6-panel" aria-expanded="false">Can you arrange a doctor on call?</button><div class="acc-content" id="sp-a6-panel" role="region" aria-labelledby="sp-q6-btn"><div class="acc-inner">Yes, we have a doctor on call for emergencies.</div></div></div>
+        <div class="acc-item" id="sp-q7"><button class="acc-btn" id="sp-q7-btn" aria-controls="sp-a7-panel" aria-expanded="false">Do you help with sightseeing plans?</button><div class="acc-content" id="sp-a7-panel" role="region" aria-labelledby="sp-q7-btn"><div class="acc-inner">Yes, our team can recommend and arrange local tours.</div></div></div>
+        <div class="acc-item" id="sp-q8"><button class="acc-btn" id="sp-q8-btn" aria-controls="sp-a8-panel" aria-expanded="false">Do you offer event hosting?</button><div class="acc-content" id="sp-a8-panel" role="region" aria-labelledby="sp-q8-btn"><div class="acc-inner">Small in-room celebrations can be hosted; we do not offer banquet facilities.</div></div></div>
+      </div>
+    </section>
+
+    <!-- 11) Policies -->
+    <section class="faq-section" aria-labelledby="faq-policies-title">
+    <h2 id="faq-policies-title" class="section-title">Policies</h2>
+      <div class="accordion" id="acc-policies" role="region" aria-label="Policies FAQs">
+        <div class="acc-item" id="pol-q1"><button class="acc-btn" id="pol-q1-btn" aria-controls="pol-a1-panel" aria-expanded="false">What’s your smoking policy?</button><div class="acc-content" id="pol-a1-panel" role="region" aria-labelledby="pol-q1-btn"><div class="acc-inner">Smoking is not allowed inside rooms; designated outdoor areas are available.</div></div></div>
+        <div class="acc-item" id="pol-q2"><button class="acc-btn" id="pol-q2-btn" aria-controls="pol-a2-panel" aria-expanded="false">What’s your cancellation policy?</button><div class="acc-content" id="pol-a2-panel" role="region" aria-labelledby="pol-q2-btn"><div class="acc-inner">Varies by booking type; please check at the time of reservation.</div></div></div>
+        <div class="acc-item" id="pol-q3"><button class="acc-btn" id="pol-q3-btn" aria-controls="pol-a3-panel" aria-expanded="false">Do you have a no-noise policy?</button><div class="acc-content" id="pol-a3-panel" role="region" aria-labelledby="pol-q3-btn"><div class="acc-inner">Yes, quiet hours are observed from 10:00 PM to 7:00 AM.</div></div></div>
+        <div class="acc-item" id="pol-q4"><button class="acc-btn" id="pol-q4-btn" aria-controls="pol-a4-panel" aria-expanded="false">What’s your alcohol policy?</button><div class="acc-content" id="pol-a4-panel" role="region" aria-labelledby="pol-q4-btn"><div class="acc-inner">We do not serve alcohol, but guests may consume their own in private rooms.</div></div></div>
+        <div class="acc-item" id="pol-q5"><button class="acc-btn" id="pol-q5-btn" aria-controls="pol-a5-panel" aria-expanded="false">Do you allow outside visitors?</button><div class="acc-content" id="pol-a5-panel" role="region" aria-labelledby="pol-q5-btn"><div class="acc-inner">Yes, but they must register at the front desk and carry valid ID.</div></div></div>
+        <div class="acc-item" id="pol-q6"><button class="acc-btn" id="pol-q6-btn" aria-controls="pol-a6-panel" aria-expanded="false">What’s your photography policy?</button><div class="acc-content" id="pol-a6-panel" role="region" aria-labelledby="pol-q6-btn"><div class="acc-inner">Personal photography is allowed; commercial shoots require prior approval.</div></div></div>
+      </div>
+    </section>
+
+    <!-- 12) Contact & Support -->
+    <section class="faq-section" aria-labelledby="faq-contact-title">
+    <h2 id="faq-contact-title" class="section-title">Contact &amp; Support</h2>
+      <div class="accordion" id="acc-contact" role="region" aria-label="Contact & Support FAQs">
+        <div class="acc-item" id="cs-q1"><button class="acc-btn" id="cs-q1-btn" aria-controls="cs-a1-panel" aria-expanded="false">What’s the best way to contact you?</button><div class="acc-content" id="cs-a1-panel" role="region" aria-labelledby="cs-q1-btn"><div class="acc-inner">Call or WhatsApp us at <a href="tel:+917277522222">+91-72775-22222</a>, or use our <a href="/contact.html">Contact</a> page.</div></div></div>
+        <div class="acc-item" id="cs-q2"><button class="acc-btn" id="cs-q2-btn" aria-controls="cs-a2-panel" aria-expanded="false">Do you have WhatsApp support?</button><div class="acc-content" id="cs-a2-panel" role="region" aria-labelledby="cs-q2-btn"><div class="acc-inner">Yes, for reservations, queries, and quick assistance.</div></div></div>
+        <div class="acc-item" id="cs-q3"><button class="acc-btn" id="cs-q3-btn" aria-controls="cs-a3-panel" aria-expanded="false">Do you respond to emails quickly?</button><div class="acc-content" id="cs-a3-panel" role="region" aria-labelledby="cs-q3-btn"><div class="acc-inner">Yes, we aim to respond within a few hours during working hours.</div></div></div>
+        <div class="acc-item" id="cs-q4"><button class="acc-btn" id="cs-q4-btn" aria-controls="cs-a4-panel" aria-expanded="false">Can I contact you 24×7?</button><div class="acc-content" id="cs-a4-panel" role="region" aria-labelledby="cs-q4-btn"><div class="acc-inner">Yes, our reception team is available at all times.</div></div></div>
+        <div class="acc-item" id="cs-q5"><button class="acc-btn" id="cs-q5-btn" aria-controls="cs-a5-panel" aria-expanded="false">Who do I call for urgent issues?</button><div class="acc-content" id="cs-a5-panel" role="region" aria-labelledby="cs-q5-btn"><div class="acc-inner">Use our single contact number: <a href="tel:+917277522222">+91-72775-22222</a> — available for all needs including food orders, housekeeping, and emergencies.</div></div></div>
+      </div>
+    </section>
+
+     <!-- CONVERSION FOOTER -->
+    <section class="fade-up" aria-label="Final Call to Action">
+      <div class="grid-2" style="align-items:center">
+        <div>
+          <h2 class="section-title">Ready to Book the Right Room?</h2>
+          <p class="muted"> Book direct for best rates and priority upgrades when available.</p>
+          <div class="small">One number for everything: <strong><a href="tel:+917277522222">+91-72775-22222</a></strong> (reservations, housekeeping, food orders, information).</div>
+        </div>
+        <div>
+          <div class="cta-row">
+            <a class="btn btn-primary" href="tel:+917277522222" aria-label="Call Now">Call Now</a>
+            <a class="btn btn-ghost" href="https://wa.me/917277522222" target="_blank" rel="noopener" aria-label="WhatsApp Us">WhatsApp Us</a>
+            <a class="btn btn-ghost" href="/contact.html" aria-label="Book Online">Book Online</a>
+          </div>
+          <p class="small" style="margin-top:10px">Or explore details: <a href="/deluxe-room.html">Deluxe</a> • <a href="/super-deluxe-room.html">Super Deluxe</a> • <a href="/premium-room.html">Premium</a></p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer role="contentinfo">
+    <div class="container footer-grid">
+      <div class="footer-col">
+        <h4>Hotel The Black Gold</h4>
+        <p class="small">Nayagaon, Punjab (Chandigarh region) • Pet-friendly • Wheelchair accessible • Near PGI &amp; Sukhna Lake</p>
+        <p class="small"><strong>Phone:</strong> <a href="tel:+917277522222">+91-72775-22222</a><br><strong>Email:</strong> <a href="mailto:hoteltheblackgold@gmail.com">hoteltheblackgold@gmail.com</a></p>
+      </div>
+      <div class="footer-col">
+        <h4>Explore</h4>
+        <p class="small">
+          <a href="/rooms.html">Rooms &amp; Rates</a><br>
+          <a href="/deluxe-room.html">Deluxe Rooms</a><br>
+          <a href="/super-deluxe-room.html">Super Deluxe Rooms</a><br>
+          <a href="/premium-room.html">Premium Rooms</a>
+        </p>
+      </div>
+      <div class="footer-col">
+        <h4>Guest Info</h4>
+        <p class="small">
+          <a href="/amenities.html">Amenities</a><br>
+          <a href="/location.html">Location</a><br>
+          <a href="/hotel-near-pgi.html">Hotel Near PGI</a><br>
+          <a href="/faq.html">FAQ</a>
+        </p>
+      </div>
+      <div class="footer-col">
+        <h4>Connect</h4>
+        <p class="small">
+          <a href="https://wa.me/917277522222" target="_blank" rel="noopener">WhatsApp</a><br>
+          <a href="/contact.html">Contact</a><br>
+          <a href="tel:+917277522222">Call +91-72775-22222</a>
+        </p>
+      </div>
+    </div>
+    <div class="container copyright">
+      <div>© <span id="year"></span> Hotel The Black Gold. All rights reserved.</div>
+    </div>
+  </footer>
+
+  <!-- Floating Quick Actions (priority: Call > WhatsApp > Book) -->
+  <nav class="fab" aria-label="Quick actions">
+    <a class="call" href="tel:+917277522222" aria-label="Call Hotel The Black Gold">Call</a>
+    <a class="wa" href="https://wa.me/917277522222" target="_blank" rel="noopener" aria-label="WhatsApp Hotel The Black Gold">WhatsApp</a>
+    <a class="book" href="/contact.html" aria-label="Book Now">Book Now</a>
+  </nav>
+
+  <!-- Minimal JS: Accordion + Year (single-open, consistent with rooms.html) -->
+  <script>
+    const groups=[...document.querySelectorAll('.accordion')];
+    groups.forEach(group=>{
+      const items=[...group.querySelectorAll('.acc-item')];
+      items.forEach(item=>{
+        const btn=item.querySelector('.acc-btn');
+        const panel=item.querySelector('.acc-content');
+        btn.addEventListener('click',()=>{
+          const willOpen = btn.getAttribute('aria-expanded')!=='true';
+          // close others in this accordion only
+          items.forEach(other=>{
+            const ob=other.querySelector('.acc-btn'), oc=other.querySelector('.acc-content');
+            ob.setAttribute('aria-expanded','false'); oc.style.maxHeight=0;
+          });
+          // toggle current
+          btn.setAttribute('aria-expanded', String(willOpen));
+          panel.style.maxHeight = willOpen ? (panel.scrollHeight + 'px') : 0;
+        });
+        // keep height correct on resize if open
+        addEventListener('resize',()=>{
+          if(btn.getAttribute('aria-expanded')==='true'){
+            panel.style.maxHeight = panel.scrollHeight + 'px';
+          }
+        });
+      });
+    });
+    // Year
+    document.getElementById('year').textContent=new Date().getFullYear();
+  </script>
+</body>
+</html>

@@ -1,0 +1,594 @@
+<head>
+  <!-- =========================================================
+       Hotel The Black Gold — Nearby Attractions
+       File: nearby-attractions.html
+       =========================================================
+       - Semantic HTML5; WCAG-2.1 AA; ARIA; single <h1>
+       - Inline minified CSS; minimal JS; hero preload; lazy images
+       - Canonical, OG/Twitter, JSON-LD (Hotel, Breadcrumb, TouristAttraction)
+       - Responsive: grid/flex, mobile-first; sticky header; floating quick actions
+       ========================================================= -->
+
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover, interactive-widget=resizes-content">
+
+  <!-- Browser UI colors -->
+  <meta name="theme-color" content="#111111">
+  <meta name="color-scheme" content="dark light">
+
+  <!-- Meta Title (<=60 chars) -->
+  <title>Nearby Attractions in Chandigarh | Hotel The Black Gold</title>
+
+  <!-- Meta Description (<=155 chars) -->
+  <meta name="description" content="Explore Sukhna Lake, Rock Garden, Sector 17 Plaza, Elante Mall & more near Hotel The Black Gold. Distances, why-visit notes, and quick planning tips.">
+
+  <!-- Canonical -->
+  <link rel="canonical" href="https://www.hoteltheblackgold.com/nearby-attractions.html">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Nearby Attractions in Chandigarh | Hotel The Black Gold">
+  <meta property="og:description" content="Top sights near our hotel: Sukhna Lake, Rock Garden, Sector 17 Plaza, Elante Mall & more — with distances and planning tips.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://www.hoteltheblackgold.com/nearby-attractions.html">
+  <meta property="og:site_name" content="Hotel The Black Gold">
+  <meta property="og:image" content="https://www.hoteltheblackgold.com/assets/og/og-nearby-attractions.webp">
+  <meta property="og:image:secure_url" content="https://www.hoteltheblackgold.com/assets/og/og-nearby-attractions.webp">
+  <meta property="og:image:type" content="image/webp">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <!-- JPEG fallback -->
+  <meta property="og:image" content="https://www.hoteltheblackgold.com/assets/og/og-nearby-attractions.jpg">
+  <meta property="og:locale" content="en_IN">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Nearby Attractions in Chandigarh | Hotel The Black Gold">
+  <meta name="twitter:description" content="See the best of Chandigarh from our central base — quick distances, ideas & routes.">
+  <meta name="twitter:image" content="https://www.hoteltheblackgold.com/assets/og/og-nearby-attractions.webp">
+  <meta name="twitter:site" content="@HotelBlackGold">
+
+  <!-- Favicons -->
+  <link rel="icon" href="/assets/icons/favicon.ico">
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/icons/favicon-32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/icons/favicon-16.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/icons/apple-touch-icon.png">
+  <link rel="manifest" href="/assets/icons/site.webmanifest">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Montserrat:wght@600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Preload hero image -->
+  <link rel="preload" as="image"
+        href="/assets/images/nearby-attractions-hero-the-black-gold.webp"
+        imagesrcset="/assets/images/nearby-attractions-hero-the-black-gold.webp 1920w"
+        imagesizes="100vw">
+
+  <!-- Styles (minified) -->
+  <style>
+    :root{--bg:#111111;--text:#F5F5F5;--muted:#EDEDED;--gold:#D4AF37;--card:#151515;--line:#2A2A2A;--shadow:0 8px 24px rgba(0,0,0,.35),0 2px 6px rgba(0,0,0,.25)}
+    *{box-sizing:border-box}html,body{margin:0;padding:0;background:var(--bg);color:var(--text);font-family:Lato,system-ui,-apple-system,Segoe UI,Roboto,"Helvetica Neue",Arial,sans-serif;line-height:1.6}
+    img{max-width:100%;height:auto;border:0}a{color:var(--muted);text-decoration:none}a:hover,a:focus{color:var(--gold)}
+    .container{width:min(1180px,92vw);margin-inline:auto}
+    .skip-link{position:absolute;left:-999px;top:auto;width:1px;height:1px;overflow:hidden}
+    .skip-link:focus{left:1rem;top:1rem;width:auto;height:auto;background:#000;padding:.75rem 1rem;border:2px solid var(--gold);z-index:10000}
+
+    /* Header */
+    header{position:sticky;top:0;z-index:999;background:rgba(17,17,17,.78);backdrop-filter:saturate(120%) blur(8px);border-bottom:1px solid rgba(255,255,255,.05)}
+    .nav{display:flex;align-items:center;justify-content:space-between;padding:.85rem 0}
+    .brand{display:flex;align-items:center;gap:.75rem}.logo{width:36px;height:36px;border-radius:10px;background:linear-gradient(135deg,var(--gold),#9b7c1f);box-shadow:var(--shadow)}
+    .brand-name{font-family:Montserrat,sans-serif;font-weight:800;letter-spacing:.4px}
+    nav ul{list-style:none;margin:0;padding:0;display:flex;gap:1.25rem;align-items:center}
+    .book-now{background:var(--gold);color:#111;padding:.6rem 1rem;border-radius:999px;font-weight:700;box-shadow:var(--shadow);border:1px solid rgba(0,0,0,.35)}
+
+    /* Hero */
+    .hero{position:relative;isolation:isolate}
+    .hero-media{position:absolute;inset:0;z-index:-1;overflow:hidden}
+    .hero-media img{width:100%;height:100%;object-fit:cover;filter:grayscale(.06) contrast(1.05) brightness(.86)}
+    .hero-overlay{position:absolute;inset:0;background:radial-gradient(1200px 600px at 60% 18%,rgba(212,175,55,.16),transparent),linear-gradient(180deg,rgba(17,17,17,.28),rgba(17,17,17,.88))}
+    .hero-inner{padding:clamp(88px,12vw,148px) 0 56px}
+    h1{font-family:Montserrat,sans-serif;font-weight:800;line-height:1.1;font-size:clamp(28px,5.6vw,46px);margin:0 0 .5rem}
+    .subhead{color:var(--muted);font-size:clamp(15px,2.2vw,18px);max-width:880px}
+    .cta-row{display:flex;gap:10px;flex-wrap:wrap;margin-top:14px}
+    .btn{display:inline-flex;align-items:center;justify-content:center;gap:.5rem;border:none;border-radius:12px;cursor:pointer;padding:.85rem 1.05rem}
+    .btn-primary{background:var(--gold);color:#111;font-weight:800}
+    .btn-ghost{background:#1a1a1a;border:1px solid #2b2b2b;color:#f1f1f1}
+
+    /* Sections */
+    section{padding:64px 0}
+    .section-title{font-family:Montserrat,sans-serif;font-weight:800;font-size:clamp(22px,3.6vw,32px);margin:0 0 16px}
+    .muted{color:#d2d2d2}.small{font-size:.95rem;color:#cfcfcf}
+
+    /* Chips */
+    .chip{display:inline-flex;align-items:center;gap:.4rem;background:#141414;color:#f3f3f3;border:1px solid #2a2a2a;border-radius:999px;padding:.25rem .6rem}
+    .chip .dot{width:8px;height:8px;border-radius:999px;background:var(--gold)}
+
+    /* Grids / cards */
+    .grid-2{display:grid;grid-template-columns:1fr;gap:18px}
+    .grid-3{display:grid;grid-template-columns:1fr;gap:18px}
+    @media (min-width:720px){.grid-2{grid-template-columns:repeat(2,1fr)}.grid-3{grid-template-columns:repeat(3,1fr)}}
+    .cards{display:grid;grid-template-columns:1fr;gap:18px}
+    @media(min-width:720px){.cards{grid-template-columns:repeat(2,1fr)}}
+    @media(min-width:1180px){.cards{grid-template-columns:repeat(3,1fr)}}
+    .card{background:var(--card);border:1px solid var(--line);border-radius:18px;overflow:hidden;box-shadow:var(--shadow)}
+    .card img{display:block;aspect-ratio:16/9;object-fit:cover}
+    .card-body{padding:16px}
+    .card h3,.card h2{font-family:Montserrat,sans-serif;margin:.2rem 0 .5rem}
+    .more{color:var(--gold);font-weight:700}
+
+    /* Footer */
+    footer{border-top:1px solid rgba(255,255,255,.06);padding-top:40px;padding-bottom:80px}
+    .footer-grid{display:grid;grid-template-columns:1fr;gap:22px}
+    .footer-col h4{font-family:Montserrat,sans-serif;margin:.2rem 0 .6rem}
+    .copyright{border-top:1px solid rgba(255,255,255,.06);margin-top:26px;padding-top:18px;color:#c9c9c9;font-size:.9rem}
+    @media (min-width:700px){.footer-grid{grid-template-columns:2fr 1fr 1fr 1fr}}
+
+    /* FAB */
+    .fab{position:fixed;right:16px;bottom:16px;display:grid;gap:10px;z-index:1000}
+    .fab a{display:flex;align-items:center;gap:.6rem;padding:.7rem 1rem;border-radius:999px;box-shadow:var(--shadow);border:1px solid rgba(0,0,0,.4);backdrop-filter:saturate(120%) blur(6px)}
+    .fab .call{background:var(--gold);color:#111;font-weight:800}
+    .fab .wa{background:#128C7E;color:#fff}
+    .fab .book{background:#1f1f1f;color:#f1f1f1;border-color:#343434}
+
+    :where(a,button){outline-color:var(--gold);outline-offset:2px}
+  </style>
+
+  <!-- JSON-LD: Hotel -->
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"Hotel",
+    "name":"Hotel The Black Gold",
+    "url":"https://www.hoteltheblackgold.com/",
+    "image":"https://www.hoteltheblackgold.com/assets/og/og-home.webp",
+    "description":"Best budget & premium hotel in Chandigarh near PGI, PEC & Panjab University — modern rooms with practical amenities and caring service.",
+    "telephone":"+917277522222",
+    "address":{"@type":"PostalAddress","streetAddress":"Hotel The Black Gold, near Century Public School, Nayagaon, Punjab","addressLocality":"Nayagaon","addressRegion":"Punjab","postalCode":"160103","addressCountry":"IN"},
+    "geo":{"@type":"GeoCoordinates","latitude":30.77498,"longitude":76.79716},
+    "areaServed":"Chandigarh",
+    "currenciesAccepted":"INR",
+    "paymentAccepted":"Cash, Card, UPI",
+    "priceRange":"₹₹",
+    "brand":{"@type":"Brand","name":"Hotel The Black Gold","logo":"https://www.hoteltheblackgold.com/assets/brand/logo.svg"},
+    "hasMap":"https://maps.app.goo.gl/8PPMnzc98C3cesBN9",
+    "sameAs":["https://www.facebook.com/HotelTheBlackGoldChandigarh","https://x.com/HotelBlackGold","https://maps.app.goo.gl/yUs4sxDEXqwgCvyC6"],
+    "knowsLanguage":["en","hi","pa"]
+  }
+  </script>
+
+  <!-- JSON-LD: Breadcrumbs -->
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"BreadcrumbList",
+    "itemListElement":[
+      {"@type":"ListItem","position":1,"name":"Home","item":"https://www.hoteltheblackgold.com/"},
+      {"@type":"ListItem","position":2,"name":"Nearby Attractions","item":"https://www.hoteltheblackgold.com/nearby-attractions.html"}
+    ]
+  }
+  </script>
+
+  <!-- JSON-LD: TouristAttraction (anchors on this page) -->
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@graph":[
+      {"@type":"TouristAttraction","name":"Sukhna Lake","url":"https://www.hoteltheblackgold.com/nearby-attractions.html#sukhna-lake","description":"A serene reservoir at the Shivalik foothills for boating, sunrise walks, and birdwatching.","isAccessibleForFree":true},
+      {"@type":"TouristAttraction","name":"Rock Garden","url":"https://www.hoteltheblackgold.com/nearby-attractions.html#rock-garden","description":"Nek Chand’s iconic maze of recycled-sculpture courts, passages and waterfalls.","isAccessibleForFree":false},
+      {"@type":"TouristAttraction","name":"Rose Garden","url":"https://www.hoteltheblackgold.com/nearby-attractions.html#rose-garden","description":"Asia’s largest rose garden with seasonal blooms and lawns for leisurely strolls.","isAccessibleForFree":true},
+      {"@type":"TouristAttraction","name":"Sector 17 Plaza","url":"https://www.hoteltheblackgold.com/nearby-attractions.html#sector-17-plaza","description":"Open-air shopping plaza with boutiques, eateries, and evening performances.","isAccessibleForFree":true},
+      {"@type":"TouristAttraction","name":"Japanese Garden","url":"https://www.hoteltheblackgold.com/nearby-attractions.html#japanese-garden","description":"Landscaped park with koi ponds, pagodas, and bridges — a calm retreat.","isAccessibleForFree":true},
+      {"@type":"TouristAttraction","name":"Government Museum and Art Gallery","url":"https://www.hoteltheblackgold.com/nearby-attractions.html#govt-museum","description":"Collections of Gandhara sculpture, Pahari miniatures, and decorative arts.","isAccessibleForFree":false},
+      {"@type":"TouristAttraction","name":"Chandigarh Capitol Complex","url":"https://www.hoteltheblackgold.com/nearby-attractions.html#capitol-complex","description":"UNESCO-listed ensemble by Le Corbusier: High Court, Secretariat, and Assembly.","isAccessibleForFree":true},
+      {"@type":"TouristAttraction","name":"Zakir Hussain Rose Garden","url":"https://www.hoteltheblackgold.com/nearby-attractions.html#zakir-rose-garden","description":"Fragrant rose beds and seasonal flora; venue of the Rose Festival.","isAccessibleForFree":true},
+      {"@type":"TouristAttraction","name":"International Dolls Museum","url":"https://www.hoteltheblackgold.com/nearby-attractions.html#dolls-museum","description":"Dolls from around the world with intricate costumes — family favorite.","isAccessibleForFree":false},
+      {"@type":"TouristAttraction","name":"Garden of Fragrance","url":"https://www.hoteltheblackgold.com/nearby-attractions.html#garden-of-fragrance","description":"Aromatic shrubs and flowering trees; ideal for quiet evening walks.","isAccessibleForFree":true},
+      {"@type":"TouristAttraction","name":"Terraced Garden","url":"https://www.hoteltheblackgold.com/nearby-attractions.html#terraced-garden","description":"Layered lawns, blooms, and musical fountain shows on select evenings.","isAccessibleForFree":true},
+      {"@type":"TouristAttraction","name":"Leisure Valley","url":"https://www.hoteltheblackgold.com/nearby-attractions.html#leisure-valley","description":"A green spine of interconnected parks for jogging, cycling, and relaxation.","isAccessibleForFree":true},
+      {"@type":"TouristAttraction","name":"Cactus Garden, Panchkula","url":"https://www.hoteltheblackgold.com/nearby-attractions.html#cactus-garden","description":"Extensive collection of cacti and succulents across themed sections.","isAccessibleForFree":false},
+      {"@type":"TouristAttraction","name":"Pinjore Gardens","url":"https://www.hoteltheblackgold.com/nearby-attractions.html#pinjore-gardens","description":"Historic Mughal terraced gardens with fountains and pavilions.","isAccessibleForFree":false},
+      {"@type":"TouristAttraction","name":"Chhatbir Zoo","url":"https://www.hoteltheblackgold.com/nearby-attractions.html#chhatbir-zoo","description":"Expansive zoological park with big cats, aviaries, and nature trails.","isAccessibleForFree":false},
+      {"@type":"TouristAttraction","name":"Gurudwara Nada Sahib","url":"https://www.hoteltheblackgold.com/nearby-attractions.html#nada-sahib","description":"Revered Sikh shrine by the Ghaggar, known for serenity and views.","isAccessibleForFree":true},
+      {"@type":"TouristAttraction","name":"Mohali Cricket Stadium (PCA)","url":"https://www.hoteltheblackgold.com/nearby-attractions.html#pca-stadium","description":"Premier venue for international cricket and league matches.","isAccessibleForFree":false},
+      {"@type":"TouristAttraction","name":"Elante Mall","url":"https://www.hoteltheblackgold.com/nearby-attractions.html#elante-mall","description":"Large mall with global brands, dining, and multiplex entertainment.","isAccessibleForFree":true},
+      {"@type":"TouristAttraction","name":"Fun City, Panchkula","url":"https://www.hoteltheblackgold.com/nearby-attractions.html#fun-city","description":"Amusement and water park offering rides and slides for families.","isAccessibleForFree":false},
+      {"@type":"TouristAttraction","name":"Timber Trail, Parwanoo","url":"https://www.hoteltheblackgold.com/nearby-attractions.html#timber-trail","description":"Scenic cable-car ride over the Shivaliks with hilltop views and dining.","isAccessibleForFree":false}
+    ]
+  }
+  </script>
+
+  <!-- Analytics hook (insert GA4 when ready) -->
+  <!-- <script defer src="/assets/js/ga4.js"></script> -->
+</head>
+
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <!-- HEADER -->
+  <header role="banner" aria-label="Primary">
+    <div class="container nav" id="nav">
+      <!-- Brand -->
+      <a class="brand" href="/" aria-label="Hotel The Black Gold — Home">
+        <span class="logo" aria-hidden="true"></span>
+        <span class="brand-name">Hotel The Black Gold</span>
+      </a>
+
+      <!-- Nav -->
+      <nav aria-label="Main">
+        <ul>
+          <li><a href="/">Home</a></li>
+          <li><a href="/rooms.html">Rooms &amp; Rates</a></li>
+          <li><a href="/amenities.html">Amenities</a></li>
+          <li><a href="/location.html">Location</a></li>
+          <li><a href="/nearby-attractions.html" aria-current="page">Nearby Attractions</a></li>
+          <li><a href="/faq.html">FAQ</a></li>
+          <li><a href="/contact.html">Contact</a></li>
+        </ul>
+      </nav>
+
+      <!-- CTA -->
+      <a class="book-now" href="/contact.html">Book Now</a>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero" aria-label="Nearby Attractions Hero">
+    <div class="hero-media" aria-hidden="true">
+      <img src="/assets/images/nearby-attractions-hero-the-black-gold.webp"
+           alt="Chandigarh attractions collage: Sukhna Lake, Rock Garden, Sector 17"
+           width="1920" height="1080" decoding="async" fetchpriority="high">
+      <div class="hero-overlay"></div>
+    </div>
+    <div class="container hero-inner fade-up">
+      <nav class="breadcrumbs" aria-label="Breadcrumb">
+        <a href="/">Home</a> › <span aria-current="page">Nearby Attractions</span>
+      </nav>
+      <h1>Nearby Attractions in Chandigarh – From Our Doorstep</h1>
+      <p class="subhead">See Chandigarh’s favorites with easy distances and quick tips — perfect for families, couples, and business travelers with a free afternoon.</p>
+      <div class="cta-row">
+        <a class="btn btn-primary" href="tel:+917277522222" aria-label="Call Hotel The Black Gold">Call</a>
+        <a class="btn btn-ghost" href="https://wa.me/917277522222" target="_blank" rel="noopener" aria-label="WhatsApp Hotel The Black Gold">WhatsApp</a>
+        <a class="btn btn-ghost" href="/rooms.html" aria-label="View Rooms & Rates">View Rooms</a>
+      </div>
+    </div>
+  </section>
+
+  <main id="main" class="container" role="main">
+    <!-- ATTRACTIONS GRID -->
+    <section class="fade-up" aria-labelledby="attractions">
+      <h2 id="attractions" class="section-title">Top Places to Visit</h2>
+      <div class="cards">
+        <!-- 1 -->
+        <article class="card" id="sukhna-lake">
+          <img loading="lazy" decoding="async" width="800" height="450"
+               src="/assets/images/attractions/sukhna-lake.webp"
+               alt="Sunrise at Sukhna Lake, Chandigarh">
+          <div class="card-body">
+            <h3>Sukhna Lake <span class="chip"><span class="dot"></span>6 km</span></h3>
+            <p class="small">A calm, man-made lake at the Shivalik foothills — boating, sunrise walks, and birdwatching.</p>
+            <p class="small"><strong>Why visit:</strong> Golden sunrises, paddle boats, scenic promenades.</p>
+            <a class="more" href="/location.html">See on Map →</a>
+          </div>
+        </article>
+        <!-- 2 -->
+        <article class="card" id="rock-garden">
+          <img loading="lazy" decoding="async" width="800" height="450"
+               src="/assets/images/attractions/rock-garden.webp"
+               alt="Rock Garden recycled art installations">
+          <div class="card-body">
+            <h3>Rock Garden <span class="chip"><span class="dot"></span>7 km</span></h3>
+            <p class="small">Nek Chand’s maze of recycled-sculpture courts, waterfalls, and whimsical passages.</p>
+            <p class="small"><strong>Why visit:</strong> Chandigarh’s creativity — unforgettable for kids & adults.</p>
+            <a class="more" href="/location.html">See on Map →</a>
+          </div>
+        </article>
+        <!-- 3 -->
+        <article class="card" id="rose-garden">
+          <img loading="lazy" decoding="async" width="800" height="450"
+               src="/assets/images/attractions/rose-garden.webp"
+               alt="Blooming roses at Zakir Hussain Rose Garden">
+          <div class="card-body">
+            <h3>Rose Garden <span class="chip"><span class="dot"></span>8 km</span></h3>
+            <p class="small">Asia’s largest rose garden with seasonal blooms and lawns for leisurely strolls.</p>
+            <p class="small"><strong>Why visit:</strong> Fragrance, color, classic Chandigarh walks.</p>
+            <a class="more" href="/location.html">See on Map →</a>
+          </div>
+        </article>
+        <!-- 4 -->
+        <article class="card" id="sector-17-plaza">
+          <img loading="lazy" decoding="async" width="800" height="450"
+               src="/assets/images/attractions/sector-17.webp"
+               alt="Open-air shopping at Sector 17 Plaza">
+          <div class="card-body">
+            <h3>Sector 17 Plaza <span class="chip"><span class="dot"></span>7 km</span></h3>
+            <p class="small">Open-air shopping & dining hub with boutiques, performances, and city buzz.</p>
+            <p class="small"><strong>Why visit:</strong> Retail therapy, local snacks, lively evenings.</p>
+            <a class="more" href="/location.html">See on Map →</a>
+          </div>
+        </article>
+        <!-- 5 -->
+        <article class="card" id="japanese-garden">
+          <img loading="lazy" decoding="async" width="800" height="450"
+               src="/assets/images/attractions/japanese-garden.webp"
+               alt="Pagoda and pond at Japanese Garden Chandigarh">
+          <div class="card-body">
+            <h3>Japanese Garden <span class="chip"><span class="dot"></span>5 km</span></h3>
+            <p class="small">Pagodas, koi ponds, and bridges — tranquil, photo-friendly landscaping.</p>
+            <p class="small"><strong>Why visit:</strong> Calm spaces and family-friendly paths.</p>
+            <a class="more" href="/location.html">See on Map →</a>
+          </div>
+        </article>
+        <!-- 6 -->
+        <article class="card" id="govt-museum">
+          <img loading="lazy" decoding="async" width="800" height="450"
+               src="/assets/images/attractions/govt-museum.webp"
+               alt="Exhibits at Government Museum and Art Gallery">
+          <div class="card-body">
+            <h3>Government Museum &amp; Art Gallery <span class="chip"><span class="dot"></span>6 km</span></h3>
+            <p class="small">Gandhara sculpture, Pahari miniatures, decorative arts — quiet galleries.</p>
+            <p class="small"><strong>Why visit:</strong> Cultural depth & regional art history.</p>
+            <a class="more" href="/location.html">See on Map →</a>
+          </div>
+        </article>
+        <!-- 7 -->
+        <article class="card" id="capitol-complex">
+          <img loading="lazy" decoding="async" width="800" height="450"
+               src="/assets/images/attractions/capitol-complex.webp"
+               alt="Chandigarh Capitol Complex buildings">
+          <div class="card-body">
+            <h3>Chandigarh Capitol Complex <span class="chip"><span class="dot"></span>6 km</span></h3>
+            <p class="small">UNESCO-listed ensemble by Le Corbusier: High Court, Secretariat, Assembly.</p>
+            <p class="small"><strong>Why visit:</strong> Modernist architecture at urban scale.</p>
+            <a class="more" href="/location.html">See on Map →</a>
+          </div>
+        </article>
+        <!-- 8 -->
+        <article class="card" id="zakir-rose-garden">
+          <img loading="lazy" decoding="async" width="800" height="450"
+               src="/assets/images/attractions/zakir-rose-garden.webp"
+               alt="Zakir Hussain Rose Garden blooms">
+          <div class="card-body">
+            <h3>Zakir Hussain Rose Garden <span class="chip"><span class="dot"></span>8 km</span></h3>
+            <p class="small">Fragrant seasonal displays; venue of the Rose Festival.</p>
+            <p class="small"><strong>Why visit:</strong> Florals, fragrance, benches & lawns.</p>
+            <a class="more" href="/location.html">See on Map →</a>
+          </div>
+        </article>
+        <!-- 9 -->
+        <article class="card" id="dolls-museum">
+          <img loading="lazy" decoding="async" width="800" height="450"
+               src="/assets/images/attractions/dolls-museum.webp"
+               alt="International Dolls Museum displays">
+          <div class="card-body">
+            <h3>International Dolls Museum <span class="chip"><span class="dot"></span>5 km</span></h3>
+            <p class="small">Global dolls with intricate costumes — compact & engaging for kids.</p>
+            <p class="small"><strong>Why visit:</strong> Family-friendly, educational, photogenic.</p>
+            <a class="more" href="/location.html">See on Map →</a>
+          </div>
+        </article>
+        <!-- 10 -->
+        <article class="card" id="garden-of-fragrance">
+          <img loading="lazy" decoding="async" width="800" height="450"
+               src="/assets/images/attractions/garden-of-fragrance.webp"
+               alt="Fragrant blossoms at Garden of Fragrance">
+          <div class="card-body">
+            <h3>Garden of Fragrance <span class="chip"><span class="dot"></span>9 km</span></h3>
+            <p class="small">Aromatic shrubs, flower beds, meandering paths for mindful walks.</p>
+            <p class="small"><strong>Why visit:</strong> Gentle reset for the senses.</p>
+            <a class="more" href="/location.html">See on Map →</a>
+          </div>
+        </article>
+        <!-- 11 -->
+        <article class="card" id="terraced-garden">
+          <img loading="lazy" decoding="async" width="800" height="450"
+               src="/assets/images/attractions/terraced-garden.webp"
+               alt="Terraced Garden lawns and fountain show">
+          <div class="card-body">
+            <h3>Terraced Garden <span class="chip"><span class="dot"></span>9 km</span></h3>
+            <p class="small">Layered lawns & seasonal blooms; musical fountains on select evenings.</p>
+            <p class="small"><strong>Why visit:</strong> Easy family time & classic charm.</p>
+            <a class="more" href="/location.html">See on Map →</a>
+          </div>
+        </article>
+        <!-- 12 -->
+        <article class="card" id="leisure-valley">
+          <img loading="lazy" decoding="async" width="800" height="450"
+               src="/assets/images/attractions/leisure-valley.webp"
+               alt="Green tracks at Leisure Valley">
+          <div class="card-body">
+            <h3>Leisure Valley <span class="chip"><span class="dot"></span>6 km</span></h3>
+            <p class="small">City’s green spine — jogging lanes, cycling tracks, open lawns.</p>
+            <p class="small"><strong>Why visit:</strong> Fresh air and easy exercise.</p>
+            <a class="more" href="/location.html">See on Map →</a>
+          </div>
+        </article>
+        <!-- 13 -->
+        <article class="card" id="cactus-garden">
+          <img loading="lazy" decoding="async" width="800" height="450"
+               src="/assets/images/attractions/cactus-garden.webp"
+               alt="Cactus Garden Panchkula collection">
+          <div class="card-body">
+            <h3>Cactus Garden, Panchkula <span class="chip"><span class="dot"></span>12 km</span></h3>
+            <p class="small">One of Asia’s largest succulent collections in themed beds.</p>
+            <p class="small"><strong>Why visit:</strong> Unique flora & striking textures.</p>
+            <a class="more" href="/location.html">See on Map →</a>
+          </div>
+        </article>
+        <!-- 14 -->
+        <article class="card" id="pinjore-gardens">
+          <img loading="lazy" decoding="async" width="800" height="450"
+               src="/assets/images/attractions/pinjore-gardens.webp"
+               alt="Historic Pinjore Mughal Gardens">
+          <div class="card-body">
+            <h3>Pinjore Gardens <span class="chip"><span class="dot"></span>22 km</span></h3>
+            <p class="small">Mughal terraces with fountains, pavilions, and heritage charm.</p>
+            <p class="small"><strong>Why visit:</strong> Architecture, lawns, leisurely photo walks.</p>
+            <a class="more" href="/location.html">See on Map →</a>
+          </div>
+        </article>
+        <!-- 15 -->
+        <article class="card" id="chhatbir-zoo">
+          <img loading="lazy" decoding="async" width="800" height="450"
+               src="/assets/images/attractions/chhatbir-zoo.webp"
+               alt="Chhatbir Zoo wildlife enclosures">
+          <div class="card-body">
+            <h3>Chhatbir Zoo <span class="chip"><span class="dot"></span>20 km</span></h3>
+            <p class="small">Big cats, aviaries, and nature trails — a full outdoor afternoon.</p>
+            <p class="small"><strong>Why visit:</strong> Wildlife variety & easy navigation.</p>
+            <a class="more" href="/location.html">See on Map →</a>
+          </div>
+        </article>
+        <!-- 16 -->
+        <article class="card" id="nada-sahib">
+          <img loading="lazy" decoding="async" width="800" height="450"
+               src="/assets/images/attractions/nada-sahib.webp"
+               alt="Gurudwara Nada Sahib riverfront view">
+          <div class="card-body">
+            <h3>Gurudwara Nada Sahib <span class="chip"><span class="dot"></span>15 km</span></h3>
+            <p class="small">Serene Sikh shrine overlooking the Ghaggar with panoramic views.</p>
+            <p class="small"><strong>Why visit:</strong> Calm, seva, gentle cultural intro.</p>
+            <a class="more" href="/location.html">See on Map →</a>
+          </div>
+        </article>
+        <!-- 17 -->
+        <article class="card" id="pca-stadium">
+          <img loading="lazy" decoding="async" width="800" height="450"
+               src="/assets/images/attractions/pca-stadium.webp"
+               alt="Mohali PCA Cricket Stadium under lights">
+          <div class="card-body">
+            <h3>Mohali Cricket Stadium (PCA) <span class="chip"><span class="dot"></span>11 km</span></h3>
+            <p class="small">Premier venue for internationals & league matches. Match days are electric.</p>
+            <p class="small"><strong>Why visit:</strong> World-class cricket & spirited crowds. <a href="/hotel-near-pca-stadium.html">Match stay tips</a>.</p>
+            <a class="more" href="/hotel-near-pca-stadium.html">Match-Stay Guide →</a>
+          </div>
+        </article>
+        <!-- 18 -->
+        <article class="card" id="elante-mall">
+          <img loading="lazy" decoding="async" width="800" height="450"
+               src="/assets/images/attractions/elante-mall.webp"
+               alt="Elante Mall atrium and stores">
+          <div class="card-body">
+            <h3>Elante Mall <span class="chip"><span class="dot"></span>7 km</span></h3>
+            <p class="small">Global brands, dining, and multiplex — airy, easy browsing.</p>
+            <p class="small"><strong>Why visit:</strong> One-stop shopping & entertainment.</p>
+            <a class="more" href="/location.html">See on Map →</a>
+          </div>
+        </article>
+        <!-- 19 -->
+        <article class="card" id="fun-city">
+          <img loading="lazy" decoding="async" width="800" height="450"
+               src="/assets/images/attractions/fun-city.webp"
+               alt="Fun City water slides and rides">
+          <div class="card-body">
+            <h3>Fun City, Panchkula <span class="chip"><span class="dot"></span>14 km</span></h3>
+            <p class="small">Amusement + water park with slides, wave pools, and family rides.</p>
+            <p class="small"><strong>Why visit:</strong> Day-long fun with easy food options.</p>
+            <a class="more" href="/location.html">See on Map →</a>
+          </div>
+        </article>
+        <!-- 20 -->
+        <article class="card" id="timber-trail">
+          <img loading="lazy" decoding="async" width="800" height="450"
+               src="/assets/images/attractions/timber-trail.webp"
+               alt="Timber Trail cable car over Shivalik hills">
+          <div class="card-body">
+            <h3>Timber Trail, Parwanoo <span class="chip"><span class="dot"></span>35 km</span></h3>
+            <p class="small">Cable-car over the Shivaliks to a hilltop with sweeping valley views.</p>
+            <p class="small"><strong>Why visit:</strong> Dramatic vistas, fresh air, memorable photos.</p>
+            <a class="more" href="/location.html">See on Map →</a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- TRAVEL & TRANSPORT -->
+    <section class="fade-up" aria-labelledby="travel">
+      <h2 id="travel" class="section-title">Travel &amp; Transport</h2>
+      <div class="grid-2">
+        <div>
+          <p class="muted">Cabs, autos, and ride-hailing apps (Ola/Uber) are widely available. Our front desk can help with bookings and late returns after events.</p>
+          <p class="small">
+            <span class="chip"><span class="dot"></span>Airport ~11 km</span>
+            <span class="chip"><span class="dot"></span>Railway Station ~8 km</span>
+            <span class="chip"><span class="dot"></span>Bus Stand Sec 43 ~3.5 km • ISBT-17 ~6 km</span>
+          </p>
+        </div>
+        <div class="card">
+          <div class="card-body">
+            <h3 style="margin-top:0">Plan Your Stay</h3>
+            <p class="small muted">Book direct for flexibility and quick help during your trip.</p>
+            <p class="small">
+              <a class="more" href="/rooms.html">Rooms &amp; Rates →</a> &nbsp;•&nbsp;
+              <a class="more" href="/location.html">Location Overview →</a> &nbsp;•&nbsp;
+              <a class="more" href="/contact.html">Contact Us →</a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONVERSION FOOTER -->
+    <section class="fade-up" aria-label="Final Call to Action">
+      <div class="card" style="padding:18px">
+        <h2 class="section-title" style="margin-top:0">Ready to Explore Chandigarh?</h2>
+        <p class="muted">Book direct for the best rates &amp; complimentary breakfast on select plans.</p>
+        <div class="cta-row">
+          <a class="btn btn-primary" href="tel:+917277522222" aria-label="Call Now">Call Now</a>
+          <a class="btn btn-ghost" href="https://wa.me/917277522222" target="_blank" rel="noopener" aria-label="WhatsApp Us">WhatsApp Us</a>
+          <a class="btn btn-ghost" href="/contact.html" aria-label="Book Online">Book Online</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer role="contentinfo">
+    <div class="container footer-grid">
+      <div class="footer-col">
+        <h4>Hotel The Black Gold</h4>
+        <p class="small">Best budget &amp; premium hotel in Chandigarh near PGI, PEC &amp; Panjab University — modern rooms with practical amenities and caring service.</p>
+        <p class="small"><strong>Phone:</strong> <a href="tel:+917277522222">+91-72775-22222</a><br><strong>Email:</strong> <a href="mailto:hoteltheblackgold@gmail.com">hoteltheblackgold@gmail.com</a></p>
+      </div>
+      <div class="footer-col">
+        <h4>Rooms</h4>
+        <p class="small">
+          <a href="/deluxe-room.html">Deluxe Room</a><br>
+          <a href="/super-deluxe-room.html">Super Deluxe Room</a><br>
+          <a href="/premium-room.html">Premium Room</a><br>
+          <a href="/rooms.html">Rooms &amp; Rates</a>
+        </p>
+      </div>
+      <div class="footer-col">
+        <h4>Plan</h4>
+        <p class="small">
+          <a href="/location.html">Location</a><br>
+          <a href="/hotel-near-pgi.html">Hotel Near PGI</a>
+        </p>
+      </div>
+      <div class="footer-col">
+        <h4>Help</h4>
+        <p class="small">
+          <a href="/faq.html">FAQ</a><br>
+          <a href="/contact.html">Contact</a>
+        </p>
+      </div>
+    </div>
+    <div class="container copyright">
+      <div>© <span id="year"></span> Hotel The Black Gold. All rights reserved.</div>
+    </div>
+  </footer>
+
+  <!-- Floating Quick Actions -->
+  <nav class="fab" aria-label="Quick actions">
+    <a class="call" href="tel:+917277522222" aria-label="Call Hotel The Black Gold">Call</a>
+    <a class="wa" href="https://wa.me/917277522222" target="_blank" rel="noopener" aria-label="WhatsApp Hotel The Black Gold">WhatsApp</a>
+    <a class="book" href="/contact.html" aria-label="Book at Hotel The Black Gold">Book</a>
+  </nav>
+
+  <!-- Minimal JS: year -->
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
