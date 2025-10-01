@@ -810,8 +810,32 @@ content: "−"; /* minus when open */
     },
   });
 </script>
-
-
-
+<script>
+  document.addEventListener("DOMContentLoaded", function() {
+    const checkin = document.getElementById("in");
+    const checkout = document.getElementById("out");
+  
+    checkin.addEventListener("change", function() {
+      if (checkin.value) {
+        // Parse selected check-in date
+        const inDate = new Date(checkin.value);
+        // Add 1 day
+        inDate.setDate(inDate.getDate() + 1);
+  
+        // Format to yyyy-mm-dd
+        const minDate = inDate.toISOString().split("T")[0];
+        checkout.min = minDate;
+  
+        // If current checkout < new min, reset checkout
+        if (checkout.value && checkout.value < minDate) {
+          checkout.value = minDate;
+        }
+      } else {
+        checkout.min = "";
+      }
+    });
+  });
+  </script>
+  
 </body>
 </html>
