@@ -153,6 +153,8 @@
       .acc-btn::after {content: "+"; /* default is plus */float: right;font-weight: bold;transition: transform 0.3s;}
       .acc-btn[aria-expanded="true"]::after {content: "−"; /* minus when open */}
       .acc-item {background: #1f1f1f;margin-bottom: 16px;padding: 0;border-radius: 10px;}
+      .acc-btn::after {content: "+"; /* default is plus */float: right;font-weight: bold;transition: transform 0.3s;}
+      .acc-btn[aria-expanded="true"]::after {content: "−"; /* minus when open */}
 
       /* Footer */
       footer{border-top:1px solid rgba(255,255,255,.06);padding-top:40px;padding-bottom:80px}
@@ -169,20 +171,12 @@
       .fab .book{background:#1f1f1f;color:#f1f1f1;border-color:#343434}
 
       .swiper-slide.amenity {min-height: 100px;}
-
-      a.btn.btn-primary i {
-    font-size: 17px;
-}
-
-button.more {color: var(--gold);font-weight: 700;background: none;border: 0;font-size: 16px;}
+      a.btn.btn-primary i {font-size: 17px;}
+      button.more {color: var(--gold);font-weight: 700;background: none;border: 0;font-size: 16px;}
 
 
 /* Desktop menu: normal flex */
-#main-nav .menu {
-  list-style: none;
-  display: flex;
-  gap: 25px;
-}
+      #main-nav .menu {list-style: none;display: flex;gap: 25px;}
 
 
 
@@ -356,16 +350,8 @@ span.dott5 img {
     grid-template-columns: 1fr;
 }
 
-.acc-btn::after {
-content: "+"; /* default is plus */
-float: right;
-font-weight: bold;
-transition: transform 0.3s;
-}
 
-.acc-btn[aria-expanded="true"]::after {
-content: "−"; /* minus when open */
-}
+section.fade-up:last-child {padding-bottom: 50px;}
       
     </style>
 
@@ -558,6 +544,7 @@ ul.sub-dropdown li a {
 .whatsapp-btn:hover {background: #128C7E;color: #fff;transform: scale(1.2); box-shadow: 0 0 20px rgba(18, 140, 126, 0.4);}
 
 button.btn.btn-primary-1 {background: var(--gold);color: #111;padding: 17px 15px;border-radius: 59px;font-weight: 800;}
+section.fade-up { padding-bottom: 0;}
 
 </style>
 
@@ -911,7 +898,7 @@ button.btn.btn-primary-1 {background: var(--gold);color: #111;padding: 17px 15px
     <a class="wa" href="https://wa.me/917277522222" target="_blank" rel="noopener" aria-label="WhatsApp Hotel The Black Gold">WhatsApp</a>
     <a class="book" href="./to be edited/contact.html" aria-label="Book Now">Book Now</a>
   </nav>
-  
+
 
   <script>
     // Header compact on scroll
@@ -1051,7 +1038,6 @@ window.addEventListener("resize", () => {
     });
   }
 });
-
 </script>
 <script>
   document.addEventListener("DOMContentLoaded", function() {
