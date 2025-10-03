@@ -18,8 +18,8 @@
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://www.hoteltheblackgold.com/">
   <meta property="og:site_name" content="Hotel The Black Gold">
-  <meta property="og:image:secure_url" content="https://www.hoteltheblackgold.com/assets/og/og-home.webp">
-  <meta property="og:image:type" content="image/webp">
+  <meta property="og:image:secure_url" content="https://www.hoteltheblackgold.com/assets/og/og-home.jpg">
+  <meta property="og:image:type" content="image/jpg">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
   <meta property="og:image" content="https://www.hoteltheblackgold.com/assets/og/og-home.jpg">
@@ -28,7 +28,7 @@
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="Hotel in Chandigarh | Hotel The Black Gold">
   <meta name="twitter:description" content="Premium hotel in the Chandigarh region near PGI & Sukhna Lake. Modern rooms, free Wi-Fi, secure parking, EV charging, pet-friendly. Book direct for best rates.">
-  <meta name="twitter:image" content="https://www.hoteltheblackgold.com/assets/og/og-home.webp">
+  <meta name="twitter:image" content="https://www.hoteltheblackgold.com/assets/og/og-home.jpg">
   <meta name="twitter:site" content="@HotelBlackGold">
 
   <link rel="icon" href="/assets/icons/favicon.ico">
@@ -46,13 +46,13 @@
   <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Montserrat:wght@600;700;800&display=swap" rel="stylesheet">
 
   <link rel="preload" as="image"
-        href="/assets/images/hero-chandigarh-hotel-the-black-gold.webp"
-        imagesrcset="/assets/images/hero-chandigarh-hotel-the-black-gold.webp 1920w"
+        href="/assets/images/hero-chandigarh-hotel-the-black-gold.jpg"
+        imagesrcset="/assets/images/hero-chandigarh-hotel-the-black-gold.jpg 1920w"
         imagesizes="100vw" fetchpriority="high">
 
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
 
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
 
 
@@ -164,11 +164,11 @@
       .copyright{border-top:1px solid rgba(255,255,255,.06);margin-top:26px;padding-top:18px;color:#c9c9c9;font-size:.9rem}
 
       /* Floating Quick Actions */
-      .fab{position:fixed;right:100px;bottom:16px;display:grid;gap:10px;z-index:1000}
+      .fab{position:fixed;right:16px;bottom:16px;display:grid;gap:10px;z-index:1000;font-size: 14px;}
       .fab a{display:flex;align-items:center;gap:.6rem;padding:.7rem .9rem;border-radius:999px;box-shadow:var(--shadow);border:1px solid rgba(0,0,0,.4);backdrop-filter:saturate(120%) blur(6px)}
       .fab .call{background:var(--gold);color:#111;font-weight:800}
       .fab .wa{background:#128C7E;color:#fff}
-      .fab .book {background: #1f1f1f;color: #f1f1f1;border-color: #343434;width: 101px;}
+      .fab .book {background: #1f1f1f;color: #f1f1f1;border-color: #343434;width: 138px;}
       .swiper-slide.amenity {min-height: 100px;}
       a.btn.btn-primary i {font-size: 17px;}
       button.more {color: var(--gold);font-weight: 700;background: none;border: 0;font-size: 16px;}
@@ -210,15 +210,17 @@
           color: #fff;
       }
       /* Hover effects */
-      .call-btn {transition: all 0.3s ease; color: #ffffff;}
+      .call-btn {transition: all 0.3s ease; color: #fff;}
       .call-btn:hover {background: #d4af37;color: #fff;transform: scale(1.3);box-shadow: 0 8px 16px rgb(211 174 37 / 40%);}
       /* WhatsApp button hover */
-      .whatsapp-btn {transition: all 0.3s ease; color: #ffffff;}
+      .whatsapp-btn {transition: all 0.3s ease; color: #128C7E;;}
       .whatsapp-btn:hover {background: #128C7E;color: #fff;transform: scale(1.2); box-shadow: 0 0 20px rgba(18, 140, 126, 0.4);}
       button.btn.btn-primary-1 {background: var(--gold);color: #111;padding: 17px 15px;border-radius: 59px;font-weight: 800;}
+      button a.btn.btn-primary-2 {background: var(--gold);color: #111;padding: 17px 15px;border-radius: 59px;font-weight: 800;}
+      .btn.btn-primary-2 {display: inline-flex;justify-content: center;align-items: center;gap: .5rem;font-size: 22px;border: none;cursor: pointer;background: var(--gold);color: #000;font-weight: 800;padding: 17px 15px;border-radius: 43px;}
       section.fade-up { padding-bottom: 0;}
       section.fade-up:last-child {padding-bottom: 50px;}
-      @media (max-width:768px){.amenities {display: grid;grid-template-columns: repeat(1,minmax(0,1fr));gap: 10px;}button.menu-toggle {background: transparent;border: 0;color: #fff;}}
+      @media (max-width:768px){.amenities {display: grid;grid-template-columns: repeat(1,minmax(0,1fr));gap: 10px;}button.menu-toggle {background: transparent;border: 0;color: #fff;}.hero-media img {object-fit: fill;}}
       @media(min-width:1025px){.menu-toggle,.menu-close{display:none!important}}
       @media(max-width:425px){.brand-name {font-family: revenue;font-weight: 800;letter-spacing: .4px;font-size: 20px;width: 101px;}}
       /* Header compact on scroll */
@@ -240,7 +242,7 @@
     "name": "Hotel The Black Gold",
     "url": "https://www.hoteltheblackgold.com/",
     "brand": {"@type":"Brand","name":"Hotel The Black Gold","logo":"https://www.hoteltheblackgold.com/assets/brand/logo.svg"},
-    "image": "https://www.hoteltheblackgold.com/assets/og/og-home.webp",
+    "image": "https://www.hoteltheblackgold.com/assets/og/og-home.jpg",
     "description": "Premium hotel in the Chandigarh region near PGI & Sukhna Lake. Modern rooms, free Wi-Fi, secure parking, EV charging, pet-friendly. Book direct for best rates.",
     "telephone": "+917277522222",
     "petsAllowed": true,
@@ -438,6 +440,7 @@
           </div>
         </div>
         <button class="btn btn-primary-1" type="submit" aria-label="Check availability">Check Availability</button>
+        <button class="btn btn-primary-2" aria-label="Call now" onclick="window.location.href='tel:+917277522222'">Call now</button>
         <div class="trust" aria-label="Trust & Direct Booking Benefits">
           <span class="badge">Best Rate Direct</span>
           <span class="badge">Priority Upgrades (when available)</span>
@@ -519,7 +522,7 @@
        </a>
         <a href="./only final editing left/super-deluxe-room.html" class="card-link">
           <article class="card" role="listitem">
-            <img loading="lazy" decoding="async" width="800" height="450" src="./images/Super Deluxe Room 6.JPG" alt="Interior of the Super Deluxe Room with a 43-inch Smart TV and elevated modern decor.">
+            <img loading="lazy" decoding="async" width="800" height="450" src="./images/Super Deluxe Room 6.jpg" alt="Interior of the Super Deluxe Room with a 43-inch Smart TV and elevated modern decor.">
             <div class="card-body">
               <h3>Super Deluxe Rooms</h3>
               <p>Extra space and style. Enjoy a <strong>43" Smart TV + Airtel STB</strong>, elevated décor, and a calm, modern palette.</p>
@@ -608,7 +611,7 @@
         </div>
         <div>
           <div id="map" role="img" aria-label="Map showing the location of Hotel The Black Gold in Nayagaon, near Chandigarh">
-             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3428.878586326071!2d76.79458507540266!3d30.749984974577824!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390ffb5a93167135%3A0xf391c015b5089dd9!2sHotel%20The%20Black%20Gold!5e0!3m2!1sen!2sin!4v1696000000000!5m2!1sen!2sin" width="100%" height="320" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Map of Hotel The Black Gold"></iframe>
+             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4066.274098567786!2d76.79431867607663!3d30.77487188359404!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390ff29bd41cbe8d%3A0x5d19455e37441482!2sHotel%20The%20Black%20Gold!5e1!3m2!1sen!2sin!4v1759478293581!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
           </div>
         </div>
       </div>
@@ -653,10 +656,10 @@
           </div>
         </div>
         <div>
-  <a class="btn btn-primary call-btn" href="tel:+917277522222" style="margin-right:10px;border:1px solid #646464;border-radius:59px;padding:17px 14px">
+  <a class="btn btn-primary call-btn" href="tel:+917277522222" style="margin-right:10px;border:1px solid #646464;border-radius:59px;padding:20px 20px">
     <i class="fa-solid fa-phone"></i>
   </a>
-  <a class="btn whatsapp-btn" href="https://wa.me/917277522222" target="_blank" rel="noopener" style="border:1px solid #646464;border-radius:59px;padding:17px 14px">
+  <a class="btn whatsapp-btn" href="https://wa.me/917277522222" target="_blank" rel="noopener" style="border:1px solid #646464;border-radius:59px;padding:18px 20px">
     <i class="fa-brands fa-whatsapp"></i>
   </a>
       </div>
@@ -704,8 +707,8 @@
   </footer>
 
   <nav class="fab" aria-label="Quick actions">
-    <a class="call" href="tel:+917277522222" aria-label="Call Hotel The Black Gold">Call</a>
-    <a class="wa" href="https://wa.me/917277522222" target="_blank" rel="noopener" aria-label="WhatsApp Hotel The Black Gold">WhatsApp</a>
+    <a class="call" href="tel:+917277522222" aria-label="Call Hotel The Black Gold">Call<i class="fa-solid fa-phone"></i></a>
+    <a class="wa" href="https://wa.me/917277522222" target="_blank" rel="noopener" aria-label="WhatsApp Hotel The Black Gold">WhatsApp<i class="fa-brands fa-whatsapp"></i></a>
     <a class="book" href="./to be edited/contact.html" aria-label="Book Now">Book Now</a>
   </nav>
 
