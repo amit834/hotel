@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- =========================================================================
+       Hotel The Black Gold — Room Decorations
+       File: room-decorations.html
+       =========================================================================
+       - Semantic HTML5; WCAG-2.1 AA; ARIA; single <h1>
+       - Inline, minified CSS; tiny vanilla JS; hero preload; lazy images
+       - Canonical, OG/Twitter, JSON-LD (Hotel + Offer, Breadcrumb, FAQPage)
+       - Responsive: grid/flex, mobile-first; sticky header; floating quick actions
+       - Developer: replace placeholder assets & wire GA4 / booking widget when ready
+       ========================================================================= -->
+
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Meta Title (<=60 chars) -->
+  <title>Room Decorations in Chandigarh | The Black Gold</title>
+
+  <!-- Meta Description (<=155 chars) -->
+  <meta name="description" content="Personalized hotel room decorations—romantic, birthday, anniversary, festive & corporate. Packages from Basic to Luxury. Call +91-72775-22222.">
+
+  <!-- Canonical -->
+  <link rel="canonical" href="https://www.hoteltheblackgold.com/room-decorations.html">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Room Decorations in Chandigarh | The Black Gold">
+  <meta property="og:description" content="Make your stay unforgettable with personalized in-room décor. Romantic, birthday, anniversary, festive & corporate themes.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://www.hoteltheblackgold.com/room-decorations.html">
+  <meta property="og:site_name" content="Hotel The Black Gold">
+  <meta property="og:image" content="https://www.hoteltheblackgold.com/assets/og/og-room-decorations.webp">
+  <meta property="og:locale" content="en_IN">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Room Decorations in Chandigarh | The Black Gold">
+  <meta name="twitter:description" content="Premium, personalized in-room decorations for every occasion.">
+  <meta name="twitter:image" content="https://www.hoteltheblackgold.com/assets/og/og-room-decorations.webp">
+
+  <!-- Favicons (replace with real assets) -->
+  <link rel="icon" href="/assets/icons/favicon.ico">
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/icons/favicon-32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/icons/favicon-16.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/icons/apple-touch-icon.png">
+  <link rel="manifest" href="/assets/icons/site.webmanifest">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Montserrat:wght@600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Preload hero image -->
+  <link rel="preload" as="image" href="/assets/images/room-decorations-hero-the-black-gold.webp" imagesrcset="/assets/images/room-decorations-hero-the-black-gold.webp 1920w" imagesizes="100vw">
+
+  <!-- Styles (minified) -->
+  <style>
+    :root{--bg:#111111;--text:#F5F5F5;--muted:#EDEDED;--gold:#D4AF37;--card:#161616;--line:#2A2A2A;--shadow:0 8px 24px rgba(0,0,0,.35),0 2px 6px rgba(0,0,0,.25)}
+    *{box-sizing:border-box}html,body{margin:0;padding:0;background:var(--bg);color:var(--text);font-family:Lato,system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,"Helvetica Neue",Arial,sans-serif;line-height:1.6;text-rendering:optimizeLegibility}
+    img{max-width:100%;height:auto;border:0}a{color:var(--muted);text-decoration:none}a:hover,a:focus{color:var(--gold)}
+    .container{width:min(1180px,92vw);margin-inline:auto}
+    .skip-link{position:absolute;left:-999px;top:auto;width:1px;height:1px;overflow:hidden}
+    .skip-link:focus{left:1rem;top:1rem;width:auto;height:auto;background:#000;padding:.75rem 1rem;border:2px solid var(--gold);z-index:10000}
+
+    /* Header */
+    header{position:sticky;top:0;z-index:999;background:rgba(17,17,17,.75);backdrop-filter:saturate(120%) blur(8px);border-bottom:1px solid rgba(255,255,255,.05)}
+    .nav{display:flex;align-items:center;justify-content:space-between;padding:.85rem 0}
+    .brand{display:flex;align-items:center;gap:.75rem}.logo{width:36px;height:36px;border-radius:10px;background:linear-gradient(135deg,var(--gold),#9b7c1f);box-shadow:var(--shadow)}
+    .brand-name{font-family:Montserrat,sans-serif;font-weight:800;letter-spacing:.4px}
+    nav ul{list-style:none;margin:0;padding:0;display:flex;gap:1.25rem;align-items:center}
+    .book-now{background:var(--gold);color:#111;padding:.6rem 1rem;border-radius:999px;font-weight:700;box-shadow:var(--shadow);border:1px solid rgba(0,0,0,.35)}
+
+    /* Hero */
+    .hero{position:relative;isolation:isolate}
+    .hero-media{position:absolute;inset:0;z-index:-1;overflow:hidden}
+    .hero-media img{width:100%;height:100%;object-fit:cover;filter:grayscale(.06) contrast(1.05) brightness(.85)}
+    .hero-overlay{position:absolute;inset:0;background:radial-gradient(1200px 600px at 60% 18%,rgba(212,175,55,.18),transparent),linear-gradient(180deg,rgba(17,17,17,.35),rgba(17,17,17,.85))}
+    .hero-inner{padding:clamp(84px,11vw,140px) 0 56px}
+    h1{font-family:Montserrat,sans-serif;font-weight:800;line-height:1.1;font-size:clamp(28px,5.6vw,46px);margin:0 0 .5rem}
+    .subhead{color:var(--muted);font-size:clamp(15px,2.2vw,18px);max-width:880px}
+    .cta-row{display:flex;gap:10px;flex-wrap:wrap;margin-top:14px}
+    .btn{display:inline-flex;align-items:center;justify-content:center;gap:.5rem;border:none;border-radius:12px;cursor:pointer;padding:.85rem 1.05rem}
+    .btn-primary{background:var(--gold);color:#111;font-weight:800}
+    .btn-ghost{background:#1a1a1a;border:1px solid #2b2b2b;color:#f1f1f1}
+
+    /* Sections */
+    section{padding:64px 0}
+    .section-title{font-family:Montserrat,sans-serif;font-weight:800;font-size:clamp(22px,3.6vw,32px);margin:0 0 16px}
+    .muted{color:#d2d2d2}.small{font-size:.95rem;color:#cfcfcf}
+
+    /* Grids */
+    .cards{display:grid;grid-template-columns:1fr;gap:18px}
+    .grid-3{display:grid;grid-template-columns:1fr;gap:18px}
+    .grid-4{display:grid;grid-template-columns:1fr;gap:18px}
+
+    /* Card */
+    .card{background:#151515;border:1px solid var(--line);border-radius:18px;overflow:hidden;box-shadow:var(--shadow)}
+    .card img{display:block;aspect-ratio:16/9;object-fit:cover}
+    .card-body{padding:16px}
+    .card h3{font-family:Montserrat,sans-serif;margin:.2rem 0 .5rem}
+    .more{color:var(--gold);font-weight:700}
+
+    /* Icon rows */
+    .icon-row{display:flex;gap:.75rem;align-items:flex-start;background:#141414;border:1px solid var(--line);padding:.8rem .9rem;border-radius:12px}
+    .icon{width:36px;height:36px;border-radius:10px;background:#1a1a1a;border:1px solid #2a2a2a;display:grid;place-items:center;color:var(--gold);font-weight:800}
+
+    /* Timeline */
+    .timeline{display:grid;grid-template-columns:1fr;gap:12px}
+    .step{display:flex;gap:.9rem;align-items:flex-start;background:#141414;border:1px solid #2b2b2b;padding:12px;border-radius:12px}
+    .step .bubble{min-width:28px;height:28px;border-radius:999px;background:var(--gold);color:#111;display:grid;place-items:center;font-weight:800}
+
+    /* Strip */
+    .strip{background:linear-gradient(180deg,#151515,#121212);border:1px solid #2b2b2b;border-radius:18px;box-shadow:var(--shadow);padding:18px}
+    .badge{display:inline-block;background:var(--gold);color:#111;font-weight:800;border-radius:999px;padding:.25rem .6rem;margin-bottom:.4rem}
+
+    /* Breadcrumbs & Footer */
+    .breadcrumbs{font-size:.95rem;margin:18px 0;color:#cfcfcf}
+    .breadcrumbs a{color:#cfcfcf}.breadcrumbs a:hover{color:var(--gold)}
+    footer{border-top:1px solid rgba(255,255,255,.06);padding-top:40px;padding-bottom:80px}
+    .footer-grid{display:grid;grid-template-columns:1fr;gap:22px}
+    .footer-col h4{font-family:Montserrat,sans-serif;margin:.2rem 0 .6rem}
+    .copyright{border-top:1px solid rgba(255,255,255,.06);margin-top:26px;padding-top:18px;color:#c9c9c9;font-size:.9rem}
+
+    /* Accordion */
+    .accordion{border:1px solid var(--line);border-radius:18px;overflow:hidden}
+    .acc-item{border-bottom:1px solid var(--line);background:#141414}
+    .acc-item:last-child{border-bottom:0}
+    .acc-btn{width:100%;text-align:left;padding:16px 18px;background:#141414;color:var(--text);border:0;font-weight:700;font-family:Montserrat,sans-serif;cursor:pointer}
+    .acc-content{max-height:0;overflow:hidden;transition:max-height .35s ease}
+    .acc-inner{padding:0 18px 16px;color:#d7d7d7}
+
+    /* FAB */
+    .fab{position:fixed;right:16px;bottom:16px;display:grid;gap:10px;z-index:1000}
+    .fab a{display:flex;align-items:center;gap:.6rem;padding:.7rem .9rem;border-radius:999px;box-shadow:var(--shadow);border:1px solid rgba(0,0,0,.4);backdrop-filter:saturate(120%) blur(6px)}
+    .fab .call{background:var(--gold);color:#111;font-weight:800}
+    .fab .wa{background:#128C7E;color:#fff}
+    .fab .book{background:#1f1f1f;color:#f1f1f1;border-color:#343434}
+
+    /* Responsive */
+    @media (min-width:700px){
+      .grid-3{grid-template-columns:repeat(3,1fr)}
+      .grid-4{grid-template-columns:repeat(4,1fr)}
+      .cards{grid-template-columns:repeat(3,1fr)}
+      .timeline{grid-template-columns:repeat(4,1fr)}
+      .footer-grid{grid-template-columns:2fr 1fr 1fr 1fr}
+    }
+
+    /* Animations */
+    @media (prefers-reduced-motion:no-preference){
+      .fade-up{opacity:0;transform:translateY(10px);animation:fadeUp .6s ease .05s forwards}
+      .delay{animation-delay:.16s}.delay2{animation-delay:.28s}
+      @keyframes fadeUp{to{opacity:1;transform:none}}
+    }
+
+    /* Focus */
+    :where(a,button){outline-color:var(--gold);outline-offset:2px}
+  </style>
+
+  <!-- JSON-LD: Hotel with Offer (Room Decoration Service) -->
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"Hotel",
+    "name":"Hotel The Black Gold",
+    "url":"https://www.hoteltheblackgold.com/",
+    "image":"https://www.hoteltheblackgold.com/assets/og/og-home.webp",
+    "description":"Premium, personalized in-room decorations for romantic getaways, birthdays, anniversaries, festive moments, and corporate welcomes.",
+    "telephone":"+91-72775-22222",
+    "address":{"@type":"PostalAddress","addressLocality":"Chandigarh","addressRegion":"Chandigarh","postalCode":"160000","addressCountry":"IN"},
+    "geo":{"@type":"GeoCoordinates","latitude":30.7333,"longitude":76.7794},
+    "areaServed":"Chandigarh",
+    "makesOffer":{
+      "@type":"Offer",
+      "name":"Room Decoration Service",
+      "availability":"https://schema.org/InStock",
+      "itemOffered":{
+        "@type":"Service",
+        "name":"In-Room Decoration",
+        "description":"Custom room decorations in Chandigarh for romance, birthdays, anniversaries, festive and corporate gestures with Basic, Premium, and Luxury tiers.",
+        "provider":{"@type":"Hotel","name":"Hotel The Black Gold"}
+      }
+    }
+  }
+  </script>
+
+  <!-- JSON-LD: Breadcrumbs -->
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"BreadcrumbList",
+    "itemListElement":[
+      {"@type":"ListItem","position":1,"name":"Home","item":"https://www.hoteltheblackgold.com/"},
+      {"@type":"ListItem","position":2,"name":"Room Decorations","item":"https://www.hoteltheblackgold.com/room-decorations.html"}
+    ]
+  }
+  </script>
+
+  <!-- JSON-LD: FAQPage (mirrors accordion content below) -->
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"FAQPage",
+    "mainEntity":[
+      {"@type":"Question","name":"Can I request a specific theme?","acceptedAnswer":{"@type":"Answer","text":"Yes. Share your theme idea in advance (at least 24 hours) and our décor team will customise it for you."}},
+      {"@type":"Question","name":"How much does decoration cost?","acceptedAnswer":{"@type":"Answer","text":"Pricing depends on the chosen package (Basic, Premium, Luxury) and any add-ons. We’ll quote transparently before confirming."}},
+      {"@type":"Question","name":"Can you arrange a cake or gifts?","acceptedAnswer":{"@type":"Answer","text":"Yes. We can arrange cakes, bouquets, and special gifts on request."}},
+      {"@type":"Question","name":"Do you provide surprise setups while the guest is away?","acceptedAnswer":{"@type":"Answer","text":"Absolutely. We specialise in discreet setups timed while the guest is out."}},
+      {"@type":"Question","name":"Are candles real?","acceptedAnswer":{"@type":"Answer","text":"For safety, we use LED candles to create a warm, elegant glow."}},
+      {"@type":"Question","name":"Can I bring my own decorations?","acceptedAnswer":{"@type":"Answer","text":"Yes, with prior approval from the hotel to ensure safety and prevent damage."}}
+    ]
+  }
+  </script>
+
+  <!-- Analytics hook (insert GA4 when ready) -->
+  <!-- <script defer src="/assets/js/ga4.js"></script> -->
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <!-- HEADER -->
+  <header role="banner" aria-label="Primary">
+    <div class="container nav" id="nav">
+      <div class="brand" aria-label="Hotel The Black Gold">
+        <div class="logo" aria-hidden="true"></div>
+        <div class="brand-name">Hotel The Black Gold</div>
+      </div>
+      <nav aria-label="Main">
+        <ul>
+          <li><a href="/" rel="home">Home</a></li>
+          <li><a href="/rooms.html" rel="internal">Rooms &amp; Rates</a></li>
+          <li><a href="/amenities.html" rel="internal">Amenities</a></li>
+          <li><a href="/location.html" rel="internal">Location</a></li>
+          <li><a href="/faq.html" rel="internal">FAQ</a></li>
+          <li><a href="/contact.html" rel="internal">Contact</a></li>
+        </ul>
+      </nav>
+      <div><a class="book-now" href="/contact.html" rel="internal">Book Now</a></div>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero" aria-label="Hero">
+    <div class="hero-media" aria-hidden="true">
+      <img src="/assets/images/room-decorations-hero-the-black-gold.webp" alt="Romantic room decoration with rose petals and LED candles at Hotel The Black Gold" width="1920" height="1080">
+      <div class="hero-overlay"></div>
+    </div>
+    <div class="container hero-inner fade-up">
+      <nav class="breadcrumbs" aria-label="Breadcrumb">
+        <a href="/" rel="home">Home</a> › <span aria-current="page">Room Decorations</span>
+      </nav>
+      <h1>Room Decorations at Hotel The Black Gold – Celebrate in Style</h1>
+      <p class="subhead">Make your stay unforgettable with personalized in-room décor—romantic, birthday, anniversary, festive, and corporate welcomes crafted with care.</p>
+      <div class="cta-row">
+        <a class="btn btn-primary" href="tel:+917277522222" aria-label="Call Hotel The Black Gold">Call</a>
+        <a class="btn btn-ghost" href="https://wa.me/917277522222" rel="noopener" aria-label="WhatsApp Hotel The Black Gold">WhatsApp</a>
+        <a class="btn btn-ghost" href="/contact.html" aria-label="Book or enquire at Hotel The Black Gold">Book</a>
+      </div>
+    </div>
+  </section>
+
+  <main id="main" class="container" role="main">
+    <!-- OCCASIONS -->
+    <section class="fade-up" aria-labelledby="occasions">
+      <h2 id="occasions" class="section-title">Occasions We Cater To</h2>
+      <div class="grid-4">
+        <article class="card">
+          <img loading="lazy" src="/assets/images/room-decorations-romantic-setup-the-black-gold.webp" alt="Romantic room decoration with petals and LED candles">
+          <div class="card-body">
+            <h3>Romantic &amp; Anniversary</h3>
+            <p>Rose trails, LED candle glow, and intimate touches for heartfelt moments.</p>
+          </div>
+        </article>
+        <article class="card">
+          <img loading="lazy" src="/assets/images/room-decorations-birthday-the-black-gold.webp" alt="Birthday room decoration with balloons and banner">
+          <div class="card-body">
+            <h3>Birthdays &amp; Milestones</h3>
+            <p>Balloons, themed banner, and a styled cake table for a joyful surprise.</p>
+          </div>
+        </article>
+        <article class="card">
+          <img loading="lazy" src="/assets/images/room-decorations-honeymoon-the-black-gold.webp" alt="Honeymoon welcome decoration with flowers and wine">
+          <div class="card-body">
+            <h3>Honeymoon Welcome</h3>
+            <p>Dreamy florals and celebratory touches to begin your new chapter.</p>
+          </div>
+        </article>
+        <article class="card">
+          <img loading="lazy" src="/assets/images/room-decorations-festive-the-black-gold.webp" alt="Festive Diwali room decoration with warm lights and flowers">
+          <div class="card-body">
+            <h3>Festive &amp; Corporate</h3>
+            <p>Seasonal sparkle or VIP welcomes tailored for clients and teams.</p>
+          </div>
+        </article>
+      </div>
+      <p class="small" style="margin-top:10px">See <a href="/amenities.html" rel="internal">Amenities</a> and <a href="/rooms.html" rel="internal">Rooms &amp; Rates</a> for more planning details.</p>
+    </section>
+
+    <!-- PACKAGES -->
+    <section class="fade-up" aria-labelledby="packages">
+      <h2 id="packages" class="section-title">Packages &amp; Customization</h2>
+      <div class="cards" role="list">
+        <article class="card" role="listitem">
+          <div class="card-body">
+            <h3>Basic</h3>
+            <p>Balloons + simple banner — ideal for quick, tasteful surprises.</p>
+            <ul class="small" style="margin:0 0 0 18px">
+              <li>Color of your choice (subject to availability)</li>
+              <li>Message banner (e.g., Happy Birthday)</li>
+              <li>Discreet setup while you’re away</li>
+            </ul>
+          </div>
+        </article>
+        <article class="card" role="listitem">
+          <div class="card-body">
+            <h3>Premium</h3>
+            <p>Balloons + fresh flowers + themed table décor for cake, wine, or gifts.</p>
+            <ul class="small" style="margin:0 0 0 18px">
+              <li>Curated palette (gold &amp; white, red &amp; gold, or pastels)</li>
+              <li>Rose petals (bed/entrance) with LED accents</li>
+              <li>Personalised message card</li>
+            </ul>
+          </div>
+        </article>
+        <article class="card" role="listitem">
+          <div class="card-body">
+            <h3>Luxury</h3>
+            <p>Full-theme décor with floral arrangements, LED candles, and custom message board.</p>
+            <ul class="small" style="margin:0 0 0 18px">
+              <li>Statement backdrop (space permitting)</li>
+              <li>Expanded floral styling</li>
+              <li>White-glove, surprise reveal</li>
+            </ul>
+          </div>
+        </article>
+      </div>
+      <div class="strip" style="margin-top:14px">
+        <span class="badge" aria-hidden="true">Custom Add-ons</span>
+        <p class="small">Cakes, champagne/wine, fresh bouquets, and gift arrangements can be organised on request. Transparent quotes provided before confirmation.</p>
+      </div>
+    </section>
+
+    <!-- BOOKING PROCESS -->
+    <section class="fade-up" aria-labelledby="process">
+      <h2 id="process" class="section-title">Booking Process</h2>
+      <div class="timeline" role="list">
+        <div class="step" role="listitem"><div class="bubble" aria-hidden="true">1</div><div><strong>Mention at Booking / Call:</strong> Tell us your occasion, theme, and date.</div></div>
+        <div class="step" role="listitem"><div class="bubble" aria-hidden="true">2</div><div><strong>Confirm Package:</strong> Choose Basic, Premium, or Luxury; add-ons as needed.</div></div>
+        <div class="step" role="listitem"><div class="bubble" aria-hidden="true">3</div><div><strong>Advance Notice:</strong> Please allow at least 24 hours for preparation.</div></div>
+        <div class="step" role="listitem"><div class="bubble" aria-hidden="true">4</div><div><strong>Payment &amp; Setup:</strong> Charges added to room bill; discreet setup while you’re out.</div></div>
+      </div>
+      <p class="small" style="margin-top:10px">Need help with group or corporate welcomes? See <a href="/group-bookings.html" rel="internal">Group Bookings</a> or <a href="/corporate-bookings.html" rel="internal">Corporate Bookings</a>.</p>
+    </section>
+
+    <!-- GALLERY TEASER -->
+    <section class="fade-up" aria-labelledby="gallery">
+      <h2 id="gallery" class="section-title">Gallery – Our Work in Action</h2>
+      <div class="grid-3">
+        <figure class="card">
+          <img loading="lazy" src="/assets/images/room-decorations-gallery-01-the-black-gold.webp" alt="Anniversary room with rose heart, LED candles, and champagne on table">
+          <figcaption class="card-body small">Anniversary: rose heart, LED candles, champagne table.</figcaption>
+        </figure>
+        <figure class="card">
+          <img loading="lazy" src="/assets/images/room-decorations-gallery-02-the-black-gold.webp" alt="Birthday room with gold & white balloons and Happy Birthday banner">
+          <figcaption class="card-body small">Birthday: gold &amp; white balloons with banner and cake setup.</figcaption>
+        </figure>
+        <figure class="card">
+          <img loading="lazy" src="/assets/images/room-decorations-gallery-03-the-black-gold.webp" alt="Festive room with marigold florals and warm lights">
+          <figcaption class="card-body small">Festive: marigold florals and warm, photo-friendly lighting.</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="fade-up" aria-labelledby="faq">
+      <h2 id="faq" class="section-title">Room Decorations – FAQs</h2>
+      <div class="accordion" id="accordion" role="region" aria-label="Room decoration FAQs">
+        <div class="acc-item">
+          <button class="acc-btn" aria-expanded="false">Can I request a specific theme?</button>
+          <div class="acc-content"><div class="acc-inner">Yes. Share your theme at least 24 hours in advance and we’ll customise it for you.</div></div>
+        </div>
+        <div class="acc-item">
+          <button class="acc-btn" aria-expanded="false">How much does decoration cost?</button>
+          <div class="acc-content"><div class="acc-inner">Costs depend on the package (Basic, Premium, Luxury) and any add-ons. We provide a clear quote before confirmation.</div></div>
+        </div>
+        <div class="acc-item">
+          <button class="acc-btn" aria-expanded="false">Can you arrange a cake or gifts?</button>
+          <div class="acc-content"><div class="acc-inner">Yes. We can arrange cakes, bouquets, and special gifts on request.</div></div>
+        </div>
+        <div class="acc-item">
+          <button class="acc-btn" aria-expanded="false">Do you provide surprise setups while the guest is away?</button>
+          <div class="acc-content"><div class="acc-inner">Absolutely. We schedule discreet setups while the guest is out to keep the surprise intact.</div></div>
+        </div>
+        <div class="acc-item">
+          <button class="acc-btn" aria-expanded="false">Are candles real?</button>
+          <div class="acc-content"><div class="acc-inner">For safety, we use LED candles to create an elegant, warm glow.</div></div>
+        </div>
+        <div class="acc-item">
+          <button class="acc-btn" aria-expanded="false">Can I bring my own decorations?</button>
+          <div class="acc-content"><div class="acc-inner">Yes, with prior approval from hotel management to ensure safety and avoid damage.</div></div>
+        </div>
+      </div>
+      <p class="small" style="margin-top:12px">Planning a bigger celebration? Explore <a href="/group-bookings.html" rel="internal">Group Bookings</a> or <a href="/amenities.html" rel="internal">Amenities</a>. Questions? <a href="/contact.html" rel="internal">Contact</a> us or see our <a href="/faq.html" rel="internal">FAQ</a>.</p>
+    </section>
+
+    <!-- CONVERSION FOOTER -->
+    <section class="fade-up" aria-label="Final Call to Action">
+      <div class="strip">
+        <h2 class="section-title" style="margin-top:0">Make Every Stay a Celebration</h2>
+        <p class="muted">Priority: <strong>Call</strong> → <strong>WhatsApp</strong> → <strong>Book Online</strong>. Book direct for best package deals and flexibility.</p>
+        <div class="cta-row">
+          <a class="btn btn-primary" href="tel:+917277522222" aria-label="Call Now">Call Now</a>
+          <a class="btn btn-ghost" href="https://wa.me/917277522222" rel="noopener" aria-label="WhatsApp Us">WhatsApp Us</a>
+          <a class="btn btn-ghost" href="/contact.html" aria-label="Book Online">Book Online</a>
+        </div>
+        <p class="small" style="margin-top:10px">Explore: <a href="/rooms.html" rel="internal">Rooms &amp; Rates</a> • <a href="/amenities.html" rel="internal">Amenities</a> • <a href="/corporate-bookings.html" rel="internal">Corporate Bookings</a></p>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer role="contentinfo">
+    <div class="container footer-grid">
+      <div class="footer-col">
+        <h4>Hotel The Black Gold</h4>
+        <p class="small">Chandigarh, India • Personalized room decorations for romance, birthdays, anniversaries, festive & corporate welcomes</p>
+        <p class="small"><strong>Phone:</strong> <a href="tel:+917277522222">+91-72775-22222</a><br><strong>Email:</strong> <a href="mailto:reservations@hoteltheblackgold.in">reservations@hoteltheblackgold.in</a></p>
+      </div>
+      <div class="footer-col">
+        <h4>Stay</h4>
+        <p class="small">
+          <a href="/rooms.html" rel="internal">Rooms &amp; Rates</a><br>
+          <a href="/amenities.html" rel="internal">Amenities</a>
+        </p>
+      </div>
+      <div class="footer-col">
+        <h4>Plan</h4>
+        <p class="small">
+          <a href="/group-bookings.html" rel="internal">Group Bookings</a><br>
+          <a href="/corporate-bookings.html" rel="internal">Corporate Bookings</a>
+        </p>
+      </div>
+      <div class="footer-col">
+        <h4>Help</h4>
+        <p class="small">
+          <a href="/faq.html" rel="internal">FAQ</a><br>
+          <a href="/contact.html" rel="internal">Contact</a>
+        </p>
+      </div>
+    </div>
+    <div class="container copyright">
+      <div>© <span id="year"></span> Hotel The Black Gold. All rights reserved.</div>
+    </div>
+  </footer>
+
+  <!-- Floating Quick Actions (priority: Call > WhatsApp > Book) -->
+  <nav class="fab" aria-label="Quick actions">
+    <a class="call" href="tel:+917277522222" aria-label="Call Hotel The Black Gold">Call</a>
+    <a class="wa" href="https://wa.me/917277522222" rel="noopener" aria-label="WhatsApp Hotel The Black Gold">WhatsApp</a>
+    <a class="book" href="/contact.html" aria-label="Book at Hotel The Black Gold">Book</a>
+  </nav>
+
+  <!-- Minimal JS: FAQ + year (deferred by placement) -->
+  <script>
+    // FAQ accordion (accessible)
+    const items=document.querySelectorAll('.acc-item');
+    items.forEach(it=>{
+      const btn=it.querySelector('.acc-btn'), ct=it.querySelector('.acc-content');
+      btn.addEventListener('click',()=>{
+        const open=btn.getAttribute('aria-expanded')==='true';
+        btn.setAttribute('aria-expanded',!open);
+        ct.style.maxHeight=!open?(ct.scrollHeight+'px'):0;
+      });
+    });
+    // Current year
+    document.getElementById('year').textContent=new Date().getFullYear();
+  </script>
+
+  <!-- Developer notes:
+       - Insert GA4 tag when ready (see head comment).
+       - Swap real images for:
+           /assets/images/room-decorations-hero-the-black-gold.webp
+           /assets/images/room-decorations-romantic-setup-the-black-gold.webp
+           /assets/images/room-decorations-birthday-the-black-gold.webp
+           /assets/images/room-decorations-honeymoon-the-black-gold.webp
+           /assets/images/room-decorations-festive-the-black-gold.webp
+           /assets/images/room-decorations-gallery-01-the-black-gold.webp
+           /assets/images/room-decorations-gallery-02-the-black-gold.webp
+           /assets/images/room-decorations-gallery-03-the-black-gold.webp
+       - Keep WebP, add width/height if available, and maintain lazy-loading for non-hero media. -->
+</body>
+</html>

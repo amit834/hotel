@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- =========================================================================
+       Hotel The Black Gold — Long-Term Stay (long-term-stay.html)
+       =========================================================================
+       - Semantic HTML5; WCAG-2.1 AA; ARIA; single <h1>
+       - Inline, minified CSS; tiny vanilla JS; hero preload; lazy images
+       - Canonical, OG/Twitter, JSON-LD (Hotel, Breadcrumb, FAQPage)
+       - Responsive: grid/flex, mobile-first; sticky header; floating quick actions
+       - Developer: replace placeholder assets & wire GA4 / enquiry form as needed
+       ========================================================================= -->
+
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Meta Title (<=60 chars) -->
+  <title>Long-Term Stay Hotel Chandigarh | The Black Gold</title>
+
+  <!-- Meta Description (<=155 chars) -->
+  <meta name="description" content="Extended stay accommodation with weekly/monthly rates, Wi-Fi, laundry, parking & EV, GST invoices. Call +91-72775-22222 for long-stay quotes.">
+
+  <!-- Canonical -->
+  <link rel="canonical" href="https://www.hoteltheblackgold.com/long-term-stay.html">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Long-Term Stay Hotel Chandigarh | The Black Gold">
+  <meta property="og:description" content="Premium, homely extended stays near PGI with flexible weekly/monthly rates. Laundry, Wi-Fi, parking & EV, GST invoices. Call +91-72775-22222.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://www.hoteltheblackgold.com/long-term-stay.html">
+  <meta property="og:site_name" content="Hotel The Black Gold">
+  <meta property="og:image" content="https://www.hoteltheblackgold.com/assets/og/og-long-term-stay.webp">
+  <meta property="og:locale" content="en_IN">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Long-Term Stay Hotel Chandigarh | The Black Gold">
+  <meta name="twitter:description" content="Extended stay accommodation with weekly/monthly rates near PGI. Fast Wi-Fi, laundry, parking & EV, GST invoices.">
+  <meta name="twitter:image" content="https://www.hoteltheblackgold.com/assets/og/og-long-term-stay.webp">
+
+  <!-- Favicons (replace with real assets) -->
+  <link rel="icon" href="/assets/icons/favicon.ico">
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/icons/favicon-32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/icons/favicon-16.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/icons/apple-touch-icon.png">
+  <link rel="manifest" href="/assets/icons/site.webmanifest">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Montserrat:wght@600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Preload hero image -->
+  <link rel="preload" as="image" href="/assets/images/long-term-stay-hotel-the-black-gold.webp" imagesrcset="/assets/images/long-term-stay-hotel-the-black-gold.webp 1920w" imagesizes="100vw">
+
+  <!-- Styles (minified) -->
+  <style>
+    :root{--bg:#111111;--text:#F5F5F5;--muted:#EDEDED;--gold:#D4AF37;--card:#161616;--line:#2A2A2A;--shadow:0 8px 24px rgba(0,0,0,.35),0 2px 6px rgba(0,0,0,.25)}
+    *{box-sizing:border-box}html,body{margin:0;padding:0;background:var(--bg);color:var(--text);font-family:Lato,system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,"Helvetica Neue",Arial,sans-serif;line-height:1.6;text-rendering:optimizeLegibility}
+    img{max-width:100%;height:auto;border:0}a{color:var(--muted);text-decoration:none}a:hover,a:focus{color:var(--gold)}
+    .container{width:min(1180px,92vw);margin-inline:auto}
+    .skip-link{position:absolute;left:-999px;top:auto;width:1px;height:1px;overflow:hidden}
+    .skip-link:focus{left:1rem;top:1rem;width:auto;height:auto;background:#000;padding:.75rem 1rem;border:2px solid var(--gold);z-index:10000}
+
+    /* Header */
+    header{position:sticky;top:0;z-index:999;background:rgba(17,17,17,.75);backdrop-filter:saturate(120%) blur(8px);border-bottom:1px solid rgba(255,255,255,.05)}
+    .nav{display:flex;align-items:center;justify-content:space-between;padding:.85rem 0}
+    .brand{display:flex;align-items:center;gap:.75rem}.logo{width:36px;height:36px;border-radius:10px;background:linear-gradient(135deg,var(--gold),#9b7c1f);box-shadow:var(--shadow)}
+    .brand-name{font-family:Montserrat,sans-serif;font-weight:800;letter-spacing:.4px}
+    nav ul{list-style:none;margin:0;padding:0;display:flex;gap:1.25rem;align-items:center}
+    .book-now{background:var(--gold);color:#111;padding:.6rem 1rem;border-radius:999px;font-weight:700;box-shadow:var(--shadow);border:1px solid rgba(0,0,0,.35)}
+    .book-now:hover{filter:brightness(1.05)}
+
+    /* Hero */
+    .hero{position:relative;isolation:isolate}
+    .hero-media{position:absolute;inset:0;z-index:-1;overflow:hidden}
+    .hero-media img{width:100%;height:100%;object-fit:cover;filter:grayscale(.1) contrast(1.1) brightness(.82)}
+    .hero-overlay{position:absolute;inset:0;background:radial-gradient(1200px 600px at 60% 20%,rgba(212,175,55,.18),transparent),linear-gradient(180deg,rgba(17,17,17,.35),rgba(17,17,17,.85))}
+    .hero-inner{padding:clamp(84px,11vw,140px) 0 56px}
+    h1{font-family:Montserrat,sans-serif;font-weight:800;line-height:1.1;font-size:clamp(28px,5.6vw,46px);margin:0 0 .5rem}
+    .subhead{color:var(--muted);font-size:clamp(15px,2.2vw,18px);max-width:880px}
+    .cta-row{display:flex;gap:10px;flex-wrap:wrap;margin-top:14px}
+    .btn{display:inline-flex;align-items:center;justify-content:center;gap:.5rem;border:none;border-radius:12px;cursor:pointer;padding:.85rem 1.05rem}
+    .btn-primary{background:var(--gold);color:#111;font-weight:800}
+    .btn-ghost{background:#1a1a1a;border:1px solid #2b2b2b;color:#f1f1f1}
+
+    /* Sections */
+    section{padding:64px 0}
+    .section-title{font-family:Montserrat,sans-serif;font-weight:800;font-size:clamp(22px,3.6vw,32px);margin:0 0 16px}
+    .muted{color:#d2d2d2}.small{font-size:.95rem;color:#cfcfcf}
+    .grid-2{display:grid;grid-template-columns:1fr;gap:22px}
+    .grid-3{display:grid;grid-template-columns:1fr;gap:18px}
+
+    /* Grid blocks */
+    .icons{display:grid;grid-template-columns:1fr;gap:12px}
+    .icon-row{display:flex;gap:.75rem;align-items:flex-start;background:#141414;border:1px solid var(--line);padding:.8rem .9rem;border-radius:12px}
+    .icon{width:36px;height:36px;border-radius:10px;background:#1a1a1a;border:1px solid #2a2a2a;display:grid;place-items:center;color:var(--gold);font-weight:800}
+
+    /* Cards */
+    .cards{display:grid;grid-template-columns:1fr;gap:18px}
+    .card{background:#151515;border:1px solid var(--line);border-radius:18px;overflow:hidden;box-shadow:var(--shadow)}
+    .card img{display:block;aspect-ratio:16/9;object-fit:cover}
+    .card-body{padding:16px}
+    .card h3{font-family:Montserrat,sans-serif;margin:.2rem 0 .5rem}
+    .more{color:var(--gold);font-weight:700}
+
+    /* Cost savings block */
+    .savings{background:linear-gradient(180deg,#151515,#121212);border:1px solid #2b2b2b;border-radius:18px;box-shadow:var(--shadow);padding:18px}
+    .badge{display:inline-block;background:var(--gold);color:#111;font-weight:800;border-radius:999px;padding:.25rem .6rem;margin-bottom:.4rem}
+
+    /* Breadcrumbs */
+    .breadcrumbs{font-size:.95rem;margin:18px 0;color:#cfcfcf}
+    .breadcrumbs a{color:#cfcfcf}.breadcrumbs a:hover{color:var(--gold)}
+
+    /* FAQ */
+    .accordion{border:1px solid var(--line);border-radius:18px;overflow:hidden}
+    .acc-item{border-bottom:1px solid var(--line);background:#141414}
+    .acc-item:last-child{border-bottom:0}
+    .acc-btn{width:100%;text-align:left;padding:16px 18px;background:#141414;color:var(--text);border:0;font-weight:700;font-family:Montserrat,sans-serif;cursor:pointer}
+    .acc-content{max-height:0;overflow:hidden;transition:max-height .35s ease}
+    .acc-inner{padding:0 18px 16px;color:#d7d7d7}
+
+    /* Footer */
+    footer{border-top:1px solid rgba(255,255,255,.06);padding-top:40px;padding-bottom:80px}
+    .footer-grid{display:grid;grid-template-columns:1fr;gap:22px}
+    .footer-col h4{font-family:Montserrat,sans-serif;margin:.2rem 0 .6rem}
+    .copyright{border-top:1px solid rgba(255,255,255,.06);margin-top:26px;padding-top:18px;color:#c9c9c9;font-size:.9rem}
+
+    /* FAB */
+    .fab{position:fixed;right:16px;bottom:16px;display:grid;gap:10px;z-index:1000}
+    .fab a{display:flex;align-items:center;gap:.6rem;padding:.7rem .9rem;border-radius:999px;box-shadow:var(--shadow);border:1px solid rgba(0,0,0,.4);backdrop-filter:saturate(120%) blur(6px)}
+    .fab .call{background:var(--gold);color:#111;font-weight:800}
+    .fab .wa{background:#128C7E;color:#fff}
+    .fab .email{background:#1f1f1f;color:#f1f1f1;border-color:#343434}
+
+    /* Responsive */
+    @media (min-width:700px){
+      .grid-2{grid-template-columns:1.15fr .85fr}
+      .grid-3{grid-template-columns:repeat(3,1fr)}
+      .icons{grid-template-columns:repeat(3,1fr)}
+      .cards{grid-template-columns:repeat(3,1fr)}
+      .footer-grid{grid-template-columns:2fr 1fr 1fr 1fr}
+    }
+
+    /* Animations */
+    @media (prefers-reduced-motion:no-preference){
+      .fade-up{opacity:0;transform:translateY(10px);animation:fadeUp .6s ease .05s forwards}
+      .delay{animation-delay:.16s}
+      .delay2{animation-delay:.28s}
+      @keyframes fadeUp{to{opacity:1;transform:none}}
+    }
+
+    /* Focus */
+    :where(a,button){outline-color:var(--gold);outline-offset:2px}
+  </style>
+
+  <!-- JSON-LD: Hotel (amenities for long stays) -->
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"Hotel",
+    "name":"Hotel The Black Gold",
+    "url":"https://www.hoteltheblackgold.com/",
+    "brand":"Hotel The Black Gold",
+    "image":"https://www.hoteltheblackgold.com/assets/og/og-home.webp",
+    "description":"Long-term stay hotel in Chandigarh with weekly/monthly rates, GST invoices, Wi-Fi, laundry, secure parking with EV chargers, wheelchair access, pet-friendly rooms, and in-house kitchen.",
+    "telephone":"+91-72775-22222",
+    "address":{"@type":"PostalAddress","addressLocality":"Chandigarh","addressRegion":"Chandigarh","postalCode":"160000","addressCountry":"IN"},
+    "geo":{"@type":"GeoCoordinates","latitude":30.7333,"longitude":76.7794},
+    "areaServed":"Chandigarh",
+    "amenityFeature":[
+      {"@type":"LocationFeatureSpecification","name":"High-Speed Wi-Fi","value":"100 Mbps per wing"},
+      {"@type":"LocationFeatureSpecification","name":"Laundry & Ironing","value":"On-site service"},
+      {"@type":"LocationFeatureSpecification","name":"Secure Basement Parking","value":"Multiple vehicles"},
+      {"@type":"LocationFeatureSpecification","name":"EV Chargers","value":"On-site"},
+      {"@type":"LocationFeatureSpecification","name":"Wheelchair Access","value":"Lift to all floors"},
+      {"@type":"LocationFeatureSpecification","name":"Pet-Friendly Rooms","value":"₹300/night/pet"},
+      {"@type":"LocationFeatureSpecification","name":"In-House Kitchen","value":"Indian & Chinese; 07:30–22:30; basics 24×7"},
+      {"@type":"LocationFeatureSpecification","name":"Printing & Scanning","value":"Free at front desk"},
+      {"@type":"LocationFeatureSpecification","name":"Luggage Storage","value":"Early check-in/late check-out support"},
+      {"@type":"LocationFeatureSpecification","name":"GST Invoices","value":"Transparent corporate/long-stay billing"}
+    ],
+    "sameAs":["https://www.chandigarhtourism.gov.in/"]
+  }
+  </script>
+
+  <!-- JSON-LD: Breadcrumbs -->
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"BreadcrumbList",
+    "itemListElement":[
+      {"@type":"ListItem","position":1,"name":"Home","item":"https://www.hoteltheblackgold.com/"},
+      {"@type":"ListItem","position":2,"name":"Long-Term Stay","item":"https://www.hoteltheblackgold.com/long-term-stay.html"}
+    ]
+  }
+  </script>
+
+  <!-- JSON-LD: FAQPage (mirrors accordion content below) -->
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"FAQPage",
+    "mainEntity":[
+      {"@type":"Question","name":"What’s the minimum stay for long-term rates?","acceptedAnswer":{"@type":"Answer","text":"We offer special long-stay rates for stays of one week or more, with additional discounts for monthly bookings."}},
+      {"@type":"Question","name":"Is housekeeping included daily?","acceptedAnswer":{"@type":"Answer","text":"Yes, daily housekeeping is included at no extra cost."}},
+      {"@type":"Question","name":"Can I cook in the room?","acceptedAnswer":{"@type":"Answer","text":"No, rooms do not have cooking facilities. Our in-house kitchen serves fresh meals daily."}},
+      {"@type":"Question","name":"Are pets allowed for long stays?","acceptedAnswer":{"@type":"Answer","text":"Yes. Pets are welcome in designated rooms at ₹300 per night per pet."}},
+      {"@type":"Question","name":"Can I change rooms mid-stay?","acceptedAnswer":{"@type":"Answer","text":"Yes, subject to availability. Please contact the front desk."}},
+      {"@type":"Question","name":"Do you offer special rates for medical visitors or corporate guests?","acceptedAnswer":{"@type":"Answer","text":"Yes. We provide tailored packages for medical and corporate long stays."}}
+    ]
+  }
+  </script>
+
+  <!-- Analytics hook (insert GA4 when ready) -->
+  <!-- <script defer src="/assets/js/ga4.js"></script> -->
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <!-- HEADER -->
+  <header role="banner" aria-label="Primary">
+    <div class="container nav" id="nav">
+      <div class="brand" aria-label="Hotel The Black Gold">
+        <div class="logo" aria-hidden="true"></div>
+        <div class="brand-name">Hotel The Black Gold</div>
+      </div>
+      <nav aria-label="Main">
+        <ul>
+          <li><a href="/" rel="home">Home</a></li>
+          <li><a href="/rooms.html" rel="internal">Rooms &amp; Rates</a></li>
+          <li><a href="/amenities.html" rel="internal">Amenities</a></li>
+          <li><a href="/location.html" rel="internal">Location</a></li>
+          <li><a href="/faq.html" rel="internal">FAQ</a></li>
+          <li><a href="/contact.html" rel="internal">Contact</a></li>
+        </ul>
+      </nav>
+      <div><a class="book-now" href="/contact.html" rel="internal">Book Now</a></div>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero" aria-label="Hero">
+    <div class="hero-media" aria-hidden="true">
+      <img src="/assets/images/long-term-stay-hotel-the-black-gold.webp" alt="Comfortable extended-stay room at Hotel The Black Gold in Chandigarh" width="1920" height="1080">
+      <div class="hero-overlay"></div>
+    </div>
+    <div class="container hero-inner fade-up">
+      <nav class="breadcrumbs" aria-label="Breadcrumb">
+        <a href="/" rel="home">Home</a> › <span aria-current="page">Long-Term Stay</span>
+      </nav>
+      <h1>Long-Term Stay in Chandigarh – Hotel The Black Gold</h1>
+      <p class="subhead">Premium comfort for extended visits, with the flexibility and amenities you need — near PGI, PEC, High Court, and the city centre.</p>
+      <div class="cta-row">
+        <a class="btn btn-primary" href="tel:+917277522222" aria-label="Call Hotel The Black Gold">Call</a>
+        <a class="btn btn-ghost" href="https://wa.me/917277522222" rel="noopener" aria-label="WhatsApp Hotel The Black Gold">WhatsApp</a>
+        <a class="btn btn-ghost" href="mailto:reservations@hoteltheblackgold.in" aria-label="Email Hotel The Black Gold">Email</a>
+      </div>
+    </div>
+  </section>
+
+  <main id="main" class="container" role="main">
+    <!-- WHY CHOOSE US -->
+    <section class="fade-up" aria-labelledby="benefits">
+      <h2 id="benefits" class="section-title">Why Choose Us for Long Stays</h2>
+      <div class="icons" role="list">
+        <div class="icon-row" role="listitem"><div class="icon" aria-hidden="true">💸</div><div><strong>Flexible long-stay pricing:</strong> Weekly and monthly packages tailored to your duration.</div></div>
+        <div class="icon-row" role="listitem"><div class="icon" aria-hidden="true">📶</div><div><strong>Reliable 100&nbsp;Mbps Wi-Fi:</strong> Wing-wise coverage for work and streaming.</div></div>
+        <div class="icon-row" role="listitem"><div class="icon" aria-hidden="true">🧹</div><div><strong>Fully serviced rooms:</strong> AC, attached washroom, and daily housekeeping.</div></div>
+        <div class="icon-row" role="listitem"><div class="icon" aria-hidden="true">🍽</div><div><strong>In-house kitchen:</strong> Indian &amp; Chinese; breakfast on select packages.</div></div>
+        <div class="icon-row" role="listitem"><div class="icon" aria-hidden="true">🅿</div><div><strong>Parking &amp; EV:</strong> Secure basement parking with EV charging.</div></div>
+        <div class="icon-row" role="listitem"><div class="icon" aria-hidden="true">🧾</div><div><strong>GST invoices:</strong> Transparent billing for extended stays.</div></div>
+      </div>
+    </section>
+
+    <!-- ROOM CARDS -->
+    <section class="fade-up" aria-labelledby="rooms">
+      <h2 id="rooms" class="section-title">Room Options for Extended Stays</h2>
+      <div class="cards" role="list">
+        <article class="card" role="listitem">
+          <img loading="lazy" src="/assets/images/rooms-deluxe-hotel-the-black-gold-chandigarh.webp" alt="Deluxe room at Hotel The Black Gold for long-term stay">
+          <div class="card-body">
+            <h3>Deluxe</h3>
+            <p>Budget-friendly comfort with all essentials for longer stays.</p>
+            <a class="more" href="/deluxe-room.html" rel="internal">View Deluxe →</a>
+          </div>
+        </article>
+        <article class="card" role="listitem">
+          <img loading="lazy" src="/assets/images/rooms-super-deluxe-hotel-the-black-gold-chandigarh.webp" alt="Super Deluxe room with Smart TV for extended stays">
+          <div class="card-body">
+            <h3>Super Deluxe</h3>
+            <p>Extra space and Smart TV — ideal balance of comfort and value.</p>
+            <a class="more" href="/super-deluxe-room.html" rel="internal">View Super Deluxe →</a>
+          </div>
+        </article>
+        <article class="card" role="listitem">
+          <img loading="lazy" src="/assets/images/rooms-premium-hotel-the-black-gold-chandigarh.webp" alt="Premium room with 50-inch 4K Smart TV for long stays">
+          <div class="card-body">
+            <h3>Premium</h3>
+            <p>Our most comfortable setup with a 50&quot; 4K Smart TV and premium finish.</p>
+            <a class="more" href="/premium-room.html" rel="internal">View Premium →</a>
+          </div>
+        </article>
+      </div>
+      <p class="small" style="margin-top:10px">Compare all categories on <a href="/rooms.html" rel="internal">Rooms &amp; Rates</a>. See full <a href="/amenities.html" rel="internal">Amenities</a>.</p>
+    </section>
+
+    <!-- AMENITIES FOR LONG STAYS -->
+    <section class="fade-up" aria-labelledby="amenities">
+      <h2 id="amenities" class="section-title">Amenities That Matter for Long Stays</h2>
+      <div class="icons" role="list">
+        <div class="icon-row" role="listitem"><div class="icon" aria-hidden="true">🧺</div><div><strong>Laundry &amp; ironing</strong> to keep you fresh for weeks.</div></div>
+        <div class="icon-row" role="listitem"><div class="icon" aria-hidden="true">♿</div><div><strong>Lift &amp; accessibility</strong> across all floors; assistance on request.</div></div>
+        <div class="icon-row" role="listitem"><div class="icon" aria-hidden="true">🖨</div><div><strong>Printing &amp; scanning</strong> — complimentary at the front desk.</div></div>
+        <div class="icon-row" role="listitem"><div class="icon" aria-hidden="true">🧳</div><div><strong>Luggage storage</strong> for short trips away during your stay.</div></div>
+        <div class="icon-row" role="listitem"><div class="icon" aria-hidden="true">🐾</div><div><strong>Pet-friendly rooms</strong> available (₹300/night/pet).</div></div>
+        <div class="icon-row" role="listitem"><div class="icon" aria-hidden="true">🕐</div><div><strong>24/7 basics</strong> — tea, coffee, Maggi, sandwiches anytime.</div></div>
+      </div>
+    </section>
+
+    <!-- COST SAVINGS -->
+    <section class="fade-up" aria-labelledby="pricing">
+      <h2 id="pricing" class="section-title">Cost Savings &amp; Flexibility</h2>
+      <div class="savings">
+        <span class="badge" aria-hidden="true">Best for long stays</span>
+        <p class="muted">Save more the longer you stay. We offer weekly and monthly pricing with flexible check-in/check-out where possible and GST-compliant billing.</p>
+        <ul class="small" style="margin:0 0 8px 18px">
+          <li>Weekly Rates — <em>From ₹X,XXX/night*</em></li>
+          <li>Monthly Rates — <em>From ₹X,XXX/night*</em></li>
+        </ul>
+        <p class="small">*Rates are indicative and vary by dates/occupancy; taxes extra. Call for today’s quote.</p>
+        <div class="cta-row" style="margin-top:8px">
+          <a class="btn btn-primary" href="tel:+917277522222" aria-label="Call for long-stay quote">Call for Quote</a>
+          <a class="btn btn-ghost" href="https://wa.me/917277522222" rel="noopener" aria-label="WhatsApp for long-stay quote">WhatsApp Us</a>
+          <a class="btn btn-ghost" href="/contact.html" aria-label="Email/Enquiry form for long-stay">Email/Enquire</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="fade-up" aria-labelledby="faq">
+      <h2 id="faq" class="section-title">Long-Term Stay – FAQs</h2>
+      <div class="accordion" id="accordion" role="region" aria-label="Long-stay FAQs">
+        <div class="acc-item">
+          <button class="acc-btn" aria-expanded="false">What’s the minimum stay for long-term rates?</button>
+          <div class="acc-content"><div class="acc-inner">We offer special long-stay rates for stays of one week or more, with bigger discounts on monthly bookings.</div></div>
+        </div>
+        <div class="acc-item">
+          <button class="acc-btn" aria-expanded="false">Is housekeeping included daily?</button>
+          <div class="acc-content"><div class="acc-inner">Yes, daily housekeeping is included at no extra cost.</div></div>
+        </div>
+        <div class="acc-item">
+          <button class="acc-btn" aria-expanded="false">Can I cook in the room?</button>
+          <div class="acc-content"><div class="acc-inner">Rooms do not have cooking facilities. Our in-house kitchen serves Indian &amp; Chinese meals daily.</div></div>
+        </div>
+        <div class="acc-item">
+          <button class="acc-btn" aria-expanded="false">Are pets allowed for long stays?</button>
+          <div class="acc-content"><div class="acc-inner">Yes — pets are welcome in designated rooms at ₹300 per night per pet.</div></div>
+        </div>
+        <div class="acc-item">
+          <button class="acc-btn" aria-expanded="false">Can I change rooms mid-stay?</button>
+          <div class="acc-content"><div class="acc-inner">Yes, subject to availability. Please contact the front desk in advance.</div></div>
+        </div>
+        <div class="acc-item">
+          <button class="acc-btn" aria-expanded="false">Do you offer special rates for medical visitors or corporate guests?</button>
+          <div class="acc-content"><div class="acc-inner">Yes. We have tailored packages for medical visitors and corporate long stays.</div></div>
+        </div>
+      </div>
+      <p class="small" style="margin-top:12px">For directions and nearby highlights, see our <a href="/location.html" rel="internal">Location</a> page.</p>
+    </section>
+
+    <!-- CONVERSION FOOTER -->
+    <section class="fade-up" aria-label="Final Call to Action">
+      <div class="grid-2" style="align-items:center">
+        <div>
+          <h2 class="section-title">Book Your Extended Stay Today</h2>
+          <p class="muted">Priority: <strong>Call</strong> → <strong>WhatsApp</strong> → <strong>Email</strong>. Get custom long-stay rates and flexible arrangements.</p>
+          <div class="small">One number for everything: <strong><a href="tel:+917277522222">+91-72775-22222</a></strong>.</div>
+        </div>
+        <div>
+          <div class="cta-row">
+            <a class="btn btn-primary" href="tel:+917277522222" aria-label="Call Now">Call Now</a>
+            <a class="btn btn-ghost" href="https://wa.me/917277522222" rel="noopener" aria-label="WhatsApp Us">WhatsApp Us</a>
+            <a class="btn btn-ghost" href="/contact.html" aria-label="Email Us">Email Us</a>
+          </div>
+          <p class="small" style="margin-top:10px">Explore: <a href="/rooms.html" rel="internal">Rooms &amp; Rates</a> • <a href="/amenities.html" rel="internal">Amenities</a> • <a href="/location.html" rel="internal">Location</a></p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer role="contentinfo">
+    <div class="container footer-grid">
+      <div class="footer-col">
+        <h4>Hotel The Black Gold</h4>
+        <p class="small">Chandigarh, India • Near PGI &amp; city highlights • Pet-friendly • Wheelchair accessible</p>
+        <p class="small"><strong>Phone:</strong> <a href="tel:+917277522222">+91-72775-22222</a><br><strong>Email:</strong> <a href="mailto:reservations@hoteltheblackgold.in">reservations@hoteltheblackgold.in</a></p>
+      </div>
+      <div class="footer-col">
+        <h4>Stay Options</h4>
+        <p class="small">
+          <a href="/deluxe-room.html" rel="internal">Deluxe</a><br>
+          <a href="/super-deluxe-room.html" rel="internal">Super Deluxe</a><br>
+          <a href="/premium-room.html" rel="internal">Premium</a>
+        </p>
+      </div>
+      <div class="footer-col">
+        <h4>Plan</h4>
+        <p class="small">
+          <a href="/rooms.html" rel="internal">Rooms &amp; Rates</a><br>
+          <a href="/amenities.html" rel="internal">Amenities</a><br>
+          <a href="/location.html" rel="internal">Location</a>
+        </p>
+      </div>
+      <div class="footer-col">
+        <h4>Help</h4>
+        <p class="small">
+          <a href="/faq.html" rel="internal">FAQ</a><br>
+          <a href="/contact.html" rel="internal">Contact</a>
+        </p>
+      </div>
+    </div>
+    <div class="container copyright">
+      <div>© <span id="year"></span> Hotel The Black Gold. All rights reserved.</div>
+    </div>
+  </footer>
+
+  <!-- Floating Quick Actions (priority: Call > WhatsApp > Email) -->
+  <nav class="fab" aria-label="Quick actions">
+    <a class="call" href="tel:+917277522222" aria-label="Call Hotel The Black Gold">Call</a>
+    <a class="wa" href="https://wa.me/917277522222" rel="noopener" aria-label="WhatsApp Hotel The Black Gold">WhatsApp</a>
+    <a class="email" href="mailto:reservations@hoteltheblackgold.in" aria-label="Email Hotel The Black Gold">Email</a>
+  </nav>
+
+  <!-- Minimal JS: FAQ + year (deferred by placement) -->
+  <script>
+    // FAQ accordion
+    const items=document.querySelectorAll('.acc-item');items.forEach(it=>{const btn=it.querySelector('.acc-btn'),ct=it.querySelector('.acc-content');btn.addEventListener('click',()=>{const open=btn.getAttribute('aria-expanded')==='true';btn.setAttribute('aria-expanded',!open);ct.style.maxHeight=!open?(ct.scrollHeight+'px'):0})});
+    // Current year
+    document.getElementById('year').textContent=new Date().getFullYear();
+  </script>
+
+  <!-- Developer notes:
+       - Insert GA4 tag when ready (see head comment).
+       - Long-stay enquiry: link to /contact.html or add a dedicated /api/longstay-enquiry endpoint & modal.
+       - Replace hero and room images with optimized WebP assets:
+           /assets/images/long-term-stay-hotel-the-black-gold.webp
+           /assets/images/rooms-deluxe-hotel-the-black-gold-chandigarh.webp
+           /assets/images/rooms-super-deluxe-hotel-the-black-gold-chandigarh.webp
+           /assets/images/rooms-premium-hotel-the-black-gold-chandigarh.webp
+       - Update placeholder rate ranges in the savings block when pricing is finalized. -->
+</body>
+</html>
