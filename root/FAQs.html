@@ -1,0 +1,1149 @@
+<head>
+  <!-- =========================================================
+       Hotel The Black Gold — FAQ
+       File: faq.html  |  Purpose: <head> only (SEO + design consistency)
+       Design system: Montserrat (headings), Lato (body), gold accents
+       ========================================================= -->
+
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover, interactive-widget=resizes-content">
+  <meta name="theme-color" content="#111111">
+  <meta name="color-scheme" content="dark light">
+
+  <!-- Meta Title (<=60 chars) -->
+  <title>Frequently Asked Questions | Hotel The Black Gold</title>
+
+  <!-- Meta Description (<=155 chars) -->
+  <meta name="description" content="Answers to bookings, rates, check-in/out, rooms & amenities, dining, accessibility, pets, location & transport, safety, services, and policies.">
+
+  <!-- Canonical -->
+  <link rel="canonical" href="https://www.hoteltheblackgold.com/faq.html">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Frequently Asked Questions | Hotel The Black Gold">
+  <meta property="og:description" content="Clear, practical answers: bookings, rates, check-in/out, rooms, dining, accessibility, pets, transport, safety, services, and policies.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://www.hoteltheblackgold.com/faq.html">
+  <meta property="og:site_name" content="Hotel The Black Gold">
+  <meta property="og:image" content="https://www.hoteltheblackgold.com/assets/og/og-faq.webp">
+  <meta property="og:image:secure_url" content="https://www.hoteltheblackgold.com/assets/og/og-faq.webp">
+  <meta property="og:image:type" content="image/webp">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:locale" content="en_IN">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Frequently Asked Questions | Hotel The Black Gold">
+  <meta name="twitter:description" content="Everything you need to plan your stay — organized by topic with quick answers.">
+  <meta name="twitter:image" content="https://www.hoteltheblackgold.com/assets/og/og-faq.webp">
+  <meta name="twitter:site" content="@HotelBlackGold">
+
+  <!-- Favicons -->
+  <link rel="icon" href="/assets/icons/favicon.ico">
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/icons/favicon-32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/icons/favicon-16.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/icons/apple-touch-icon.png">
+  <link rel="manifest" href="/assets/icons/site.webmanifest">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Montserrat:wght@600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Preload hero image -->
+  <link rel="preload" as="image"
+        href="/assets/images/faq-hero-the-black-gold.webp"
+        imagesrcset="/assets/images/faq-hero-the-black-gold.webp 1920w"
+        imagesizes="100vw">
+
+  <!-- Critical styles (tokens + header/hero primitives for consistency) -->
+  <style>
+    :root{--bg:#111111;--text:#F5F5F5;--muted:#EDEDED;--gold:#D4AF37;--card:#151515;--line:#2A2A2A;--shadow:0 8px 24px rgba(0,0,0,.35),0 2px 6px rgba(0,0,0,.25)}
+    *{box-sizing:border-box}html,body{margin:0;padding:0;background:var(--bg);color:var(--text);font-family:Lato,system-ui,-apple-system,Segoe UI,Roboto,"Helvetica Neue",Arial,sans-serif;line-height:1.6}
+    a{color:#e9e9e9;text-decoration:none}a:hover,a:focus{color:var(--gold)}
+    img{max-width:100%;height:auto;border:0}
+    .container{width:min(1180px,92vw);margin-inline:auto}
+    .skip-link{position:absolute;left:-999px;top:auto;width:1px;height:1px;overflow:hidden}
+    .skip-link:focus{left:1rem;top:1rem;width:auto;height:auto;background:#000;padding:.75rem 1rem;border:2px solid var(--gold);z-index:10000}
+
+    /* Header */
+    header{position:sticky;top:0;z-index:999;background:rgba(17,17,17,.78);backdrop-filter:saturate(120%) blur(8px);border-bottom:1px solid rgba(255,255,255,.06)}
+    .nav{display:flex;align-items:center;justify-content:space-between;padding:.85rem 0}
+    .brand{display:flex;align-items:center;gap:.75rem}
+    .logo{width:36px;height:36px;border-radius:10px;background:linear-gradient(135deg,var(--gold),#9b7c1f);box-shadow:var(--shadow)}
+    .brand-name{font-family:Montserrat,sans-serif;font-weight:800;letter-spacing:.4px}
+    nav ul{list-style:none;margin:0;padding:0;display:flex;gap:1.1rem;align-items:center}
+    .book-now{background:var(--gold);color:#111;padding:.58rem 1rem;border-radius:999px;font-weight:800;box-shadow:var(--shadow);border:1px solid rgba(0,0,0,.35)}
+
+    /* Hero */
+    .hero{position:relative;isolation:isolate}
+    .hero-media{position:absolute;inset:0;z-index:-1;overflow:hidden}
+    .hero-media img{width:100%;height:100%;object-fit:cover;filter:grayscale(.06) contrast(1.05) brightness(.86)}
+    .hero-overlay{position:absolute;inset:0;background:radial-gradient(1200px 600px at 60% 18%,rgba(212,175,55,.16),transparent),linear-gradient(180deg,rgba(17,17,17,.28),rgba(17,17,17,.88))}
+    .hero-inner{padding:clamp(88px,12vw,148px) 0 56px}
+    h1{font-family:Montserrat,sans-serif;font-weight:800;line-height:1.1;font-size:clamp(28px,5.6vw,46px);margin:0 0 .5rem}
+    .subhead{color:#d6d6d6;font-size:clamp(15px,2.2vw,18px);max-width:880px}
+    .cta-row{display:flex;gap:10px;flex-wrap:wrap;margin-top:14px}
+    .btn{display:inline-flex;align-items:center;justify-content:center;gap:.5rem;border:none;border-radius:12px;cursor:pointer;padding:.85rem 1.05rem}
+    .btn-primary{background:var(--gold);color:#111;font-weight:800}
+    .btn-ghost{background:#1a1a1a;border:1px solid #2b2b2b;color:#f1f1f1}
+  </style>
+
+  <!-- JSON-LD: Hotel -->
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"Hotel",
+    "name":"Hotel The Black Gold",
+    "url":"https://www.hoteltheblackgold.com/",
+    "image":"https://www.hoteltheblackgold.com/assets/og/og-home.webp",
+    "description":"Best budget & premium hotel in Chandigarh near PU, PEC, High Court & CII — modern rooms with practical amenities and caring service.",
+    "telephone":"+917277522222",
+    "address":{"@type":"PostalAddress","streetAddress":"Hotel The Black Gold, near Century Public School, Nayagaon, Punjab","addressLocality":"Nayagaon","addressRegion":"Punjab","postalCode":"160103","addressCountry":"IN"},
+    "geo":{"@type":"GeoCoordinates","latitude":30.77498,"longitude":76.79716},
+    "areaServed":"Chandigarh",
+    "currenciesAccepted":"INR",
+    "paymentAccepted":"Cash, Card, UPI",
+    "priceRange":"₹₹",
+    "brand":{"@type":"Brand","name":"Hotel The Black Gold","logo":"https://www.hoteltheblackgold.com/assets/brand/logo.svg"},
+    "hasMap":"https://maps.app.goo.gl/8PPMnzc98C3cesBN9",
+    "sameAs":["https://www.facebook.com/HotelTheBlackGoldChandigarh","https://x.com/HotelBlackGold","https://maps.app.goo.gl/yUs4sxDEXqwgCvyC6"],
+    "knowsLanguage":["en","hi","pa"]
+  }
+  </script>
+
+  <!-- JSON-LD: Breadcrumbs -->
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"BreadcrumbList",
+    "itemListElement":[
+      {"@type":"ListItem","position":1,"name":"Home","item":"https://www.hoteltheblackgold.com/"},
+      {"@type":"ListItem","position":2,"name":"FAQ","item":"https://www.hoteltheblackgold.com/faq.html"}
+    ]
+  }
+  </script>
+
+  <!-- JSON-LD: FAQ Page (category anchors only; body will render accordions per topic) -->
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"WebPage",
+    "name":"Frequently Asked Questions",
+    "url":"https://www.hoteltheblackgold.com/faq.html",
+    "hasPart":[
+      {"@type":"WebPage","@id":"https://www.hoteltheblackgold.com/faq.html#faq-bookings-rates","name":"Bookings & Rates"},
+      {"@type":"WebPage","@id":"https://www.hoteltheblackgold.com/faq.html#faq-checkin-checkout","name":"Check-in & Check-out"},
+      {"@type":"WebPage","@id":"https://www.hoteltheblackgold.com/faq.html#faq-rooms-amenities","name":"Rooms & Amenities"},
+      {"@type":"WebPage","@id":"https://www.hoteltheblackgold.com/faq.html#faq-dining-kitchen","name":"Dining & Kitchen"},
+      {"@type":"WebPage","@id":"https://www.hoteltheblackgold.com/faq.html#faq-accessibility","name":"Accessibility"},
+      {"@type":"WebPage","@id":"https://www.hoteltheblackgold.com/faq.html#faq-pets","name":"Pets"},
+      {"@type":"WebPage","@id":"https://www.hoteltheblackgold.com/faq.html#faq-couple-policy","name":"Couple-Friendly Policy"},
+      {"@type":"WebPage","@id":"https://www.hoteltheblackgold.com/faq.html#faq-location-transport","name":"Location & Transport"},
+      {"@type":"WebPage","@id":"https://www.hoteltheblackgold.com/faq.html#faq-safety-security","name":"Safety & Security"},
+      {"@type":"WebPage","@id":"https://www.hoteltheblackgold.com/faq.html#faq-special-services","name":"Special Services"},
+      {"@type":"WebPage","@id":"https://www.hoteltheblackgold.com/faq.html#faq-policies","name":"Policies"},
+      {"@type":"WebPage","@id":"https://www.hoteltheblackgold.com/faq.html#faq-contact-support","name":"Contact & Support"}
+    ]
+  }
+  </script>
+
+  <!-- Analytics hook (insert GA4 when ready) -->
+  <!-- <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXX"></script>
+  <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)};gtag('js',new Date());gtag('config','G-XXXXXXX');</script> -->
+</head>
+
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <!-- HEADER -->
+  <header role="banner" aria-label="Primary">
+    <div class="container nav">
+      <!-- Brand -->
+      <a class="brand" href="/" aria-label="Hotel The Black Gold — Home">
+        <span class="logo" aria-hidden="true"></span>
+        <span class="brand-name">Hotel The Black Gold</span>
+      </a>
+
+      <!-- Nav -->
+      <nav aria-label="Main">
+        <ul>
+          <li><a href="/">Home</a></li>
+          <li><a href="/rooms.html">Rooms &amp; Rates</a></li>
+          <li><a href="/amenities.html">Amenities</a></li>
+          <li><a href="/location.html">Location</a></li>
+          <li><a href="/nearby-attractions.html">Nearby Attractions</a></li>
+          <li><a href="/important-landmarks.html">Important Landmarks</a></li>
+          <li><a href="/full-day-outings.html">Full-Day Outings</a></li>
+          <li><a href="/faq.html" aria-current="page">FAQ</a></li>
+          <li><a href="/contact.html">Contact</a></li>
+        </ul>
+      </nav>
+
+      <!-- CTA -->
+      <a class="book-now" href="/contact.html">Book Now</a>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero" aria-label="FAQ Hero">
+    <div class="hero-media" aria-hidden="true">
+      <img src="/assets/images/faq-hero-the-black-gold.webp"
+           alt="Warm, welcoming hotel ambience representing guest support"
+           width="1920" height="1080" decoding="async" fetchpriority="high">
+      <div class="hero-overlay"></div>
+    </div>
+    <div class="container hero-inner">
+      <nav class="breadcrumbs" aria-label="Breadcrumb">
+        <a href="/">Home</a> › <span aria-current="page">FAQ</span>
+      </nav>
+      <h1>Frequently Asked Questions</h1>
+      <p class="subhead">Clear, practical answers to help you plan — organized by topic with expandable sections. For anything else, call or WhatsApp us at <a href="tel:+917277522222">+91-72775-22222</a>.</p>
+      <div class="cta-row">
+        <a class="btn btn-primary" href="tel:+917277522222" aria-label="Call Hotel The Black Gold">Call</a>
+        <a class="btn btn-ghost" href="https://wa.me/917277522222" target="_blank" rel="noopener" aria-label="WhatsApp Hotel The Black Gold">WhatsApp</a>
+        <a class="btn btn-ghost" href="/rooms.html" aria-label="View Rooms & Rates">View Rooms</a>
+      </div>
+    </div>
+  </section>
+
+  <main id="main" class="container" role="main">
+    <!-- Bookings & Rates -->
+    <section id="faq-bookings-rates" aria-labelledby="faq-bookings-rates-title" style="padding:64px 0">
+      <h2 id="faq-bookings-rates-title" class="section-title">1) Bookings &amp; Rates</h2>
+
+      <details id="faq-bookings-rates-q1" class="card">
+        <summary><strong>What’s the best way to get the lowest rate at Hotel The Black Gold?</strong></summary>
+        <div class="card-body">
+          <p>The best rates are always available when you book directly through our official channels — by calling <a href="tel:+917277522222">+91-72775-22222</a>, sending us a WhatsApp message, or using our official booking link. Direct bookings often include perks such as complimentary breakfast on select plans and flexible support.</p>
+        </div>
+      </details>
+
+      <details id="faq-bookings-rates-q2" class="card">
+        <summary><strong>Do you offer price matching?</strong></summary>
+        <div class="card-body">
+          <p>Yes. If you find a lower publicly available rate for the same room type, dates, and booking conditions, we’ll match it — provided you contact us before confirming your booking.</p>
+        </div>
+      </details>
+
+      <details id="faq-bookings-rates-q3" class="card">
+        <summary><strong>How are your room rates calculated?</strong></summary>
+        <div class="card-body">
+          <p>Rates are based on room category, occupancy, seasonality, and availability. Special events in Chandigarh, such as cricket matches or festivals, may impact pricing.</p>
+        </div>
+      </details>
+
+      <details id="faq-bookings-rates-q4" class="card">
+        <summary><strong>Are taxes included in the room rate?</strong></summary>
+        <div class="card-body">
+          <p>All rates are exclusive of applicable GST, which is added at the time of booking or check-in.</p>
+        </div>
+      </details>
+
+      <details id="faq-bookings-rates-q5" class="card">
+        <summary><strong>What payment methods do you accept?</strong></summary>
+        <div class="card-body">
+          <p>We accept major credit/debit cards, UPI, net banking, and cash payments at the hotel.</p>
+        </div>
+      </details>
+
+      <details id="faq-bookings-rates-q6" class="card">
+        <summary><strong>Do you accept international credit cards?</strong></summary>
+        <div class="card-body">
+          <p>Yes, Visa, MasterCard, and other internationally recognized cards are accepted.</p>
+        </div>
+      </details>
+
+      <details id="faq-bookings-rates-q7" class="card">
+        <summary><strong>Can I pay in cash at check-in?</strong></summary>
+        <div class="card-body">
+          <p>Yes, we accept cash payments at check-in or check-out.</p>
+        </div>
+      </details>
+
+      <details id="faq-bookings-rates-q8" class="card">
+        <summary><strong>Do you require a booking deposit?</strong></summary>
+        <div class="card-body">
+          <p>For certain high-demand periods, group bookings, or long-term stays, we may request a partial advance to confirm your booking.</p>
+        </div>
+      </details>
+
+      <details id="faq-bookings-rates-q9" class="card">
+        <summary><strong>What’s your refund policy?</strong></summary>
+        <div class="card-body">
+          <p>Refunds are processed as per our cancellation policy, which varies based on the booking plan. Please confirm the terms before making your reservation.</p>
+        </div>
+      </details>
+
+      <details id="faq-bookings-rates-q10" class="card">
+        <summary><strong>How do I modify an existing booking?</strong></summary>
+        <div class="card-body">
+          <p>Simply call our reservations team or send a WhatsApp message to <a href="tel:+917277522222">+91-72775-22222</a>. Changes are subject to availability and rate adjustments.</p>
+        </div>
+      </details>
+
+      <details id="faq-bookings-rates-q11" class="card">
+        <summary><strong>How do I cancel a booking?</strong></summary>
+        <div class="card-body">
+          <p>You can cancel via the same channel you booked through. Cancellations made within the free-cancellation window will be refunded in full.</p>
+        </div>
+      </details>
+
+      <details id="faq-bookings-rates-q12" class="card">
+        <summary><strong>Do you offer corporate rates?</strong></summary>
+        <div class="card-body">
+          <p>Yes, special rates are available for corporate clients. Please see <a href="/corporate-bookings.html">Corporate Bookings →</a>.</p>
+        </div>
+      </details>
+
+      <details id="faq-bookings-rates-q13" class="card">
+        <summary><strong>Are there special rates for travel agents?</strong></summary>
+        <div class="card-body">
+          <p>Yes, we work with travel partners and offer competitive commissions. Contact us for details.</p>
+        </div>
+      </details>
+
+      <details id="faq-bookings-rates-q14" class="card">
+        <summary><strong>Do you offer long-term stay discounts?</strong></summary>
+        <div class="card-body">
+          <p>Yes, discounted rates are available for extended stays. See <a href="/long-term-stay.html">Long-Term Stay →</a> for more information.</p>
+        </div>
+      </details>
+
+      <details id="faq-bookings-rates-q15" class="card">
+        <summary><strong>Are there seasonal promotions?</strong></summary>
+        <div class="card-body">
+          <p>We run periodic offers during festive seasons and off-peak periods. Check our website or call us to know the latest deals.</p>
+        </div>
+      </details>
+    </section>
+
+    <!-- Check-in & Check-out -->
+    <section id="faq-checkin-checkout" aria-labelledby="faq-checkin-checkout-title" style="padding:64px 0">
+      <h2 id="faq-checkin-checkout-title" class="section-title">2) Check-in &amp; Check-out</h2>
+
+      <details id="faq-checkin-checkout-q1" class="card">
+        <summary><strong>What are your check-in and check-out times?</strong></summary>
+        <div class="card-body">
+          <p>Standard check-in is from 12:00 PM, and check-out is by 11:00 AM.</p>
+        </div>
+      </details>
+
+      <details id="faq-checkin-checkout-q2" class="card">
+        <summary><strong>Can I request an early check-in?</strong></summary>
+        <div class="card-body">
+          <p>Yes, subject to room availability and a nominal charge.</p>
+        </div>
+      </details>
+
+      <details id="faq-checkin-checkout-q3" class="card">
+        <summary><strong>Can I request a late check-out?</strong></summary>
+        <div class="card-body">
+          <p>Yes, depending on availability. Charges may apply for late check-outs beyond 2:00 PM.</p>
+        </div>
+      </details>
+
+      <details id="faq-checkin-checkout-q4" class="card">
+        <summary><strong>Is there a charge for early check-in or late check-out?</strong></summary>
+        <div class="card-body">
+          <p>Yes, a half-day or full-day rate may apply depending on the time and duration.</p>
+        </div>
+      </details>
+
+      <details id="faq-checkin-checkout-q5" class="card">
+        <summary><strong>What documents do I need at check-in?</strong></summary>
+        <div class="card-body">
+          <p>All guests must present a valid government-issued photo ID (passport for international guests).</p>
+        </div>
+      </details>
+
+      <details id="faq-checkin-checkout-q6" class="card">
+        <summary><strong>Can I check in without an ID?</strong></summary>
+        <div class="card-body">
+          <p>No, valid ID is mandatory for all guests.</p>
+        </div>
+      </details>
+
+      <details id="faq-checkin-checkout-q7" class="card">
+        <summary><strong>Can someone else check in on my behalf?</strong></summary>
+        <div class="card-body">
+          <p>Yes, but their name must be on the booking, and they must present valid ID.</p>
+        </div>
+      </details>
+
+      <details id="faq-checkin-checkout-q8" class="card">
+        <summary><strong>Can I check in after midnight?</strong></summary>
+        <div class="card-body">
+          <p>Yes, late-night check-ins are accepted if your booking is confirmed in advance.</p>
+        </div>
+      </details>
+
+      <details id="faq-checkin-checkout-q9" class="card">
+        <summary><strong>Is 24-hour check-in available?</strong></summary>
+        <div class="card-body">
+          <p>We do not offer rolling 24-hour check-in, but our front desk is open 24×7 to assist guests.</p>
+        </div>
+      </details>
+
+      <details id="faq-checkin-checkout-q10" class="card">
+        <summary><strong>Can I store luggage before check-in or after check-out?</strong></summary>
+        <div class="card-body">
+          <p>Yes, we provide secure luggage storage for early arrivals and late departures.</p>
+        </div>
+      </details>
+
+      <details id="faq-checkin-checkout-q11" class="card">
+        <summary><strong>Is there a secure luggage storage area?</strong></summary>
+        <div class="card-body">
+          <p>Yes, your belongings will be safely stored at the front desk until you collect them.</p>
+        </div>
+      </details>
+    </section>
+
+    <!-- Rooms & Amenities -->
+    <section id="faq-rooms-amenities" aria-labelledby="faq-rooms-amenities-title" style="padding:64px 0">
+      <h2 id="faq-rooms-amenities-title" class="section-title">3) Rooms &amp; Amenities</h2>
+
+      <details id="faq-rooms-amenities-q1" class="card">
+        <summary><strong>What room categories are available?</strong></summary>
+        <div class="card-body">
+          <p>We offer <a href="/deluxe-room.html">Deluxe Room →</a>, <a href="/super-deluxe-room.html">Super Deluxe Room →</a>, and <a href="/premium-room.html">Premium Room →</a> options.</p>
+        </div>
+      </details>
+
+      <details id="faq-rooms-amenities-q2" class="card">
+        <summary><strong>What is included in the Deluxe Room?</strong></summary>
+        <div class="card-body">
+          <p>Compact comfort with a 32&quot; TV, AC, Wi-Fi, attached washroom, and all basic amenities.</p>
+        </div>
+      </details>
+
+      <details id="faq-rooms-amenities-q3" class="card">
+        <summary><strong>What is included in the Super Deluxe Room?</strong></summary>
+        <div class="card-body">
+          <p>Extra space, a 43&quot; Smart TV with Airtel STB, and upgraded furnishings.</p>
+        </div>
+      </details>
+
+      <details id="faq-rooms-amenities-q4" class="card">
+        <summary><strong>What is included in the Premium Room?</strong></summary>
+        <div class="card-body">
+          <p>Our most spacious option with a 50&quot; 4K Smart TV, premium finishes, and serene ambience.</p>
+        </div>
+      </details>
+
+      <details id="faq-rooms-amenities-q5" class="card">
+        <summary><strong>Do all rooms have air conditioning?</strong></summary>
+        <div class="card-body">
+          <p>Yes, every room is air-conditioned.</p>
+        </div>
+      </details>
+
+      <details id="faq-rooms-amenities-q6" class="card">
+        <summary><strong>Is Wi-Fi free and how fast is it?</strong></summary>
+        <div class="card-body">
+          <p>Yes, free high-speed Wi-Fi (100 Mbps per wing) is available throughout the property.</p>
+        </div>
+      </details>
+
+      <details id="faq-rooms-amenities-q7" class="card">
+        <summary><strong>Do rooms have attached washrooms?</strong></summary>
+        <div class="card-body">
+          <p>Yes, all rooms feature private attached washrooms.</p>
+        </div>
+      </details>
+
+      <details id="faq-rooms-amenities-q8" class="card">
+        <summary><strong>Are toiletries provided?</strong></summary>
+        <div class="card-body">
+          <p>Yes, fresh towels, soap, shampoo, and other essentials are included.</p>
+        </div>
+      </details>
+
+      <details id="faq-rooms-amenities-q9" class="card">
+        <summary><strong>Is bottled water complimentary?</strong></summary>
+        <div class="card-body">
+          <p>Yes, drinking water is provided in all rooms.</p>
+        </div>
+      </details>
+
+      <details id="faq-rooms-amenities-q10" class="card">
+        <summary><strong>Do you provide an electric kettle?</strong></summary>
+        <div class="card-body">
+          <p>No, but tea, coffee, and basic snacks are available 24×7 via room service.</p>
+        </div>
+      </details>
+
+      <details id="faq-rooms-amenities-q11" class="card">
+        <summary><strong>Do you have work desks in rooms?</strong></summary>
+        <div class="card-body">
+          <p>No, but all rooms have a coffee table and two chairs.</p>
+        </div>
+      </details>
+
+      <details id="faq-rooms-amenities-q12" class="card">
+        <summary><strong>Can I request an extra bed or pillow?</strong></summary>
+        <div class="card-body">
+          <p>Yes, available on request, subject to availability.</p>
+        </div>
+      </details>
+
+      <details id="faq-rooms-amenities-q13" class="card">
+        <summary><strong>Are ironing facilities available?</strong></summary>
+        <div class="card-body">
+          <p>Yes, ironing is offered as a service.</p>
+        </div>
+      </details>
+
+      <details id="faq-rooms-amenities-q14" class="card">
+        <summary><strong>How often is housekeeping done?</strong></summary>
+        <div class="card-body">
+          <p>Daily housekeeping is included in all stays.</p>
+        </div>
+      </details>
+
+      <details id="faq-rooms-amenities-q15" class="card">
+        <summary><strong>Do rooms have a balcony or view?</strong></summary>
+        <div class="card-body">
+          <p>Views vary by room; please request in advance.</p>
+        </div>
+      </details>
+
+      <details id="faq-rooms-amenities-q16" class="card">
+        <summary><strong>Are smoking rooms available?</strong></summary>
+        <div class="card-body">
+          <p>No, all rooms are non-smoking.</p>
+        </div>
+      </details>
+
+      <details id="faq-rooms-amenities-q17" class="card">
+        <summary><strong>Do you have wheelchair-accessible rooms?</strong></summary>
+        <div class="card-body">
+          <p>Yes, accessible rooms and lift access are available.</p>
+        </div>
+      </details>
+
+      <details id="faq-rooms-amenities-q18" class="card">
+        <summary><strong>Can I request a specific floor or room number?</strong></summary>
+        <div class="card-body">
+          <p>Yes, subject to availability.</p>
+        </div>
+      </details>
+
+      <details id="faq-rooms-amenities-q19" class="card">
+        <summary><strong>Are rooms soundproof?</strong></summary>
+        <div class="card-body">
+          <p>Rooms are designed for privacy, though not fully soundproof.</p>
+        </div>
+      </details>
+    </section>
+
+    <!-- Dining & Kitchen -->
+    <section id="faq-dining-kitchen" aria-labelledby="faq-dining-kitchen-title" style="padding:64px 0">
+      <h2 id="faq-dining-kitchen-title" class="section-title">4) Dining &amp; Kitchen</h2>
+
+      <details id="faq-dining-kitchen-q1" class="card">
+        <summary><strong>What are the kitchen operating hours?</strong></summary>
+        <div class="card-body">
+          <p>The kitchen operates from 7:30 AM to 10:30 PM for full meals.</p>
+        </div>
+      </details>
+
+      <details id="faq-dining-kitchen-q2" class="card">
+        <summary><strong>Is breakfast included in my booking?</strong></summary>
+        <div class="card-body">
+          <p>Complimentary breakfast is included with select packages.</p>
+        </div>
+      </details>
+
+      <details id="faq-dining-kitchen-q3" class="card">
+        <summary><strong>What cuisines do you serve?</strong></summary>
+        <div class="card-body">
+          <p>We serve Indian and Chinese cuisine.</p>
+        </div>
+      </details>
+
+      <details id="faq-dining-kitchen-q4" class="card">
+        <summary><strong>Can I order food to my room?</strong></summary>
+        <div class="card-body">
+          <p>Yes, room service is available.</p>
+        </div>
+      </details>
+
+      <details id="faq-dining-kitchen-q5" class="card">
+        <summary><strong>Do you have 24-hour room service?</strong></summary>
+        <div class="card-body">
+          <p>Yes, for basics like tea, coffee, Maggi, and sandwiches.</p>
+        </div>
+      </details>
+
+      <details id="faq-dining-kitchen-q6" class="card">
+        <summary><strong>Do you cater to dietary restrictions?</strong></summary>
+        <div class="card-body">
+          <p>Yes, inform us in advance so we can accommodate.</p>
+        </div>
+      </details>
+
+      <details id="faq-dining-kitchen-q7" class="card">
+        <summary><strong>Can I request a custom meal?</strong></summary>
+        <div class="card-body">
+          <p>Yes, subject to ingredient availability.</p>
+        </div>
+      </details>
+
+      <details id="faq-dining-kitchen-q8" class="card">
+        <summary><strong>Do you serve alcohol?</strong></summary>
+        <div class="card-body">
+          <p>No, we do not serve alcohol.</p>
+        </div>
+      </details>
+
+      <details id="faq-dining-kitchen-q9" class="card">
+        <summary><strong>Can I order food from outside?</strong></summary>
+        <div class="card-body">
+          <p>Yes, outside food delivery is allowed.</p>
+        </div>
+      </details>
+
+      <details id="faq-dining-kitchen-q10" class="card">
+        <summary><strong>Do you have a dining hall?</strong></summary>
+        <div class="card-body">
+          <p>Yes, especially for <a href="/group-bookings.html">Group Bookings →</a>.</p>
+        </div>
+      </details>
+
+      <details id="faq-dining-kitchen-q11" class="card">
+        <summary><strong>Can you arrange in-room celebrations with cake and drinks?</strong></summary>
+        <div class="card-body">
+          <p>Yes, see <a href="/room-decorations.html">Room Decorations →</a> for options.</p>
+        </div>
+      </details>
+    </section>
+
+    <!-- Accessibility -->
+    <section id="faq-accessibility" aria-labelledby="faq-accessibility-title" style="padding:64px 0">
+      <h2 id="faq-accessibility-title" class="section-title">5) Accessibility</h2>
+
+      <details id="faq-accessibility-q1" class="card">
+        <summary><strong>Is the hotel wheelchair accessible?</strong></summary>
+        <div class="card-body">
+          <p>Yes, our property has been designed to accommodate wheelchair users, with smooth pathways and lift access to all floors.</p>
+        </div>
+      </details>
+
+      <details id="faq-accessibility-q2" class="card">
+        <summary><strong>Do you have a lift/elevator to all floors?</strong></summary>
+        <div class="card-body">
+          <p>Yes, a modern elevator provides access to every floor, including guest rooms and common areas.</p>
+        </div>
+      </details>
+
+      <details id="faq-accessibility-q3" class="card">
+        <summary><strong>Do you offer wheelchair assistance?</strong></summary>
+        <div class="card-body">
+          <p>Yes, our team can provide wheelchair assistance on request. Please inform us in advance for smooth arrangements.</p>
+        </div>
+      </details>
+
+      <details id="faq-accessibility-q4" class="card">
+        <summary><strong>Are washrooms accessible for guests with disabilities?</strong></summary>
+        <div class="card-body">
+          <p>Yes, select rooms feature accessible washrooms with supportive fixtures.</p>
+        </div>
+      </details>
+
+      <details id="faq-accessibility-q5" class="card">
+        <summary><strong>Do you have Braille signs or tactile indicators?</strong></summary>
+        <div class="card-body">
+          <p>We do not have Braille signage at this time, but our staff is trained to assist visually impaired guests.</p>
+        </div>
+      </details>
+    </section>
+
+    <!-- Pets -->
+    <section id="faq-pets" aria-labelledby="faq-pets-title" style="padding:64px 0">
+      <h2 id="faq-pets-title" class="section-title">6) Pets</h2>
+
+      <details id="faq-pets-q1" class="card">
+        <summary><strong>Are pets allowed?</strong></summary>
+        <div class="card-body">
+          <p>Yes, we are a pet-friendly hotel. Details are available on our <a href="/pet-friendly.html">Pet-Friendly →</a> page.</p>
+        </div>
+      </details>
+
+      <details id="faq-pets-q2" class="card">
+        <summary><strong>What’s the pet fee?</strong></summary>
+        <div class="card-body">
+          <p>The fee is ₹300 per night per pet.</p>
+        </div>
+      </details>
+
+      <details id="faq-pets-q3" class="card">
+        <summary><strong>Do you have pet-friendly rooms?</strong></summary>
+        <div class="card-body">
+          <p>Yes, certain rooms are allocated for guests traveling with pets.</p>
+        </div>
+      </details>
+
+      <details id="faq-pets-q4" class="card">
+        <summary><strong>Can I leave my pet alone in the room?</strong></summary>
+        <div class="card-body">
+          <p>We do not recommend leaving pets unattended for long periods to ensure their safety and comfort.</p>
+        </div>
+      </details>
+
+      <details id="faq-pets-q5" class="card">
+        <summary><strong>Do you offer pet beds or bowls?</strong></summary>
+        <div class="card-body">
+          <p>Yes, available on request at no extra charge.</p>
+        </div>
+      </details>
+
+      <details id="faq-pets-q6" class="card">
+        <summary><strong>Are there any pet size or breed restrictions?</strong></summary>
+        <div class="card-body">
+          <p>No, we welcome pets of all sizes and breeds.</p>
+        </div>
+      </details>
+
+      <details id="faq-pets-q7" class="card">
+        <summary><strong>Do you have a designated pet relief area?</strong></summary>
+        <div class="card-body">
+          <p>No, but we can guide you to nearby outdoor spaces suitable for pets.</p>
+        </div>
+      </details>
+    </section>
+
+    <!-- Couple-Friendly Policy -->
+    <section id="faq-couple-policy" aria-labelledby="faq-couple-policy-title" style="padding:64px 0">
+      <h2 id="faq-couple-policy-title" class="section-title">7) Couple-Friendly Policy</h2>
+
+      <details id="faq-couple-policy-q1" class="card">
+        <summary><strong>Are unmarried couples allowed?</strong></summary>
+        <div class="card-body">
+          <p>Yes, we welcome all adult guests, including unmarried couples.</p>
+        </div>
+      </details>
+
+      <details id="faq-couple-policy-q2" class="card">
+        <summary><strong>Do you require both guests to show ID?</strong></summary>
+        <div class="card-body">
+          <p>Yes, valid government-issued IDs are required for all guests.</p>
+        </div>
+      </details>
+
+      <details id="faq-couple-policy-q3" class="card">
+        <summary><strong>Will my local ID be accepted?</strong></summary>
+        <div class="card-body">
+          <p>Yes, local IDs are accepted for check-in.</p>
+        </div>
+      </details>
+
+      <details id="faq-couple-policy-q4" class="card">
+        <summary><strong>Is the hotel discreet for couples?</strong></summary>
+        <div class="card-body">
+          <p>Yes, we respect the privacy of all guests and maintain a professional approach.</p>
+        </div>
+      </details>
+
+      <details id="faq-couple-policy-q5" class="card">
+        <summary><strong>Do you provide early check-in for couples?</strong></summary>
+        <div class="card-body">
+          <p>Early check-in is subject to availability and may incur a nominal charge.</p>
+        </div>
+      </details>
+
+      <details id="faq-couple-policy-q6" class="card">
+        <summary><strong>Do you offer special couple packages?</strong></summary>
+        <div class="card-body">
+          <p>Yes, including romantic room decorations — see <a href="/room-decorations.html">Room Decorations →</a>.</p>
+        </div>
+      </details>
+
+      <details id="faq-couple-policy-q7" class="card">
+        <summary><strong>Is the room decoration service available for anniversaries or proposals?</strong></summary>
+        <div class="card-body">
+          <p>Yes, custom themes can be arranged with prior notice.</p>
+        </div>
+      </details>
+
+      <details id="faq-couple-policy-q8" class="card">
+        <summary><strong>Are there restrictions for same-sex couples?</strong></summary>
+        <div class="card-body">
+          <p>No, we are inclusive and welcome all couples.</p>
+        </div>
+      </details>
+
+      <details id="faq-couple-policy-q9" class="card">
+        <summary><strong>Do you ensure privacy for couple guests?</strong></summary>
+        <div class="card-body">
+          <p>Yes, guest confidentiality is a priority.</p>
+        </div>
+      </details>
+    </section>
+
+    <!-- Location & Transport -->
+    <section id="faq-location-transport" aria-labelledby="faq-location-transport-title" style="padding:64px 0">
+      <h2 id="faq-location-transport-title" class="section-title">8) Location &amp; Transport</h2>
+
+      <details id="faq-location-transport-q1" class="card">
+        <summary><strong>How far is PGI Chandigarh from the hotel?</strong></summary>
+        <div class="card-body">
+          <p>Less than 1.5 km — approximately a 5-minute drive. See <a href="/hotel-near-pgi.html">Hotel Near PGI →</a>.</p>
+        </div>
+      </details>
+
+      <details id="faq-location-transport-q2" class="card">
+        <summary><strong>How far is Sukhna Lake from the hotel?</strong></summary>
+        <div class="card-body">
+          <p>Around 6 km, a 15-minute drive.</p>
+        </div>
+      </details>
+
+      <details id="faq-location-transport-q3" class="card">
+        <summary><strong>How far is the Rock Garden from the hotel?</strong></summary>
+        <div class="card-body">
+          <p>Approximately 7 km, about 15 minutes by car.</p>
+        </div>
+      </details>
+
+      <details id="faq-location-transport-q4" class="card">
+        <summary><strong>How far is Sector 17 from the hotel?</strong></summary>
+        <div class="card-body">
+          <p>Around 7 km, roughly 15 minutes by car.</p>
+        </div>
+      </details>
+
+      <details id="faq-location-transport-q5" class="card">
+        <summary><strong>How far is PEC from the hotel?</strong></summary>
+        <div class="card-body">
+          <p>About 5 km, 12 minutes by car.</p>
+        </div>
+      </details>
+
+      <details id="faq-location-transport-q6" class="card">
+        <summary><strong>How far is Panjab University from the hotel?</strong></summary>
+        <div class="card-body">
+          <p>Around 5 km, about 12 minutes by car.</p>
+        </div>
+      </details>
+
+      <details id="faq-location-transport-q7" class="card">
+        <summary><strong>How far is the Punjab &amp; Haryana High Court from the hotel?</strong></summary>
+        <div class="card-body">
+          <p>Approximately 6 km, a 15-minute drive.</p>
+        </div>
+      </details>
+
+      <details id="faq-location-transport-q8" class="card">
+        <summary><strong>How far is PCA Stadium from the hotel?</strong></summary>
+        <div class="card-body">
+          <p>Around 15 km, about 30 minutes by car.</p>
+        </div>
+      </details>
+
+      <details id="faq-location-transport-q9" class="card">
+        <summary><strong>How far is Chandigarh International Airport?</strong></summary>
+        <div class="card-body">
+          <p>Approximately 11 km, a 25-minute drive.</p>
+        </div>
+      </details>
+
+      <details id="faq-location-transport-q10" class="card">
+        <summary><strong>How far is the railway station?</strong></summary>
+        <div class="card-body">
+          <p>Around 8 km, roughly 20 minutes by car.</p>
+        </div>
+      </details>
+
+      <details id="faq-location-transport-q11" class="card">
+        <summary><strong>How far are the main bus stands?</strong></summary>
+        <div class="card-body">
+          <p>Sector 43 Bus Stand is 3.5 km away; ISBT Sector 17 is 6 km away.</p>
+        </div>
+      </details>
+
+      <details id="faq-location-transport-q12" class="card">
+        <summary><strong>Do you offer airport pickup and drop?</strong></summary>
+        <div class="card-body">
+          <p>Yes, available on request for an additional charge.</p>
+        </div>
+      </details>
+
+      <details id="faq-location-transport-q13" class="card">
+        <summary><strong>Can you arrange a taxi or cab?</strong></summary>
+        <div class="card-body">
+          <p>Yes, we can arrange Ola, Uber, or private taxis for you.</p>
+        </div>
+      </details>
+
+      <details id="faq-location-transport-q14" class="card">
+        <summary><strong>Is parking available?</strong></summary>
+        <div class="card-body">
+          <p>Yes, secure basement parking is available for guests.</p>
+        </div>
+      </details>
+
+      <details id="faq-location-transport-q15" class="card">
+        <summary><strong>Do you have EV charging?</strong></summary>
+        <div class="card-body">
+          <p>Yes, EV charging stations are available in our parking area.</p>
+        </div>
+      </details>
+
+      <details id="faq-location-transport-q16" class="card">
+        <summary><strong>Is Ola/Uber easily available?</strong></summary>
+        <div class="card-body">
+          <p>Yes, both are readily accessible in our location.</p>
+        </div>
+      </details>
+    </section>
+
+    <!-- Safety & Security -->
+    <section id="faq-safety-security" aria-labelledby="faq-safety-security-title" style="padding:64px 0">
+      <h2 id="faq-safety-security-title" class="section-title">9) Safety &amp; Security</h2>
+
+      <details id="faq-safety-security-q1" class="card">
+        <summary><strong>Is the hotel safe for solo travelers?</strong></summary>
+        <div class="card-body">
+          <p>Yes, our hotel is in a safe area and has robust security measures.</p>
+        </div>
+      </details>
+
+      <details id="faq-safety-security-q2" class="card">
+        <summary><strong>Is the hotel safe for women travelers?</strong></summary>
+        <div class="card-body">
+          <p>Absolutely. We maintain 24-hour staffed reception and CCTV surveillance.</p>
+        </div>
+      </details>
+
+      <details id="faq-safety-security-q3" class="card">
+        <summary><strong>Do you have 24-hour front desk staff?</strong></summary>
+        <div class="card-body">
+          <p>Yes, our team is available round-the-clock to assist.</p>
+        </div>
+      </details>
+
+      <details id="faq-safety-security-q4" class="card">
+        <summary><strong>Do you have CCTV surveillance?</strong></summary>
+        <div class="card-body">
+          <p>Yes, common areas and entrances are monitored for your safety.</p>
+        </div>
+      </details>
+
+      <details id="faq-safety-security-q5" class="card">
+        <summary><strong>Is there a safe in the room?</strong></summary>
+        <div class="card-body">
+          <p>We do not provide in-room safes, but valuables can be stored securely at the front desk.</p>
+        </div>
+      </details>
+
+      <details id="faq-safety-security-q6" class="card">
+        <summary><strong>Are valuables safe in the room?</strong></summary>
+        <div class="card-body">
+          <p>We recommend storing high-value items at reception for maximum security.</p>
+        </div>
+      </details>
+    </section>
+
+    <!-- Special Services -->
+    <section id="faq-special-services" aria-labelledby="faq-special-services-title" style="padding:64px 0">
+      <h2 id="faq-special-services-title" class="section-title">10) Special Services</h2>
+
+      <details id="faq-special-services-q1" class="card">
+        <summary><strong>Do you offer room decorations?</strong></summary>
+        <div class="card-body">
+          <p>Yes, for birthdays, anniversaries, and special occasions. See <a href="/room-decorations.html">Room Decorations →</a>.</p>
+        </div>
+      </details>
+
+      <details id="faq-special-services-q2" class="card">
+        <summary><strong>Can you organize birthday surprises?</strong></summary>
+        <div class="card-body">
+          <p>Yes, including balloons, cakes, and themed décor.</p>
+        </div>
+      </details>
+
+      <details id="faq-special-services-q3" class="card">
+        <summary><strong>Do you have meeting spaces?</strong></summary>
+        <div class="card-body">
+          <p>We do not currently have formal meeting rooms.</p>
+        </div>
+      </details>
+
+      <details id="faq-special-services-q4" class="card">
+        <summary><strong>Do you have laundry service?</strong></summary>
+        <div class="card-body">
+          <p>Yes, laundry and ironing services are available.</p>
+        </div>
+      </details>
+
+      <details id="faq-special-services-q5" class="card">
+        <summary><strong>Do you have printing and scanning?</strong></summary>
+        <div class="card-body">
+          <p>Yes, free printing and scanning services are available at the front desk.</p>
+        </div>
+      </details>
+
+      <details id="faq-special-services-q6" class="card">
+        <summary><strong>Can you arrange a doctor on call?</strong></summary>
+        <div class="card-body">
+          <p>Yes, we have a doctor on call for emergencies.</p>
+        </div>
+      </details>
+
+      <details id="faq-special-services-q7" class="card">
+        <summary><strong>Do you help with sightseeing plans?</strong></summary>
+        <div class="card-body">
+          <p>Yes, our team can recommend and arrange local tours.</p>
+        </div>
+      </details>
+
+      <details id="faq-special-services-q8" class="card">
+        <summary><strong>Do you offer event hosting?</strong></summary>
+        <div class="card-body">
+          <p>Small in-room celebrations can be hosted; we do not offer banquet facilities.</p>
+        </div>
+      </details>
+    </section>
+
+    <!-- Policies -->
+    <section id="faq-policies" aria-labelledby="faq-policies-title" style="padding:64px 0">
+      <h2 id="faq-policies-title" class="section-title">11) Policies</h2>
+
+      <details id="faq-policies-q1" class="card">
+        <summary><strong>What’s your smoking policy?</strong></summary>
+        <div class="card-body">
+          <p>Smoking is not allowed inside rooms; designated outdoor areas are available.</p>
+        </div>
+      </details>
+
+      <details id="faq-policies-q2" class="card">
+        <summary><strong>What’s your cancellation policy?</strong></summary>
+        <div class="card-body">
+          <p>Varies by booking type; please check at the time of reservation.</p>
+        </div>
+      </details>
+
+      <details id="faq-policies-q3" class="card">
+        <summary><strong>Do you have a no-noise policy?</strong></summary>
+        <div class="card-body">
+          <p>Yes, quiet hours are observed from 10:00 PM to 7:00 AM.</p>
+        </div>
+      </details>
+
+      <details id="faq-policies-q4" class="card">
+        <summary><strong>What’s your alcohol policy?</strong></summary>
+        <div class="card-body">
+          <p>We do not serve alcohol, but guests may consume their own in private rooms.</p>
+        </div>
+      </details>
+
+      <details id="faq-policies-q5" class="card">
+        <summary><strong>Do you allow outside visitors?</strong></summary>
+        <div class="card-body">
+          <p>Yes, but they must register at the front desk and carry valid ID.</p>
+        </div>
+      </details>
+
+      <details id="faq-policies-q6" class="card">
+        <summary><strong>What’s your photography policy?</strong></summary>
+        <div class="card-body">
+          <p>Personal photography is allowed; commercial shoots require prior approval.</p>
+        </div>
+      </details>
+    </section>
+
+    <!-- Contact & Support -->
+    <section id="faq-contact-support" aria-labelledby="faq-contact-support-title" style="padding:64px 0">
+      <h2 id="faq-contact-support-title" class="section-title">12) Contact &amp; Support</h2>
+
+      <details id="faq-contact-support-q1" class="card">
+        <summary><strong>What’s the best way to contact you?</strong></summary>
+        <div class="card-body">
+          <p>Call or WhatsApp us at <a href="tel:+917277522222">+91-72775-22222</a>, or use our <a href="/contact.html">Contact →</a> page.</p>
+        </div>
+      </details>
+
+      <details id="faq-contact-support-q2" class="card">
+        <summary><strong>Do you have WhatsApp support?</strong></summary>
+        <div class="card-body">
+          <p>Yes, for reservations, queries, and quick assistance.</p>
+        </div>
+      </details>
+
+      <details id="faq-contact-support-q3" class="card">
+        <summary><strong>Do you respond to emails quickly?</strong></summary>
+        <div class="card-body">
+          <p>Yes, we aim to respond within a few hours during working hours.</p>
+        </div>
+      </details>
+
+      <details id="faq-contact-support-q4" class="card">
+        <summary><strong>Can I contact you 24×7?</strong></summary>
+        <div class="card-body">
+          <p>Yes, our reception team is available at all times.</p>
+        </div>
+      </details>
+
+      <details id="faq-contact-support-q5" class="card">
+        <summary><strong>Who do I call for urgent issues?</strong></summary>
+        <div class="card-body">
+          <p>Use our single contact number: <a href="tel:+917277522222">+91-72775-22222</a> — available for all needs including food orders, housekeeping, and emergencies.</p>
+        </div>
+      </details>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer role="contentinfo">
+    <div class="container footer-grid">
+      <div class="footer-col">
+        <h4>Hotel The Black Gold</h4>
+        <p class="small">Best budget &amp; premium hotel in Chandigarh near PU, PEC, High Court &amp; CII — modern rooms with practical amenities and caring service.</p>
+        <p class="small"><strong>Phone:</strong> <a href="tel:+917277522222">+91-72775-22222</a><br><strong>Email:</strong> <a href="mailto:hoteltheblackgold@gmail.com">hoteltheblackgold@gmail.com</a></p>
+      </div>
+      <div class="footer-col">
+        <h4>Rooms</h4>
+        <p class="small">
+          <a href="/deluxe-room.html">Deluxe Room</a><br>
+          <a href="/super-deluxe-room.html">Super Deluxe Room</a><br>
+          <a href="/premium-room.html">Premium Room</a><br>
+          <a href="/rooms.html">Rooms &amp; Rates</a>
+        </p>
+      </div>
+      <div class="footer-col">
+        <h4>Plan</h4>
+        <p class="small">
+          <a href="/location.html">Location</a><br>
+          <a href="/nearby-attractions.html">Nearby Attractions</a><br>
+          <a href="/important-landmarks.html">Important Landmarks</a>
+        </p>
+      </div>
+      <div class="footer-col">
+        <h4>Help</h4>
+        <p class="small">
+          <a href="/faq.html">FAQ</a><br>
+          <a href="/contact.html">Contact</a>
+        </p>
+      </div>
+    </div>
+    <div class="container copyright">
+      <div>© <span id="year"></span> Hotel The Black Gold. All rights reserved.</div>
+    </div>
+  </footer>
+
+  <!-- Floating Quick Actions -->
+  <nav class="fab" aria-label="Quick actions">
+    <a class="call" href="tel:+917277522222" aria-label="Call Hotel The Black Gold">Call</a>
+    <a class="wa" href="https://wa.me/917277522222" target="_blank" rel="noopener" aria-label="WhatsApp Hotel The Black Gold">WhatsApp</a>
+    <a class="book" href="/contact.html" aria-label="Book at Hotel The Black Gold">Book</a>
+  </nav>
+
+  <!-- Minimal JS: year -->
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>

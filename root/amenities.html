@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- =========================================================================
+       Hotel The Black Gold — Amenities (amenities.html)
+       =========================================================================
+       - Valid semantic HTML5; WCAG-2.1 AA contrast; ARIA; single <h1>
+       - Inline, minified CSS; small vanilla JS; lazy images; hero preload
+       - Canonical, OG/Twitter, JSON-LD (Hotel, FAQPage, Breadcrumb)
+       - Responsive: grid/flex, mobile-first; sticky header; floating quick actions
+       - NOTE: Replace placeholder assets/links with real files when available
+       ========================================================================= -->
+
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Meta Title (<=60 chars) -->
+  <title>Hotel Amenities in Chandigarh | Hotel The Black Gold</title>
+
+  <!-- Meta Description (<=155 chars) -->
+  <meta name="description" content="Explore Hotel The Black Gold amenities: AC rooms, fast Wi-Fi, smart TVs, lift, EV chargers, pet-friendly, wheelchair access, in-house kitchen. Near PGI.">
+
+  <!-- Canonical -->
+  <link rel="canonical" href="https://www.hoteltheblackgold.com/amenities.html">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Hotel Amenities in Chandigarh | Hotel The Black Gold">
+  <meta property="og:description" content="AC rooms, fast Wi-Fi, smart TVs, lift, EV chargers, pet-friendly & wheelchair access. In-house kitchen. Near PGI.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://www.hoteltheblackgold.com/amenities.html">
+  <meta property="og:site_name" content="Hotel The Black Gold">
+  <meta property="og:image" content="https://www.hoteltheblackgold.com/assets/og/og-amenities.webp">
+  <meta property="og:locale" content="en_IN">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Hotel Amenities in Chandigarh | Hotel The Black Gold">
+  <meta name="twitter:description" content="AC rooms, fast Wi-Fi, smart TVs, lift, EV chargers, pet-friendly & wheelchair access. In-house kitchen. Near PGI.">
+  <meta name="twitter:image" content="https://www.hoteltheblackgold.com/assets/og/og-amenities.webp">
+
+  <!-- Favicons (replace with real assets) -->
+  <link rel="icon" href="/assets/icons/favicon.ico">
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/icons/favicon-32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/icons/favicon-16.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/icons/apple-touch-icon.png">
+  <link rel="manifest" href="/assets/icons/site.webmanifest">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Montserrat:wght@600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Preload hero -->
+  <link rel="preload" as="image" href="/assets/images/hero-amenities-hotel-the-black-gold.webp" imagesrcset="/assets/images/hero-amenities-hotel-the-black-gold.webp 1920w" imagesizes="100vw">
+
+  <!-- Styles (minified) -->
+  <style>
+    :root{--bg:#111111;--text:#F5F5F5;--muted:#EDEDED;--gold:#D4AF37;--card:#161616;--line:#2A2A2A;--shadow:0 8px 24px rgba(0,0,0,.35),0 2px 6px rgba(0,0,0,.25)}
+    *{box-sizing:border-box}html,body{margin:0;padding:0;background:var(--bg);color:var(--text);font-family:Lato,system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,"Helvetica Neue",Arial,sans-serif;line-height:1.6;text-rendering:optimizeLegibility}
+    img{max-width:100%;height:auto;border:0}a{color:var(--muted);text-decoration:none}a:hover,a:focus{color:var(--gold)}
+    .container{width:min(1180px,92vw);margin-inline:auto}
+    .skip-link{position:absolute;left:-999px;top:auto;width:1px;height:1px;overflow:hidden}
+    .skip-link:focus{left:1rem;top:1rem;width:auto;height:auto;background:#000;padding:.75rem 1rem;border:2px solid var(--gold);z-index:10000}
+    /* Header */
+    header{position:sticky;top:0;z-index:999;background:rgba(17,17,17,.75);backdrop-filter:saturate(120%) blur(8px);border-bottom:1px solid rgba(255,255,255,.05)}
+    .nav{display:flex;align-items:center;justify-content:space-between;padding:.85rem 0}
+    .brand{display:flex;align-items:center;gap:.75rem}.logo{width:36px;height:36px;border-radius:10px;background:linear-gradient(135deg,var(--gold),#9b7c1f);box-shadow:var(--shadow)}
+    .brand-name{font-family:Montserrat,sans-serif;font-weight:800;letter-spacing:.4px}
+    nav ul{list-style:none;margin:0;padding:0;display:flex;gap:1.25rem;align-items:center}
+    .book-now{background:var(--gold);color:#111;padding:.6rem 1rem;border-radius:999px;font-weight:700;box-shadow:var(--shadow);border:1px solid rgba(0,0,0,.35)}
+    .book-now:hover{filter:brightness(1.05)}
+    /* Hero */
+    .hero{position:relative;isolation:isolate}
+    .hero-media{position:absolute;inset:0;z-index:-1;overflow:hidden}
+    .hero-media img{width:100%;height:100%;object-fit:cover;filter:grayscale(.1) contrast(1.1) brightness(.8)}
+    .hero-overlay{position:absolute;inset:0;background:radial-gradient(1200px 600px at 60% 20%,rgba(212,175,55,.15),transparent),linear-gradient(180deg,rgba(17,17,17,.35),rgba(17,17,17,.85))}
+    .hero-inner{padding:clamp(84px,11vw,140px) 0 56px}
+    h1{font-family:Montserrat,sans-serif;font-weight:800;line-height:1.1;font-size:clamp(28px,5.6vw,46px);margin:0 0 .5rem}
+    .subhead{color:var(--muted);font-size:clamp(15px,2.2vw,18px);max-width:840px}
+    .cta-row{display:flex;gap:10px;flex-wrap:wrap;margin-top:14px}
+    .btn{display:inline-flex;align-items:center;justify-content:center;gap:.5rem;border:none;border-radius:12px;cursor:pointer;padding:.85rem 1.05rem}
+    .btn-primary{background:var(--gold);color:#111;font-weight:800}
+    .btn-ghost{background:#1a1a1a;border:1px solid #2b2b2b;color:#f1f1f1}
+    /* Sections */
+    section{padding:64px 0}
+    .section-title{font-family:Montserrat,sans-serif;font-weight:800;font-size:clamp(22px,3.6vw,32px);margin:0 0 16px}
+    .muted{color:#d2d2d2}.small{font-size:.95rem;color:#cfcfcf}
+    .grid-2{display:grid;grid-template-columns:1fr;gap:22px}
+    .grid-3{display:grid;grid-template-columns:1fr;gap:18px}
+    /* Card/grid items */
+    .cards{display:grid;grid-template-columns:1fr;gap:18px}
+    .card{background:#151515;border:1px solid var(--line);border-radius:18px;overflow:hidden;box-shadow:var(--shadow)}
+    .card-body{padding:16px}
+    .icon-row{display:flex;gap:.75rem;align-items:flex-start}
+    .icon{width:36px;height:36px;border-radius:10px;background:#1a1a1a;border:1px solid #2a2a2a;display:grid;place-items:center;color:var(--gold);font-weight:800}
+    .amenity-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}
+    .amenity{display:flex;gap:.6rem;align-items:flex-start;background:#131313;border:1px solid var(--line);padding:.7rem .8rem;border-radius:12px}
+    .dot{width:10px;height:10px;border-radius:999px;background:var(--gold);margin-top:.35rem}
+    /* Distance chips */
+    .chips{display:flex;flex-wrap:wrap;gap:8px}
+    .chip{border:1px solid var(--line);background:#151515;border-radius:999px;padding:.4rem .7rem;font-size:.95rem;box-shadow:var(--shadow)}
+    /* Breadcrumbs */
+    .breadcrumbs{font-size:.95rem;margin:18px 0;color:#cfcfcf}
+    .breadcrumbs a{color:#cfcfcf}.breadcrumbs a:hover{color:var(--gold)}
+    /* FAQ */
+    .accordion{border:1px solid var(--line);border-radius:18px;overflow:hidden}
+    .acc-item{border-bottom:1px solid var(--line);background:#141414}
+    .acc-item:last-child{border-bottom:0}
+    .acc-btn{width:100%;text-align:left;padding:16px 18px;background:#141414;color:var(--text);border:0;font-weight:700;font-family:Montserrat,sans-serif;cursor:pointer}
+    .acc-content{max-height:0;overflow:hidden;transition:max-height .35s ease}
+    .acc-inner{padding:0 18px 16px;color:#d7d7d7}
+    /* Footer */
+    footer{border-top:1px solid rgba(255,255,255,.06);padding-top:40px;padding-bottom:80px}
+    .footer-grid{display:grid;grid-template-columns:1fr;gap:22px}
+    .footer-col h4{font-family:Montserrat,sans-serif;margin:.2rem 0 .6rem}
+    .copyright{border-top:1px solid rgba(255,255,255,.06);margin-top:26px;padding-top:18px;color:#c9c9c9;font-size:.9rem}
+    /* FAB */
+    .fab{position:fixed;right:16px;bottom:16px;display:grid;gap:10px;z-index:1000}
+    .fab a{display:flex;align-items:center;gap:.6rem;padding:.7rem .9rem;border-radius:999px;box-shadow:var(--shadow);border:1px solid rgba(0,0,0,.4);backdrop-filter:saturate(120%) blur(6px)}
+    .fab .call{background:var(--gold);color:#111;font-weight:800}
+    .fab .wa{background:#128C7E;color:#fff}
+    .fab .book{background:#1f1f1f;color:#f1f1f1;border-color:#343434}
+    /* Responsive */
+    @media (min-width:700px){
+      .grid-2{grid-template-columns:1.15fr .85fr}
+      .grid-3{grid-template-columns:repeat(3,1fr)}
+      .cards{grid-template-columns:repeat(3,1fr)}
+      .amenity-grid{grid-template-columns:repeat(3,minmax(0,1fr))}
+      .footer-grid{grid-template-columns:2fr 1fr 1fr 1fr}
+    }
+    /* Animations */
+    @media (prefers-reduced-motion:no-preference){
+      .fade-up{opacity:0;transform:translateY(10px);animation:fadeUp .6s ease .05s forwards}
+      .delay{animation-delay:.16s}
+      .delay2{animation-delay:.28s}
+      @keyframes fadeUp{to{opacity:1;transform:none}}
+    }
+    /* Focus */
+    :where(a,button,input,select){outline-color:var(--gold);outline-offset:2px}
+  </style>
+
+  <!-- JSON-LD: Site-level Hotel (amenities enumerated) -->
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"Hotel",
+    "name":"Hotel The Black Gold",
+    "url":"https://www.hoteltheblackgold.com/",
+    "brand":"Hotel The Black Gold",
+    "image":"https://www.hoteltheblackgold.com/assets/og/og-home.webp",
+    "description":"Modern amenities at Hotel The Black Gold in Chandigarh: AC rooms, fast Wi-Fi, smart TVs, lift, EV chargers, pet-friendly, wheelchair access. Near PGI.",
+    "telephone":"+91-72775-22222",
+    "address":{"@type":"PostalAddress","addressLocality":"Chandigarh","addressRegion":"Chandigarh","postalCode":"160000","addressCountry":"IN"},
+    "geo":{"@type":"GeoCoordinates","latitude":30.7333,"longitude":76.7794},
+    "areaServed":"Chandigarh",
+    "openingHours":"Mo-Su 00:00-23:59",
+    "petsAllowed":"Yes",
+    "amenityFeature":[
+      {"@type":"LocationFeatureSpecification","name":"High-Speed Wi-Fi","value":"100 Mbps per wing"},
+      {"@type":"LocationFeatureSpecification","name":"Air Conditioning","value":"All rooms"},
+      {"@type":"LocationFeatureSpecification","name":"Attached Washroom","value":"All rooms"},
+      {"@type":"LocationFeatureSpecification","name":"Daily Housekeeping","value":"Included"},
+      {"@type":"LocationFeatureSpecification","name":"Coffee Table & Two Chairs","value":"All rooms"},
+      {"@type":"LocationFeatureSpecification","name":"24/7 Basics","value":"Tea, coffee, Maggi, sandwiches"},
+      {"@type":"LocationFeatureSpecification","name":"TV (Deluxe)","value":"32-inch normal TV"},
+      {"@type":"LocationFeatureSpecification","name":"TV (Super Deluxe)","value":"43-inch Smart TV + Airtel STB"},
+      {"@type":"LocationFeatureSpecification","name":"TV (Premium)","value":"50-inch 4K Smart TV"},
+      {"@type":"LocationFeatureSpecification","name":"Lift Access","value":"All floors"},
+      {"@type":"LocationFeatureSpecification","name":"Secure Basement Parking","value":"On-site"},
+      {"@type":"LocationFeatureSpecification","name":"EV Charging","value":"Available"},
+      {"@type":"LocationFeatureSpecification","name":"Luggage Storage","value":"Early check-in / late check-out support"},
+      {"@type":"LocationFeatureSpecification","name":"Airport Pickup/Drop","value":"On request"},
+      {"@type":"LocationFeatureSpecification","name":"Printing & Scanning","value":"Complimentary at front desk"},
+      {"@type":"LocationFeatureSpecification","name":"Laundry & Ironing","value":"Available"},
+      {"@type":"LocationFeatureSpecification","name":"Pet-Friendly","value":"₹300/night/pet (standard accommodation charge)"},
+      {"@type":"LocationFeatureSpecification","name":"Wheelchair Accessibility","value":"Assistance on request"},
+      {"@type":"LocationFeatureSpecification","name":"In-house Kitchen","value":"Indian & Chinese; 7:30 AM – 10:30 PM"}
+    ],
+    "sameAs":["https://www.chandigarhtourism.gov.in/","https://pgimer.edu.in/"]
+  }
+  </script>
+
+  <!-- JSON-LD: Breadcrumbs -->
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"BreadcrumbList",
+    "itemListElement":[
+      {"@type":"ListItem","position":1,"name":"Home","item":"https://www.hoteltheblackgold.com/"},
+      {"@type":"ListItem","position":2,"name":"Amenities","item":"https://www.hoteltheblackgold.com/amenities.html"}
+    ]
+  }
+  </script>
+
+  <!-- JSON-LD: FAQPage (mirrors accordion content below) -->
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"FAQPage",
+    "mainEntity":[
+      {"@type":"Question","name":"Do all rooms have AC, Wi-Fi, and attached washrooms?","acceptedAnswer":{"@type":"Answer","text":"Yes. Every room is air-conditioned, has high-speed Wi-Fi (100 Mbps per wing), and a private attached washroom."}},
+      {"@type":"Question","name":"What TV sizes are in each room type?","acceptedAnswer":{"@type":"Answer","text":"Deluxe: 32-inch normal TV; Super Deluxe: 43-inch Smart TV + Airtel STB; Premium: 50-inch 4K Smart TV."}},
+      {"@type":"Question","name":"Are pets allowed? What’s the fee and policy?","acceptedAnswer":{"@type":"Answer","text":"Yes. Pet-friendly rooms are available at ₹300 per night per pet (standard accommodation charge). No pet-sitting or pet-walking and no designated pet relief area."}},
+      {"@type":"Question","name":"Is there wheelchair access and assistance?","acceptedAnswer":{"@type":"Answer","text":"Yes. Lift access to all floors and wheelchair assistance available on request."}},
+      {"@type":"Question","name":"What are the kitchen timings and is room service 24×7?","acceptedAnswer":{"@type":"Answer","text":"In-house kitchen runs 7:30 AM – 10:30 PM. Basics (tea, coffee, Maggi, sandwiches) available 24×7."}},
+      {"@type":"Question","name":"Do you have EV charging? How do I use it?","acceptedAnswer":{"@type":"Answer","text":"Yes, EV chargers are in our secure basement parking. Ask the front desk for assistance and availability."}},
+      {"@type":"Question","name":"Best way to reach from airport or railway station?","acceptedAnswer":{"@type":"Answer","text":"We’re ~11 km from the airport and ~8 km from the railway station. The front desk can arrange a reliable cab or pickup on request."}}
+    ]
+  }
+  </script>
+
+  <!-- Analytics hook (insert GA4 when ready) -->
+  <!-- <script defer src="/assets/js/ga4.js"></script> -->
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <!-- HEADER -->
+  <header role="banner" aria-label="Primary">
+    <div class="container nav" id="nav">
+      <div class="brand" aria-label="Hotel The Black Gold">
+        <div class="logo" aria-hidden="true"></div>
+        <div class="brand-name">Hotel The Black Gold</div>
+      </div>
+      <nav aria-label="Main">
+        <ul>
+          <li><a href="/" rel="home">Home</a></li>
+          <li><a href="/rooms.html" rel="internal">Rooms &amp; Rates</a></li>
+          <li><a href="/amenities.html" aria-current="page" rel="internal">Amenities</a></li>
+          <li><a href="/location.html" rel="internal">Location</a></li>
+          <li><a href="/hotel-near-pgi.html" rel="internal">Hotel Near PGI</a></li>
+          <li><a href="/faq.html" rel="internal">FAQ</a></li>
+        </ul>
+      </nav>
+      <div><a class="book-now" href="/contact.html" rel="internal">Book Now</a></div>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero" aria-label="Hero">
+    <div class="hero-media" aria-hidden="true">
+      <!-- Replace with optimized hero image -->
+      <img src="/assets/images/hero-amenities-hotel-the-black-gold.webp" alt="Modern hotel amenities at Hotel The Black Gold in Chandigarh" width="1920" height="1080">
+      <div class="hero-overlay"></div>
+    </div>
+    <div class="container hero-inner fade-up">
+      <nav class="breadcrumbs" aria-label="Breadcrumb">
+        <a href="/" rel="home">Home</a> › <span aria-current="page">Amenities</span>
+      </nav>
+      <h1>Amenities – Modern Hotel Amenities in Chandigarh</h1>
+      <p class="subhead">Premium comfort with practical convenience: AC rooms, fast Wi-Fi, smart TVs, lift access, EV chargers, and an in-house kitchen — all minutes from PGI.</p>
+      <div class="cta-row">
+        <a class="btn btn-primary" href="tel:+917277522222" aria-label="Call Hotel The Black Gold">Call</a>
+        <a class="btn btn-ghost" href="https://wa.me/917277522222" rel="noopener" aria-label="WhatsApp Hotel The Black Gold">WhatsApp</a>
+        <a class="btn btn-ghost" href="/contact.html" rel="internal" aria-label="Check Availability">Check Availability</a>
+      </div>
+    </div>
+  </section>
+
+  <main id="main" class="container" role="main">
+    <!-- IN-ROOM AMENITIES -->
+    <section class="fade-up" aria-labelledby="inroom">
+      <h2 id="inroom" class="section-title">In-Room Amenities</h2>
+      <p class="muted">A consistent baseline of quality across every category, with smart upgrades as you move from Deluxe to Premium.</p>
+      <div class="amenity-grid" role="list">
+        <div class="amenity" role="listitem"><span class="dot"></span><div>Air conditioning in all rooms</div></div>
+        <div class="amenity" role="listitem"><span class="dot"></span><div>High-speed Wi-Fi (100 Mbps per wing)</div></div>
+        <div class="amenity" role="listitem"><span class="dot"></span><div>Attached washrooms with modern fixtures</div></div>
+        <div class="amenity" role="listitem"><span class="dot"></span><div>Fresh linen &amp; essential toiletries</div></div>
+        <div class="amenity" role="listitem"><span class="dot"></span><div>Daily housekeeping</div></div>
+        <div class="amenity" role="listitem"><span class="dot"></span><div>Coffee table &amp; two chairs</div></div>
+        <div class="amenity" role="listitem"><span class="dot"></span><div>24/7 basics: tea, coffee, Maggi, sandwiches</div></div>
+      </div>
+
+      <div class="cards" style="margin-top:18px">
+        <article class="card">
+          <div class="card-body">
+            <div class="icon-row"><div class="icon">TV</div><h3 style="margin:0;font-family:Montserrat,sans-serif">Smart TVs by Category</h3></div>
+            <ul style="margin:.6rem 0 0 1.2rem">
+              <li><strong>Deluxe</strong>: 32-inch normal TV</li>
+              <li><strong>Super Deluxe</strong>: 43-inch Smart TV + Airtel Set-Top Box</li>
+              <li><strong>Premium</strong>: 50-inch 4K Smart TV</li>
+            </ul>
+            <p class="small" style="margin-top:.6rem">Explore room details: <a href="/deluxe-room.html" rel="internal">Deluxe</a> • <a href="/super-deluxe-room.html" rel="internal">Super Deluxe</a> • <a href="/premium-room.html" rel="internal">Premium</a></p>
+          </div>
+        </article>
+      </div>
+
+      <figure style="margin:18px 0 0">
+        <img loading="lazy" src="/assets/images/amenities-smart-tv-premium-room.webp" alt="Premium room smart TV and modern interiors at Hotel The Black Gold">
+        <figcaption class="small">Premium category features a 50-inch 4K Smart TV for effortless downtime.</figcaption>
+      </figure>
+    </section>
+
+    <!-- PROPERTY & GUEST SERVICES -->
+    <section class="fade-up delay" aria-labelledby="property">
+      <h2 id="property" class="section-title">Property &amp; Guest Services</h2>
+      <div class="amenity-grid" role="list">
+        <div class="amenity" role="listitem"><span class="dot"></span><div>Elevator/lift access to all floors</div></div>
+        <div class="amenity" role="listitem"><span class="dot"></span><div>24/7 front desk</div></div>
+        <div class="amenity" role="listitem"><span class="dot"></span><div>Cab booking assistance</div></div>
+        <div class="amenity" role="listitem"><span class="dot"></span><div>Secure basement parking</div></div>
+        <div class="amenity" role="listitem"><span class="dot"></span><div>EV charging stations (on-site)</div></div>
+        <div class="amenity" role="listitem"><span class="dot"></span><div>Luggage storage for early/late guests</div></div>
+        <div class="amenity" role="listitem"><span class="dot"></span><div>Airport pickup/drop (on request)</div></div>
+        <div class="amenity" role="listitem"><span class="dot"></span><div>Printing &amp; scanning (complimentary at front desk)</div></div>
+        <div class="amenity" role="listitem"><span class="dot"></span><div>Laundry &amp; ironing services</div></div>
+      </div>
+
+      <figure style="margin:18px 0 0">
+        <img loading="lazy" src="/assets/images/amenities-ev-charger-hotel-the-black-gold.webp" alt="EV charging stations at Hotel The Black Gold in Chandigarh">
+        <figcaption class="small">Charge with confidence — EV points available in secure basement parking.</figcaption>
+      </figure>
+    </section>
+
+    <!-- FOOD & DINING -->
+    <section class="fade-up" aria-labelledby="dining">
+      <h2 id="dining" class="section-title">Food &amp; Dining</h2>
+      <p class="muted">Good food, right when you want it.</p>
+      <div class="amenity-grid">
+        <div class="amenity"><span class="dot"></span><div>In-house kitchen serving Indian &amp; Chinese</div></div>
+        <div class="amenity"><span class="dot"></span><div>Kitchen hours: 7:30 AM – 10:30 PM</div></div>
+        <div class="amenity"><span class="dot"></span><div>Basics available 24×7 (tea, coffee, Maggi, sandwiches)</div></div>
+        <div class="amenity"><span class="dot"></span><div>Complimentary breakfast on select plans</div></div>
+      </div>
+      <p class="small" style="margin-top:10px"><strong>Direct-Booking Perk:</strong> Book direct for best rates and eligibility for complimentary breakfast on select plans.</p>
+    </section>
+
+    <!-- ACCESSIBILITY & SPECIAL -->
+    <section class="fade-up" aria-labelledby="access">
+      <h2 id="access" class="section-title">Accessibility &amp; Special Facilities</h2>
+      <div class="amenity-grid">
+        <div class="amenity"><span class="dot"></span><div>Wheelchair accessibility across the property</div></div>
+        <div class="amenity"><span class="dot"></span><div>Wheelchair assistance on request</div></div>
+        <div class="amenity"><span class="dot"></span><div>Lift access to all floors</div></div>
+        <div class="amenity"><span class="dot"></span><div>Pet-friendly rooms — ₹300/night/pet (standard accommodation charge)</div></div>
+        <div class="amenity"><span class="dot"></span><div>No pet-sitting/walking; no designated pet relief area</div></div>
+        <div class="amenity"><span class="dot"></span><div>Foreigner-friendly; English-speaking staff</div></div>
+      </div>
+      <p class="small" style="margin-top:10px">Read the full details in our <a href="/pet-friendly.html" rel="internal">Pet-Friendly</a> policy.</p>
+    </section>
+
+    <!-- LOCATION STRIP -->
+    <section class="fade-up delay2" aria-labelledby="location">
+      <h2 id="location" class="section-title">Location Convenience</h2>
+      <p class="muted">Stay close to everything Chandigarh offers — especially PGI for medical visits.</p>
+      <div class="chips" role="list">
+        <span class="chip" role="listitem">PGI &lt; 2 km</span>
+        <span class="chip" role="listitem">Sukhna Lake ~6 km</span>
+        <span class="chip" role="listitem">Rock Garden ~7 km</span>
+        <span class="chip" role="listitem">Sector 17 ~7 km</span>
+        <span class="chip" role="listitem">PEC ~5 km</span>
+        <span class="chip" role="listitem">High Court ~6 km</span>
+        <span class="chip" role="listitem">Airport ~11 km</span>
+        <span class="chip" role="listitem">Railway ~8 km</span>
+        <span class="chip" role="listitem">Bus Stand 43 ~3.5 km</span>
+        <span class="chip" role="listitem">ISBT-17 ~6 km</span>
+      </div>
+      <p class="small" style="margin-top:10px">See maps and routes on our <a href="/location.html" rel="internal">Location</a> page. <!-- Developer note: Map embed belongs on location.html (insert Google Maps iframe there). --></p>
+    </section>
+
+    <!-- FAQ -->
+    <section class="fade-up" aria-labelledby="faq">
+      <h2 id="faq" class="section-title">Amenities – FAQs</h2>
+      <div class="accordion" id="accordion" role="region" aria-label="Amenities FAQs">
+        <div class="acc-item">
+          <button class="acc-btn" aria-expanded="false">Do all rooms have AC, Wi-Fi, and attached washrooms?</button>
+          <div class="acc-content"><div class="acc-inner">Yes. Every room is air-conditioned, includes high-speed Wi-Fi (100 Mbps per wing), and has a private attached washroom.</div></div>
+        </div>
+        <div class="acc-item">
+          <button class="acc-btn" aria-expanded="false">What TV sizes are in each room type?</button>
+          <div class="acc-content"><div class="acc-inner">Deluxe: 32-inch normal TV. Super Deluxe: 43-inch Smart TV with Airtel Set-Top Box. Premium: 50-inch 4K Smart TV.</div></div>
+        </div>
+        <div class="acc-item">
+          <button class="acc-btn" aria-expanded="false">Are pets allowed? What’s the fee and policy?</button>
+          <div class="acc-content"><div class="acc-inner">Yes. We’re pet-friendly with a standard ₹300 per night per pet accommodation charge. We don’t provide pet-sitting or walking, and there’s no designated pet relief area. See <a href="/pet-friendly.html" rel="internal">Pet-Friendly</a> for details.</div></div>
+        </div>
+        <div class="acc-item">
+          <button class="acc-btn" aria-expanded="false">Is there wheelchair access and assistance?</button>
+          <div class="acc-content"><div class="acc-inner">Yes. We have lift access to all floors and can provide wheelchair assistance on request.</div></div>
+        </div>
+        <div class="acc-item">
+          <button class="acc-btn" aria-expanded="false">What are the kitchen timings? Is room service 24×7?</button>
+          <div class="acc-content"><div class="acc-inner">The in-house kitchen operates from 7:30 AM to 10:30 PM. Essentials like tea, coffee, Maggi, and sandwiches are available 24×7.</div></div>
+        </div>
+        <div class="acc-item">
+          <button class="acc-btn" aria-expanded="false">Do you have EV charging? How can I use it?</button>
+          <div class="acc-content"><div class="acc-inner">Yes, EV chargers are located in our secure basement parking. Ask the front desk for assistance and availability.</div></div>
+        </div>
+        <div class="acc-item">
+          <button class="acc-btn" aria-expanded="false">What’s the best way to reach from the airport or railway station?</button>
+          <div class="acc-content"><div class="acc-inner">We’re ~11 km from Chandigarh International Airport and ~8 km from the railway station. We can arrange a reliable cab or pickup on request.</div></div>
+        </div>
+      </div>
+      <p class="small" style="margin-top:12px">More questions? Visit our <a href="/faq.html" rel="internal">FAQ</a> or <a href="/contact.html" rel="internal">Contact</a> us.</p>
+    </section>
+
+    <!-- CONVERSION FOOTER -->
+    <section class="fade-up" aria-label="Final Call to Action">
+      <div class="grid-2" style="align-items:center">
+        <div>
+          <h2 class="section-title">Book Your Stay at Hotel The Black Gold</h2>
+          <p class="muted">Priority order: <strong>Call</strong> → <strong>WhatsApp</strong> → <strong>Book Online</strong>. Book direct for best rates and enjoy complimentary breakfast on select plans.</p>
+          <div class="small">One number for everything: <strong><a href="tel:+917277522222">+91-72775-22222</a></strong> (reservations, housekeeping, food orders, information).</div>
+        </div>
+        <div>
+          <div class="cta-row">
+            <a class="btn btn-primary" href="tel:+917277522222" aria-label="Call Now">Call Now</a>
+            <a class="btn btn-ghost" href="https://wa.me/917277522222" rel="noopener" aria-label="WhatsApp Us">WhatsApp Us</a>
+            <a class="btn btn-ghost" href="/contact.html" rel="internal" aria-label="Book Online">Book Online</a>
+          </div>
+          <p class="small" style="margin-top:10px">Explore rooms: <a href="/rooms.html" rel="internal">Rooms &amp; Rates</a> • <a href="/deluxe-room.html" rel="internal">Deluxe</a> • <a href="/super-deluxe-room.html" rel="internal">Super Deluxe</a> • <a href="/premium-room.html" rel="internal">Premium</a></p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer role="contentinfo">
+    <div class="container footer-grid">
+      <div class="footer-col">
+        <h4>Hotel The Black Gold</h4>
+        <p class="small">Chandigarh, India • Pet-friendly • Wheelchair accessible • Near PGI &amp; Sukhna Lake</p>
+        <p class="small"><strong>Phone:</strong> <a href="tel:+917277522222">+91-72775-22222</a><br><strong>Email:</strong> <a href="mailto:info@hoteltheblackgold.com">info@hoteltheblackgold.com</a></p>
+      </div>
+      <div class="footer-col">
+        <h4>Explore</h4>
+        <p class="small">
+          <a href="/rooms.html" rel="internal">Rooms &amp; Rates</a><br>
+          <a href="/deluxe-room.html" rel="internal">Deluxe Rooms</a><br>
+          <a href="/super-deluxe-room.html" rel="internal">Super Deluxe Rooms</a><br>
+          <a href="/premium-room.html" rel="internal">Premium Rooms</a>
+        </p>
+      </div>
+      <div class="footer-col">
+        <h4>Guest Info</h4>
+        <p class="small">
+          <a href="/amenities.html" rel="internal">Amenities</a><br>
+          <a href="/location.html" rel="internal">Location</a><br>
+          <a href="/hotel-near-pgi.html" rel="internal">Hotel Near PGI</a><br>
+          <a href="/faq.html" rel="internal">FAQ</a>
+        </p>
+      </div>
+      <div class="footer-col">
+        <h4>Connect</h4>
+        <p class="small">
+          <a href="https://wa.me/917277522222" rel="noopener">WhatsApp</a><br>
+          <a href="/contact.html" rel="internal">Contact</a><br>
+          <a href="tel:+917277522222">Call +91-72775-22222</a>
+        </p>
+      </div>
+    </div>
+    <div class="container copyright">
+      <div>© <span id="year"></span> Hotel The Black Gold. All rights reserved.</div>
+    </div>
+  </footer>
+
+  <!-- Floating Quick Actions (priority: Call > WhatsApp > Book) -->
+  <nav class="fab" aria-label="Quick actions">
+    <a class="call" href="tel:+917277522222" aria-label="Call Hotel The Black Gold">Call</a>
+    <a class="wa" href="https://wa.me/917277522222" rel="noopener" aria-label="WhatsApp Hotel The Black Gold">WhatsApp</a>
+    <a class="book" href="/contact.html" rel="internal" aria-label="Book Now">Book Now</a>
+  </nav>
+
+  <!-- Minimal JS: FAQ + year (deferred by placement) -->
+  <script>
+    // FAQ accordion
+    const items=document.querySelectorAll('.acc-item');items.forEach(it=>{const btn=it.querySelector('.acc-btn'),ct=it.querySelector('.acc-content');btn.addEventListener('click',()=>{const open=btn.getAttribute('aria-expanded')==='true';btn.setAttribute('aria-expanded',!open);ct.style.maxHeight=!open?(ct.scrollHeight+'px'):0})});
+    // Year
+    document.getElementById('year').textContent=new Date().getFullYear();
+  </script>
+
+  <!-- Developer notes:
+       - Insert GA4 tag when ready (see head comment).
+       - Amenity icons can be expanded by adding SVGs inside .icon elements.
+       - Map embed should live on location.html to avoid extra scripts here. -->
+</body>
+</html>

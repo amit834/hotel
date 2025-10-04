@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- =========================================================================
+       Hotel The Black Gold — Group Bookings (group-bookings.html)
+       =========================================================================
+       - Semantic HTML5; WCAG-2.1 AA; ARIA; single <h1>
+       - Inline, minified CSS; tiny vanilla JS; hero preload; lazy images
+       - Canonical, OG/Twitter, JSON-LD (Hotel, Offer, Breadcrumb, FAQPage)
+       - Responsive: grid/flex, mobile-first; sticky header; floating quick actions
+       - Developer: replace placeholder assets & wire GA4 / booking form as needed
+       ========================================================================= -->
+
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Meta Title (<=60 chars) -->
+  <title>Group Bookings Hotel Chandigarh | The Black Gold</title>
+
+  <!-- Meta Description (<=155 chars) -->
+  <meta name="description" content="Group stays made easy in Chandigarh—flexible rates, dining hall, multiple room categories, central location. Call +91-72775-22222.">
+
+  <!-- Canonical -->
+  <link rel="canonical" href="https://www.hoteltheblackgold.com/group-bookings.html">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Group Bookings Hotel Chandigarh | The Black Gold">
+  <meta property="og:description" content="Book multiple rooms in Chandigarh with flexible group rates, dining hall, and premium service. Central, pet-friendly, wheelchair accessible.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://www.hoteltheblackgold.com/group-bookings.html">
+  <meta property="og:site_name" content="Hotel The Black Gold">
+  <meta property="og:image" content="https://www.hoteltheblackgold.com/assets/og/og-group-bookings.webp">
+  <meta property="og:locale" content="en_IN">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Group Bookings Hotel Chandigarh | The Black Gold">
+  <meta name="twitter:description" content="Flexible group rates, dining hall, and premium service near PGI & city highlights. Call +91-72775-22222.">
+  <meta name="twitter:image" content="https://www.hoteltheblackgold.com/assets/og/og-group-bookings.webp">
+
+  <!-- Favicons (replace with real assets) -->
+  <link rel="icon" href="/assets/icons/favicon.ico">
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/icons/favicon-32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/icons/favicon-16.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/icons/apple-touch-icon.png">
+  <link rel="manifest" href="/assets/icons/site.webmanifest">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Montserrat:wght@600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Preload hero image -->
+  <link rel="preload" as="image" href="/assets/images/hero-group-bookings-the-black-gold.webp" imagesrcset="/assets/images/hero-group-bookings-the-black-gold.webp 1920w" imagesizes="100vw">
+
+  <!-- Styles (minified) -->
+  <style>
+    :root{--bg:#111111;--text:#F5F5F5;--muted:#EDEDED;--gold:#D4AF37;--card:#161616;--line:#2A2A2A;--shadow:0 8px 24px rgba(0,0,0,.35),0 2px 6px rgba(0,0,0,.25)}
+    *{box-sizing:border-box}html,body{margin:0;padding:0;background:var(--bg);color:var(--text);font-family:Lato,system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,"Helvetica Neue",Arial,sans-serif;line-height:1.6;text-rendering:optimizeLegibility}
+    img{max-width:100%;height:auto;border:0}a{color:var(--muted);text-decoration:none}a:hover,a:focus{color:var(--gold)}
+    .container{width:min(1180px,92vw);margin-inline:auto}
+    .skip-link{position:absolute;left:-999px;top:auto;width:1px;height:1px;overflow:hidden}
+    .skip-link:focus{left:1rem;top:1rem;width:auto;height:auto;background:#000;padding:.75rem 1rem;border:2px solid var(--gold);z-index:10000}
+    /* Header */
+    header{position:sticky;top:0;z-index:999;background:rgba(17,17,17,.75);backdrop-filter:saturate(120%) blur(8px);border-bottom:1px solid rgba(255,255,255,.05)}
+    .nav{display:flex;align-items:center;justify-content:space-between;padding:.85rem 0}
+    .brand{display:flex;align-items:center;gap:.75rem}.logo{width:36px;height:36px;border-radius:10px;background:linear-gradient(135deg,var(--gold),#9b7c1f);box-shadow:var(--shadow)}
+    .brand-name{font-family:Montserrat,sans-serif;font-weight:800;letter-spacing:.4px}
+    nav ul{list-style:none;margin:0;padding:0;display:flex;gap:1.25rem;align-items:center}
+    .book-now{background:var(--gold);color:#111;padding:.6rem 1rem;border-radius:999px;font-weight:700;box-shadow:var(--shadow);border:1px solid rgba(0,0,0,.35)}
+    .book-now:hover{filter:brightness(1.05)}
+    /* Hero */
+    .hero{position:relative;isolation:isolate}
+    .hero-media{position:absolute;inset:0;z-index:-1;overflow:hidden}
+    .hero-media img{width:100%;height:100%;object-fit:cover;filter:grayscale(.1) contrast(1.1) brightness(.82)}
+    .hero-overlay{position:absolute;inset:0;background:radial-gradient(1200px 600px at 60% 20%,rgba(212,175,55,.18),transparent),linear-gradient(180deg,rgba(17,17,17,.35),rgba(17,17,17,.85))}
+    .hero-inner{padding:clamp(84px,11vw,140px) 0 56px}
+    h1{font-family:Montserrat,sans-serif;font-weight:800;line-height:1.1;font-size:clamp(28px,5.6vw,46px);margin:0 0 .5rem}
+    .subhead{color:var(--muted);font-size:clamp(15px,2.2vw,18px);max-width:880px}
+    .cta-row{display:flex;gap:10px;flex-wrap:wrap;margin-top:14px}
+    .btn{display:inline-flex;align-items:center;justify-content:center;gap:.5rem;border:none;border-radius:12px;cursor:pointer;padding:.85rem 1.05rem}
+    .btn-primary{background:var(--gold);color:#111;font-weight:800}
+    .btn-ghost{background:#1a1a1a;border:1px solid #2b2b2b;color:#f1f1f1}
+    /* Sections */
+    section{padding:64px 0}
+    .section-title{font-family:Montserrat,sans-serif;font-weight:800;font-size:clamp(22px,3.6vw,32px);margin:0 0 16px}
+    .muted{color:#d2d2d2}.small{font-size:.95rem;color:#cfcfcf}
+    .grid-2{display:grid;grid-template-columns:1fr;gap:22px}
+    .grid-3{display:grid;grid-template-columns:1fr;gap:18px}
+    /* Cards */
+    .cards{display:grid;grid-template-columns:1fr;gap:18px}
+    .card{background:#151515;border:1px solid var(--line);border-radius:18px;overflow:hidden;box-shadow:var(--shadow)}
+    .card img{display:block;aspect-ratio:16/9;object-fit:cover}
+    .card-body{padding:16px}
+    .card h3{font-family:Montserrat,sans-serif;margin:.2rem 0 .5rem}
+    .more{color:var(--gold);font-weight:700}
+    /* Benefits strip */
+    .benefits{display:grid;grid-template-columns:1fr;gap:12px}
+    .benefit{display:flex;gap:.75rem;align-items:flex-start;background:#141414;border:1px solid var(--line);padding:.8rem .9rem;border-radius:12px}
+    .icon{width:36px;height:36px;border-radius:10px;background:#1a1a1a;border:1px solid #2a2a2a;display:grid;place-items:center;color:var(--gold);font-weight:800}
+    /* Steps */
+    .steps{display:grid;grid-template-columns:1fr;gap:12px}
+    .step{display:flex;gap:.8rem;align-items:flex-start;background:#131313;border:1px solid var(--line);border-radius:12px;padding:1rem}
+    .num{min-width:32px;height:32px;border-radius:999px;background:var(--gold);color:#111;display:grid;place-items:center;font-weight:800}
+    /* Breadcrumbs */
+    .breadcrumbs{font-size:.95rem;margin:18px 0;color:#cfcfcf}
+    .breadcrumbs a{color:#cfcfcf}.breadcrumbs a:hover{color:var(--gold)}
+    /* FAQ */
+    .accordion{border:1px solid var(--line);border-radius:18px;overflow:hidden}
+    .acc-item{border-bottom:1px solid var(--line);background:#141414}
+    .acc-item:last-child{border-bottom:0}
+    .acc-btn{width:100%;text-align:left;padding:16px 18px;background:#141414;color:var(--text);border:0;font-weight:700;font-family:Montserrat,sans-serif;cursor:pointer}
+    .acc-content{max-height:0;overflow:hidden;transition:max-height .35s ease}
+    .acc-inner{padding:0 18px 16px;color:#d7d7d7}
+    /* Footer */
+    footer{border-top:1px solid rgba(255,255,255,.06);padding-top:40px;padding-bottom:80px}
+    .footer-grid{display:grid;grid-template-columns:1fr;gap:22px}
+    .footer-col h4{font-family:Montserrat,sans-serif;margin:.2rem 0 .6rem}
+    .copyright{border-top:1px solid rgba(255,255,255,.06);margin-top:26px;padding-top:18px;color:#c9c9c9;font-size:.9rem}
+    /* FAB */
+    .fab{position:fixed;right:16px;bottom:16px;display:grid;gap:10px;z-index:1000}
+    .fab a{display:flex;align-items:center;gap:.6rem;padding:.7rem .9rem;border-radius:999px;box-shadow:var(--shadow);border:1px solid rgba(0,0,0,.4);backdrop-filter:saturate(120%) blur(6px)}
+    .fab .call{background:var(--gold);color:#111;font-weight:800}
+    .fab .wa{background:#128C7E;color:#fff}
+    .fab .email{background:#1f1f1f;color:#f1f1f1;border-color:#343434}
+    /* Responsive */
+    @media (min-width:700px){
+      .grid-2{grid-template-columns:1.15fr .85fr}
+      .grid-3{grid-template-columns:repeat(3,1fr)}
+      .cards{grid-template-columns:repeat(3,1fr)}
+      .benefits{grid-template-columns:repeat(3,1fr)}
+      .steps{grid-template-columns:repeat(3,1fr)}
+      .footer-grid{grid-template-columns:2fr 1fr 1fr 1fr}
+    }
+    /* Animations */
+    @media (prefers-reduced-motion:no-preference){
+      .fade-up{opacity:0;transform:translateY(10px);animation:fadeUp .6s ease .05s forwards}
+      .delay{animation-delay:.16s}
+      .delay2{animation-delay:.28s}
+      @keyframes fadeUp{to{opacity:1;transform:none}}
+    }
+    /* Focus */
+    :where(a,button){outline-color:var(--gold);outline-offset:2px}
+  </style>
+
+  <!-- JSON-LD: Hotel (amenities for groups) + Offer (group discount, contact for quote) -->
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"Hotel",
+    "name":"Hotel The Black Gold",
+    "url":"https://www.hoteltheblackgold.com/",
+    "brand":"Hotel The Black Gold",
+    "image":"https://www.hoteltheblackgold.com/assets/og/og-home.webp",
+    "description":"Group bookings in Chandigarh made simple: flexible rates, dining hall, secure parking with EV chargers, Wi-Fi, wheelchair access, and pet-friendly rooms.",
+    "telephone":"+91-72775-22222",
+    "address":{"@type":"PostalAddress","addressLocality":"Chandigarh","addressRegion":"Chandigarh","postalCode":"160000","addressCountry":"IN"},
+    "geo":{"@type":"GeoCoordinates","latitude":30.7333,"longitude":76.7794},
+    "areaServed":"Chandigarh",
+    "petsAllowed":"Yes",
+    "amenityFeature":[
+      {"@type":"LocationFeatureSpecification","name":"Dining Hall","value":"Available for group meals"},
+      {"@type":"LocationFeatureSpecification","name":"High-Speed Wi-Fi","value":"100 Mbps per wing"},
+      {"@type":"LocationFeatureSpecification","name":"Wheelchair Access","value":"Lift access; assistance on request"},
+      {"@type":"LocationFeatureSpecification","name":"Secure Basement Parking","value":"On-site"},
+      {"@type":"LocationFeatureSpecification","name":"EV Chargers","value":"On-site"},
+      {"@type":"LocationFeatureSpecification","name":"Pet-Friendly","value":"₹300/night/pet"}
+    ],
+    "makesOffer":{
+      "@type":"Offer",
+      "name":"Group Booking Discount",
+      "description":"Special rates for bulk room bookings. Contact for quote.",
+      "availability":"https://schema.org/InStock",
+      "url":"https://www.hoteltheblackgold.com/group-bookings.html"
+    },
+    "sameAs":["https://www.chandigarhtourism.gov.in/"]
+  }
+  </script>
+
+  <!-- JSON-LD: Breadcrumbs -->
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"BreadcrumbList",
+    "itemListElement":[
+      {"@type":"ListItem","position":1,"name":"Home","item":"https://www.hoteltheblackgold.com/"},
+      {"@type":"ListItem","position":2,"name":"Group Bookings","item":"https://www.hoteltheblackgold.com/group-bookings.html"}
+    ]
+  }
+  </script>
+
+  <!-- JSON-LD: FAQPage (mirrors accordion content below) -->
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"FAQPage",
+    "mainEntity":[
+      {"@type":"Question","name":"What counts as a group booking?","acceptedAnswer":{"@type":"Answer","text":"Typically, five or more rooms reserved together under one request. Talk to us for your specific plan."}},
+      {"@type":"Question","name":"Is there a discount for booking multiple rooms?","acceptedAnswer":{"@type":"Answer","text":"Yes. We offer flexible group rates based on number of rooms and length of stay—contact us for a tailored quote."}},
+      {"@type":"Question","name":"Can I reserve an entire floor?","acceptedAnswer":{"@type":"Answer","text":"Yes, subject to availability and safety guidelines. Please request this during enquiry."}},
+      {"@type":"Question","name":"Can you arrange group meals?","acceptedAnswer":{"@type":"Answer","text":"Absolutely. We provide dining hall access, buffet-style options, and customized Indian/Chinese menus."}},
+      {"@type":"Question","name":"Do you offer airport transfers for groups?","acceptedAnswer":{"@type":"Answer","text":"Yes. Airport and railway pickups/drops can be arranged on request with advance notice."}},
+      {"@type":"Question","name":"Can pets be part of group stays?","acceptedAnswer":{"@type":"Answer","text":"Yes. Pet-friendly rooms are available at ₹300 per night per pet. Please inform us when booking."}},
+      {"@type":"Question","name":"How far in advance should I book?","acceptedAnswer":{"@type":"Answer","text":"During peak wedding/holiday seasons, we recommend booking 4–6 weeks ahead to secure adjacent rooms."}}
+    ]
+  }
+  </script>
+
+  <!-- Analytics hook (insert GA4 when ready) -->
+  <!-- <script defer src="/assets/js/ga4.js"></script> -->
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <!-- HEADER -->
+  <header role="banner" aria-label="Primary">
+    <div class="container nav" id="nav">
+      <div class="brand" aria-label="Hotel The Black Gold">
+        <div class="logo" aria-hidden="true"></div>
+        <div class="brand-name">Hotel The Black Gold</div>
+      </div>
+      <nav aria-label="Main">
+        <ul>
+          <li><a href="/" rel="home">Home</a></li>
+          <li><a href="/rooms.html" rel="internal">Rooms &amp; Rates</a></li>
+          <li><a href="/amenities.html" rel="internal">Amenities</a></li>
+          <li><a href="/location.html" rel="internal">Location</a></li>
+          <li><a href="/decorations-celebrations.html" rel="internal">Decorations</a></li>
+          <li><a href="/faq.html" rel="internal">FAQ</a></li>
+        </ul>
+      </nav>
+      <div><a class="book-now" href="/contact.html" rel="internal">Book Now</a></div>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero" aria-label="Hero">
+    <div class="hero-media" aria-hidden="true">
+      <img src="/assets/images/hero-group-bookings-the-black-gold.webp" alt="Group stay welcome at Hotel The Black Gold in Chandigarh" width="1920" height="1080">
+      <div class="hero-overlay"></div>
+    </div>
+    <div class="container hero-inner fade-up">
+      <nav class="breadcrumbs" aria-label="Breadcrumb">
+        <a href="/" rel="home">Home</a> › <span aria-current="page">Group Bookings</span>
+      </nav>
+      <h1>Group Bookings – Hotel The Black Gold, Chandigarh</h1>
+      <p class="subhead">Plan with confidence: flexible group rates, multiple room categories, dining hall, and a central location near PGI, Sukhna Lake, Rock Garden, and Sector 17.</p>
+      <div class="cta-row">
+        <a class="btn btn-primary" href="tel:+917277522222" aria-label="Call Hotel The Black Gold">Call</a>
+        <a class="btn btn-ghost" href="https://wa.me/917277522222" rel="noopener" aria-label="WhatsApp Hotel The Black Gold">WhatsApp</a>
+        <a class="btn btn-ghost" href="mailto:reservations@hoteltheblackgold.in" aria-label="Email Hotel The Black Gold">Email</a>
+      </div>
+    </div>
+  </section>
+
+  <main id="main" class="container" role="main">
+    <!-- BENEFITS -->
+    <section class="fade-up" aria-labelledby="benefits">
+      <h2 id="benefits" class="section-title">Why Choose Us for Group Stays</h2>
+      <div class="benefits" role="list">
+        <div class="benefit" role="listitem"><div class="icon" aria-hidden="true">🛏</div><div><strong>Multiple Categories:</strong> <a href="/deluxe-room.html" rel="internal">Deluxe</a>, <a href="/super-deluxe-room.html" rel="internal">Super Deluxe</a>, and <a href="/premium-room.html" rel="internal">Premium</a> for all budgets.</div></div>
+        <div class="benefit" role="listitem"><div class="icon" aria-hidden="true">📍</div><div><strong>Central Location:</strong> Near PGI, Sukhna Lake, Rock Garden, and Sector 17 for easy itineraries.</div></div>
+        <div class="benefit" role="listitem"><div class="icon" aria-hidden="true">🕒</div><div><strong>Flexible Timings:</strong> Group-friendly check-in/check-out where possible.</div></div>
+        <div class="benefit" role="listitem"><div class="icon" aria-hidden="true">💸</div><div><strong>Special Group Rates:</strong> Bulk booking benefits—contact us for a tailored quote.</div></div>
+        <div class="benefit" role="listitem"><div class="icon" aria-hidden="true">🅿</div><div><strong>Parking &amp; EV:</strong> Secure basement parking with EV charging points.</div></div>
+        <div class="benefit" role="listitem"><div class="icon" aria-hidden="true">♿</div><div><strong>Accessible:</strong> Lift access to all floors; wheelchair-friendly rooms on request.</div></div>
+      </div>
+    </section>
+
+    <!-- ROOM CARDS -->
+    <section class="fade-up" aria-labelledby="rooms">
+      <h2 id="rooms" class="section-title">Rooms for Every Group</h2>
+      <p class="muted">All rooms include AC, high-speed Wi-Fi, attached washrooms, daily housekeeping, and TVs (by category).</p>
+      <div class="cards" role="list">
+        <article class="card" role="listitem">
+          <img loading="lazy" src="/assets/images/rooms-deluxe-hotel-the-black-gold-chandigarh.webp" alt="Deluxe rooms for group stays in Chandigarh">
+          <div class="card-body">
+            <h3>Deluxe</h3>
+            <p>Budget-friendly comfort—ideal for short trips and student or tour groups.</p>
+            <a class="more" href="/deluxe-room.html" rel="internal">View Deluxe →</a>
+          </div>
+        </article>
+        <article class="card" role="listitem">
+          <img loading="lazy" src="/assets/images/rooms-super-deluxe-hotel-the-black-gold-chandigarh.webp" alt="Super Deluxe rooms with more space for families">
+          <div class="card-body">
+            <h3>Super Deluxe</h3>
+            <p>Extra space with a 43&quot; Smart TV + Airtel STB—great for families and teams.</p>
+            <a class="more" href="/super-deluxe-room.html" rel="internal">View Super Deluxe →</a>
+          </div>
+        </article>
+        <article class="card" role="listitem">
+          <img loading="lazy" src="/assets/images/rooms-premium-hotel-the-black-gold-chandigarh.webp" alt="Premium rooms with 50-inch 4K Smart TV for corporate groups">
+          <div class="card-body">
+            <h3>Premium</h3>
+            <p>Most comfortable option featuring a 50&quot; 4K Smart TV and refined interiors.</p>
+            <a class="more" href="/premium-room.html" rel="internal">View Premium →</a>
+          </div>
+        </article>
+      </div>
+      <p class="small" style="margin-top:10px">Compare categories on <a href="/rooms.html" rel="internal">Rooms &amp; Rates</a> and explore full <a href="/amenities.html" rel="internal">Amenities</a>.</p>
+    </section>
+
+    <!-- DINING HALL -->
+    <section class="fade-up" aria-labelledby="dining">
+      <h2 id="dining" class="section-title">Dining Hall for Group Meals</h2>
+      <div class="grid-2">
+        <div>
+          <p class="muted">Bring everyone together in our on-site dining hall. Choose buffet-style or pre-set menus with Indian and Chinese options. Vegetarian, non-vegetarian, and regional dishes can be arranged. We coordinate with planners and tour managers to align menus and timings.</p>
+          <p class="small">Planning a celebration? See <a href="/decorations-celebrations.html" rel="internal">Decorations &amp; Celebrations</a> for event support.</p>
+        </div>
+        <div>
+          <img loading="lazy" src="/assets/images/group-bookings-dining-hall-the-black-gold.webp" alt="Dining hall setup for group meals at Hotel The Black Gold">
+        </div>
+      </div>
+    </section>
+
+    <!-- BOOKING PROCESS -->
+    <section class="fade-up" aria-labelledby="process">
+      <h2 id="process" class="section-title">Simple Group Booking Process</h2>
+      <div class="steps" role="list">
+        <div class="step" role="listitem"><div class="num" aria-hidden="true">1</div><div><strong>Enquire:</strong> Call, WhatsApp, or email with dates, group size, and room mix.</div></div>
+        <div class="step" role="listitem"><div class="num" aria-hidden="true">2</div><div><strong>Get a Quote:</strong> We’ll share tailored group rates and inclusions.</div></div>
+        <div class="step" role="listitem"><div class="num" aria-hidden="true">3</div><div><strong>Confirm:</strong> Block rooms with a simple deposit and finalize the plan.</div></div>
+      </div>
+      <p class="small" style="margin-top:10px">Tip: For peak wedding/holiday periods, book 4–6 weeks in advance to secure adjacent rooms.</p>
+    </section>
+
+    <!-- FAQ -->
+    <section class="fade-up" aria-labelledby="faq">
+      <h2 id="faq" class="section-title">Group Bookings – FAQs</h2>
+      <div class="accordion" id="accordion" role="region" aria-label="Group booking FAQs">
+        <div class="acc-item">
+          <button class="acc-btn" aria-expanded="false">What counts as a group booking?</button>
+          <div class="acc-content"><div class="acc-inner">Typically, five or more rooms reserved together under one request. Share your plan and we’ll advise the best fit.</div></div>
+        </div>
+        <div class="acc-item">
+          <button class="acc-btn" aria-expanded="false">Is there a discount for booking multiple rooms?</button>
+          <div class="acc-content"><div class="acc-inner">Yes. We offer flexible group rates based on room count and length of stay. Contact us for a tailored quote.</div></div>
+        </div>
+        <div class="acc-item">
+          <button class="acc-btn" aria-expanded="false">Can I reserve an entire floor?</button>
+          <div class="acc-content"><div class="acc-inner">Yes, subject to availability and safety guidelines. Request this when you enquire.</div></div>
+        </div>
+        <div class="acc-item">
+          <button class="acc-btn" aria-expanded="false">Can you arrange group meals?</button>
+          <div class="acc-content"><div class="acc-inner">Absolutely. Our dining hall supports buffet-style service and customized menus.</div></div>
+        </div>
+        <div class="acc-item">
+          <button class="acc-btn" aria-expanded="false">Do you offer airport transfers for groups?</button>
+          <div class="acc-content"><div class="acc-inner">Yes. We can arrange airport and railway station pickups/drops on request with prior notice.</div></div>
+        </div>
+        <div class="acc-item">
+          <button class="acc-btn" aria-expanded="false">Can pets be part of group stays?</button>
+          <div class="acc-content"><div class="acc-inner">Yes, in pet-friendly rooms at ₹300 per night per pet. Please inform us at booking time.</div></div>
+        </div>
+        <div class="acc-item">
+          <button class="acc-btn" aria-expanded="false">How far in advance should I book?</button>
+          <div class="acc-content"><div class="acc-inner">During peak seasons, we recommend booking 4–6 weeks ahead to guarantee availability for your whole group.</div></div>
+        </div>
+      </div>
+      <p class="small" style="margin-top:12px">Need more details? Visit <a href="/faq.html" rel="internal">FAQ</a> or <a href="/contact.html" rel="internal">Contact</a> us.</p>
+    </section>
+
+    <!-- CONVERSION FOOTER -->
+    <section class="fade-up" aria-label="Final Call to Action">
+      <div class="grid-2" style="align-items:center">
+        <div>
+          <h2 class="section-title">Ready to Reserve Multiple Rooms?</h2>
+          <p class="muted">Priority for group enquiries: <strong>Call</strong> → <strong>WhatsApp</strong> → <strong>Email</strong>. Book direct for priority service and flexible arrangements.</p>
+          <div class="small">One number for everything: <strong><a href="tel:+917277522222">+91-72775-22222</a></strong>.</div>
+        </div>
+        <div>
+          <div class="cta-row">
+            <a class="btn btn-primary" href="tel:+917277522222" aria-label="Call Now">Call Now</a>
+            <a class="btn btn-ghost" href="https://wa.me/917277522222" rel="noopener" aria-label="WhatsApp Us">WhatsApp Us</a>
+            <a class="btn btn-ghost" href="mailto:reservations@hoteltheblackgold.in" aria-label="Email Us">Email Us</a>
+          </div>
+          <p class="small" style="margin-top:10px">Explore: <a href="/rooms.html" rel="internal">Rooms &amp; Rates</a> • <a href="/amenities.html" rel="internal">Amenities</a> • <a href="/decorations-celebrations.html" rel="internal">Decorations &amp; Celebrations</a></p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer role="contentinfo">
+    <div class="container footer-grid">
+      <div class="footer-col">
+        <h4>Hotel The Black Gold</h4>
+        <p class="small">Chandigarh, India • Pet-friendly • Wheelchair accessible • Near PGI &amp; city highlights</p>
+        <p class="small"><strong>Phone:</strong> <a href="tel:+917277522222">+91-72775-22222</a><br><strong>Email:</strong> <a href="mailto:reservations@hoteltheblackgold.in">reservations@hoteltheblackgold.in</a></p>
+      </div>
+      <div class="footer-col">
+        <h4>Explore</h4>
+        <p class="small">
+          <a href="/rooms.html" rel="internal">Rooms &amp; Rates</a><br>
+          <a href="/amenities.html" rel="internal">Amenities</a><br>
+          <a href="/location.html" rel="internal">Location</a>
+        </p>
+      </div>
+      <div class="footer-col">
+        <h4>Stay Options</h4>
+        <p class="small">
+          <a href="/deluxe-room.html" rel="internal">Deluxe</a><br>
+          <a href="/super-deluxe-room.html" rel="internal">Super Deluxe</a><br>
+          <a href="/premium-room.html" rel="internal">Premium</a>
+        </p>
+      </div>
+      <div class="footer-col">
+        <h4>Help</h4>
+        <p class="small">
+          <a href="/decorations-celebrations.html" rel="internal">Decorations &amp; Celebrations</a><br>
+          <a href="/faq.html" rel="internal">FAQ</a><br>
+          <a href="/contact.html" rel="internal">Contact</a>
+        </p>
+      </div>
+    </div>
+    <div class="container copyright">
+      <div>© <span id="year"></span> Hotel The Black Gold. All rights reserved.</div>
+    </div>
+  </footer>
+
+  <!-- Floating Quick Actions (priority: Call > WhatsApp > Email) -->
+  <nav class="fab" aria-label="Quick actions">
+    <a class="call" href="tel:+917277522222" aria-label="Call Hotel The Black Gold">Call</a>
+    <a class="wa" href="https://wa.me/917277522222" rel="noopener" aria-label="WhatsApp Hotel The Black Gold">WhatsApp</a>
+    <a class="email" href="mailto:reservations@hoteltheblackgold.in" aria-label="Email Hotel The Black Gold">Email</a>
+  </nav>
+
+  <!-- Minimal JS: FAQ + year (deferred by placement) -->
+  <script>
+    // FAQ accordion
+    const items=document.querySelectorAll('.acc-item');items.forEach(it=>{const btn=it.querySelector('.acc-btn'),ct=it.querySelector('.acc-content');btn.addEventListener('click',()=>{const open=btn.getAttribute('aria-expanded')==='true';btn.setAttribute('aria-expanded',!open);ct.style.maxHeight=!open?(ct.scrollHeight+'px'):0})});
+    // Current year
+    document.getElementById('year').textContent=new Date().getFullYear();
+  </script>
+
+  <!-- Developer notes:
+       - Insert GA4 tag when ready (see head comment).
+       - Booking form: use /contact.html or add a dedicated /api/group-enquiry endpoint & modal form.
+       - Replace hero/dining images with optimized WebP assets:
+           /assets/images/hero-group-bookings-the-black-gold.webp
+           /assets/images/group-bookings-dining-hall-the-black-gold.webp
+       - Gallery: consider adding a carousel of room blocks if needed. -->
+</body>
+</html>
