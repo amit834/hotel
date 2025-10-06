@@ -12,6 +12,8 @@
 
   <meta name="description" content="Compare Deluxe, Super Deluxe And Premium hotel rooms in Chandigarh. See features And typical price ranges. Book direct for best rates & breakfast on select plans.">
 
+  <link rel="icon" type="image/jpg" href="./images/The black gold_final2.jpg">
+  
   <link rel="canonical" href="https://www.hoteltheblackgold.com/rooms.html">
 
   <meta property="og:title" content="Rooms & Rates Chandigarh | Hotel The Black Gold">
@@ -42,6 +44,8 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Montserrat:wght@600;700;800&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
   <link rel="preload" as="image"
       href="/assets/images/hero-rooms-hotel-the-black-gold.webp"
@@ -57,7 +61,7 @@
     /* Header */
     header{position:sticky;top:0;z-index:999;background:rgba(17,17,17,.75);backdrop-filter:saturate(120%) blur(8px);border-bottom:1px solid rgba(255,255,255,.05)}
     .nav{display:flex;align-items:center;justify-content:space-between;padding:.85rem 0}
-    .brand{display:flex;align-items:center;gap:.75rem}.logo{width:36px;height:36px;border-radius:10px;}
+    .brand{display:flex;align-items:center;gap:.75rem}.logo{width:36px;height:36px;border-radius:10px;box-shadow:var(--shadow)}
     .brand-name{font-family:Montserrat,sans-serif;font-weight:800;letter-spacing:.4px}
     nav ul{list-style:none;margin:0;padding:0;gap:1.25rem;align-items:center}
     .book-now{background:var(--gold);color:#111;padding:.6rem 1rem;border-radius:999px;font-weight:700;box-shadow:var(--shadow);border:1px solid rgba(0,0,0,.35)}
@@ -65,188 +69,60 @@
     .brand-name {font-family: revenue;font-weight: 800;letter-spacing: .4px;font-size: 20px;}
     span .brand-name {font-family: revenue !important;}
     /* Header Container */
-header {
-  position: sticky;
-  top: 0;
-  z-index: 999;
-  background: rgba(17, 17, 17, 0.75);
-  backdrop-filter: saturate(120%) blur(8px);
-  border-bottom: 1px solid rgba(255, 255, 255, 0.04);
+header {position: sticky;top: 0;z-index: 999;background: rgba(17, 17, 17, 0.75);backdrop-filter: saturate(120%) blur(8px);border-bottom: 1px solid rgba(255, 255, 255, 0.04);
 }
 
 /* Nav wrapper */
-.nav {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 0.85rem 0;
+.nav {display: flex;align-items: center;justify-content: space-between;padding: 0.85rem 0;
 }
 
 /* Branding */
-.brand {
-  display: flex;
-  align-items: center;
-  gap: 0.75rem;
-}
+.brand {display: flex;align-items: center;gap: 0.75rem;}
 
-.logo {
-  width: 36px;
-  height: 36px;
-  border-radius: 10px;
-}
+.logo {width: 36px;height: 36px;border-radius: 10px;box-shadow: 0 8px 24px rgba(0,0,0,.35),0 2px 6px rgba(0,0,0,.25);}
 
 /* Menu */
-nav ul.menu {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  display: flex;
-  gap: 1.25rem;
-  align-items: center;
-}
+nav ul.menu {list-style: none;margin: 0;padding: 0;display: flex;gap: 1.25rem;align-items: center;}
 
-.menu > li {
-  position: relative;
-}
+.menu > li {position: relative;}
 
 .menu a,
-.menu button {
-  font: inherit;
-  color: #EDEDED;
-  background: transparent;
-  border: 0;
-  padding: 0.4rem 0;
-  cursor: pointer;
-}
+.menu button {font: inherit;color: #EDEDED;background: transparent;border: 0;padding: 0.4rem 0;cursor: pointer;}
 
 .menu a:hover,
 .menu a:focus,
 .menu button:hover,
-.menu button:focus {
-  color: #D4AF37;
-}
+.menu button:focus {color: #D4AF37;}
 
 /* Dropdown caret */
-.has-dropdown > button {
-  display: inline-flex;
-  align-items: center;
-  gap: 0.45rem;
-}
+.has-dropdown > button {display: inline-flex;align-items: center;gap: 0.45rem;}
 
-.caret {
-  display: inline-block;
-  width: 0.5rem;
-  height: 0.35rem;
-  border-left: 0.35rem solid transparent;
-  border-right: 0.35rem solid transparent;
-  border-top: 0.45rem solid #EDEDED;
-  transform: translateY(1px);
-}
+.caret {display: inline-block;width: 0.5rem;height: 0.35rem;border-left: 0.35rem solid transparent;border-right: 0.35rem solid transparent;border-top: 0.45rem solid #EDEDED;transform: translateY(1px);}
 
 .has-dropdown:hover .caret,
 .has-dropdown:focus-within .caret,
-.has-dropdown > button[aria-expanded="true"] .caret {
-  border-top-color: #D4AF37;
-}
+.has-dropdown > button[aria-expanded="true"] .caret {border-top-color: #D4AF37;}
 
 /* Dropdown panel */
-.dropdown {
-  position: absolute;
-  left: 0;
-  top: calc(100% + 10px);
-  min-width: 230px;
-  background: #1a1a1a;
-  border: 1px solid #646464;
-  border-radius: 14px;
-  box-shadow: 0 8px 24px rgba(0,0,0,.35),0 2px 6px rgba(0,0,0,.25);
-  padding: 0.6rem 0;
-  opacity: 0;
-  transform: translateY(-4px);
-  transition: opacity 0.18s ease, transform 0.18s ease, visibility 0.18s;
-  visibility: hidden;
-  z-index: 999;
-}
-
+.dropdown {position: absolute;left: 0;top: calc(100% + 10px);min-width: 230px;background: #1a1a1a;border: 1px solid #646464;border-radius: 14px;box-shadow: 0 8px 24px rgba(0,0,0,.35),0 2px 6px rgba(0,0,0,.25);padding: 0.6rem 0;opacity: 0;transform: translateY(-4px);transition: opacity 0.18s ease, transform 0.18s ease, visibility 0.18s;visibility: hidden;z-index: 999;}
 .has-dropdown:hover .dropdown,
 .has-dropdown:focus-within .dropdown,
-.has-dropdown > button[aria-expanded="true"] + .dropdown {
-  opacity: 1;
-  visibility: visible;
-  transform: translateY(0);
-}
-
-.dropdown a {
-  display: block;
-  padding: 0.6rem 0.9rem;
-  color: #E7E7E7;
-}
-
+.has-dropdown > button[aria-expanded="true"] + .dropdown {opacity: 1;visibility: visible;transform: translateY(0);}
+.dropdown a {display: block;padding: 0.6rem 0.9rem;color: #E7E7E7;}
 /* Book Now button */
-.book-now {
-  background: #D4AF37;
-  color: #111;
-  padding: 0.6rem 1rem;
-  border-radius: 999px;
-  font-weight: 700;
-  box-shadow: 0 8px 24px rgba(0,0,0,.35),0 2px 6px rgba(0,0,0,.25);
-  border: 1px solid rgba(0,0,0,.35);
-}
+.book-now {background: #D4AF37;color: #111;padding: 0.6rem 1rem;border-radius: 999px;font-weight: 700;box-shadow: 0 8px 24px rgba(0,0,0,.35),0 2px 6px rgba(0,0,0,.25);border: 1px solid rgba(0,0,0,.35);}
 
-.book-now:hover {
-  filter: brightness(1.05);
-  color: #fff;
-}
-
+.book-now:hover {filter: brightness(1.05);color: #fff;}
 /* Hamburger / Mobile Menu */
-.menu-toggle {
-  display: none;
-  font-size: 2rem;
-  cursor: pointer;
-  color: #fff;
-  background: transparent;
-  border: none;
-  position: relative;
-}
-
+.menu-toggle {display: none;font-size: 2rem;cursor: pointer;color: #fff;background: transparent;border: none;position: relative;}
 /* Mobile Menu */
-@media (max-width: 1024px) {
-  .menu-toggle {
-    display: block;
-  }
-
-  #main-nav .menu {
-    position: fixed;
-    top: 0;
-    left: -100%;
-    height: 100vh;
-    width: 100%;
-    max-width: 300px;
-    background: #333;
-    flex-direction: column;
-    padding: 1rem;
-    transition: left 0.3s ease;
-    z-index: 999999;
-  }
-
-  #main-nav .menu.active {
-    left: 0;
-  }
-
-  .menu > li {
-    width: 100%;
-  }
-
-  #main-nav .has-dropdown:hover .dropdown {
-    display: none;
-  }
-
-  #main-nav .has-dropdown.open .dropdown {
-    display: flex;
-    flex-direction: column;
-    margin-top: 0.5rem;
-    background: #444;
-  }
-}
+  @media (max-width: 1024px) {
+  .menu-toggle {display: block;}
+  #main-nav .menu {position: fixed;top: 0;left: -100%;height: 100vh;width: 100%;max-width: 300px;background: #333;flex-direction: column;padding: 1rem;transition: left 0.3s ease;z-index: 999999;}
+  #main-nav .menu.active {left: 0;}
+  .menu > li {width: 100%;}
+  #main-nav .has-dropdown:hover .dropdown {display: none;}
+  #main-nav .has-dropdown.open .dropdown {display: flex;flex-direction: column;margin-top: 0.5rem;background: #444;}}
 
     /* Hero */
     .hero{position:relative;isolation:isolate}
@@ -259,25 +135,27 @@ nav ul.menu {
     .cta-row{display:flex;gap:10px;flex-wrap:wrap;margin-top:14px}
     .btn{display:inline-flex;align-items:center;justify-content:center;gap:.5rem;border:none;border-radius:12px;cursor:pointer;padding:.85rem 1.05rem}
     .btn-primary{background:var(--gold);color:#111;font-weight:800}
+    .btn-primary:hover {color: #fff !important;}
+    .btn-primary:focus {color: #fff !important;}
     .btn-ghost{background:#1a1a1a;border:1px solid #2b2b2b;color:#f1f1f1}
     /* Sections */
     section{padding:64px 0}
     .section-title{font-family:Montserrat,sans-serif;font-weight:800;font-size:clamp(22px,3.6vw,32px);margin:0 0 16px}
     .muted{color:#d2d2d2}.small{font-size:.95rem;color:#cfcfcf}
-    .grid-2{display:grid;grid-template-columns:1fr;gap:22px}
+    .grid-2{display:grid;grid-template-columns:1fr !important;gap:22px}
     .grid-3{display:grid;grid-template-columns:1fr;gap:18px}
     /* Cards */
     .cards{display:grid;grid-template-columns:1fr;gap:18px}
-    .card{background:#151515;border:1px solid var(--line);border-radius:18px;overflow:hidden;box-shadow:var(--shadow)}
+    .card{background:#151515;border:1px solid #646464;border-radius:18px;overflow:hidden;box-shadow:var(--shadow)}
     .card img{display:block;aspect-ratio:16/9;object-fit:cover}
     .card-body{padding:16px}
     .card h3{font-family:Montserrat,sans-serif;margin:.2rem 0 .5rem}
     .card ul{margin:.35rem 0 .8rem 1.1rem; padding-left: 1.1rem;}
     .more{color:var(--gold);font-weight:700}
     /* Table */
-    .table-wrap{overflow:auto;border:1px solid var(--line);border-radius:18px;background:#141414;box-shadow:var(--shadow)}
+    .table-wrap{overflow:auto;border:1px solid #646464;border-radius:18px;background:#141414;box-shadow:var(--shadow)}
     table{width:100%;border-collapse:collapse}
-    th,td{padding:14px;border-bottom:1px solid #222}
+    th,td{padding:14px;border-bottom:1px solid #646464}
     thead th{font-family:Montserrat,sans-serif;text-align:left;background:#131313;position:sticky;top:0}
     thead th a {color: var(--text);} thead th a:hover {color: var(--gold);}
     tbody tr:nth-child(even){background:#121212}
@@ -285,19 +163,25 @@ nav ul.menu {
     .disclaimer{padding:8px 12px;color:#cfcfcf}
     /* Amenities mini */
     .amenities{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}
-    .amenity{display:flex;gap:.6rem;align-items:flex-start;background:#131313;border:1px solid var(--line);padding:.7rem .8rem;border-radius:12px}
+    .amenity{display:flex;gap:.6rem;align-items:flex-start;background:#131313;border:1px solid #646464;padding:.7rem .8rem;border-radius:12px}
     .dot{width:10px;height:10px;border-radius:999px;background:var(--gold);margin-top:.35rem}
+    p.smart {color: #dcdcdc;}
     /* Breadcrumbs */
     .breadcrumbs ol{list-style:none;padding:0;margin:0;display:flex;gap:.5rem;align-items:center;font-size:.95rem;color:#cfcfcf}
     .breadcrumbs li:not(:last-child)::after{content:'/';margin-left:.5rem;color:#555}
     .breadcrumbs a{color:#cfcfcf}.breadcrumbs a:hover{color:var(--gold)}
     /* FAQ */
-    .accordion{border:1px solid var(--line);border-radius:18px;overflow:hidden}
-    .acc-item{border-bottom:1px solid var(--line);background:#141414}
-    .acc-item:last-child{border-bottom:0}
-    .acc-btn{width:100%;text-align:left;padding:16px 18px;background:#141414;color:var(--text);border:0;font-weight:700;font-family:Montserrat,sans-serif;cursor:pointer}
-    .acc-content{max-height:0;overflow:hidden;transition:max-height .35s ease}
-    .acc-inner{padding:0 18px 16px;color:#d7d7d7}
+      .accordion{border-radius:10px;overflow:hidden}
+      .acc-item {padding: 0 0 15px;}
+      .acc-item:last-child{border-bottom:0}
+      .acc-btn {width: 100%;text-align: left;padding: 25px 16px;background: transparent;border-radius: 18px;border: 1px solid #646464;font-weight: 700;font-family: Montserrat,sans-serif;cursor: pointer;font-size: 18px;border: 0; color: #fff;}
+      .acc-content{max-height:0;overflow:hidden;transition:max-height .35s ease}
+      .acc-inner{padding:0 18px 16px;color:#d7d7d7}
+      .acc-btn::after {content: "+"; /* default is plus */float: right;font-weight: bold;transition: transform 0.3s;}
+      .acc-btn[aria-expanded="true"]::after {content: "−"; /* minus when open */}
+      .acc-item {background: #1f1f1f;margin-bottom: 16px;padding: 0;border-radius: 10px;color: #fff;}
+      .acc-btn::after {content: "+"; /* default is plus */float: right;font-weight: bold;transition: transform 0.3s;}
+      .acc-btn[aria-expanded="true"]::after {content: "−"; /* minus when open */}
     /* Footer */
     footer{border-top:1px solid rgba(255,255,255,.06);padding-top:40px;padding-bottom:80px}
     .footer-grid{display:grid;grid-template-columns:1fr;gap:22px}
@@ -309,6 +193,8 @@ nav ul.menu {
     .fab .call{background:var(--gold);color:#111;font-weight:800}
     .fab .wa{background:#128C7E;color:#fff}
     .fab .book{background:#1f1f1f;color:#f1f1f1;border-color:#343434}
+    .fab {font-size: 12px;}
+    .fab a i {font-size: 20px;}
     /* Responsive */
     @media (min-width:700px){
       .grid-2{grid-template-columns:1.15fr .85fr}
@@ -328,6 +214,9 @@ nav ul.menu {
     :where(a,button,input,select):focus-visible{outline-color:var(--gold);outline-offset:2px}
     @supports (padding: max(0px)) {
     .fab { bottom: max(16px, env(safe-area-inset-bottom)); }
+    }
+    .noemal {
+      color: #fff;
     }
   </style>
 
@@ -519,7 +408,7 @@ nav ul.menu {
     <li class="has-dropdown" role="none">
       <button type="button">Rooms ▼</button>
       <ul class="dropdown" role="menu">
-        <li><a role="menuitem" href="./Completely Ready Pages/rooms.html">Rooms & Rates</a></li>
+        <li><a role="menuitem" href="./rooms.html">Rooms & Rates</a></li>
         <li><a role="menuitem" href="./root/deluxe-room.html">Deluxe Room</a></li>
         <li><a role="menuitem" href="./root/super-deluxe-room.html">Super Deluxe Room</a></li>
         <li><a role="menuitem" href="./root/premium-room.html">Premium Room</a></li>
@@ -561,7 +450,7 @@ nav ul.menu {
 
   <section class="hero" aria-label="Hero">
     <div class="hero-media" aria-hidden="true">
-      <img src="/assets/images/hero-rooms-hotel-the-black-gold.webp"
+      <img src="./images/Premium Room 5.JPG"
      alt="Welcoming staff, homely meals and accessible, comfortable rooms near PGI Chandigarh"
      width="1920" height="1080" decoding="async" fetchpriority="high">
       <div class="hero-overlay"></div>
@@ -576,9 +465,9 @@ nav ul.menu {
       <h1>Hotel Rooms & Rates in Chandigarh</h1>
       <p class="subhead">Three modern categories, one premium standard. Steps from PGI and minutes to Sukhna Lake, compare features and typical ranges, then book direct for the best experience.</p>
       <div class="cta-row">
-        <a class="btn btn-primary" href="tel:+917277522222" aria-label="Call Hotel The Black Gold">Call</a>
-        <a class="btn btn-ghost" href="https://wa.me/917277522222" target="_blank" rel="noopener" aria-label="WhatsApp Hotel The Black Gold">WhatsApp</a>
-        <a class="btn btn-ghost" href="/contact.html" aria-label="Check Availability">Check Availability</a>
+        <a class="btn btn-primary" href="tel:+917277522222" aria-label="Call Hotel The Black Gold"><i class="fa-solid fa-phone"></i>Call</a>
+        <a class="btn btn-ghost" href="https://wa.me/917277522222" target="_blank" rel="noopener" aria-label="WhatsApp Hotel The Black Gold"><i class="fa-brands fa-whatsapp"></i>WhatsApp</a>
+        <a class="btn btn-ghost" href="./root/contact.html" aria-label="Check Availability"><i class="fa-solid fa-calendar-days"></i>Check Availability</a>
       </div>
     </div>
   </section>
@@ -622,31 +511,34 @@ nav ul.menu {
       <h2 id="rooms" class="section-title">Choose Your Room</h2>
       <div class="cards" role="list">
         <article class="card" role="listitem">
+          <a href="./root/deluxe-room.html">
           <img loading="lazy" decoding="async" width="800" height="450"
-     src="/assets/images/rooms-deluxe-hotel-the-black-gold-chandigarh.webp"
-     alt="Deluxe Room at Hotel The Black Gold with 32-inch TV and modern comforts">
-          <div class="card-body">
-            <h3>Deluxe Rooms</h3>
-            <p>Smart, comfortable, and efficient — ideal for solo or business travelers who value essentials in a premium setting.</p>
-            <ul>
-              <li>32" normal TV</li>
-              <li>AC, attached washroom</li>
-              <li>High-speed Wi-Fi (100 Mbps per wing)</li>
-              <li>Daily housekeeping; coffee table + 2 chairs</li>
-              <li>24/7 basics: tea, coffee, Maggi, sandwiches</li>
-            </ul>
-            <p class="small">View details & typical ranges:</p>
-            <a class="more" href="/deluxe-room.html">Explore Deluxe →</a>
-          </div>
+            src="./images/Deluxe Room 3.jpg"
+            alt="Deluxe Room at Hotel The Black Gold with 32-inch TV and modern comforts">
+            <div class="card-body">
+              <h3>Deluxe Rooms</h3>
+              <p class="smart">Smart, comfortable, and efficient — ideal for solo or business travelers who value essentials in a premium setting.</p>
+              <ul class="noemal">
+                <li>32" normal TV</li>
+                <li>AC, attached washroom</li>
+                <li>High-speed Wi-Fi (100 Mbps per wing)</li>
+                <li>Daily housekeeping; coffee table + 2 chairs</li>
+                <li>24/7 basics: tea, coffee, Maggi, sandwiches</li>
+              </ul>
+              <p class="small">View details & typical ranges:</p>
+              <a class="more" href="./root/deluxe-room.html">Explore Deluxe →</a>
+            </div>
+          </a>
         </article>
         <article class="card" role="listitem">
+          <a href="./root/super-deluxe-room.html">
           <img loading="lazy" decoding="async" width="800" height="450"
-     src="/assets/images/rooms-super-deluxe-hotel-the-black-gold-chandigarh.webp"
-     alt="Super Deluxe Room with 43-inch Smart TV and Airtel set-top box">
-     <div class="card-body">
+        src="./images/Super Deluxe Room 6.JPG"
+        alt="Super Deluxe Room with 43-inch Smart TV and Airtel set-top box">
+        <div class="card-body">
             <h3>Super Deluxe Rooms</h3>
-            <p>More space and style for couples or small families. Enhanced décor and entertainment for relaxed evenings.</p>
-            <ul>
+            <p class="smart">More space and style for couples or small families. Enhanced décor and entertainment for relaxed evenings.</p>
+            <ul class="noemal">
               <li>43" Smart TV + Airtel Set-Top Box</li>
               <li>AC, attached washroom with upgraded fixtures</li>
               <li>High-speed Wi-Fi (100 Mbps per wing)</li>
@@ -654,17 +546,19 @@ nav ul.menu {
               <li>24/7 basics: tea, coffee, Maggi, sandwiches</li>
             </ul>
             <p class="small">View details & typical ranges:</p>
-            <a class="more" href="/super-deluxe-room.html">Explore Super Deluxe →</a>
+            <a class="more" href="./root/super-deluxe-room.html">Explore Super Deluxe →</a>
           </div>
+          </a>
         </article>
         <article class="card" role="listitem">
+          <a href="./root/premium-room.html">
            <img loading="lazy" decoding="async" width="800" height="450"
-     src="/assets/images/rooms-premium-hotel-the-black-gold-chandigarh.webp"
-     alt="Premium Room with 50-inch 4K Smart TV and refined interiors">
+        src="./images/premium-room.jpg"
+        alt="Premium Room with 50-inch 4K Smart TV and refined interiors">
           <div class="card-body">
             <h3>Premium Rooms</h3>
-            <p>Our most spacious and refined category with premium fittings and a serene, modern palette for uninterrupted rest.</p>
-            <ul>
+            <p class="smart">Our most spacious and refined category with premium fittings and a serene, modern palette for uninterrupted rest.</p>
+            <ul class="noemal">
               <li>50" 4K Smart TV</li>
               <li>AC, attached washroom with premium fittings</li>
               <li>High-speed Wi-Fi (100 Mbps per wing)</li>
@@ -672,8 +566,9 @@ nav ul.menu {
               <li>24/7 basics: tea, coffee, Maggi, sandwiches</li>
             </ul>
             <p class="small">View details & typical ranges:</p>
-            <a class="more" href="/premium-room.html">Explore Premium →</a>
+            <a class="more" href="./root/premium-room.html">Explore Premium →</a>
           </div>
+          </a>
         </article>
       </div>
     </section>
@@ -779,9 +674,9 @@ nav ul.menu {
         </div>
         <div>
           <div class="cta-row">
-            <a class="btn btn-primary" href="tel:+917277522222" aria-label="Call Now">Call Now</a>
-            <a class="btn btn-ghost" href="https://wa.me/917277522222" target="_blank" rel="noopener" aria-label="WhatsApp Us">WhatsApp Us</a>
-            <a class="btn btn-ghost" href="/contact.html" aria-label="Book Online">Book Online</a>
+            <a class="btn btn-primary" href="tel:+917277522222" aria-label="Call Now"><i class="fa-solid fa-phone"></i>Call Now</a>
+            <a class="btn btn-ghost" href="https://wa.me/917277522222" target="_blank" rel="noopener" aria-label="WhatsApp Us"><i class="fa-brands fa-whatsapp"></i>WhatsApp Us</a>
+            <a class="btn btn-ghost" href="/contact.html" aria-label="Book Online"><i class="fa-solid fa-calendar-days"></i>  Book Online</a>
           </div>
           <p class="small" style="margin-top:10px">Or explore details: <a href="/deluxe-room.html">Deluxe</a> • <a href="/super-deluxe-room.html">Super Deluxe</a> • <a href="/premium-room.html">Premium</a></p>
         </div>
@@ -829,9 +724,9 @@ nav ul.menu {
   </footer>
 
   <nav class="fab" aria-label="Quick actions">
-    <a class="call" href="tel:+917277522222" aria-label="Call Hotel The Black Gold">Call</a>
-    <a class="wa" href="https://wa.me/917277522222" target="_blank" rel="noopener" aria-label="WhatsApp Hotel The Black Gold">WhatsApp</a>
-    <a class="book" href="/contact.html" aria-label="Book Now">Book Now</a>
+    <a class="call" href="tel:+917277522222" aria-label="Call Hotel The Black Gold"><i class="fa-solid fa-phone"></i>Call</a>
+    <a class="wa" href="https://wa.me/917277522222" target="_blank" rel="noopener" aria-label="WhatsApp Hotel The Black Gold"><i class="fa-brands fa-whatsapp"></i>WhatsApp</a>
+    <a class="book" href="/contact.html" aria-label="Book Now"><i class="fa-solid fa-calendar-days"></i>Book Now</a>
   </nav>
 
   <script>
