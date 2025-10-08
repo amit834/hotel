@@ -115,7 +115,16 @@
       a.btn-primary:hover {color: #ffffff;}
       .trust{margin-top:.75rem;font-size:.9rem;color:#cfcfcf;display:flex;flex-wrap:wrap;gap:.75rem}
       .trust .badge{border:1px solid #646464;padding:.35rem .6rem;border-radius:999px}
-
+a.call-1 {
+    text-align: center;
+    font-size: 22px;
+    font-weight: 800;
+    font-family: Arial;
+    background: #d4af37;
+    color: #000;
+    padding: 17px 15px;
+    border-radius: 99px;
+}
       /* Sections */
       section{padding:64px 0}
       .section-title{font-family:Montserrat,sans-serif;font-weight:800;font-size:clamp(22px,3.6vw,32px);margin:0 0 18px}
@@ -438,7 +447,8 @@
           </div>
         </div>
         <button class="btn btn-primary-1" type="submit" aria-label="Check availability">Check Availability</button>
-        <button class="btn btn-primary-2" type="button" id="callBtn">Call now</button>
+        <!-- <button class="btn btn-primary-2" type="button" id="callBtn">Call now</button> -->
+         <a class="call-1" href="tel:+917277522222" aria-label="Call Hotel The Black Gold">Call Now</a>
         <div class="trust" aria-label="Trust & Direct Booking Benefits">
           <span class="badge">Best Rate Direct</span>
           <span class="badge">Priority Upgrades (when available)</span>
@@ -876,12 +886,5 @@ window.addEventListener("resize", () => {
     });
   });
   </script>
-
-
-<script>
-  document.getElementById('callBtn').addEventListener('click', () => {
-    window.location.href = 'tel:+917277522222';
-  });
-</script>
 </body>
 </html>
