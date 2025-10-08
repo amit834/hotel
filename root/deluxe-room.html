@@ -136,7 +136,7 @@
 
     /* Chips */
     .chips{display:flex;flex-wrap:wrap;gap:.5rem}
-    .chip{display:inline-flex;align-items:center;gap:.4rem;background:#141414;color:#f3f3f3;border:1px solid #2a2a2a;border-radius:999px;padding:.4rem .7rem}
+    .chip{display:inline-flex;align-items:center;gap:.4rem;background:#141414;color:#f3f3f3;border:1px solid #646464;border-radius:999px;padding:.4rem .7rem}
     .chip .dot{width:8px;height:8px;border-radius:999px;background:var(--gold)}
 
     /* Grids */
@@ -144,16 +144,17 @@
     .grid-3{display:grid;grid-template-columns:1fr;gap:18px}
     .grid-4{display:grid;grid-template-columns:1fr;gap:18px}
     @media (min-width:720px){.grid-2{grid-template-columns:repeat(2,1fr)}.grid-3{grid-template-columns:repeat(3,1fr)}.grid-4{grid-template-columns:repeat(4,1fr)}}
+    @media (max-width:768px){iframe {width: 100%;}}
 
     /* Cards */
-    .card{background:var(--card);border:1px solid var(--line);border-radius:18px;overflow:hidden;box-shadow:var(--shadow);margin: 0;}
+    .card{background:var(--card);border:1px solid #646464;border-radius:18px;overflow:hidden;box-shadow:var(--shadow);margin: 0;}
     .card img{display:block;aspect-ratio:10/9;object-fit:cover}
     .card-body{padding:16px}
     .card h3{font-family:Montserrat,sans-serif;margin:.2rem 0 .5rem}
     .more{color:var(--gold);font-weight:700}
 
     /* Icon row + amenities */
-    .icon-row{display:flex;gap:.75rem;align-items:flex-start;background:#141414;border:1px solid var(--line);padding:.8rem .9rem;border-radius:12px}
+    .icon-row{display:flex;gap:.75rem;align-items:flex-start;background:#141414;border:1px solid #646464;padding:.8rem .9rem;border-radius:12px}
     .icon{width:36px;height:36px;border-radius:10px;background:#1a1a1a;border:1px solid #2a2a2a;display:grid;place-items:center;color:var(--gold);font-weight:800}
 
     /* Accordion */
@@ -171,7 +172,7 @@
       .acc-btn[aria-expanded="true"]::after {content: "−"; /* minus when open */}
 
     /* Strips & footer */
-    .strip{background:linear-gradient(180deg,#151515,#121212);border:1px solid #2b2b2b;border-radius:18px;box-shadow:var(--shadow);padding:18px}
+    .strip{background:linear-gradient(180deg,#151515,#121212);border:1px solid #646464;border-radius:18px;box-shadow:var(--shadow);padding:18px}
     .badge{display:inline-block;background:var(--gold);color:#111;font-weight:800;border-radius:999px;padding:.25rem .6rem;margin-bottom:.4rem}
     footer{border-top:1px solid rgba(255,255,255,.06);padding-top:40px;padding-bottom:80px}
     .footer-grid{display:grid;grid-template-columns:1fr;gap:22px}
@@ -185,6 +186,8 @@
     .fab .call{background:var(--gold);color:#111;font-weight:800}
     .fab .wa{background:#128C7E;color:#fff}
     .fab .book{background:#1f1f1f;color:#f1f1f1;border-color:#343434}
+    .fab {font-size: 12px;}
+    .fab a i {font-size: 19px;}  
 
     /* Animations */
     @media (prefers-reduced-motion:no-preference){
@@ -331,13 +334,13 @@
       <button type="button">Rooms ▼</button>
       <ul class="dropdown" role="menu">
         <li><a role="menuitem" href="../rooms.html">Rooms & Rates</a></li>
-        <li><a role="menuitem" href="./root/deluxe-room.html">Deluxe Room</a></li>
-        <li><a role="menuitem" href="./root/super-deluxe-room.html">Super Deluxe Room</a></li>
-        <li><a role="menuitem" href="./root/premium-room.html">Premium Room</a></li>
+        <li><a role="menuitem" href="../root/deluxe-room.html">Deluxe Room</a></li>
+        <li><a role="menuitem" href="../root/super-deluxe-room.html">Super Deluxe Room</a></li>
+        <li><a role="menuitem" href="../root/premium-room.html">Premium Room</a></li>
       </ul>
     </li>
 
-    <li role="none"><a role="menuitem" href="./root/amenities.html">Amenities</a></li>
+    <li role="none"><a role="menuitem" href="../root/amenities.html">Amenities</a></li>
 
     <li class="has-dropdown" role="none">
       <button type="button">Location ▼</button>
@@ -380,7 +383,7 @@
     </div>
     <div class="container hero-inner fade-up">
       <nav class="breadcrumbs" aria-label="Breadcrumb">
-        <a href="/">Home</a> › <a href="/rooms.html">Rooms &amp; Rates</a> › <span aria-current="page">Deluxe Room</span>
+        <a href="/">Home</a> › <a href="../rooms.html">Rooms &amp; Rates</a> › <span aria-current="page">Deluxe Room</span>
       </nav>
       <h1>Deluxe Room in Chandigarh – Hotel The Black Gold</h1>
       <p class="subhead">Smart, clean, comfortable — near PGI, PEC &amp; Panjab University. Ideal for solo travelers, medical visits, parents &amp; students, and short business trips.</p>
@@ -416,11 +419,11 @@
           <figcaption class="card-body small">Bright, restful space with queen bed and fresh linen.</figcaption>
         </figure>
         <figure class="card">
-          <img loading="lazy" src="../images/Super Deluxe room 4.webp" alt="Deluxe Room seating with coffee table and two chairs" width="800" height="450">
+          <img loading="lazy" src="../images/Deluxe Room 3 (1).webp" alt="Deluxe Room seating with coffee table and two chairs" width="800" height="450">
           <figcaption class="card-body small">Coffee table &amp; two chairs—perfect for light meals or work.</figcaption>
         </figure>
         <figure class="card">
-          <img loading="lazy" src="../images/premium-room-with-toilet.webp" alt="Deluxe Room attached washroom with fresh towels and toiletries" width="800" height="450">
+          <img loading="lazy" src="../images/Deluxe Room Washroom 1.webp" alt="Deluxe Room attached washroom with fresh towels and toiletries" width="800" height="450">
           <figcaption class="card-body small">Attached washroom with fresh towels and basic toiletries.</figcaption>
         </figure>
       </div>
@@ -455,7 +458,7 @@
           <div><strong>Access &amp; Pets</strong><br><span class="small">Lift access; wheelchair assistance on request. Pet-friendly rooms (₹300/night/pet).</span></div>
         </div>
       </div>
-      <p class="small" style="margin-top:10px">See more on <a href="/amenities.html">Amenities</a>.</p>
+      <p class="small" style="margin-top:10px">See more on <a href="./amenities.html">Amenities</a>.</p>
     </section>
 
     <!-- DINING & SERVICE -->
@@ -485,7 +488,7 @@
             <div role="listitem"><strong>Railway Station</strong> – ~8 km</div>
             <div role="listitem"><strong>Bus Stand Sec 43</strong> – ~8 km</div>
           </div>
-          <p class="small" style="margin-top:10px">Learn more on our <a href="/location.html">Location</a> page or see <a href="/hotel-near-pgi.html" >Hotel Near PGI</a>.</p>
+          <p class="small" style="margin-top:10px">Learn more on our <a href="./location.html">Location</a> page or see <a href="./hotel-near-pgi.html" >Hotel Near PGI</a>.</p>
         </div>
         <div>
           <div id="map" role="img" aria-label="Map placeholder for Hotel The Black Gold location">
@@ -502,19 +505,19 @@
       <h2 id="upgrades" class="section-title">Upgrade Options</h2>
       <div class="grid-2">
         <article class="card">
-          <img loading="lazy" src="/assets/images/super-deluxe-card-the-black-gold.webp" alt="Super Deluxe Room with larger smart TV and added space" width="800" height="450">
+          <img loading="lazy" src="../images/Super Deluxe Room 7.jpg" alt="Super Deluxe Room with larger smart TV and added space" width="800" height="450">
           <div class="card-body">
             <h3>Super Deluxe Room</h3>
             <p class="small">More space with 43&quot; Smart TV + Airtel STB.</p>
-            <a class="more" href="/super-deluxe-room.html">View Super Deluxe →</a>
+            <a class="more" href="../root/super-deluxe-room.html">View Super Deluxe →</a>
           </div>
         </article>
         <article class="card">
-          <img loading="lazy" src="/assets/images/premium-room-card-the-black-gold.webp" alt="Premium Room with 50-inch 4K Smart TV and premium finishes" width="800" height="450">
+          <img loading="lazy" src="../images/Premium Room 6.JPG" alt="Premium Room with 50-inch 4K Smart TV and premium finishes" width="800" height="450">
           <div class="card-body">
             <h3>Premium Room</h3>
             <p class="small">Top comfort with 50&quot; 4K Smart TV.</p>
-            <a class="more" href="/premium-room.html">View Premium →</a>
+            <a class="more" href="./premium-room.html">View Premium →</a>
           </div>
         </article>
       </div>
@@ -560,7 +563,7 @@
           <div class="acc-inner">Use ride-hailing apps or pre-booked taxis. The front desk can assist with cab bookings.</div></div>
         </div>
       </div>
-      <p class="small" style="margin-top:12px">Need more help? Visit our <a href="/faq.html">FAQ</a> or <a href="/contact.html">Contact</a> us.</p>
+      <p class="small" style="margin-top:12px">Need more help? Visit our <a href="./faq.html">FAQ</a> or <a href="./contact.html">Contact</a> us.</p>
     </section>
 
     <!-- CONVERSION FOOTER -->
@@ -573,7 +576,7 @@
           <a class="btn btn-ghost" href="https://wa.me/917277522222" target="_blank" rel="noopener" aria-label="WhatsApp Us"><i class="fa-brands fa-whatsapp"></i>WhatsApp Us</a>
           <a class="btn btn-ghost" href="/contact.html" aria-label="Book Online"><i class="fa-solid fa-calendar-days"></i>Book Online</a>
         </div>
-        <p class="small" style="margin-top:10px">Explore: <a href="/rooms.html">Rooms &amp; Rates</a> • <a href="/amenities.html">Amenities</a> • <a href="/long-term-stay.html">Long-Term Stay</a> • <a href="/pet-friendly.html">Pet-Friendly</a></p>
+        <p class="small" style="margin-top:10px">Explore: <a href="../rooms.html">Rooms &amp; Rates</a> • <a href="./amenities.html">Amenities</a> • <a href="./long-term-stay.html">Long-Term Stay</a> • <a href="./pet-friendly.html">Pet-Friendly</a></p>
       </div>
     </section>
   </main>
@@ -589,23 +592,23 @@
       <div class="footer-col">
         <h4>Rooms</h4>
         <p class="small">
-          <a href="/super-deluxe-room.html">Super Deluxe Room</a><br>
-          <a href="/premium-room.html">Premium Room</a><br>
-          <a href="/rooms.html">Rooms &amp; Rates</a>
+          <a href="./super-deluxe-room.html">Super Deluxe Room</a><br>
+          <a href="./premium-room.html">Premium Room</a><br>
+          <a href="../rooms.html">Rooms &amp; Rates</a>
         </p>
       </div>
       <div class="footer-col">
         <h4>Plan</h4>
         <p class="small">
-          <a href="/location.html">Location</a><br>
-          <a href="/hotel-near-pgi.html">Hotel Near PGI</a>
+          <a href="./location.html">Location</a><br>
+          <a href="./hotel-near-pgi.html">Hotel Near PGI</a>
         </p>
       </div>
       <div class="footer-col">
         <h4>Help</h4>
         <p class="small">
-          <a href="/faq.html">FAQ</a><br>
-          <a href="/contact.html">Contact</a>
+          <a href="./faq.html">FAQ</a><br>
+          <a href="./contact.html">Contact</a>
         </p>
       </div>
     </div>
