@@ -438,7 +438,7 @@
           </div>
         </div>
         <button class="btn btn-primary-1" type="submit" aria-label="Check availability">Check Availability</button>
-        <button class="btn btn-primary-2" aria-label="Call now" onclick="window.location.href='tel:+917277522222'">Call now</button>
+        <button class="btn btn-primary-2" type="button" id="callBtn">Call now</button>
         <div class="trust" aria-label="Trust & Direct Booking Benefits">
           <span class="badge">Best Rate Direct</span>
           <span class="badge">Priority Upgrades (when available)</span>
@@ -876,5 +876,12 @@ window.addEventListener("resize", () => {
     });
   });
   </script>
+
+
+<script>
+  document.getElementById('callBtn').addEventListener('click', () => {
+    window.location.href = 'tel:+917277522222';
+  });
+</script>
 </body>
 </html>
