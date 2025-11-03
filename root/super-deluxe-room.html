@@ -165,7 +165,7 @@
     .footer-col h4{font-family:Montserrat,sans-serif;margin:.2rem 0 .6rem}
     .copyright{border-top:1px solid rgba(255,255,255,.06);margin-top:26px;padding-top:18px;color:#c9c9c9;font-size:.9rem}
     @media (min-width:700px){.footer-grid{grid-template-columns:2fr 1fr 1fr 1fr}}
-    @media (max-width:768px){iframe {width: 100%;}}
+    @media (max-width:768px){iframe {width: 100%;}.logo{width: 58px;}.brand {width: 50%;}}
 
     /* FAB */
     .fab{position:fixed;right:16px;bottom:16px;display:grid;gap:10px;z-index:1000}
@@ -584,5 +584,60 @@
            /assets/images/premium-room-card-the-black-gold.webp
        - Keep WebP, add width/height if available, and maintain lazy-loading for non-hero media.
        - Booking widget can be embedded on /contact.html and linked from CTAs here. -->
+       <script>
+const nav = document.getElementById("main-nav");
+const menu = nav.querySelector(".menu");
+
+// Insert mobile toggle button
+const toggleBtn = document.createElement("button");
+toggleBtn.className = "menu-toggle";
+toggleBtn.innerHTML = "☰";
+nav.prepend(toggleBtn);
+
+// Insert close button inside menu
+const closeBtn = document.createElement("div");
+closeBtn.className = "menu-close";
+closeBtn.innerHTML = "✕";
+menu.prepend(closeBtn);
+
+// Function to detect mobile/tablet
+function isMobileOrTablet() {
+  return window.innerWidth <= 1024;
+}
+
+// Toggle menu open
+toggleBtn.addEventListener("click", () => {
+  if (isMobileOrTablet()) menu.classList.add("active");
+});
+
+// Close menu
+closeBtn.addEventListener("click", () => {
+  if (isMobileOrTablet()) menu.classList.remove("active");
+});
+
+// Toggle dropdowns inside mobile menu
+document.querySelectorAll("#main-nav .has-dropdown > button").forEach((btn) => {
+  btn.addEventListener("click", (e) => {
+    if (!isMobileOrTablet()) return; // ignore on desktop
+    e.preventDefault();
+    const parent = btn.closest(".has-dropdown");
+    parent.classList.toggle("open");
+
+    // update aria-expanded
+    const expanded = parent.classList.contains("open");
+    btn.setAttribute("aria-expanded", expanded);
+  });
+});
+
+// Close menu if window resized to desktop
+window.addEventListener("resize", () => {
+  if (!isMobileOrTablet()) {
+    menu.classList.remove("active");
+    document.querySelectorAll("#main-nav .has-dropdown").forEach((item) => {
+      item.classList.remove("open");
+    });
+  }
+});
+</script>
 </body>
 </html>
