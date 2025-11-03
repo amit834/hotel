@@ -203,7 +203,7 @@ nav ul.menu {list-style: none;margin: 0;padding: 0;display: flex;gap: 1.25rem;al
       .amenities{grid-template-columns:repeat(3,minmax(0,1fr))}
       .footer-grid{grid-template-columns:2fr 1fr 1fr 1fr}
     }
-    @media (max-width:768px){iframe {width: 100%;}}
+    @media (max-width: 768px){iframe {width: 100%;}.logo{width: 58px;}.brand {width: 50%;}}
     /* Animations */
     @media (prefers-reduced-motion:no-preference){
       .fade-up{opacity:0;transform:translateY(10px);animation:fadeUp .6s ease .05s forwards}
@@ -512,7 +512,7 @@ nav ul.menu {list-style: none;margin: 0;padding: 0;display: flex;gap: 1.25rem;al
       <h2 id="rooms" class="section-title">Choose Your Room</h2>
       <div class="cards" role="list">
         <article class="card" role="listitem">
-          <a href="./root./root/deluxe-room.html">
+          <a href="./root/deluxe-room.html">
           <img loading="lazy" decoding="async" width="800" height="450"
             src="./images/Deluxe Room 3.jpg"
             alt="Deluxe Room at Hotel The Black Gold with 32-inch TV and modern comforts">
@@ -527,7 +527,7 @@ nav ul.menu {list-style: none;margin: 0;padding: 0;display: flex;gap: 1.25rem;al
                 <li>24/7 basics: tea, coffee, Maggi, sandwiches</li>
               </ul>
               <p class="small">View details & typical ranges:</p>
-              <a class="more" href="./root./root/deluxe-room.html">Explore Deluxe →</a>
+              <a class="more" href="./root/deluxe-room.html">Explore Deluxe →</a>
             </div>
           </a>
         </article>
@@ -763,6 +763,62 @@ nav ul.menu {list-style: none;margin: 0;padding: 0;display: flex;gap: 1.25rem;al
     });
     document.getElementById('year').textContent = new Date().getFullYear();
   </script>
+  
+  <script>
+const nav = document.getElementById("main-nav");
+const menu = nav.querySelector(".menu");
+
+// Insert mobile toggle button
+const toggleBtn = document.createElement("button");
+toggleBtn.className = "menu-toggle";
+toggleBtn.innerHTML = "☰";
+nav.prepend(toggleBtn);
+
+// Insert close button inside menu
+const closeBtn = document.createElement("div");
+closeBtn.className = "menu-close";
+closeBtn.innerHTML = "✕";
+menu.prepend(closeBtn);
+
+// Function to detect mobile/tablet
+function isMobileOrTablet() {
+  return window.innerWidth <= 1024;
+}
+
+// Toggle menu open
+toggleBtn.addEventListener("click", () => {
+  if (isMobileOrTablet()) menu.classList.add("active");
+});
+
+// Close menu
+closeBtn.addEventListener("click", () => {
+  if (isMobileOrTablet()) menu.classList.remove("active");
+});
+
+// Toggle dropdowns inside mobile menu
+document.querySelectorAll("#main-nav .has-dropdown > button").forEach((btn) => {
+  btn.addEventListener("click", (e) => {
+    if (!isMobileOrTablet()) return; // ignore on desktop
+    e.preventDefault();
+    const parent = btn.closest(".has-dropdown");
+    parent.classList.toggle("open");
+
+    // update aria-expanded
+    const expanded = parent.classList.contains("open");
+    btn.setAttribute("aria-expanded", expanded);
+  });
+});
+
+// Close menu if window resized to desktop
+window.addEventListener("resize", () => {
+  if (!isMobileOrTablet()) {
+    menu.classList.remove("active");
+    document.querySelectorAll("#main-nav .has-dropdown").forEach((item) => {
+      item.classList.remove("open");
+    });
+  }
+});
+</script>
   
 </body>
 </html>
