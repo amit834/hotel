@@ -126,12 +126,17 @@
     .breadcrumbs{font-size:.95rem;margin:18px 0;color:#cfcfcf}
     .breadcrumbs a{color:#cfcfcf}.breadcrumbs a:hover{color:var(--gold)}
     /* FAQ */
-    .accordion{border:1px solid var(--line);border-radius:18px;overflow:hidden}
-    .acc-item{border-bottom:1px solid var(--line);background:#141414}
+    .accordion{border-radius:10px;overflow:hidden}
+    .acc-item {padding: 0 0 15px;}
     .acc-item:last-child{border-bottom:0}
-    .acc-btn{width:100%;text-align:left;padding:16px 18px;background:#141414;color:var(--text);border:0;font-weight:700;font-family:Montserrat,sans-serif;cursor:pointer}
+    .acc-btn {width: 100%;text-align: left;padding: 25px 16px;background: transparent;border-radius: 18px;border: 1px solid #646464;font-weight: 700;font-family: Montserrat,sans-serif;cursor: pointer;font-size: 18px;border: 0; color: #fff;}
     .acc-content{max-height:0;overflow:hidden;transition:max-height .35s ease}
     .acc-inner{padding:0 18px 16px;color:#d7d7d7}
+    .acc-btn::after {content: "+"; /* default is plus */float: right;font-weight: bold;transition: transform 0.3s;}
+    .acc-btn[aria-expanded="true"]::after {content: "−"; /* minus when open */}
+    .acc-item {background: #1f1f1f;margin-bottom: 16px;padding: 0;border-radius: 10px;color: #fff;}
+    .acc-btn::after {content: "+"; /* default is plus */float: right;font-weight: bold;transition: transform 0.3s;}
+    .acc-btn[aria-expanded="true"]::after {content: "−"; /* minus when open */}
     /* Footer */
     footer{border-top:1px solid rgba(255,255,255,.06);padding-top:40px;padding-bottom:80px}
     .footer-grid{display:grid;grid-template-columns:1fr;gap:22px}
@@ -143,6 +148,8 @@
     .fab .call{background:var(--gold);color:#111;font-weight:800}
     .fab .wa{background:#128C7E;color:#fff}
     .fab .book{background:#1f1f1f;color:#f1f1f1;border-color:#343434}
+
+    .btn-primary:hover {color: #fff;}
     /* Responsive */
     @media (min-width:700px){
       .grid-2{grid-template-columns:1.15fr .85fr}
@@ -257,43 +264,43 @@
         <li class="has-dropdown" role="none">
           <button type="button">Rooms ▼</button>
           <ul class="dropdown" role="menu">
-            <li><a role="menuitem" href="./rooms.html">Rooms & Rates</a></li>
-            <li><a role="menuitem" href="./root/deluxe-room.html">Deluxe Room</a></li>
-            <li><a role="menuitem" href="./root/super-deluxe-room.html">Super Deluxe Room</a></li>
-            <li><a role="menuitem" href="./root/premium-room.html">Premium Room</a></li>
+            <li><a role="menuitem" href="../rooms.html">Rooms & Rates</a></li>
+            <li><a role="menuitem" href="../root/deluxe-room.html">Deluxe Room</a></li>
+            <li><a role="menuitem" href="../root/super-deluxe-room.html">Super Deluxe Room</a></li>
+            <li><a role="menuitem" href="../root/premium-room.html">Premium Room</a></li>
           </ul>
         </li>
 
-        <li role="none"><a role="menuitem" href="./root/amenities.html">Amenities</a></li>
+        <li role="none"><a role="menuitem" href="../root/amenities.html">Amenities</a></li>
 
         <li class="has-dropdown" role="none">
           <button type="button">Location ▼</button>
           <ul class="dropdown" role="menu">
-            <li><a role="menuitem" href="./root/location.html">Location (Main)</a></li>
-            <li><a role="menuitem" href="./root/nearby-attractions.html">Nearby Attractions</a></li>
-            <li><a role="menuitem" href="./root/important-landmarks.html">Important Landmarks</a></li>
-            <li><a role="menuitem" href="./root/full-day-outings.html">Full-Day Outings</a></li>
-            <li><a role="menuitem" href="./root/curated-full-day-itenararies.html">Curated Itineraries</a></li>
+            <li><a role="menuitem" href="../root/location.html">Location (Main)</a></li>
+            <li><a role="menuitem" href="../root/nearby-attractions.html">Nearby Attractions</a></li>
+            <li><a role="menuitem" href="../root/important-landmarks.html">Important Landmarks</a></li>
+            <li><a role="menuitem" href="../root/full-day-outings.html">Full-Day Outings</a></li>
+            <li><a role="menuitem" href="../root/curated-full-day-itenararies.html">Curated Itineraries</a></li>
           </ul>
         </li>
 
         <li class="has-dropdown" role="none">
           <button type="button">Stay Near ▼</button>
           <ul class="dropdown" role="menu">
-            <li><a role="menuitem" href="./root/hotel-near-pgi.html">Hotel Near PGI</a></li>
-            <li><a role="menuitem" href="./root/hotel-near-punjab-haryana-high-court.html">Hotel Near High Court</a></li>
-            <li><a role="menuitem" href="./root/hotel-near-pec.html">Hotel Near PEC</a></li>
-            <li><a role="menuitem" href="./root/hotel-near-panjab-university.html">Hotel Near Panjab University</a></li>
-            <li><a role="menuitem" href="./root/hotel-near-pca-stadium.html">Hotel Near PCA Stadium</a></li>
+            <li><a role="menuitem" href="../root/hotel-near-pgi.html">Hotel Near PGI</a></li>
+            <li><a role="menuitem" href="../root/hotel-near-punjab-haryana-high-court.html">Hotel Near High Court</a></li>
+            <li><a role="menuitem" href="../root/hotel-near-pec.html">Hotel Near PEC</a></li>
+            <li><a role="menuitem" href="../root/hotel-near-panjab-university.html">Hotel Near Panjab University</a></li>
+            <li><a role="menuitem" href="../root/hotel-near-pca-stadium.html">Hotel Near PCA Stadium</a></li>
           </ul>
         </li>
 
-        <li role="none"><a role="menuitem" href="./root/FAQs.html">FAQ</a></li>
+        <li role="none"><a role="menuitem" href="../root/FAQs.html">FAQ</a></li>
       </ul>
     </nav>
 
 
-        <div><a class="book-now" href="./root/contact.html" aria-label="Book or Contact">Book Now</a></div>
+        <div><a class="book-now" href="../root/contact.html" aria-label="Book or Contact">Book Now</a></div>
       </div>
     </header>
 

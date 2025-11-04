@@ -78,10 +78,30 @@
     /* Header */
     header{position:sticky;top:0;z-index:999;background:rgba(17,17,17,.78);backdrop-filter:saturate(120%) blur(8px);border-bottom:1px solid rgba(255,255,255,.05)}
     .nav{display:flex;align-items:center;justify-content:space-between;padding:.85rem 0}
-    .brand{display:flex;align-items:center;gap:.75rem}.logo{width:36px;height:36px;border-radius:10px;background:linear-gradient(135deg,var(--gold),#9b7c1f);box-shadow:var(--shadow)}
+    .brand{display:flex;align-items:center;gap:.75rem}.logo{width:36px;height:36px;border-radius:10px;}
     .brand-name{font-family:Montserrat,sans-serif;font-weight:800;letter-spacing:.4px}
     nav ul{list-style:none;margin:0;padding:0;display:flex;gap:1.25rem;align-items:center}
     .book-now{background:var(--gold);color:#111;padding:.6rem 1rem;border-radius:999px;font-weight:700;box-shadow:var(--shadow);border:1px solid rgba(0,0,0,.35)}
+
+    /* Dropdown nav */
+      ul.dropdown {display: block !important;}
+      nav ul{list-style:none;margin:0;padding:0;display:flex;gap:1.25rem;align-items:center}
+      .menu>li{position:relative}
+      .menu a,.menu button{font:inherit;color:var(--muted);background:transparent;border:0;padding:.4rem 0;cursor:pointer}
+      .menu a:hover,.menu a:focus,.menu button:hover,.menu button:focus{color:var(--gold)}
+      .has-dropdown>button{display:inline-flex;align-items:center;gap:.45rem}
+      .caret{display:inline-block;inline-size:.5rem;block-size:.35rem;border-left:.35rem solid transparent;border-right:.35rem solid transparent;border-top:.45rem solid var(--muted);transform:translateY(1px)}
+      .has-dropdown:hover .caret,.has-dropdown:focus-within .caret,.has-dropdown>button[aria-expanded="true"] .caret{border-top-color:var(--gold)}
+
+      /* Dropdown panel */
+      .dropdown{position:absolute;left:0;top:calc(100% + 10px);min-width:230px;background:#1a1a1a;border:1px solid #646464;border-radius:14px;box-shadow:var(--shadow);padding:.6rem 0;opacity:0;/* visibility:hidden; */transform:translateY(-4px);transition:opacity .18s ease,transform .18s ease,visibility .18s;/* overflow:hidden; */}
+      .has-dropdown:hover .dropdown,.has-dropdown:focus-within .dropdown{opacity:1;visibility:visible;transform:translateY(0)}
+      /* Open via JS toggle on touch */
+      .has-dropdown>button[aria-expanded="true"] + .dropdown{opacity:1;visibility:visible;transform:translateY(0)}
+      .dropdown a{display:block;padding:.6rem .9rem;color:#e7e7e7}
+
+      .book-now{background:var(--gold);color:#111;padding:.6rem 1rem;border-radius:999px;font-weight:700;box-shadow:var(--shadow);border:1px solid rgba(0,0,0,.35)}
+      .book-now:hover{filter:brightness(1.05);color: #fff;}
 
     /* Hero */
     .hero{position:relative;isolation:isolate}
@@ -95,6 +115,7 @@
     .btn{display:inline-flex;align-items:center;justify-content:center;gap:.5rem;border:none;border-radius:12px;cursor:pointer;padding:.85rem 1.05rem}
     .btn-primary{background:var(--gold);color:#111;font-weight:800}
     .btn-ghost{background:#1a1a1a;border:1px solid #2b2b2b;color:#f1f1f1}
+    .btn-primary:hover {color: #fff;}
 
     /* Sections */
     section{padding:64px 0}
@@ -207,31 +228,63 @@
   <a class="skip-link" href="#main">Skip to content</a>
 
   <!-- HEADER -->
-  <header role="banner" aria-label="Primary">
-    <div class="container nav" id="nav">
-      <!-- Brand -->
-      <a class="brand" href="/" aria-label="Hotel The Black Gold — Home">
-        <span class="logo" aria-hidden="true"></span>
-        <span class="brand-name">Hotel The Black Gold</span>
-      </a>
+        <header role="banner" aria-label="Primary">
+      <div class="container nav" id="nav">
+        <a class="brand" href="/" aria-label="Hotel The Black Gold — Home">
+          <span class="logo" aria-hidden="true"><img src="../images/The black gold_final1.png" alt=""></span>
+          <span class="brand-name">Hotel The Black Gold</span>
+        </a>
 
-      <!-- Nav -->
-      <nav aria-label="Main">
-        <ul>
-          <li><a href="/">Home</a></li>
-          <li><a href="/rooms.html">Rooms &amp; Rates</a></li>
-          <li><a href="/amenities.html">Amenities</a></li>
-          <li><a href="/location.html">Location</a></li>
-          <li><a href="/nearby-attractions.html" aria-current="page">Nearby Attractions</a></li>
-          <li><a href="/faq.html">FAQ</a></li>
-          <li><a href="/contact.html">Contact</a></li>
-        </ul>
-      </nav>
+        <!-- Hamburger for mobile -->
+        <div class="menu-toggle" id="menu-toggle" aria-label="Toggle navigation">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+    <nav aria-label="Main" id="main-nav">
+      <ul class="menu" role="menubar">
+        <li class="has-dropdown" role="none">
+          <button type="button">Rooms ▼</button>
+          <ul class="dropdown" role="menu">
+            <li><a role="menuitem" href="../rooms.html">Rooms & Rates</a></li>
+            <li><a role="menuitem" href="../root/deluxe-room.html">Deluxe Room</a></li>
+            <li><a role="menuitem" href="../root/super-deluxe-room.html">Super Deluxe Room</a></li>
+            <li><a role="menuitem" href="../root/premium-room.html">Premium Room</a></li>
+          </ul>
+        </li>
 
-      <!-- CTA -->
-      <a class="book-now" href="/contact.html">Book Now</a>
-    </div>
-  </header>
+        <li role="none"><a role="menuitem" href="../root/amenities.html">Amenities</a></li>
+
+        <li class="has-dropdown" role="none">
+          <button type="button">Location ▼</button>
+          <ul class="dropdown" role="menu">
+            <li><a role="menuitem" href="../root/location.html">Location (Main)</a></li>
+            <li><a role="menuitem" href="../root/nearby-attractions.html">Nearby Attractions</a></li>
+            <li><a role="menuitem" href="../root/important-landmarks.html">Important Landmarks</a></li>
+            <li><a role="menuitem" href="../root/full-day-outings.html">Full-Day Outings</a></li>
+            <li><a role="menuitem" href="../root/curated-full-day-itenararies.html">Curated Itineraries</a></li>
+          </ul>
+        </li>
+
+        <li class="has-dropdown" role="none">
+          <button type="button">Stay Near ▼</button>
+          <ul class="dropdown" role="menu">
+            <li><a role="menuitem" href="../root/hotel-near-pgi.html">Hotel Near PGI</a></li>
+            <li><a role="menuitem" href="../root/hotel-near-punjab-haryana-high-court.html">Hotel Near High Court</a></li>
+            <li><a role="menuitem" href="../root/hotel-near-pec.html">Hotel Near PEC</a></li>
+            <li><a role="menuitem" href="../root/hotel-near-panjab-university.html">Hotel Near Panjab University</a></li>
+            <li><a role="menuitem" href="../root/hotel-near-pca-stadium.html">Hotel Near PCA Stadium</a></li>
+          </ul>
+        </li>
+
+        <li role="none"><a role="menuitem" href="../root/FAQs.html">FAQ</a></li>
+      </ul>
+    </nav>
+
+
+        <div><a class="book-now" href="../root/contact.html" aria-label="Book or Contact">Book Now</a></div>
+      </div>
+    </header>
 
   <!-- HERO -->
   <section class="hero" aria-label="Nearby Attractions Hero">
