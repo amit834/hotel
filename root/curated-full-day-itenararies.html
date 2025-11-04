@@ -15,6 +15,8 @@
   <title>Full-Day Outings from Chandigarh | Hotel The Black Gold</title>
   <meta name="description" content="Plan curated one-day trips from Hotel The Black Gold: Shimla, Kasauli, Pinjore & Morni Hills, Anandpur Sahib, Ropar Wetlands, and more. Timings, tips, and routes.">
   <link rel="canonical" href="https://www.hoteltheblackgold.in/full-day-outings">
+
+  <link rel="icon" type="image/jpg" href="../images/The black gold_final2.jpg">
   <!-- Open Graph -->
   <meta property="og:title" content="Full-Day Outings from Chandigarh | Hotel The Black Gold">
   <meta property="og:description" content="Curated one-day trips with timings, tips, and routes—starting and ending at Hotel The Black Gold, Chandigarh.">
@@ -36,6 +38,9 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Lato:wght@400;500&display=swap">
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Lato:wght@400;500&display=swap" rel="stylesheet">
+
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
   <!-- Preload hero -->
   <link rel="preload" as="image" href="/assets/images/full-day-outings-hero.webp" imagesrcset="/assets/images/full-day-outings-hero.webp" type="image/webp">
   <!-- Styles (minified, consistent with sitewide design system) -->
@@ -125,10 +130,14 @@
     .footer h3{font-family:Montserrat,sans-serif;margin:.25rem 0 .5rem}
     .footer a{color:var(--muted);text-decoration:underline dotted}
     .legal{font-size:.85rem;color:var(--muted);border-top:1px solid rgba(255,255,255,.08);padding:.75rem 0}
-    /* Floating quick actions */
-    .fab{position:fixed;right:1rem;bottom:1rem;display:flex;flex-direction:column;gap:.5rem;z-index:999}
-    .fab a{display:flex;align-items:center;justify-content:center;width:52px;height:52px;border-radius:50%;box-shadow:var(--shadow);background:var(--gold);color:#111;border:0}
-    .fab a.secondary{background:#1a1a1a;color:#fff;border:1px solid rgba(255,255,255,.12)}
+    /* FAB */
+    .fab{position:fixed;right:16px;bottom:16px;display:grid;gap:10px;z-index:1000}
+    .fab a{display:flex;align-items:center;gap:.6rem;padding:.7rem .9rem;border-radius:999px;box-shadow:var(--shadow);border:1px solid rgba(0,0,0,.4);backdrop-filter:saturate(120%) blur(6px)}
+    .fab .call{background:var(--gold);color:#111;font-weight:800}
+    .fab .wa{background:#128C7E;color:#fff}
+    .fab .book{background:#1f1f1f;color:#f1f1f1;border-color:#343434}
+    .fab {font-size: 12px;}
+    .fab a i {font-size: 20px;}
     .sr-only{position:absolute;left:-10000px;top:auto;width:1px;height:1px;overflow:hidden}
     /* Motion preferences */
     @media(prefers-reduced-motion:reduce){.card,.hero{transition:none}}
@@ -510,11 +519,11 @@
   </footer>
 
   <!-- Floating Quick Actions -->
-  <div class="fab" role="region" aria-label="Quick actions">
-    <a href="tel:+917277522222" aria-label="Call Hotel The Black Gold"><span class="sr-only">Call</span>☎</a>
-    <a class="secondary" href="https://wa.me/917277522222" rel="noopener" aria-label="WhatsApp Hotel The Black Gold"><span class="sr-only">WhatsApp</span>🟢</a>
-    <a class="secondary" href="/rooms.html" aria-label="Book a room"><span class="sr-only">Book</span>★</a>
-  </div>
+  <nav class="fab" aria-label="Quick actions">
+    <a class="call" href="tel:+917277522222" aria-label="Call Hotel The Black Gold"><i class="fa-solid fa-phone"></i>Call</a>
+    <a class="wa" href="https://wa.me/917277522222" target="_blank" rel="noopener" aria-label="WhatsApp Hotel The Black Gold"><i class="fa-brands fa-whatsapp"></i>WhatsApp</a>
+    <a class="book" href="/contact.html" aria-label="Book Now"><i class="fa-solid fa-calendar-days"></i>Book Now</a>
+  </nav>
 
   <!-- Minimal JS (deferred) -->
   <script defer>
