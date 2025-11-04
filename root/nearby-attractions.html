@@ -25,6 +25,7 @@
 
   <!-- Canonical -->
   <link rel="canonical" href="https://www.hoteltheblackgold.com/nearby-attractions.html">
+  <link rel="icon" type="image/jpg" href="../images/The black gold_final2.jpg">
 
   <!-- Open Graph -->
   <meta property="og:title" content="Nearby Attractions in Chandigarh | Hotel The Black Gold">
@@ -59,6 +60,8 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Montserrat:wght@600;700;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
   <!-- Preload hero image -->
   <link rel="preload" as="image"
@@ -148,10 +151,12 @@
 
     /* FAB */
     .fab{position:fixed;right:16px;bottom:16px;display:grid;gap:10px;z-index:1000}
-    .fab a{display:flex;align-items:center;gap:.6rem;padding:.7rem 1rem;border-radius:999px;box-shadow:var(--shadow);border:1px solid rgba(0,0,0,.4);backdrop-filter:saturate(120%) blur(6px)}
+    .fab a{display:flex;align-items:center;gap:.6rem;padding:.7rem .9rem;border-radius:999px;box-shadow:var(--shadow);border:1px solid rgba(0,0,0,.4);backdrop-filter:saturate(120%) blur(6px)}
     .fab .call{background:var(--gold);color:#111;font-weight:800}
     .fab .wa{background:#128C7E;color:#fff}
     .fab .book{background:#1f1f1f;color:#f1f1f1;border-color:#343434}
+    .fab {font-size: 12px;}
+    .fab a i {font-size: 20px;}
 
     :where(a,button){outline-color:var(--gold);outline-offset:2px}
   </style>
@@ -635,9 +640,9 @@
 
   <!-- Floating Quick Actions -->
   <nav class="fab" aria-label="Quick actions">
-    <a class="call" href="tel:+917277522222" aria-label="Call Hotel The Black Gold">Call</a>
-    <a class="wa" href="https://wa.me/917277522222" target="_blank" rel="noopener" aria-label="WhatsApp Hotel The Black Gold">WhatsApp</a>
-    <a class="book" href="/contact.html" aria-label="Book at Hotel The Black Gold">Book</a>
+    <a class="call" href="tel:+917277522222" aria-label="Call Hotel The Black Gold"><i class="fa-solid fa-phone"></i>Call</a>
+    <a class="wa" href="https://wa.me/917277522222" target="_blank" rel="noopener" aria-label="WhatsApp Hotel The Black Gold"><i class="fa-brands fa-whatsapp"></i>WhatsApp</a>
+    <a class="book" href="/contact.html" aria-label="Book Now"><i class="fa-solid fa-calendar-days"></i>Book Now</a>
   </nav>
 
   <!-- Minimal JS: year -->

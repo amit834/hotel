@@ -53,6 +53,8 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Montserrat:wght@600;700;800&display=swap" rel="stylesheet">
 
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
   <!-- Preload hero -->
   <link rel="preload" as="image" href="/assets/images/hero-location-hotel-the-black-gold.webp" imagesrcset="/assets/images/hero-location-hotel-the-black-gold.webp 1920w" imagesizes="100vw">
 
@@ -156,6 +158,8 @@
     .fab .call{background:var(--gold);color:#111;font-weight:800}
     .fab .wa{background:#128C7E;color:#fff}
     .fab .book{background:#1f1f1f;color:#f1f1f1;border-color:#343434}
+    .fab {font-size: 12px;}
+    .fab a i {font-size: 20px;}
     /* Responsive */
     @media (min-width:700px){
       .grid-2{grid-template-columns:1.15fr .85fr}
@@ -494,9 +498,9 @@
 
   <!-- Floating Quick Actions (priority: Call > WhatsApp > Book) -->
   <nav class="fab" aria-label="Quick actions">
-    <a class="call" href="tel:+917277522222" aria-label="Call Hotel The Black Gold">Call</a>
-    <a class="wa" href="https://wa.me/917277522222" rel="noopener" aria-label="WhatsApp Hotel The Black Gold">WhatsApp</a>
-    <a class="book" href="/contact.html" rel="internal" aria-label="Book Now">Book Now</a>
+    <a class="call" href="tel:+917277522222" aria-label="Call Hotel The Black Gold"><i class="fa-solid fa-phone"></i>Call</a>
+    <a class="wa" href="https://wa.me/917277522222" target="_blank" rel="noopener" aria-label="WhatsApp Hotel The Black Gold"><i class="fa-brands fa-whatsapp"></i>WhatsApp</a>
+    <a class="book" href="/contact.html" aria-label="Book Now"><i class="fa-solid fa-calendar-days"></i>Book Now</a>
   </nav>
 
   <!-- Minimal JS: FAQ + year -->
