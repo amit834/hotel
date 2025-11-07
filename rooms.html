@@ -46,6 +46,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Montserrat:wght@600;700;800&display=swap" rel="stylesheet">
   
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 
   <link rel="preload" as="image"
       href="/assets/images/hero-rooms-hotel-the-black-gold.webp"
@@ -219,6 +220,18 @@ nav ul.menu {list-style: none;margin: 0;padding: 0;display: flex;gap: 1.25rem;al
     .noemal {
       color: #fff;
     }
+
+    .mySwiper{width:100%;padding:20px 0}
+    .swiper-slide{width:32%;color:#fff;border-radius:10px;font-size:28px;font-style:italic}
+    .swiper-slide img{width:350px;height:200px;object-fit:cover;border-radius:10px}
+    .swiper-pagination-bullet-active{background:#6B8E23!important}
+    .review-card{width:32%;min-height:325px;background:#0d0d0d;color:#fff;padding:25px;border-radius:12px;border:2px solid #d4af37}
+    .review-card h3{font-size:22px;margin-bottom:12px;letter-spacing:2px}
+    .review-text{font-size:15px;line-height:1.6;margin-bottom:15px;opacity:.95}
+    .review-author{text-align:right;font-weight:600;font-size:14px;opacity:.9}
+    .menu-close {
+    display: none !important;
+} 
   </style>
 
   <script type="application/ld+json">
@@ -617,6 +630,50 @@ nav ul.menu {list-style: none;margin: 0;padding: 0;display: flex;gap: 1.25rem;al
       </div>
     </section>
 
+    <!-- review section -->
+    <div class="swiper mySwiper">
+      <div class="swiper-wrapper">
+
+        <!-- 1️⃣ Neha -->
+        <div class="swiper-slide review-card">
+          <h3>⭐️⭐️⭐️⭐️⭐</h3>
+          <p class="review-text">
+            “I stayed in a Deluxe Room — it’s compact but thoughtfully designed. The air conditioning worked perfectly, the bed was comfortable, and the washroom was super clean. A great option for solo travelers or short stays in Chandigarh.”
+          </p>
+          <p class="review-author">— Manisha from Mumbai</p>
+        </div>
+
+        <!-- 2️⃣ Arjun Mehta -->
+        <div class="swiper-slide review-card">
+          <h3>⭐️⭐️⭐️⭐️⭐</h3>
+          <p class="review-text">
+            “Our Super Deluxe Room had a 43-inch Smart TV with an Airtel set-top box, and the kids loved watching cartoons before bed. Room service was prompt, and breakfast was tasty. Great experience for families visiting Chandigarh!”
+          </p>
+          <p class="review-author">— Rohit & Family</p>
+        </div>
+
+        <!-- 3️⃣ Priya & Simba -->
+        <div class="swiper-slide review-card">
+          <h3>⭐️⭐️⭐️⭐️⭐</h3>
+          <p class="review-text">
+            “Booked a Premium Room for my parents during their medical visit to PGI. The 50-inch 4K Smart TV, peaceful interiors, and lift access made their stay very comfortable. The staff was genuinely caring and professional.”
+          </p>
+          <p class="review-author">— Dr. Kavita Sharma, PGI Visitor</p>
+        </div>
+
+        <!-- 4️⃣ Rajat -->
+        <div class="swiper-slide review-card">
+          <h3>⭐️⭐️⭐️⭐️⭐</h3>
+          <p class="review-text">
+            “Hotel The Black Gold offers great value for money. Each room category — Deluxe, Super Deluxe, and Premium — is clean and well-equipped. The pricing is reasonable, and the amenities easily match many higher-end hotels in Chandigarh.”
+          </p>
+          <p class="review-author">— Abhishek from Gurgaon</p>
+        </div>
+
+      </div>
+
+    </div>
+
     <section class="fade-up" aria-labelledby="faq">
       <h2 id="faq" class="section-title">Rooms & Rates – FAQs</h2>
       <div class="accordion" id="accordion" role="region" aria-label="Rooms FAQs">
@@ -819,6 +876,23 @@ window.addEventListener("resize", () => {
   }
 });
 </script>
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+      slidesPerView: "auto",
+      spaceBetween: 20,
+      grabCursor: true,
+      loop: true,
+      centeredSlides: false,
+
+      autoplay: {
+        delay: 2500,     // 2.5 sec delay
+        disableOnInteraction: false, // swipe ke baad bhi autoplay chalta rahe
+      },
+
+    });
+  </script>
   
 </body>
 </html>
