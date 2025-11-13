@@ -74,6 +74,10 @@
     nav ul{list-style:none;margin:0;padding:0;display:flex;gap:1.25rem;align-items:center}
     .book-now{background:var(--gold);color:#111;padding:.6rem 1rem;border-radius:999px;font-weight:700;box-shadow:var(--shadow);border:1px solid rgba(0,0,0,.35)}
     .book-now:hover{filter:brightness(1.05)}
+    .breadcrumbs ol{display:flex;flex-wrap:nowrap;gap:6px;list-style:none;padding:0;margin:0}
+    .breadcrumbs li{font-size:14px;color:#fff}
+    .breadcrumbs li a{text-decoration:none;  color:#fff}
+    .breadcrumbs li+li:before{content:"›";padding:0 4px;color:#fff}
 
     /* Dropdown nav */
       ul.dropdown {display: block !important;}
@@ -314,7 +318,10 @@
     </div>
     <div class="container hero-inner fade-up">
       <nav class="breadcrumbs" aria-label="Breadcrumb">
-        <a href="/" rel="home">Home</a> › <span aria-current="page">Location</span>
+        <ol>
+          <li><a href="/">Home</a></li>
+          <li aria-current="page">Location</li>
+        </ol>
       </nav>
       <h1>Location – Hotel The Black Gold in Chandigarh</h1>
       <p class="subhead">Central, connected, and minutes from PGI, Sukhna Lake, and Rock Garden. Spend less time in transit and more time enjoying Chandigarh.</p>

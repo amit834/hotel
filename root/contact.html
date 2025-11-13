@@ -134,8 +134,10 @@
     .chips{display:flex;flex-wrap:wrap;gap:8px;margin-top:10px}
     .chip{border:1px solid var(--line);background:#151515;border-radius:999px;padding:.4rem .7rem;font-size:.95rem;box-shadow:var(--shadow)}
     /* Breadcrumbs */
-    .breadcrumbs{font-size:.95rem;margin:18px 0;color:#cfcfcf}
-    .breadcrumbs a{color:#cfcfcf}.breadcrumbs a:hover{color:var(--gold)}
+    .breadcrumbs ol{display:flex;flex-wrap:nowrap;gap:6px;list-style:none;padding:0;margin:0}
+    .breadcrumbs li{font-size:14px;color:#fff}
+    .breadcrumbs li a{text-decoration:none;  color:#fff}
+    .breadcrumbs li+li:before{content:"›";padding:0 4px;color:#fff}
     /* FAQ */
     .accordion{border-radius:10px;overflow:hidden}
     .acc-item {padding: 0 0 15px;}
@@ -318,7 +320,10 @@
     </div>
     <div class="container hero-inner fade-up">
       <nav class="breadcrumbs" aria-label="Breadcrumb">
-        <a href="/" rel="home">Home</a> › <span aria-current="page">Contact</span>
+        <ol>
+          <li><a href="/">Home</a></li>
+          <li aria-current="page">Contact</li>
+        </ol>
       </nav>
       <h1>Contact Hotel The Black Gold – Chandigarh</h1>
       <p class="subhead">Fast responses, friendly guidance, and 24/7 basics via our front desk. Call first for the quickest help.</p>

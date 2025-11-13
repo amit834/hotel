@@ -73,6 +73,11 @@
 header {position: sticky;top: 0;z-index: 999;background: rgba(17, 17, 17, 0.75);backdrop-filter: saturate(120%) blur(8px);border-bottom: 1px solid rgba(255, 255, 255, 0.04);
 }
 
+    .breadcrumbs ol{display:flex;flex-wrap:nowrap;gap:6px;list-style:none;padding:0;margin:0}
+    .breadcrumbs li{font-size:14px;color:#fff}
+    .breadcrumbs li a{text-decoration:none;  color:#fff}
+    .breadcrumbs li+li:before{content:"›";padding:0 4px;color:#fff}
+
 /* Nav wrapper */
 .nav {display: flex;align-items: center;justify-content: space-between;padding: 0.85rem 0;
 }
@@ -167,10 +172,6 @@ nav ul.menu {list-style: none;margin: 0;padding: 0;display: flex;gap: 1.25rem;al
     .amenity{display:flex;gap:.6rem;align-items:flex-start;background:#131313;border:1px solid #646464;padding:.7rem .8rem;border-radius:12px}
     .dot{width:10px;height:10px;border-radius:999px;background:var(--gold);margin-top:.35rem}
     p.smart {color: #dcdcdc;}
-    /* Breadcrumbs */
-    .breadcrumbs ol{list-style:none;padding:0;margin:0;display:flex;gap:.5rem;align-items:center;font-size:.95rem;color:#cfcfcf}
-    .breadcrumbs li:not(:last-child)::after{content:'/';margin-left:.5rem;color:#555}
-    .breadcrumbs a{color:#cfcfcf}.breadcrumbs a:hover{color:var(--gold)}
     /* FAQ */
       .accordion{border-radius:10px;overflow:hidden}
       .acc-item {padding: 0 0 15px;}
@@ -473,7 +474,7 @@ nav ul.menu {list-style: none;margin: 0;padding: 0;display: flex;gap: 1.25rem;al
       <nav class="breadcrumbs" aria-label="Breadcrumb">
         <ol>
           <li><a href="/">Home</a></li>
-          <li aria-current="page">Rooms & Rates</li>
+          <li aria-current="page">Rooms and Rates</li>
         </ol>
       </nav>
       <h1>Hotel Rooms & Rates in Chandigarh</h1>

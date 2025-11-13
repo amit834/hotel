@@ -83,6 +83,10 @@
     .brand-name{font-family:Montserrat,sans-serif;font-weight:800;letter-spacing:.4px}
     nav ul{list-style:none;margin:0;padding:0;display:flex;gap:1.25rem;align-items:center}
     .book-now{background:var(--gold);color:#111;padding:.6rem 1rem;border-radius:999px;font-weight:700;box-shadow:var(--shadow);border:1px solid rgba(0,0,0,.35)}
+    .breadcrumbs ol{display:flex;flex-wrap:nowrap;gap:6px;list-style:none;padding:0;margin:0}
+    .breadcrumbs li{font-size:14px;color:#fff}
+    .breadcrumbs li a{text-decoration:none;  color:#fff}
+    .breadcrumbs li+li:before{content:"›";padding:0 4px;color:#fff}
 
     /* Hero */
     .hero{position:relative;isolation:isolate}
@@ -236,7 +240,10 @@
     </div>
     <div class="container hero-inner fade-up">
       <nav class="breadcrumbs" aria-label="Breadcrumb">
-        <a href="/">Home</a> › <span aria-current="page">About Us</span>
+        <ol>
+          <li><a href="/">Home</a></li>
+          <li aria-current="page">About Us</li>
+        </ol>
       </nav>
       <h1>About Hotel The Black Gold – Chandigarh</h1>
       <p class="subhead">A guest-first stay near PGI, PEC &amp; Panjab University — modern rooms, practical amenities, and a caring team.</p>

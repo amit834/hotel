@@ -105,6 +105,10 @@
 
       .book-now{background:var(--gold);color:#111;padding:.6rem 1rem;border-radius:999px;font-weight:700;box-shadow:var(--shadow);border:1px solid rgba(0,0,0,.35)}
       .book-now:hover{filter:brightness(1.05);color: #fff;}
+      .breadcrumbs ol{display:flex;flex-wrap:nowrap;gap:6px;list-style:none;padding:0;margin:0}
+      .breadcrumbs li{font-size:14px;color:#fff}
+      .breadcrumbs li a{text-decoration:none;  color:#fff}
+      .breadcrumbs li+li:before{content:"›";padding:0 4px;color:#fff}
 
     /* Hero */
     .hero{position:relative;isolation:isolate}
@@ -301,7 +305,10 @@
     </div>
     <div class="container hero-inner fade-up">
       <nav class="breadcrumbs" aria-label="Breadcrumb">
-        <a href="/">Home</a> › <span aria-current="page">Nearby Attractions</span>
+        <ol>
+          <li><a href="/">Home</a></li>
+          <li aria-current="page">Nearby Attractions</li>
+        </ol>
       </nav>
       <h1>Nearby Attractions in Chandigarh – From Our Doorstep</h1>
       <p class="subhead">See Chandigarh’s favorites with easy distances and quick tips — perfect for families, couples, and business travelers with a free afternoon.</p>

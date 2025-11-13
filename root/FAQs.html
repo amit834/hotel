@@ -79,7 +79,10 @@
     .book-now{background:var(--gold);color:#111;padding:.58rem 1rem;border-radius:999px;font-weight:800;box-shadow:var(--shadow);border:1px solid rgba(0,0,0,.35)}
     .book-now:hover{filter:brightness(1.05); color: #000;}
     .btn-primary:hover {color: #000;}
-
+    .breadcrumbs ol{display:flex;flex-wrap:nowrap;gap:6px;list-style:none;padding:0;margin:0}
+    .breadcrumbs li{font-size:14px;color:#fff}
+    .breadcrumbs li a{text-decoration:none;  color:#fff}
+    .breadcrumbs li+li:before{content:"›";padding:0 4px;color:#fff}
     /* Dropdown menu (if needed in future) */
      ul.dropdown {display: block !important;}
     nav ul{list-style:none;margin:0;padding:0;display:flex;gap:1.25rem;align-items:center}
@@ -319,7 +322,10 @@
     </div>
     <div class="container hero-inner">
       <nav class="breadcrumbs" aria-label="Breadcrumb">
-        <a href="/">Home</a> › <span aria-current="page">FAQ</span>
+        <ol>
+          <li><a href="/">Home</a></li>
+          <li aria-current="page">FAQ</li>
+        </ol>
       </nav>
       <h1>Frequently Asked Questions</h1>
       <p class="subhead">Clear, practical answers to help you plan — organized by topic with expandable sections. For anything else, call or WhatsApp us at <a href="tel:+917277522222">+91-72775-22222</a>.</p>

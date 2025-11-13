@@ -104,6 +104,10 @@
     .btn-ghost{background:#1a1a1a;border:1px solid #2b2b2b;color:#f1f1f1}
     .btn-primary:hover {color: #fff;}
     .book-now:hover {color: #fff;}
+    .breadcrumbs ol{display:flex;flex-wrap:nowrap;gap:6px;list-style:none;padding:0;margin:0}
+    .breadcrumbs li{font-size:14px;color:#fff}
+    .breadcrumbs li a{text-decoration:none;  color:#fff}
+    .breadcrumbs li+li:before{content:"›";padding:0 4px;color:#fff}
     /* Sections */
     section{padding:64px 0}
     .section-title{font-family:Montserrat,sans-serif;font-weight:800;font-size:clamp(22px,3.6vw,32px);margin:0 0 16px}
@@ -305,7 +309,10 @@
     </div>
     <div class="container hero-inner fade-up">
       <nav class="breadcrumbs" aria-label="Breadcrumb">
-        <a href="/" rel="home">Home</a> › <span aria-current="page">Hotel Near PGI</span>
+        <ol>
+          <li><a href="/">Home</a></li>
+          <li aria-current="page">Hotel Near PGI  </li>
+        </ol>
       </nav>
       <h1>Hotel Near PGI Chandigarh – Hotel The Black Gold</h1>
       <p class="subhead">Less than 2 km from PGIMER. Modern comfort, compassionate service, and thoughtful amenities for patients, families, and medical professionals.</p>

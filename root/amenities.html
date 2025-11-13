@@ -123,9 +123,10 @@ ul.dropdown{display:block!important}.menu>li{position:relative}
 .dot{width:10px;height:10px;border-radius:999px;background:var(--gold);margin-top:.35rem}
 .chips{display:flex;flex-wrap:wrap;gap:8px}
 .chip{border:1px solid var(--line);background:#151515;border-radius:999px;padding:.4rem .7rem;font-size:.95rem;box-shadow:var(--shadow)}
-.breadcrumbs{font-size:.95rem;margin:18px 0;color:#cfcfcf}
-.breadcrumbs a{color:#cfcfcf}
-.breadcrumbs a:hover{color:var(--gold)}
+.breadcrumbs ol{display:flex;flex-wrap:nowrap;gap:6px;list-style:none;padding:0;margin:0}
+.breadcrumbs li{font-size:14px;color:#fff}
+.breadcrumbs li a{text-decoration:none;  color:#fff}
+.breadcrumbs li+li:before{content:"›";padding:0 4px;color:#fff}
 .accordion{border-radius:10px;overflow:hidden}
 .acc-item{padding:0 0 15px}
 .acc-item:last-child{border-bottom:0}
@@ -316,7 +317,10 @@ ul.dropdown{display:block!important}.menu>li{position:relative}
     </div>
     <div class="container hero-inner fade-up">
       <nav class="breadcrumbs" aria-label="Breadcrumb">
-        <a href="/" rel="home">Home</a> › <span aria-current="page">Amenities</span>
+        <ol>
+          <li><a href="/">Home</a></li>
+          <li aria-current="page">Amenities</li>
+        </ol>
       </nav>
       <h1>Amenities – Modern Hotel Amenities in Chandigarh</h1>
       <p class="subhead">Premium comfort with practical convenience: AC rooms, fast Wi-Fi, smart TVs, lift access, EV

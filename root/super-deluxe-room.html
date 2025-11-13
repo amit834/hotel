@@ -101,6 +101,11 @@
     #main-nav .has-dropdown:hover .dropdown{display:none}
     #main-nav .has-dropdown.open .dropdown{display:flex;flex-direction:column;margin-top:.5rem;background:#444}}
     .brand-name {font-family: revenue;font-weight: 800;letter-spacing: .4px;font-size: 20px;}
+    .breadcrumbs ol{display:flex;flex-wrap:nowrap;gap:6px;list-style:none;padding:0;margin:0}
+    .breadcrumbs li{font-size:14px;color:#fff}
+    .breadcrumbs li a{text-decoration:none;  color:#fff}
+    .breadcrumbs li+li:before{content:"›";padding:0 4px;color:#fff}
+    .menu-close{display:none}
 
     /* Hero */
     .hero{position:relative;isolation:isolate}
@@ -333,7 +338,11 @@
     </div>
     <div class="container hero-inner fade-up">
       <nav class="breadcrumbs" aria-label="Breadcrumb">
-        <a href="/" rel="home">Home</a> › <a href="../rooms.html" rel="internal">Rooms &amp; Rates</a> › <span aria-current="page">Super Deluxe Room</span>
+        <ol>
+          <li><a href="/">Home</a></li>
+          <li><a href="../rooms.html">Rooms & Rates</a></li>
+          <li aria-current="page">Super Deluxe Room</li>
+        </ol>
       </nav>
       <h1>Super Deluxe Room in Chandigarh – Hotel The Black Gold</h1>
       <p class="subhead">Extra space, smarter entertainment, and quiet comfort near PGI, PEC &amp; Panjab University.</p>

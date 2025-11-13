@@ -107,6 +107,10 @@
 
       .book-now{background:var(--gold);color:#111;padding:.6rem 1rem;border-radius:999px;font-weight:700;box-shadow:var(--shadow);border:1px solid rgba(0,0,0,.35)}
       .book-now:hover{filter:brightness(1.05);color: #fff;}
+      .breadcrumbs ol{display:flex;flex-wrap:nowrap;gap:6px;list-style:none;padding:0;margin:0}
+      .breadcrumbs li{font-size:14px;color:#fff}
+      .breadcrumbs li a{text-decoration:none;  color:#fff}
+      .breadcrumbs li+li:before{content:"›";padding:0 4px;color:#fff}
 
     /* Hero */
     .hero{position:relative;isolation:isolate}
@@ -291,7 +295,11 @@
     </div>
     <div class="container hero-inner">
       <nav class="breadcrumbs" aria-label="Breadcrumb">
-        <a href="/">Home</a> › <a href="./location.html">Location</a> › <span aria-current="page">Important Landmarks</span>
+        <ol>
+          <li><a href="/">Home</a></li>
+          <li><a href="./location.html">Location</a></li>
+          <li aria-current="page">Important Landmarks</li>
+        </ol>
       </nav>
       <h1>Important Landmarks – Hotel The Black Gold, Chandigarh</h1>
       <p class="subhead">Here for an exam, conference, hearing, or industry meet? Our central location keeps you close to Chandigarh’s institutions — with swift cab access, early breakfast on request, reliable Wi-Fi, and secure parking.</p>

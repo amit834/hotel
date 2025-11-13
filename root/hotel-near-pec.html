@@ -131,8 +131,10 @@
     .badge{display:inline-block;background:var(--gold);color:#111;font-weight:800;border-radius:999px;padding:.25rem .6rem;margin-bottom:.4rem}
 
     /* Breadcrumbs */
-    .breadcrumbs{font-size:.95rem;margin:18px 0;color:#cfcfcf}
-    .breadcrumbs a{color:#cfcfcf}.breadcrumbs a:hover{color:var(--gold)}
+    .breadcrumbs ol{display:flex;flex-wrap:nowrap;gap:6px;list-style:none;padding:0;margin:0}
+    .breadcrumbs li{font-size:14px;color:#fff}
+    .breadcrumbs li a{text-decoration:none;  color:#fff}
+    .breadcrumbs li+li:before{content:"›";padding:0 4px;color:#fff}
 
     /* FAQ */
     .accordion{border-radius:10px;overflow:hidden}
@@ -311,7 +313,10 @@
     </div>
     <div class="container hero-inner fade-up">
       <nav class="breadcrumbs" aria-label="Breadcrumb">
-        <a href="/" rel="home">Home</a> › <span aria-current="page">Hotel Near Punjab Engineering College</span>
+        <ol>
+          <li><a href="/">Home</a></li>
+          <li aria-current="page">Hotel Near Punjab Engineering College</li>
+        </ol>
       </nav>
       <h1>Hotel Near Punjab Engineering College (PEC) – Hotel The Black Gold</h1>
       <p class="subhead">Premium comfort just minutes from campus — ideal for students, visiting parents, faculty, conference attendees, and corporate recruiters.</p>
