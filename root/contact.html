@@ -134,8 +134,10 @@
     .chips{display:flex;flex-wrap:wrap;gap:8px;margin-top:10px}
     .chip{border:1px solid var(--line);background:#151515;border-radius:999px;padding:.4rem .7rem;font-size:.95rem;box-shadow:var(--shadow)}
     /* Breadcrumbs */
-    .breadcrumbs{font-size:.95rem;margin:18px 0;color:#cfcfcf}
-    .breadcrumbs a{color:#cfcfcf}.breadcrumbs a:hover{color:var(--gold)}
+    .breadcrumbs ol{display:flex;flex-wrap:nowrap;gap:6px;list-style:none;padding:0;margin:0}
+    .breadcrumbs li{font-size:14px;color:#fff}
+    .breadcrumbs li a{text-decoration:none;  color:#fff}
+    .breadcrumbs li+li:before{content:"›";padding:0 4px;color:#fff}
     /* FAQ */
     .accordion{border-radius:10px;overflow:hidden}
     .acc-item {padding: 0 0 15px;}
@@ -318,7 +320,10 @@
     </div>
     <div class="container hero-inner fade-up">
       <nav class="breadcrumbs" aria-label="Breadcrumb">
-        <a href="/" rel="home">Home</a> › <span aria-current="page">Contact</span>
+        <ol>
+          <li><a href="/">Home</a></li>
+          <li aria-current="page">Contact</li>
+        </ol>
       </nav>
       <h1>Contact Hotel The Black Gold – Chandigarh</h1>
       <p class="subhead">Fast responses, friendly guidance, and 24/7 basics via our front desk. Call first for the quickest help.</p>
@@ -362,7 +367,7 @@
     <!-- ENQUIRY FORM -->
     <section id="enquiry" class="fade-up" aria-labelledby="form">
       <h2 id="form" class="section-title">Enquiry Form</h2>
-      <p class="muted">Use this form for quotes, group &amp; corporate bookings, long stays, or special requests. We use your data only to respond — no spam. See our <a href="/privacy.html" rel="internal">Privacy Policy</a>.</p>
+      <p class="muted">Use this form for quotes, group &amp; corporate bookings, long stays, or special requests. We use your data only to respond — no spam. See our <a href="./privacy.html" rel="internal">Privacy Policy</a>.</p>
 
       <!-- ARIA alerts (visually hidden by default) -->
       <div id="form-success" class="alert success" role="alert" aria-live="polite"></div>
@@ -490,16 +495,16 @@
       <div class="grid-2">
         <div>
           <ul>
-            <li><strong>Medical visits to PGI:</strong> Wheelchair assistance on request. See <a href="/hotel-near-pgi.html" rel="internal">Hotel Near PGI</a>.</li>
-            <li><strong>Group bookings:</strong> Dining arrangements &amp; bulk rooms — <a href="/group-bookings.html" rel="internal">Group Bookings</a>.</li>
-            <li><strong>Corporate bookings:</strong> GST details &amp; negotiated rates — <a href="/corporate-bookings.html" rel="internal">Corporate Bookings</a>.</li>
+            <li><strong>Medical visits to PGI:</strong> Wheelchair assistance on request. See <a href="./hotel-near-pgi.html" rel="internal">Hotel Near PGI</a>.</li>
+            <li><strong>Group bookings:</strong> Dining arrangements &amp; bulk rooms — <a href="./group-bookings.html" rel="internal">Group Bookings</a>.</li>
+            <li><strong>Corporate bookings:</strong> GST details &amp; negotiated rates — <a href="./corporate-bookings.html" rel="internal">Corporate Bookings</a>.</li>
           </ul>
         </div>
         <div>
           <ul>
-            <li><strong>Long-term stays:</strong> Extended-stay quotes — <a href="/long-term-stay.html" rel="internal">Long-Term Stay</a>.</li>
-            <li><strong>Pet-friendly rooms:</strong> ₹300/night/pet (standard charge). See <a href="/pet-friendly.html" rel="internal">Pet-Friendly</a>.</li>
-            <li><strong>More questions?</strong> Visit <a href="/faq.html" rel="internal">FAQ</a>, check <a href="/rooms.html" rel="internal">Rooms &amp; Rates</a>, <a href="/amenities.html" rel="internal">Amenities</a>, or <a href="/location.html" rel="internal">Location</a>.</li>
+            <li><strong>Long-term stays:</strong> Extended-stay quotes — <a href="./long-term-stay.html" rel="internal">Long-Term Stay</a>.</li>
+            <li><strong>Pet-friendly rooms:</strong> ₹300/night/pet (standard charge). See <a href="./pet-friendly.html" rel="internal">Pet-Friendly</a>.</li>
+            <li><strong>More questions?</strong> Visit <a href="./faq.html" rel="internal">FAQ</a>, check <a href="../rooms.html" rel="internal">Rooms &amp; Rates</a>, <a href="./amenities.html" rel="internal">Amenities</a>, or <a href="./location.html" rel="internal">Location</a>.</li>
           </ul>
         </div>
       </div>
@@ -523,7 +528,7 @@
         </div>
         <div class="acc-item">
           <button class="acc-btn" aria-expanded="false">What is your pet policy and fee?</button>
-          <div class="acc-content"><div class="acc-inner">We’re pet-friendly with a standard ₹300 per night per pet accommodation charge. No pet-sitting/walking; no designated pet relief area. See <a href="/pet-friendly.html" rel="internal">Pet-Friendly</a> for details.</div></div>
+          <div class="acc-content"><div class="acc-inner">We’re pet-friendly with a standard ₹300 per night per pet accommodation charge. No pet-sitting/walking; no designated pet relief area. See <a href="./pet-friendly.html" rel="internal">Pet-Friendly</a> for details.</div></div>
         </div>
         <div class="acc-item">
           <button class="acc-btn" aria-expanded="false">Is the hotel wheelchair accessible?</button>
@@ -570,25 +575,25 @@
       <div class="footer-col">
         <h4>Explore</h4>
         <p class="small">
-          <a href="/rooms.html" rel="internal">Rooms &amp; Rates</a><br>
-          <a href="/amenities.html" rel="internal">Amenities</a><br>
-          <a href="/location.html" rel="internal">Location</a>
+          <a href="../rooms.html" rel="internal">Rooms &amp; Rates</a><br>
+          <a href="./amenities.html" rel="internal">Amenities</a><br>
+          <a href="./location.html" rel="internal">Location</a>
         </p>
       </div>
       <div class="footer-col">
         <h4>Bookings</h4>
         <p class="small">
-          <a href="/hotel-near-pgi.html" rel="internal">Hotel Near PGI</a><br>
-          <a href="/group-bookings.html" rel="internal">Group Bookings</a><br>
-          <a href="/corporate-bookings.html" rel="internal">Corporate Bookings</a><br>
-          <a href="/long-term-stay.html" rel="internal">Long-Term Stay</a>
+          <a href="./hotel-near-pgi.html" rel="internal">Hotel Near PGI</a><br>
+          <a href="./group-bookings.html" rel="internal">Group Bookings</a><br>
+          <a href="./corporate-bookings.html" rel="internal">Corporate Bookings</a><br>
+          <a href="./long-term-stay.html" rel="internal">Long-Term Stay</a>
         </p>
       </div>
       <div class="footer-col">
         <h4>Help</h4>
         <p class="small">
-          <a href="/pet-friendly.html" rel="internal">Pet-Friendly</a><br>
-          <a href="/faq.html" rel="internal">FAQ</a><br>
+          <a href="./pet-friendly.html" rel="internal">Pet-Friendly</a><br>
+          <a href="./faq.html" rel="internal">FAQ</a><br>
           <a href="../root/contact.html" rel="internal">Contact</a>
         </p>
       </div>

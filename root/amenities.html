@@ -123,9 +123,10 @@ ul.dropdown{display:block!important}.menu>li{position:relative}
 .dot{width:10px;height:10px;border-radius:999px;background:var(--gold);margin-top:.35rem}
 .chips{display:flex;flex-wrap:wrap;gap:8px}
 .chip{border:1px solid var(--line);background:#151515;border-radius:999px;padding:.4rem .7rem;font-size:.95rem;box-shadow:var(--shadow)}
-.breadcrumbs{font-size:.95rem;margin:18px 0;color:#cfcfcf}
-.breadcrumbs a{color:#cfcfcf}
-.breadcrumbs a:hover{color:var(--gold)}
+.breadcrumbs ol{display:flex;flex-wrap:nowrap;gap:6px;list-style:none;padding:0;margin:0}
+.breadcrumbs li{font-size:14px;color:#fff}
+.breadcrumbs li a{text-decoration:none;  color:#fff}
+.breadcrumbs li+li:before{content:"›";padding:0 4px;color:#fff}
 .accordion{border-radius:10px;overflow:hidden}
 .acc-item{padding:0 0 15px}
 .acc-item:last-child{border-bottom:0}
@@ -302,7 +303,7 @@ ul.dropdown{display:block!important}.menu>li{position:relative}
       </nav>
 
 
-      <div><a class="book-now" href=""../root/contact.html" aria-label="Book or Contact">Book Now</a></div>
+      <div><a class="book-now" href="../root/contact.html" aria-label="Book or Contact">Book Now</a></div>
     </div>
   </header>
 
@@ -316,7 +317,10 @@ ul.dropdown{display:block!important}.menu>li{position:relative}
     </div>
     <div class="container hero-inner fade-up">
       <nav class="breadcrumbs" aria-label="Breadcrumb">
-        <a href="/" rel="home">Home</a> › <span aria-current="page">Amenities</span>
+        <ol>
+          <li><a href="/">Home</a></li>
+          <li aria-current="page">Amenities</li>
+        </ol>
       </nav>
       <h1>Amenities – Modern Hotel Amenities in Chandigarh</h1>
       <p class="subhead">Premium comfort with practical convenience: AC rooms, fast Wi-Fi, smart TVs, lift access, EV
@@ -539,7 +543,7 @@ ul.dropdown{display:block!important}.menu>li{position:relative}
           <div>Foreigner-friendly; English-speaking staff</div>
         </div>
       </div>
-      <p class="small" style="margin-top:10px">Read the full details in our <a href="/pet-friendly.html"
+      <p class="small" style="margin-top:10px">Read the full details in our <a href="./pet-friendly.html"
           rel="internal">Pet-Friendly</a> policy.</p>
     </section>
 
@@ -559,7 +563,7 @@ ul.dropdown{display:block!important}.menu>li{position:relative}
         <span class="chip" role="listitem">Bus Stand 43 ~3.5 km</span>
         <span class="chip" role="listitem">ISBT-17 ~6 km</span>
       </div>
-      <p class="small" style="margin-top:10px">See maps and routes on our <a href="/location.html"
+      <p class="small" style="margin-top:10px">See maps and routes on our <a href="./location.html"
           rel="internal">Location</a> page.
         <!-- Developer note: Map embed belongs on location.html (insert Google Maps iframe there). -->
       </p>
@@ -643,7 +647,7 @@ ul.dropdown{display:block!important}.menu>li{position:relative}
           <div class="acc-content">
             <div class="acc-inner">Yes. We’re pet-friendly with a standard ₹300 per night per pet accommodation charge.
               We don’t provide pet-sitting or walking, and there’s no designated pet relief area. See <a
-                href="/pet-friendly.html" rel="internal">Pet-Friendly</a> for details.</div>
+                href="./pet-friendly.html" rel="internal">Pet-Friendly</a> for details.</div>
           </div>
         </div>
         <div class="acc-item">
@@ -676,7 +680,7 @@ ul.dropdown{display:block!important}.menu>li{position:relative}
           </div>
         </div>
       </div>
-      <p class="small" style="margin-top:12px">More questions? Visit our <a href="/faq.html" rel="internal">FAQ</a> or
+      <p class="small" style="margin-top:12px">More questions? Visit our <a href="./faq.html" rel="internal">FAQ</a> or
         <a href="../root/contact.html" rel="internal">Contact</a> us.
       </p>
     </section>
@@ -698,9 +702,9 @@ ul.dropdown{display:block!important}.menu>li{position:relative}
               Us</a>
             <a class="btn btn-ghost" href="../root/contact.html" rel="internal" aria-label="Book Online">Book Online</a>
           </div>
-          <p class="small" style="margin-top:10px">Explore rooms: <a href="/rooms.html" rel="internal">Rooms &amp;
-              Rates</a> • <a href="/deluxe-room.html" rel="internal">Deluxe</a> • <a href="/super-deluxe-room.html"
-              rel="internal">Super Deluxe</a> • <a href="/premium-room.html" rel="internal">Premium</a></p>
+          <p class="small" style="margin-top:10px">Explore rooms: <a href="../rooms.html" rel="internal">Rooms &amp;
+              Rates</a> • <a href="./deluxe-room.html" rel="internal">Deluxe</a> • <a href="./super-deluxe-room.html"
+              rel="internal">Super Deluxe</a> • <a href="./premium-room.html" rel="internal">Premium</a></p>
         </div>
       </div>
     </section>
@@ -719,19 +723,19 @@ ul.dropdown{display:block!important}.menu>li{position:relative}
       <div class="footer-col">
         <h4>Explore</h4>
         <p class="small">
-          <a href="/rooms.html" rel="internal">Rooms &amp; Rates</a><br>
-          <a href="/deluxe-room.html" rel="internal">Deluxe Rooms</a><br>
-          <a href="/super-deluxe-room.html" rel="internal">Super Deluxe Rooms</a><br>
-          <a href="/premium-room.html" rel="internal">Premium Rooms</a>
+          <a href="../rooms.html" rel="internal">Rooms &amp; Rates</a><br>
+          <a href="./deluxe-room.html" rel="internal">Deluxe Rooms</a><br>
+          <a href="./super-deluxe-room.html" rel="internal">Super Deluxe Rooms</a><br>
+          <a href="./premium-room.html" rel="internal">Premium Rooms</a>
         </p>
       </div>
       <div class="footer-col">
         <h4>Guest Info</h4>
         <p class="small">
-          <a href="/amenities.html" rel="internal">Amenities</a><br>
-          <a href="/location.html" rel="internal">Location</a><br>
-          <a href="/hotel-near-pgi.html" rel="internal">Hotel Near PGI</a><br>
-          <a href="/faq.html" rel="internal">FAQ</a>
+          <a href="./amenities.html" rel="internal">Amenities</a><br>
+          <a href="./location.html" rel="internal">Location</a><br>
+          <a href="./hotel-near-pgi.html" rel="internal">Hotel Near PGI</a><br>
+          <a href="./faq.html" rel="internal">FAQ</a>
         </p>
       </div>
       <div class="footer-col">

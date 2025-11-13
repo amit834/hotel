@@ -74,6 +74,10 @@
     nav ul{list-style:none;margin:0;padding:0;display:flex;gap:1.25rem;align-items:center}
     .book-now{background:var(--gold);color:#111;padding:.6rem 1rem;border-radius:999px;font-weight:700;box-shadow:var(--shadow);border:1px solid rgba(0,0,0,.35)}
     .book-now:hover{filter:brightness(1.05)}
+    .breadcrumbs ol{display:flex;flex-wrap:nowrap;gap:6px;list-style:none;padding:0;margin:0}
+    .breadcrumbs li{font-size:14px;color:#fff}
+    .breadcrumbs li a{text-decoration:none;  color:#fff}
+    .breadcrumbs li+li:before{content:"›";padding:0 4px;color:#fff}
 
     /* Dropdown nav */
       ul.dropdown {display: block !important;}
@@ -314,7 +318,10 @@
     </div>
     <div class="container hero-inner fade-up">
       <nav class="breadcrumbs" aria-label="Breadcrumb">
-        <a href="/" rel="home">Home</a> › <span aria-current="page">Location</span>
+        <ol>
+          <li><a href="/">Home</a></li>
+          <li aria-current="page">Location</li>
+        </ol>
       </nav>
       <h1>Location – Hotel The Black Gold in Chandigarh</h1>
       <p class="subhead">Central, connected, and minutes from PGI, Sukhna Lake, and Rock Garden. Spend less time in transit and more time enjoying Chandigarh.</p>
@@ -342,7 +349,7 @@
           <div class="card-body">
             <h3>Nearby Attractions</h3>
             <p>Boating at Sukhna Lake, sculptures at Rock Garden, the blooms of Rose Garden, and the shopping arcades of Sector 17 Plaza.</p>
-            <a class="more" href="/nearby-attractions.html" rel="internal">See Nearby Attractions →</a>
+            <a class="more" href="./nearby-attractions.html" rel="internal">See Nearby Attractions →</a>
           </div>
         </article>
         <article class="card" role="listitem">
@@ -350,7 +357,7 @@
           <div class="card-body">
             <h3>Important Landmarks</h3>
             <p>PGI, PEC, and the Punjab &amp; Haryana High Court — educational, medical, and legal hubs within easy reach.</p>
-            <a class="more" href="/important-landmarks.html" rel="internal">See Important Landmarks →</a>
+            <a class="more" href="./important-landmarks.html" rel="internal">See Important Landmarks →</a>
           </div>
         </article>
         <article class="card" role="listitem">
@@ -358,7 +365,7 @@
           <div class="card-body">
             <h3>Full-Day Outings</h3>
             <p>Plan a scenic escape to Kasauli, meet wildlife at Chhatbir Zoo, stroll through Pinjore Garden, or ride the cable car at Timber Trail.</p>
-            <a class="more" href="/full-day-outings.html" rel="internal">See Full-Day Outings →</a>
+            <a class="more" href="./full-day-outings.html" rel="internal">See Full-Day Outings →</a>
           </div>
         </article>
       </div>
@@ -384,7 +391,7 @@
           </tbody>
         </table>
       </div>
-      <p class="small" style="margin-top:10px">Need turn-by-turn directions? See <a href="/hotel-near-pgi.html" rel="internal">Hotel Near PGI</a> or <a href="../root/contact.html" rel="internal">Contact</a> us.</p>
+      <p class="small" style="margin-top:10px">Need turn-by-turn directions? See <a href="./hotel-near-pgi.html" rel="internal">Hotel Near PGI</a> or <a href="../root/contact.html" rel="internal">Contact</a> us.</p>
     </section>
 
     <!-- TRANSPORT INFO -->
@@ -433,7 +440,7 @@
           <div class="acc-content"><div class="acc-inner">Yes. We have secure basement parking with EV charging points.</div></div>
         </div>
       </div>
-      <p class="small" style="margin-top:12px">Need something else? Visit our <a href="/faq.html" rel="internal">FAQ</a> or <a href="../root/contact.html" rel="internal">Contact</a> us.</p>
+      <p class="small" style="margin-top:12px">Need something else? Visit our <a href="./faq.html" rel="internal">FAQ</a> or <a href="../root/contact.html" rel="internal">Contact</a> us.</p>
     </section>
 
     <!-- CONVERSION FOOTER -->
@@ -450,7 +457,7 @@
             <a class="btn btn-ghost" href="https://wa.me/917277522222" rel="noopener" aria-label="WhatsApp Us">WhatsApp Us</a>
             <a class="btn btn-ghost" href="../root/contact.html" rel="internal" aria-label="Book Online">Book Online</a>
           </div>
-          <p class="small" style="margin-top:10px">Explore more: <a href="/rooms.html" rel="internal">Rooms &amp; Rates</a> • <a href="/amenities.html" rel="internal">Amenities</a> • <a href="/hotel-near-pgi.html" rel="internal">Hotel Near PGI</a></p>
+          <p class="small" style="margin-top:10px">Explore more: <a href="../rooms.html" rel="internal">Rooms &amp; Rates</a> • <a href="./amenities.html" rel="internal">Amenities</a> • <a href="./hotel-near-pgi.html" rel="internal">Hotel Near PGI</a></p>
         </div>
       </div>
     </section>
@@ -467,18 +474,18 @@
       <div class="footer-col">
         <h4>Explore</h4>
         <p class="small">
-          <a href="/rooms.html" rel="internal">Rooms &amp; Rates</a><br>
-          <a href="/nearby-attractions.html" rel="internal">Nearby Attractions</a><br>
-          <a href="/important-landmarks.html" rel="internal">Important Landmarks</a><br>
-          <a href="/full-day-outings.html" rel="internal">Full-Day Outings</a>
+          <a href="../rooms.html" rel="internal">Rooms &amp; Rates</a><br>
+          <a href="./nearby-attractions.html" rel="internal">Nearby Attractions</a><br>
+          <a href="./important-landmarks.html" rel="internal">Important Landmarks</a><br>
+          <a href="./full-day-outings.html" rel="internal">Full-Day Outings</a>
         </p>
       </div>
       <div class="footer-col">
         <h4>Guest Info</h4>
         <p class="small">
-          <a href="/amenities.html" rel="internal">Amenities</a><br>
-          <a href="/hotel-near-pgi.html" rel="internal">Hotel Near PGI</a><br>
-          <a href="/faq.html" rel="internal">FAQ</a>
+          <a href="./amenities.html" rel="internal">Amenities</a><br>
+          <a href="./hotel-near-pgi.html" rel="internal">Hotel Near PGI</a><br>
+          <a href="./faq.html" rel="internal">FAQ</a>
         </p>
       </div>
       <div class="footer-col">

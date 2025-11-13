@@ -101,6 +101,11 @@
     #main-nav .has-dropdown:hover .dropdown{display:none}
     #main-nav .has-dropdown.open .dropdown{display:flex;flex-direction:column;margin-top:.5rem;background:#444}}
     .brand-name {font-family: revenue;font-weight: 800;letter-spacing: .4px;font-size: 20px;}
+    .breadcrumbs ol{display:flex;flex-wrap:nowrap;gap:6px;list-style:none;padding:0;margin:0}
+    .breadcrumbs li{font-size:14px;color:#fff}
+    .breadcrumbs li a{text-decoration:none;  color:#fff}
+    .breadcrumbs li+li:before{content:"›";padding:0 4px;color:#fff}
+    .menu-close{display:none}
 
     /* Hero */
     .hero{position:relative;isolation:isolate}
@@ -297,31 +302,31 @@
     <li class="has-dropdown" role="none">
       <button type="button">Location ▼</button>
       <ul class="dropdown" role="menu">
-        <li><a role="menuitem" href="./root/location.html">Location (Main)</a></li>
-        <li><a role="menuitem" href="./root/nearby-attractions.html">Nearby Attractions</a></li>
-        <li><a role="menuitem" href="./root/important-landmarks.html">Important Landmarks</a></li>
-        <li><a role="menuitem" href="./root/full-day-outings.html">Full-Day Outings</a></li>
-        <li><a role="menuitem" href="./root/curated-full-day-itenararies.html">Curated Itineraries</a></li>
+        <li><a role="menuitem" href="../root/location.html">Location (Main)</a></li>
+        <li><a role="menuitem" href="../root/nearby-attractions.html">Nearby Attractions</a></li>
+        <li><a role="menuitem" href="../root/important-landmarks.html">Important Landmarks</a></li>
+        <li><a role="menuitem" href="../root/full-day-outings.html">Full-Day Outings</a></li>
+        <li><a role="menuitem" href="../root/curated-full-day-itenararies.html">Curated Itineraries</a></li>
       </ul>
     </li>
 
     <li class="has-dropdown" role="none">
       <button type="button">Stay Near ▼</button>
       <ul class="dropdown" role="menu">
-        <li><a role="menuitem" href="./root/hotel-near-pgi.html">Hotel Near PGI</a></li>
-         <li><a role="menuitem" href="./root/hotel-near-punjab-haryana-high-court.html">Hotel Near High Court</a></li>
-         <li><a role="menuitem" href="./root/hotel-near-pec.html">Hotel Near PEC</a></li>
-        <li><a role="menuitem" href="./root/hotel-near-panjab-university.html">Hotel Near Panjab University</a></li>
-        <li><a role="menuitem" href="./root/hotel-near-pca-stadium.html">Hotel Near PCA Stadium</a></li>
+        <li><a role="menuitem" href="../root/hotel-near-pgi.html">Hotel Near PGI</a></li>
+         <li><a role="menuitem" href="../root/hotel-near-punjab-haryana-high-court.html">Hotel Near High Court</a></li>
+         <li><a role="menuitem" href="../root/hotel-near-pec.html">Hotel Near PEC</a></li>
+        <li><a role="menuitem" href="../root/hotel-near-panjab-university.html">Hotel Near Panjab University</a></li>
+        <li><a role="menuitem" href="../root/hotel-near-pca-stadium.html">Hotel Near PCA Stadium</a></li>
       </ul>
     </li>
 
-    <li role="none"><a role="menuitem" href="./root/FAQs.html">FAQ</a></li>
+    <li role="none"><a role="menuitem" href="../root/FAQs.html">FAQ</a></li>
   </ul>
 </nav>
 
 
-    <div><a class="book-now" href="./root/contact.html" aria-label="Book or Contact">Book Now</a></div>
+    <div><a class="book-now" href="../root/contact.html" aria-label="Book or Contact">Book Now</a></div>
   </div>
 </header>
 
@@ -333,7 +338,11 @@
     </div>
     <div class="container hero-inner fade-up">
       <nav class="breadcrumbs" aria-label="Breadcrumb">
-        <a href="/" rel="home">Home</a> › <a href="../rooms.html" rel="internal">Rooms &amp; Rates</a> › <span aria-current="page">Super Deluxe Room</span>
+        <ol>
+          <li><a href="/">Home</a></li>
+          <li><a href="../rooms.html">Rooms & Rates</a></li>
+          <li aria-current="page">Super Deluxe Room</li>
+        </ol>
       </nav>
       <h1>Super Deluxe Room in Chandigarh – Hotel The Black Gold</h1>
       <p class="subhead">Extra space, smarter entertainment, and quiet comfort near PGI, PEC &amp; Panjab University.</p>
@@ -496,7 +505,7 @@
           <div class="acc-content"><div class="acc-inner">Yes — ₹300/night/pet in designated rooms. No pet-sitting; no relief area.</div></div>
         </div>
       </div>
-      <p class="small" style="margin-top:12px">Need more help? Visit our <a href="/faq.html" rel="internal">FAQ</a> or <a href="../root/contact.html" rel="internal">Contact</a> us.</p>
+      <p class="small" style="margin-top:12px">Need more help? Visit our <a href="./faq.html" rel="internal">FAQ</a> or <a href="../root/contact.html" rel="internal">Contact</a> us.</p>
     </section>
 
     <!-- CONVERSION FOOTER -->
@@ -509,7 +518,7 @@
           <a class="btn btn-ghost" href="https://wa.me/917277522222" rel="noopener" aria-label="WhatsApp Us"><i class="fa-brands fa-whatsapp"></i>WhatsApp Us</a>
           <a class="btn btn-ghost" href="../root/contact.html" aria-label="Book Online"><i class="fa-solid fa-calendar-days"></i>Book Online</a>
         </div>
-        <p class="small" style="margin-top:10px">Explore: <a href="/rooms.html" rel="internal">Rooms &amp; Rates</a> • <a href="/amenities.html" rel="internal">Amenities</a> • <a href="/long-term-stay.html" rel="internal">Long-Term Stay</a> • <a href="/pet-friendly.html" rel="internal">Pet-Friendly</a></p>
+        <p class="small" style="margin-top:10px">Explore: <a href="../rooms.html" rel="internal">Rooms &amp; Rates</a> • <a href="./amenities.html" rel="internal">Amenities</a> • <a href="./long-term-stay.html" rel="internal">Long-Term Stay</a> • <a href="./pet-friendly.html" rel="internal">Pet-Friendly</a></p>
       </div>
     </section>
   </main>
@@ -525,22 +534,22 @@
       <div class="footer-col">
         <h4>Rooms</h4>
         <p class="small">
-          <a href="/deluxe-room.html" rel="internal">Deluxe Room</a><br>
-          <a href="/premium-room.html" rel="internal">Premium Room</a><br>
-          <a href="/rooms.html" rel="internal">Rooms &amp; Rates</a>
+          <a href="./deluxe-room.html" rel="internal">Deluxe Room</a><br>
+          <a href="./premium-room.html" rel="internal">Premium Room</a><br>
+          <a href="../rooms.html" rel="internal">Rooms &amp; Rates</a>
         </p>
       </div>
       <div class="footer-col">
         <h4>Plan</h4>
         <p class="small">
-          <a href="/location.html" rel="internal">Location</a><br>
-          <a href="/hotel-near-pgi.html" rel="internal">Hotel Near PGI</a>
+          <a href="./location.html" rel="internal">Location</a><br>
+          <a href="./hotel-near-pgi.html" rel="internal">Hotel Near PGI</a>
         </p>
       </div>
       <div class="footer-col">
         <h4>Help</h4>
         <p class="small">
-          <a href="/faq.html" rel="internal">FAQ</a><br>
+          <a href="./faq.html" rel="internal">FAQ</a><br>
           <a href="../root/contact.html" rel="internal">Contact</a>
         </p>
       </div>

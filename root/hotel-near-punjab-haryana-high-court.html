@@ -130,8 +130,10 @@
     .badge{display:inline-block;background:var(--gold);color:#111;font-weight:800;border-radius:999px;padding:.25rem .6rem;margin-bottom:.4rem}
 
     /* Breadcrumbs */
-    .breadcrumbs{font-size:.95rem;margin:18px 0;color:#cfcfcf}
-    .breadcrumbs a{color:#cfcfcf}.breadcrumbs a:hover{color:var(--gold)}
+    .breadcrumbs ol{display:flex;flex-wrap:nowrap;gap:6px;list-style:none;padding:0;margin:0}
+    .breadcrumbs li{font-size:14px;color:#fff}
+    .breadcrumbs li a{text-decoration:none;  color:#fff}
+    .breadcrumbs li+li:before{content:"›";padding:0 4px;color:#fff}
 
     /* FAQ */
     .accordion{border-radius:10px;overflow:hidden}
@@ -310,7 +312,10 @@
     </div>
     <div class="container hero-inner fade-up">
       <nav class="breadcrumbs" aria-label="Breadcrumb">
-        <a href="/" rel="home">Home</a> › <span aria-current="page">Hotel Near Punjab &amp; Haryana High Court</span>
+        <ol>
+          <li><a href="/">Home</a></li>
+          <li aria-current="page">Hotel Near Punjab & Haryana High Court</li>
+        </ol>
       </nav>
       <h1>Hotel Near Punjab and Haryana High Court – Hotel The Black Gold</h1>
       <p class="subhead">Premium comfort just minutes away — professional amenities and responsive service for lawyers, litigants, corporate clients, and government visitors.</p>
@@ -341,7 +346,7 @@
           <div class="card-body">
             <h3>Deluxe</h3>
             <p>Budget-friendly comfort with AC, Wi-Fi, and daily housekeeping.</p>
-            <a class="more" href="/deluxe-room.html" rel="internal">View Deluxe →</a>
+            <a class="more" href="./deluxe-room.html" rel="internal">View Deluxe →</a>
           </div>
         </article>
         <article class="card" role="listitem">
@@ -349,7 +354,7 @@
           <div class="card-body">
             <h3>Super Deluxe</h3>
             <p>Extra space and a 43&quot; Smart TV — ideal for unwinding after court.</p>
-            <a class="more" href="/super-deluxe-room.html" rel="internal">View Super Deluxe →</a>
+            <a class="more" href="./super-deluxe-room.html" rel="internal">View Super Deluxe →</a>
           </div>
         </article>
         <article class="card" role="listitem">
@@ -357,11 +362,11 @@
           <div class="card-body">
             <h3>Premium</h3>
             <p>Most luxurious with a 50&quot; 4K Smart TV and premium bedding.</p>
-            <a class="more" href="/premium-room.html" rel="internal">View Premium →</a>
+            <a class="more" href="./premium-room.html" rel="internal">View Premium →</a>
           </div>
         </article>
       </div>
-      <p class="small" style="margin-top:10px">Compare categories and ranges on <a href="/rooms.html" rel="internal">Rooms &amp; Rates</a>. Full list on <a href="/amenities.html" rel="internal">Amenities</a>.</p>
+      <p class="small" style="margin-top:10px">Compare categories and ranges on <a href="./rooms.html" rel="internal">Rooms &amp; Rates</a>. Full list on <a href="./amenities.html" rel="internal">Amenities</a>.</p>
     </section>
 
     <!-- AMENITIES FOR LEGAL VISITORS -->
@@ -390,7 +395,7 @@
         <div class="cta-row" style="margin-top:8px">
           <a class="btn btn-primary" href="tel:+917277522222" aria-label="Call for long-stay quote">Call for Quote</a>
           <a class="btn btn-ghost" href="https://wa.me/917277522222" rel="noopener" aria-label="WhatsApp for long-stay quote">WhatsApp Us</a>
-          <a class="btn btn-ghost" href="/long-term-stay.html" rel="internal" aria-label="See long-term stay details">See Long-Term Stay</a>
+          <a class="btn btn-ghost" href="./long-term-stay.html" rel="internal" aria-label="See long-term stay details">See Long-Term Stay</a>
         </div>
       </div>
     </section>
@@ -408,7 +413,7 @@
         <li><strong>Railway Station:</strong> 8 km</li>
         <li><strong>Bus Stand Sector 43:</strong> 3.5 km • <strong>ISBT-17:</strong> 6 km</li>
       </ul>
-      <p class="small" style="margin-top:10px">More directions and transport options on our <a href="/location.html" rel="internal">Location</a> page.</p>
+      <p class="small" style="margin-top:10px">More directions and transport options on our <a href="./location.html" rel="internal">Location</a> page.</p>
     </section>
 
     <!-- FAQ -->
@@ -440,7 +445,7 @@
           <div class="acc-content"><div class="acc-inner">Yes. We offer secure basement parking with EV charging for extended stays.</div></div>
         </div>
       </div>
-      <p class="small" style="margin-top:12px">Still have questions? See our <a href="/faq.html" rel="internal">FAQ</a> or <a href="../root/contact.html" rel="internal">Contact</a> us.</p>
+      <p class="small" style="margin-top:12px">Still have questions? See our <a href="./faq.html" rel="internal">FAQ</a> or <a href="../root/contact.html" rel="internal">Contact</a> us.</p>
     </section>
 
     <!-- CONVERSION FOOTER -->
@@ -457,7 +462,7 @@
             <a class="btn btn-ghost" href="https://wa.me/917277522222" rel="noopener" aria-label="WhatsApp Us">WhatsApp Us</a>
             <a class="btn btn-ghost" href="../root/contact.html" aria-label="Book Online">Book Online</a>
           </div>
-          <p class="small" style="margin-top:10px">Explore: <a href="/rooms.html" rel="internal">Rooms &amp; Rates</a> • <a href="/amenities.html" rel="internal">Amenities</a> • <a href="/long-term-stay.html" rel="internal">Long-Term Stay</a></p>
+          <p class="small" style="margin-top:10px">Explore: <a href="../rooms.html" rel="internal">Rooms &amp; Rates</a> • <a href="./amenities.html" rel="internal">Amenities</a> • <a href="./long-term-stay.html" rel="internal">Long-Term Stay</a></p>
         </div>
       </div>
     </section>
@@ -474,23 +479,23 @@
       <div class="footer-col">
         <h4>Stay</h4>
         <p class="small">
-          <a href="/deluxe-room.html" rel="internal">Deluxe</a><br>
-          <a href="/super-deluxe-room.html" rel="internal">Super Deluxe</a><br>
-          <a href="/premium-room.html" rel="internal">Premium</a>
+          <a href="./deluxe-room.html" rel="internal">Deluxe</a><br>
+          <a href="./super-deluxe-room.html" rel="internal">Super Deluxe</a><br>
+          <a href="./premium-room.html" rel="internal">Premium</a>
         </p>
       </div>
       <div class="footer-col">
         <h4>Plan</h4>
         <p class="small">
-          <a href="/rooms.html" rel="internal">Rooms &amp; Rates</a><br>
-          <a href="/amenities.html" rel="internal">Amenities</a><br>
-          <a href="/location.html" rel="internal">Location</a>
+          <a href="../rooms.html" rel="internal">Rooms &amp; Rates</a><br>
+          <a href="./amenities.html" rel="internal">Amenities</a><br>
+          <a href="./location.html" rel="internal">Location</a>
         </p>
       </div>
       <div class="footer-col">
         <h4>Help</h4>
         <p class="small">
-          <a href="/faq.html" rel="internal">FAQ</a><br>
+          <a href="./faq.html" rel="internal">FAQ</a><br>
           <a href="../root/contact.html" rel="internal">Contact</a>
         </p>
       </div>

@@ -88,6 +88,12 @@
     .brand-name{font-family:Montserrat,sans-serif;font-weight:800;letter-spacing:.4px}
     nav ul{list-style:none;margin:0;padding:0;display:flex;gap:1.25rem;align-items:center}
     .book-now{background:var(--gold);color:#111;padding:.6rem 1rem;border-radius:999px;font-weight:700;box-shadow:var(--shadow);border:1px solid rgba(0,0,0,.35)}
+    .breadcrumbs ol{display:flex;flex-wrap:nowrap;gap:6px;list-style:none;padding:0;margin:0}
+    .breadcrumbs li{font-size:14px;color:#fff}
+    .breadcrumbs li a{text-decoration:none;  color:#fff}
+    .breadcrumbs li+li:before{content:"›";padding:0 4px;color:#fff}
+    .menu-close{display:none}
+
         /* Header Container */
     header{position:sticky;top:0;z-index:999;background:rgba(17,17,17,.75);backdrop-filter:saturate(120%) blur(8px);border-bottom:1px solid rgba(255,255,255,.04)}
     .nav{display:flex;align-items:center;justify-content:space-between;padding:.85rem 0}
@@ -383,7 +389,11 @@
     </div>
     <div class="container hero-inner fade-up">
       <nav class="breadcrumbs" aria-label="Breadcrumb">
-        <a href="/">Home</a> › <a href="../rooms.html">Rooms &amp; Rates</a> › <span aria-current="page">Deluxe Room</span>
+        <ol>
+          <li><a href="/">Home</a></li>
+          <li><a href="../rooms.html">Rooms & Rates</a></li>
+          <li aria-current="page">Deluxe Room</li>
+        </ol>
       </nav>
       <h1>Deluxe Room in Chandigarh – Hotel The Black Gold</h1>
       <p class="subhead">Smart, clean, comfortable — near PGI, PEC &amp; Panjab University. Ideal for solo travelers, medical visits, parents &amp; students, and short business trips.</p>

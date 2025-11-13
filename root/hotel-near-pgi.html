@@ -104,6 +104,10 @@
     .btn-ghost{background:#1a1a1a;border:1px solid #2b2b2b;color:#f1f1f1}
     .btn-primary:hover {color: #fff;}
     .book-now:hover {color: #fff;}
+    .breadcrumbs ol{display:flex;flex-wrap:nowrap;gap:6px;list-style:none;padding:0;margin:0}
+    .breadcrumbs li{font-size:14px;color:#fff}
+    .breadcrumbs li a{text-decoration:none;  color:#fff}
+    .breadcrumbs li+li:before{content:"›";padding:0 4px;color:#fff}
     /* Sections */
     section{padding:64px 0}
     .section-title{font-family:Montserrat,sans-serif;font-weight:800;font-size:clamp(22px,3.6vw,32px);margin:0 0 16px}
@@ -305,7 +309,10 @@
     </div>
     <div class="container hero-inner fade-up">
       <nav class="breadcrumbs" aria-label="Breadcrumb">
-        <a href="/" rel="home">Home</a> › <span aria-current="page">Hotel Near PGI</span>
+        <ol>
+          <li><a href="/">Home</a></li>
+          <li aria-current="page">Hotel Near PGI  </li>
+        </ol>
       </nav>
       <h1>Hotel Near PGI Chandigarh – Hotel The Black Gold</h1>
       <p class="subhead">Less than 2 km from PGIMER. Modern comfort, compassionate service, and thoughtful amenities for patients, families, and medical professionals.</p>
@@ -351,7 +358,7 @@
           <div class="card-body">
             <h3>Deluxe</h3>
             <p>Budget-friendly comfort with essentials and a 32&quot; TV.</p>
-            <a class="more" href="/deluxe-room.html" rel="internal">View Deluxe →</a>
+            <a class="more" href="./deluxe-room.html" rel="internal">View Deluxe →</a>
           </div>
         </article>
         <article class="card" role="listitem">
@@ -359,7 +366,7 @@
           <div class="card-body">
             <h3>Super Deluxe</h3>
             <p>Extra space and a 43&quot; Smart TV + Airtel STB for added ease.</p>
-            <a class="more" href="/super-deluxe-room.html" rel="internal">View Super Deluxe →</a>
+            <a class="more" href="./super-deluxe-room.html" rel="internal">View Super Deluxe →</a>
           </div>
         </article>
         <article class="card" role="listitem">
@@ -367,11 +374,11 @@
           <div class="card-body">
             <h3>Premium</h3>
             <p>Our most comfortable option with a 50&quot; 4K Smart TV.</p>
-            <a class="more" href="/premium-room.html" rel="internal">View Premium →</a>
+            <a class="more" href="./premium-room.html" rel="internal">View Premium →</a>
           </div>
         </article>
       </div>
-      <p class="small" style="margin-top:10px">Compare all categories on <a href="/rooms.html" rel="internal">Rooms &amp; Rates</a> and see full <a href="/amenities.html" rel="internal">Amenities</a>. Pet-friendly rooms available at <a href="/pet-friendly.html" rel="internal">₹300/night/pet</a>.</p>
+      <p class="small" style="margin-top:10px">Compare all categories on <a href="./rooms.html" rel="internal">Rooms &amp; Rates</a> and see full <a href="./amenities.html" rel="internal">Amenities</a>. Pet-friendly rooms available at <a href="./pet-friendly.html" rel="internal">₹300/night/pet</a>.</p>
     </section>
 
     <!-- SERVICES FOR PGI VISITORS -->
@@ -399,7 +406,7 @@
             <span class="chip" role="listitem">Airport ~11 km</span>
             <span class="chip" role="listitem">Railway ~8 km</span>
           </div>
-          <p class="small" style="margin-top:10px">See full directions on our <a href="/location.html" rel="internal">Location</a> page.</p>
+          <p class="small" style="margin-top:10px">See full directions on our <a href="./location.html" rel="internal">Location</a> page.</p>
         </div>
         <div>
           <div id="map" role="img" aria-label="Map placeholder for Hotel The Black Gold">
@@ -437,14 +444,14 @@
         </div>
         <div class="acc-item">
           <button class="acc-btn" aria-expanded="false">Are pets allowed?</button>
-          <div class="acc-content"><div class="acc-inner">Yes. Pet-friendly rooms are available at ₹300 per night per pet. See our <a href="/pet-friendly.html" rel="internal">Pet-Friendly</a> page.</div></div>
+          <div class="acc-content"><div class="acc-inner">Yes. Pet-friendly rooms are available at ₹300 per night per pet. See our <a href="./pet-friendly.html" rel="internal">Pet-Friendly</a> page.</div></div>
         </div>
         <div class="acc-item">
           <button class="acc-btn" aria-expanded="false">Can I get a cab to PGI quickly?</button>
           <div class="acc-content"><div class="acc-inner">Yes. The front desk can arrange a reliable cab within minutes.</div></div>
         </div>
       </div>
-      <p class="small" style="margin-top:12px">More questions? Visit our <a href="/faq.html" rel="internal">FAQ</a> or <a href="../root/contact.html" rel="internal">Contact</a> us.</p>
+      <p class="small" style="margin-top:12px">More questions? Visit our <a href="./faq.html" rel="internal">FAQ</a> or <a href="../root/contact.html" rel="internal">Contact</a> us.</p>
     </section>
 
     <!-- CONVERSION FOOTER -->
@@ -461,7 +468,7 @@
             <a class="btn btn-ghost" href="https://wa.me/917277522222" rel="noopener" aria-label="WhatsApp Us">WhatsApp Us</a>
             <a class="btn btn-ghost" href="../root/contact.html" rel="internal" aria-label="Book Online">Book Online</a>
           </div>
-          <p class="small" style="margin-top:10px">Explore: <a href="/rooms.html" rel="internal">Rooms &amp; Rates</a> • <a href="/amenities.html" rel="internal">Amenities</a> • <a href="/location.html" rel="internal">Location</a></p>
+          <p class="small" style="margin-top:10px">Explore: <a href="../rooms.html" rel="internal">Rooms &amp; Rates</a> • <a href="./amenities.html" rel="internal">Amenities</a> • <a href="./location.html" rel="internal">Location</a></p>
         </div>
       </div>
     </section>
@@ -478,24 +485,24 @@
       <div class="footer-col">
         <h4>Explore</h4>
         <p class="small">
-          <a href="/rooms.html" rel="internal">Rooms &amp; Rates</a><br>
-          <a href="/amenities.html" rel="internal">Amenities</a><br>
-          <a href="/location.html" rel="internal">Location</a>
+          <a href="../rooms.html" rel="internal">Rooms &amp; Rates</a><br>
+          <a href="./amenities.html" rel="internal">Amenities</a><br>
+          <a href="./location.html" rel="internal">Location</a>
         </p>
       </div>
       <div class="footer-col">
         <h4>Stay Options</h4>
         <p class="small">
-          <a href="/deluxe-room.html" rel="internal">Deluxe</a><br>
-          <a href="/super-deluxe-room.html" rel="internal">Super Deluxe</a><br>
-          <a href="/premium-room.html" rel="internal">Premium</a>
+          <a href="./deluxe-room.html" rel="internal">Deluxe</a><br>
+          <a href="./super-deluxe-room.html" rel="internal">Super Deluxe</a><br>
+          <a href="./premium-room.html" rel="internal">Premium</a>
         </p>
       </div>
       <div class="footer-col">
         <h4>Help</h4>
         <p class="small">
-          <a href="/pet-friendly.html" rel="internal">Pet-Friendly</a><br>
-          <a href="/faq.html" rel="internal">FAQ</a><br>
+          <a href="./pet-friendly.html" rel="internal">Pet-Friendly</a><br>
+          <a href="./faq.html" rel="internal">FAQ</a><br>
           <a href="../root/contact.html" rel="internal">Contact</a>
         </p>
       </div>

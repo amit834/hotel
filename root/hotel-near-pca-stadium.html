@@ -132,9 +132,10 @@
     .badge{display:inline-block;background:var(--gold);color:#111;font-weight:800;border-radius:999px;padding:.25rem .6rem;margin-bottom:.4rem}
 
     /* Breadcrumbs */
-    .breadcrumbs{font-size:.95rem;margin:18px 0;color:#cfcfcf}
-    .breadcrumbs a{color:#cfcfcf}.breadcrumbs a:hover{color:var(--gold)}
-
+    .breadcrumbs ol{display:flex;flex-wrap:nowrap;gap:6px;list-style:none;padding:0;margin:0}
+    .breadcrumbs li{font-size:14px;color:#fff}
+    .breadcrumbs li a{text-decoration:none;  color:#fff}
+    .breadcrumbs li+li:before{content:"›";padding:0 4px;color:#fff}
     /* Footer */
     footer{border-top:1px solid rgba(255,255,255,.06);padding-top:40px;padding-bottom:80px}
     .footer-grid{display:grid;grid-template-columns:1fr;gap:22px}
@@ -313,7 +314,10 @@
     </div>
     <div class="container hero-inner fade-up">
       <nav class="breadcrumbs" aria-label="Breadcrumb">
-        <a href="/" rel="home">Home</a> › <span aria-current="page">Hotel Near PCA Stadium Mullanpur</span>
+        <ol>
+          <li><a href="/">Home</a></li>
+          <li aria-current="page">Hotel Near PCA Stadium Mullanpur</li>
+        </ol>
       </nav>
       <h1>Hotel Near PCA Stadium Mullanpur – Hotel The Black Gold</h1>
       <p class="subhead">Premium comfort and easy access for match days &amp; concerts — ideal for cricket fans, families, media crews, corporate hospitality, and event staff.</p>
@@ -344,7 +348,7 @@
           <div class="card-body">
             <h3>Deluxe</h3>
             <p>Budget-friendly comfort with all essentials for a winning stay.</p>
-            <a class="more" href="/deluxe-room.html" rel="internal">View Deluxe →</a>
+            <a class="more" href="./deluxe-room.html" rel="internal">View Deluxe →</a>
           </div>
         </article>
         <article class="card" role="listitem">
@@ -352,7 +356,7 @@
           <div class="card-body">
             <h3>Super Deluxe</h3>
             <p>Extra space, 43&quot; Smart TV + Airtel STB — perfect for unwinding post-match.</p>
-            <a class="more" href="/super-deluxe-room.html" rel="internal">View Super Deluxe →</a>
+            <a class="more" href="./super-deluxe-room.html" rel="internal">View Super Deluxe →</a>
           </div>
         </article>
         <article class="card" role="listitem">
@@ -360,11 +364,11 @@
           <div class="card-body">
             <h3>Premium</h3>
             <p>Maximum comfort with a 50&quot; 4K Smart TV, premium bedding and style.</p>
-            <a class="more" href="/premium-room.html" rel="internal">View Premium →</a>
+            <a class="more" href="./premium-room.html" rel="internal">View Premium →</a>
           </div>
         </article>
       </div>
-      <p class="small" style="margin-top:10px">Compare categories and typical ranges on <a href="/rooms.html" rel="internal">Rooms &amp; Rates</a>. Full inclusions on <a href="/amenities.html" rel="internal">Amenities</a>.</p>
+      <p class="small" style="margin-top:10px">Compare categories and typical ranges on <a href="./rooms.html" rel="internal">Rooms &amp; Rates</a>. Full inclusions on <a href="./amenities.html" rel="internal">Amenities</a>.</p>
     </section>
 
     <!-- MATCH-DAY AMENITIES -->
@@ -385,7 +389,7 @@
       <div class="strip">
         <span class="badge" aria-hidden="true">For Teams &amp; Fans</span>
         <p class="muted">Group room blocks, coordinated check-ins, flexible meal windows, and a dining hall for team/fan breakfasts or post-match dinners. Media crews and sponsors appreciate our reliable Wi-Fi and quick printing support.</p>
-        <p class="small">Plan your event stay: <a href="/group-bookings.html" rel="internal">Group Bookings</a> • <a href="/corporate-bookings.html" rel="internal">Corporate Bookings</a></p>
+        <p class="small">Plan your event stay: <a href="./group-bookings.html" rel="internal">Group Bookings</a> • <a href="./corporate-bookings.html" rel="internal">Corporate Bookings</a></p>
       </div>
     </section>
 
@@ -404,7 +408,7 @@
         <div class="cta-row" style="margin-top:8px">
           <a class="btn btn-primary" href="tel:+917277522222" aria-label="Call for long-stay quote">Call for Quote</a>
           <a class="btn btn-ghost" href="https://wa.me/917277522222" rel="noopener" aria-label="WhatsApp for long-stay quote">WhatsApp Us</a>
-          <a class="btn btn-ghost" href="/long-term-stay.html" rel="internal" aria-label="See long-term stay details">See Long-Term Stay</a>
+          <a class="btn btn-ghost" href="./long-term-stay.html" rel="internal" aria-label="See long-term stay details">See Long-Term Stay</a>
         </div>
       </div>
     </section>
@@ -423,7 +427,7 @@
         <li><strong>Airport:</strong> ~11 km</li>
         <li><strong>Railway Station:</strong> ~8 km</li>
       </ul>
-      <p class="small" style="margin-top:10px">For directions and transport options, visit our <a href="/location.html" rel="internal">Location</a> page.</p>
+      <p class="small" style="margin-top:10px">For directions and transport options, visit our <a href="./location.html" rel="internal">Location</a> page.</p>
     </section>
 
     <!-- FAQ -->
@@ -459,7 +463,7 @@
           <div class="acc-content"><div class="acc-inner">Yes. Pet-friendly rooms are available at ₹300/night/pet.</div></div>
         </div>
       </div>
-      <p class="small" style="margin-top:12px">Still have questions? See our <a href="/faq.html" rel="internal">FAQ</a> or <a href="../root/contact.html" rel="internal">Contact</a> us.</p>
+      <p class="small" style="margin-top:12px">Still have questions? See our <a href="./faq.html" rel="internal">FAQ</a> or <a href="../root/contact.html" rel="internal">Contact</a> us.</p>
     </section>
 
     <!-- CONVERSION FOOTER -->
@@ -476,7 +480,7 @@
             <a class="btn btn-ghost" href="https://wa.me/917277522222" rel="noopener" aria-label="WhatsApp Us">WhatsApp Us</a>
             <a class="btn btn-ghost" href="../root/contact.html" aria-label="Book Online">Book Online</a>
           </div>
-          <p class="small" style="margin-top:10px">Explore: <a href="/rooms.html" rel="internal">Rooms &amp; Rates</a> • <a href="/amenities.html" rel="internal">Amenities</a> • <a href="/group-bookings.html" rel="internal">Group Bookings</a> • <a href="/corporate-bookings.html" rel="internal">Corporate Bookings</a></p>
+          <p class="small" style="margin-top:10px">Explore: <a href="./rooms.html" rel="internal">Rooms &amp; Rates</a> • <a href="./amenities.html" rel="internal">Amenities</a> • <a href="./group-bookings.html" rel="internal">Group Bookings</a> • <a href="./corporate-bookings.html" rel="internal">Corporate Bookings</a></p>
         </div>
       </div>
     </section>
@@ -493,23 +497,23 @@
       <div class="footer-col">
         <h4>Stay</h4>
         <p class="small">
-          <a href="/deluxe-room.html" rel="internal">Deluxe</a><br>
-          <a href="/super-deluxe-room.html" rel="internal">Super Deluxe</a><br>
-          <a href="/premium-room.html" rel="internal">Premium</a>
+          <a href="./deluxe-room.html" rel="internal">Deluxe</a><br>
+          <a href="./super-deluxe-room.html" rel="internal">Super Deluxe</a><br>
+          <a href="./premium-room.html" rel="internal">Premium</a>
         </p>
       </div>
       <div class="footer-col">
         <h4>Plan</h4>
         <p class="small">
-          <a href="/rooms.html" rel="internal">Rooms &amp; Rates</a><br>
-          <a href="/amenities.html" rel="internal">Amenities</a><br>
-          <a href="/location.html" rel="internal">Location</a>
+          <a href="../rooms.html" rel="internal">Rooms &amp; Rates</a><br>
+          <a href="./amenities.html" rel="internal">Amenities</a><br>
+          <a href="./location.html" rel="internal">Location</a>
         </p>
       </div>
       <div class="footer-col">
         <h4>Help</h4>
         <p class="small">
-          <a href="/faq.html" rel="internal">FAQ</a><br>
+          <a href="./faq.html" rel="internal">FAQ</a><br>
           <a href="../root/contact.html" rel="internal">Contact</a>
         </p>
       </div>

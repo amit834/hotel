@@ -105,6 +105,10 @@
 
       .book-now{background:var(--gold);color:#111;padding:.6rem 1rem;border-radius:999px;font-weight:700;box-shadow:var(--shadow);border:1px solid rgba(0,0,0,.35)}
       .book-now:hover{filter:brightness(1.05);color: #fff;}
+      .breadcrumbs ol{display:flex;flex-wrap:nowrap;gap:6px;list-style:none;padding:0;margin:0}
+      .breadcrumbs li{font-size:14px;color:#fff}
+      .breadcrumbs li a{text-decoration:none;  color:#fff}
+      .breadcrumbs li+li:before{content:"›";padding:0 4px;color:#fff}
 
     /* Hero */
     .hero{position:relative;isolation:isolate}
@@ -301,7 +305,10 @@
     </div>
     <div class="container hero-inner fade-up">
       <nav class="breadcrumbs" aria-label="Breadcrumb">
-        <a href="/">Home</a> › <span aria-current="page">Nearby Attractions</span>
+        <ol>
+          <li><a href="/">Home</a></li>
+          <li aria-current="page">Nearby Attractions</li>
+        </ol>
       </nav>
       <h1>Nearby Attractions in Chandigarh – From Our Doorstep</h1>
       <p class="subhead">See Chandigarh’s favorites with easy distances and quick tips — perfect for families, couples, and business travelers with a free afternoon.</p>
@@ -327,7 +334,7 @@
             <h3>Sukhna Lake <span class="chip"><span class="dot"></span>6 km</span></h3>
             <p class="small">A calm, man-made lake at the Shivalik foothills — boating, sunrise walks, and birdwatching.</p>
             <p class="small"><strong>Why visit:</strong> Golden sunrises, paddle boats, scenic promenades.</p>
-            <a class="more" href="/location.html">See on Map →</a>
+            <a class="more" href="./location.html">See on Map →</a>
           </div>
         </article>
         <!-- 2 -->
@@ -339,7 +346,7 @@
             <h3>Rock Garden <span class="chip"><span class="dot"></span>7 km</span></h3>
             <p class="small">Nek Chand’s maze of recycled-sculpture courts, waterfalls, and whimsical passages.</p>
             <p class="small"><strong>Why visit:</strong> Chandigarh’s creativity — unforgettable for kids & adults.</p>
-            <a class="more" href="/location.html">See on Map →</a>
+            <a class="more" href="./location.html">See on Map →</a>
           </div>
         </article>
         <!-- 3 -->
@@ -351,7 +358,7 @@
             <h3>Rose Garden <span class="chip"><span class="dot"></span>8 km</span></h3>
             <p class="small">Asia’s largest rose garden with seasonal blooms and lawns for leisurely strolls.</p>
             <p class="small"><strong>Why visit:</strong> Fragrance, color, classic Chandigarh walks.</p>
-            <a class="more" href="/location.html">See on Map →</a>
+            <a class="more" href="./location.html">See on Map →</a>
           </div>
         </article>
         <!-- 4 -->
@@ -363,7 +370,7 @@
             <h3>Sector 17 Plaza <span class="chip"><span class="dot"></span>7 km</span></h3>
             <p class="small">Open-air shopping & dining hub with boutiques, performances, and city buzz.</p>
             <p class="small"><strong>Why visit:</strong> Retail therapy, local snacks, lively evenings.</p>
-            <a class="more" href="/location.html">See on Map →</a>
+            <a class="more" href="./location.html">See on Map →</a>
           </div>
         </article>
         <!-- 5 -->
@@ -375,7 +382,7 @@
             <h3>Japanese Garden <span class="chip"><span class="dot"></span>5 km</span></h3>
             <p class="small">Pagodas, koi ponds, and bridges — tranquil, photo-friendly landscaping.</p>
             <p class="small"><strong>Why visit:</strong> Calm spaces and family-friendly paths.</p>
-            <a class="more" href="/location.html">See on Map →</a>
+            <a class="more" href="./location.html">See on Map →</a>
           </div>
         </article>
         <!-- 6 -->
@@ -387,7 +394,7 @@
             <h3>Government Museum &amp; Art Gallery <span class="chip"><span class="dot"></span>6 km</span></h3>
             <p class="small">Gandhara sculpture, Pahari miniatures, decorative arts — quiet galleries.</p>
             <p class="small"><strong>Why visit:</strong> Cultural depth & regional art history.</p>
-            <a class="more" href="/location.html">See on Map →</a>
+            <a class="more" href="./location.html">See on Map →</a>
           </div>
         </article>
         <!-- 7 -->
@@ -399,7 +406,7 @@
             <h3>Chandigarh Capitol Complex <span class="chip"><span class="dot"></span>6 km</span></h3>
             <p class="small">UNESCO-listed ensemble by Le Corbusier: High Court, Secretariat, Assembly.</p>
             <p class="small"><strong>Why visit:</strong> Modernist architecture at urban scale.</p>
-            <a class="more" href="/location.html">See on Map →</a>
+            <a class="more" href="./location.html">See on Map →</a>
           </div>
         </article>
         <!-- 8 -->
@@ -411,7 +418,7 @@
             <h3>Zakir Hussain Rose Garden <span class="chip"><span class="dot"></span>8 km</span></h3>
             <p class="small">Fragrant seasonal displays; venue of the Rose Festival.</p>
             <p class="small"><strong>Why visit:</strong> Florals, fragrance, benches & lawns.</p>
-            <a class="more" href="/location.html">See on Map →</a>
+            <a class="more" href="./location.html">See on Map →</a>
           </div>
         </article>
         <!-- 9 -->
@@ -423,7 +430,7 @@
             <h3>International Dolls Museum <span class="chip"><span class="dot"></span>5 km</span></h3>
             <p class="small">Global dolls with intricate costumes — compact & engaging for kids.</p>
             <p class="small"><strong>Why visit:</strong> Family-friendly, educational, photogenic.</p>
-            <a class="more" href="/location.html">See on Map →</a>
+            <a class="more" href="./location.html">See on Map →</a>
           </div>
         </article>
         <!-- 10 -->
@@ -435,7 +442,7 @@
             <h3>Garden of Fragrance <span class="chip"><span class="dot"></span>9 km</span></h3>
             <p class="small">Aromatic shrubs, flower beds, meandering paths for mindful walks.</p>
             <p class="small"><strong>Why visit:</strong> Gentle reset for the senses.</p>
-            <a class="more" href="/location.html">See on Map →</a>
+            <a class="more" href="./location.html">See on Map →</a>
           </div>
         </article>
         <!-- 11 -->
@@ -447,7 +454,7 @@
             <h3>Terraced Garden <span class="chip"><span class="dot"></span>9 km</span></h3>
             <p class="small">Layered lawns & seasonal blooms; musical fountains on select evenings.</p>
             <p class="small"><strong>Why visit:</strong> Easy family time & classic charm.</p>
-            <a class="more" href="/location.html">See on Map →</a>
+            <a class="more" href="./location.html">See on Map →</a>
           </div>
         </article>
         <!-- 12 -->
@@ -459,7 +466,7 @@
             <h3>Leisure Valley <span class="chip"><span class="dot"></span>6 km</span></h3>
             <p class="small">City’s green spine — jogging lanes, cycling tracks, open lawns.</p>
             <p class="small"><strong>Why visit:</strong> Fresh air and easy exercise.</p>
-            <a class="more" href="/location.html">See on Map →</a>
+            <a class="more" href="./location.html">See on Map →</a>
           </div>
         </article>
         <!-- 13 -->
@@ -471,7 +478,7 @@
             <h3>Cactus Garden, Panchkula <span class="chip"><span class="dot"></span>12 km</span></h3>
             <p class="small">One of Asia’s largest succulent collections in themed beds.</p>
             <p class="small"><strong>Why visit:</strong> Unique flora & striking textures.</p>
-            <a class="more" href="/location.html">See on Map →</a>
+            <a class="more" href="./location.html">See on Map →</a>
           </div>
         </article>
         <!-- 14 -->
@@ -483,7 +490,7 @@
             <h3>Pinjore Gardens <span class="chip"><span class="dot"></span>22 km</span></h3>
             <p class="small">Mughal terraces with fountains, pavilions, and heritage charm.</p>
             <p class="small"><strong>Why visit:</strong> Architecture, lawns, leisurely photo walks.</p>
-            <a class="more" href="/location.html">See on Map →</a>
+            <a class="more" href="./location.html">See on Map →</a>
           </div>
         </article>
         <!-- 15 -->
@@ -495,7 +502,7 @@
             <h3>Chhatbir Zoo <span class="chip"><span class="dot"></span>20 km</span></h3>
             <p class="small">Big cats, aviaries, and nature trails — a full outdoor afternoon.</p>
             <p class="small"><strong>Why visit:</strong> Wildlife variety & easy navigation.</p>
-            <a class="more" href="/location.html">See on Map →</a>
+            <a class="more" href="./location.html">See on Map →</a>
           </div>
         </article>
         <!-- 16 -->
@@ -507,7 +514,7 @@
             <h3>Gurudwara Nada Sahib <span class="chip"><span class="dot"></span>15 km</span></h3>
             <p class="small">Serene Sikh shrine overlooking the Ghaggar with panoramic views.</p>
             <p class="small"><strong>Why visit:</strong> Calm, seva, gentle cultural intro.</p>
-            <a class="more" href="/location.html">See on Map →</a>
+            <a class="more" href="./location.html">See on Map →</a>
           </div>
         </article>
         <!-- 17 -->
@@ -518,8 +525,8 @@
           <div class="card-body">
             <h3>Mohali Cricket Stadium (PCA) <span class="chip"><span class="dot"></span>11 km</span></h3>
             <p class="small">Premier venue for internationals & league matches. Match days are electric.</p>
-            <p class="small"><strong>Why visit:</strong> World-class cricket & spirited crowds. <a href="/hotel-near-pca-stadium.html">Match stay tips</a>.</p>
-            <a class="more" href="/hotel-near-pca-stadium.html">Match-Stay Guide →</a>
+            <p class="small"><strong>Why visit:</strong> World-class cricket & spirited crowds. <a href="./hotel-near-pca-stadium.html">Match stay tips</a>.</p>
+            <a class="more" href="./hotel-near-pca-stadium.html">Match-Stay Guide →</a>
           </div>
         </article>
         <!-- 18 -->
@@ -531,7 +538,7 @@
             <h3>Elante Mall <span class="chip"><span class="dot"></span>7 km</span></h3>
             <p class="small">Global brands, dining, and multiplex — airy, easy browsing.</p>
             <p class="small"><strong>Why visit:</strong> One-stop shopping & entertainment.</p>
-            <a class="more" href="/location.html">See on Map →</a>
+            <a class="more" href="./location.html">See on Map →</a>
           </div>
         </article>
         <!-- 19 -->
@@ -543,7 +550,7 @@
             <h3>Fun City, Panchkula <span class="chip"><span class="dot"></span>14 km</span></h3>
             <p class="small">Amusement + water park with slides, wave pools, and family rides.</p>
             <p class="small"><strong>Why visit:</strong> Day-long fun with easy food options.</p>
-            <a class="more" href="/location.html">See on Map →</a>
+            <a class="more" href="./location.html">See on Map →</a>
           </div>
         </article>
         <!-- 20 -->
@@ -555,7 +562,7 @@
             <h3>Timber Trail, Parwanoo <span class="chip"><span class="dot"></span>35 km</span></h3>
             <p class="small">Cable-car over the Shivaliks to a hilltop with sweeping valley views.</p>
             <p class="small"><strong>Why visit:</strong> Dramatic vistas, fresh air, memorable photos.</p>
-            <a class="more" href="/location.html">See on Map →</a>
+            <a class="more" href="./location.html">See on Map →</a>
           </div>
         </article>
       </div>
@@ -578,8 +585,8 @@
             <h3 style="margin-top:0">Plan Your Stay</h3>
             <p class="small muted">Book direct for flexibility and quick help during your trip.</p>
             <p class="small">
-              <a class="more" href="/rooms.html">Rooms &amp; Rates →</a> &nbsp;•&nbsp;
-              <a class="more" href="/location.html">Location Overview →</a> &nbsp;•&nbsp;
+              <a class="more" href="./rooms.html">Rooms &amp; Rates →</a> &nbsp;•&nbsp;
+              <a class="more" href="./location.html">Location Overview →</a> &nbsp;•&nbsp;
               <a class="more" href="../root/contact.html">Contact Us →</a>
             </p>
           </div>
@@ -612,23 +619,23 @@
       <div class="footer-col">
         <h4>Rooms</h4>
         <p class="small">
-          <a href="/deluxe-room.html">Deluxe Room</a><br>
-          <a href="/super-deluxe-room.html">Super Deluxe Room</a><br>
-          <a href="/premium-room.html">Premium Room</a><br>
-          <a href="/rooms.html">Rooms &amp; Rates</a>
+          <a href="./deluxe-room.html">Deluxe Room</a><br>
+          <a href="./super-deluxe-room.html">Super Deluxe Room</a><br>
+          <a href="./premium-room.html">Premium Room</a><br>
+          <a href="../rooms.html">Rooms &amp; Rates</a>
         </p>
       </div>
       <div class="footer-col">
         <h4>Plan</h4>
         <p class="small">
-          <a href="/location.html">Location</a><br>
-          <a href="/hotel-near-pgi.html">Hotel Near PGI</a>
+          <a href="./location.html">Location</a><br>
+          <a href="./hotel-near-pgi.html">Hotel Near PGI</a>
         </p>
       </div>
       <div class="footer-col">
         <h4>Help</h4>
         <p class="small">
-          <a href="/faq.html">FAQ</a><br>
+          <a href="./faq.html">FAQ</a><br>
           <a href="../root/contact.html">Contact</a>
         </p>
       </div>

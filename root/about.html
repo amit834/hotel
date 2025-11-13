@@ -83,6 +83,10 @@
     .brand-name{font-family:Montserrat,sans-serif;font-weight:800;letter-spacing:.4px}
     nav ul{list-style:none;margin:0;padding:0;display:flex;gap:1.25rem;align-items:center}
     .book-now{background:var(--gold);color:#111;padding:.6rem 1rem;border-radius:999px;font-weight:700;box-shadow:var(--shadow);border:1px solid rgba(0,0,0,.35)}
+    .breadcrumbs ol{display:flex;flex-wrap:nowrap;gap:6px;list-style:none;padding:0;margin:0}
+    .breadcrumbs li{font-size:14px;color:#fff}
+    .breadcrumbs li a{text-decoration:none;  color:#fff}
+    .breadcrumbs li+li:before{content:"›";padding:0 4px;color:#fff}
 
     /* Hero */
     .hero{position:relative;isolation:isolate}
@@ -213,10 +217,10 @@
       <nav aria-label="Main">
         <ul>
           <li><a href="/">Home</a></li>
-          <li><a href="/rooms.html">Rooms &amp; Rates</a></li>
-          <li><a href="/amenities.html">Amenities</a></li>
-          <li><a href="/location.html">Location</a></li>
-          <li><a href="/faq.html">FAQ</a></li>
+          <li><a href="../rooms.html">Rooms &amp; Rates</a></li>
+          <li><a href="../root/amenities.html">Amenities</a></li>
+          <li><a href="../root/location.html">Location</a></li>
+          <li><a href="../root/faq.html">FAQ</a></li>
           <li><a href="../root/contact.html">Contact</a></li>
         </ul>
       </nav>
@@ -236,7 +240,10 @@
     </div>
     <div class="container hero-inner fade-up">
       <nav class="breadcrumbs" aria-label="Breadcrumb">
-        <a href="/">Home</a> › <span aria-current="page">About Us</span>
+        <ol>
+          <li><a href="/">Home</a></li>
+          <li aria-current="page">About Us</li>
+        </ol>
       </nav>
       <h1>About Hotel The Black Gold – Chandigarh</h1>
       <p class="subhead">A guest-first stay near PGI, PEC &amp; Panjab University — modern rooms, practical amenities, and a caring team.</p>
@@ -329,7 +336,7 @@
               <div role="listitem"><strong>Railway Station</strong> – ~8 km</div>
               <div role="listitem"><strong>Bus Stand Sec 43</strong> – ~8 km</div>
             </div>
-            <p class="small" style="margin-top:10px">Learn more on our <a href="/location.html">Location</a> page or see <a href="/hotel-near-pgi.html" >Hotel Near PGI</a>.</p>
+            <p class="small" style="margin-top:10px">Learn more on our <a href="../root/location.html">Location</a> page or see <a href="../root/hotel-near-pgi.html" >Hotel Near PGI</a>.</p>
           </div>
           <div>
             <div id="map" role="img" aria-label="Map placeholder for Hotel The Black Gold location">
@@ -353,7 +360,7 @@
           <div class="card-body">
             <h3>Deluxe Room</h3>
             <p class="small">Budget-friendly room in Chandigarh with AC, Wi-Fi, and attached washroom.</p>
-            <a class="more" href="/deluxe-room.html">View Deluxe →</a>
+            <a class="more" href="../root/deluxe-room.html">View Deluxe →</a>
           </div>
         </article>
         <article class="card">
@@ -363,7 +370,7 @@
           <div class="card-body">
             <h3>Super Deluxe Room</h3>
             <p class="small">Spacious room with 43-inch Smart TV, seating, and free Wi-Fi.</p>
-            <a class="more" href="/super-deluxe-room.html">View Super Deluxe →</a>
+            <a class="more" href="../root/super-deluxe-room.html">View Super Deluxe →</a>
           </div>
         </article>
         <article class="card">
@@ -373,7 +380,7 @@
           <div class="card-body">
             <h3>Premium Room</h3>
             <p class="small">Luxury room in Chandigarh with 50-inch 4K Smart TV and upscale finishes.</p>
-            <a class="more" href="/premium-room.html">View Premium →</a>
+            <a class="more" href="../root/premium-room.html">View Premium →</a>
           </div>
         </article>
       </div>
@@ -389,7 +396,7 @@
           <a class="btn btn-ghost" href="https://wa.me/917277522222" target="_blank" rel="noopener" aria-label="WhatsApp Us">WhatsApp Us</a>
           <a class="btn btn-ghost" href="../root/contact.html" aria-label="Book Now">Book Now</a>
         </div>
-        <p class="small" style="margin-top:10px">Explore: <a href="/rooms.html">Rooms &amp; Rates</a> • <a href="/amenities.html">Amenities</a> • <a href="/pet-friendly.html">Pet-Friendly Hotel in Chandigarh</a> • <a href="/long-term-stay.html">Long-Term Stay Hotel Chandigarh</a></p>
+        <p class="small" style="margin-top:10px">Explore: <a href="../rooms.html">Rooms &amp; Rates</a> • <a href="../root/amenities.html">Amenities</a> • <a href="../root/pet-friendly.html">Pet-Friendly Hotel in Chandigarh</a> • <a href="../root/long-term-stay.html">Long-Term Stay Hotel Chandigarh</a></p>
       </div>
     </section>
   </main>
@@ -406,23 +413,23 @@
       <div class="footer-col">
         <h4>Rooms</h4>
         <p class="small">
-          <a href="/deluxe-room.html">Deluxe Room</a><br>
-          <a href="/super-deluxe-room.html">Super Deluxe Room</a><br>
-          <a href="/premium-room.html">Premium Room</a><br>
-          <a href="/rooms.html">Rooms &amp; Rates</a>
+          <a href="../root/deluxe-room.html">Deluxe Room</a><br>
+          <a href="../root/super-deluxe-room.html">Super Deluxe Room</a><br>
+          <a href="../root/premium-room.html">Premium Room</a><br>
+          <a href="../rooms.html">Rooms &amp; Rates</a>
         </p>
       </div>
       <div class="footer-col">
         <h4>Plan</h4>
         <p class="small">
-          <a href="/location.html">Location</a><br>
-          <a href="/hotel-near-pgi.html">Hotel Near PGI</a>
+          <a href="../root/location.html">Location</a><br>
+          <a href="../root/hotel-near-pgi.html">Hotel Near PGI</a>
         </p>
       </div>
       <div class="footer-col">
         <h4>Help</h4>
         <p class="small">
-          <a href="/faq.html">FAQ</a><br>
+          <a href="../root/faq.html">FAQ</a><br>
           <a href="../root/contact.html">Contact</a>
         </p>
       </div>

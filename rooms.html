@@ -73,6 +73,11 @@
 header {position: sticky;top: 0;z-index: 999;background: rgba(17, 17, 17, 0.75);backdrop-filter: saturate(120%) blur(8px);border-bottom: 1px solid rgba(255, 255, 255, 0.04);
 }
 
+    .breadcrumbs ol{display:flex;flex-wrap:nowrap;gap:6px;list-style:none;padding:0;margin:0}
+    .breadcrumbs li{font-size:14px;color:#fff}
+    .breadcrumbs li a{text-decoration:none;  color:#fff}
+    .breadcrumbs li+li:before{content:"›";padding:0 4px;color:#fff}
+
 /* Nav wrapper */
 .nav {display: flex;align-items: center;justify-content: space-between;padding: 0.85rem 0;
 }
@@ -167,10 +172,6 @@ nav ul.menu {list-style: none;margin: 0;padding: 0;display: flex;gap: 1.25rem;al
     .amenity{display:flex;gap:.6rem;align-items:flex-start;background:#131313;border:1px solid #646464;padding:.7rem .8rem;border-radius:12px}
     .dot{width:10px;height:10px;border-radius:999px;background:var(--gold);margin-top:.35rem}
     p.smart {color: #dcdcdc;}
-    /* Breadcrumbs */
-    .breadcrumbs ol{list-style:none;padding:0;margin:0;display:flex;gap:.5rem;align-items:center;font-size:.95rem;color:#cfcfcf}
-    .breadcrumbs li:not(:last-child)::after{content:'/';margin-left:.5rem;color:#555}
-    .breadcrumbs a{color:#cfcfcf}.breadcrumbs a:hover{color:var(--gold)}
     /* FAQ */
       .accordion{border-radius:10px;overflow:hidden}
       .acc-item {padding: 0 0 15px;}
@@ -473,7 +474,7 @@ nav ul.menu {list-style: none;margin: 0;padding: 0;display: flex;gap: 1.25rem;al
       <nav class="breadcrumbs" aria-label="Breadcrumb">
         <ol>
           <li><a href="/">Home</a></li>
-          <li aria-current="page">Rooms & Rates</li>
+          <li aria-current="page">Rooms and Rates</li>
         </ol>
       </nav>
       <h1>Hotel Rooms & Rates in Chandigarh</h1>
@@ -489,7 +490,7 @@ nav ul.menu {list-style: none;margin: 0;padding: 0;display: flex;gap: 1.25rem;al
   <main id="main" class="container" role="main">
     <section class="fade-up">
       <h2 class="section-title">Quick Comparison Snapshot</h2>
-      <p class="muted">Choose from <a href="./root/deluxe-room.html">Deluxe</a> for essential comfort and value, <a href="./root/super-deluxe-room.html">Super Deluxe</a> for added space and entertainment, or <a href="/./root/premium-room.html">Premium</a> for our most refined experience. All rooms include AC, attached washrooms, and high-speed Wi-Fi.</p>
+      <p class="muted">Choose from <a href="./root/deluxe-room.html">Deluxe</a> for essential comfort and value, <a href="./root/super-deluxe-room.html">Super Deluxe</a> for added space and entertainment, or <a href="./root/premium-room.html">Premium</a> for our most refined experience. All rooms include AC, attached washrooms, and high-speed Wi-Fi.</p>
     </section>
 
     <section class="fade-up delay" aria-labelledby="compare">
@@ -734,7 +735,7 @@ nav ul.menu {list-style: none;margin: 0;padding: 0;display: flex;gap: 1.25rem;al
           <div class="cta-row">
             <a class="btn btn-primary" href="tel:+917277522222" aria-label="Call Now"><i class="fa-solid fa-phone"></i>Call Now</a>
             <a class="btn btn-ghost" href="https://wa.me/917277522222" target="_blank" rel="noopener" aria-label="WhatsApp Us"><i class="fa-brands fa-whatsapp"></i>WhatsApp Us</a>
-            <a class="btn btn-ghost" href="/contact.html" aria-label="Book Online"><i class="fa-solid fa-calendar-days"></i>  Book Online</a>
+            <a class="btn btn-ghost" href="../root/contact.html" aria-label="Book Online"><i class="fa-solid fa-calendar-days"></i>  Book Online</a>
           </div>
           <p class="small" style="margin-top:10px">Or explore details: <a href="./root/deluxe-room.html">Deluxe</a> • <a href="./root/super-deluxe-room.html">Super Deluxe</a> • <a href="./root/premium-room.html">Premium</a></p>
         </div>
@@ -784,7 +785,7 @@ nav ul.menu {list-style: none;margin: 0;padding: 0;display: flex;gap: 1.25rem;al
   <nav class="fab" aria-label="Quick actions">
     <a class="call" href="tel:+917277522222" aria-label="Call Hotel The Black Gold"><i class="fa-solid fa-phone"></i>Call</a>
     <a class="wa" href="https://wa.me/917277522222" target="_blank" rel="noopener" aria-label="WhatsApp Hotel The Black Gold"><i class="fa-brands fa-whatsapp"></i>WhatsApp</a>
-    <a class="book" href="/contact.html" aria-label="Book Now"><i class="fa-solid fa-calendar-days"></i>Book Now</a>
+    <a class="book" href="../root/contact.html" aria-label="Book Now"><i class="fa-solid fa-calendar-days"></i>Book Now</a>
   </nav>
 
   <script>
